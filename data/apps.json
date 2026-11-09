@@ -1,7 +1,7 @@
 {
   "source": "https://awesomemygo.dev/showcase",
   "asOf": "2026-11-09",
-  "syncedAt": "2026-11-09T11:29:04Z",
+  "syncedAt": "2026-11-09T11:34:32Z",
   "apps": [
     {
       "slug": "2048",
@@ -1072,28 +1072,6 @@
       "shot": "assets/shots/bunnybox.webp"
     },
     {
-      "slug": "burrow-diikhanh",
-      "name": "Burrow",
-      "author": "DiiKhanh",
-      "kind": "web",
-      "platforms": [
-        "mac"
-      ],
-      "group": "system",
-      "category": null,
-      "url": "https://github.com/DiiKhanh/burrow",
-      "repo": "DiiKhanh/burrow",
-      "summary": "macOS 清理工具：清除垃圾文件，查看磁盘占用，实时显示系统状态。",
-      "description": "面向 Apple Silicon 的 macOS 应用，用 MyGo 搭配 React Web 前端构建，用于释放磁盘空间并实时查看 Mac 的健康状况。它内置固定版本的 Mole 来查找垃圾文件，可逐组细看到单个路径，缓存和日志直接删除，其余移到废纸篓。Space 按文件夹显示磁盘占用，Status 每秒刷新 CPU、内存、电池和温度状态。",
-      "added": "2026-11-06T03:34:18Z",
-      "score": 52.1,
-      "likes": 0,
-      "stars": 2,
-      "license": "GPL-3.0",
-      "icon": "assets/icons/burrow-diikhanh.webp",
-      "shot": "assets/shots/burrow-diikhanh.webp"
-    },
-    {
       "slug": "burrow",
       "name": "Burrow",
       "author": "zeroy1024",
@@ -1115,6 +1093,28 @@
       "license": "MIT",
       "icon": "assets/icons/burrow.webp",
       "shot": "assets/shots/burrow.webp"
+    },
+    {
+      "slug": "burrow-diikhanh",
+      "name": "Burrow",
+      "author": "DiiKhanh",
+      "kind": "web",
+      "platforms": [
+        "mac"
+      ],
+      "group": "system",
+      "category": null,
+      "url": "https://github.com/DiiKhanh/burrow",
+      "repo": "DiiKhanh/burrow",
+      "summary": "macOS 清理工具：清除垃圾文件，查看磁盘占用，实时显示系统状态。",
+      "description": "面向 Apple Silicon 的 macOS 应用，用 MyGo 搭配 React Web 前端构建，用于释放磁盘空间并实时查看 Mac 的健康状况。它内置固定版本的 Mole 来查找垃圾文件，可逐组细看到单个路径，缓存和日志直接删除，其余移到废纸篓。Space 按文件夹显示磁盘占用，Status 每秒刷新 CPU、内存、电池和温度状态。",
+      "added": "2026-11-06T03:34:18Z",
+      "score": 52.1,
+      "likes": 0,
+      "stars": 2,
+      "license": "GPL-3.0",
+      "icon": "assets/icons/burrow-diikhanh.webp",
+      "shot": "assets/shots/burrow-diikhanh.webp"
     },
     {
       "slug": "byop",
@@ -3783,30 +3783,6 @@
       "shot": "assets/shots/healthsync.webp"
     },
     {
-      "slug": "herdr-desktop",
-      "name": "Herdr Desktop",
-      "author": "cxnaive",
-      "kind": "native",
-      "platforms": [
-        "win",
-        "linux",
-        "mac"
-      ],
-      "group": "agents",
-      "category": null,
-      "url": "https://github.com/cxnaive/herder_relay_extra",
-      "repo": "cxnaive/herder_relay_extra",
-      "summary": "Herdr Relay 桌面客户端，远程操控编程 Agent、终端与工作区文件。",
-      "description": "Herdr Relay 的 Windows 与 macOS 桌面客户端，由 MyGo 原生 UI 绘制；Relay 本身和 Android 应用 Herdr Pocket 另行构建。左侧按电脑、项目和 Agent 导航，中间在对话与交互终端之间切换，右侧浏览并下载工作区文件。目前为 0.1.0 开发预览版，尚无正式安装包。",
-      "added": "2026-11-08T02:29:20Z",
-      "score": 46.3,
-      "likes": 0,
-      "stars": 1,
-      "license": "NOASSERTION",
-      "icon": "assets/icons/herdr-desktop.webp",
-      "shot": "assets/shots/herdr-desktop.webp"
-    },
-    {
       "slug": "herdr",
       "name": "Herdr",
       "author": "TengYangTuoHai",
@@ -3829,6 +3805,30 @@
       "license": "MIT",
       "icon": "assets/icons/herdr.webp",
       "shot": "assets/shots/herdr.webp"
+    },
+    {
+      "slug": "herdr-desktop",
+      "name": "Herdr Desktop",
+      "author": "cxnaive",
+      "kind": "native",
+      "platforms": [
+        "win",
+        "linux",
+        "mac"
+      ],
+      "group": "agents",
+      "category": null,
+      "url": "https://github.com/cxnaive/herder_relay_extra",
+      "repo": "cxnaive/herder_relay_extra",
+      "summary": "Herdr Relay 桌面客户端，远程操控编程 Agent、终端与工作区文件。",
+      "description": "Herdr Relay 的 Windows 与 macOS 桌面客户端，由 MyGo 原生 UI 绘制；Relay 本身和 Android 应用 Herdr Pocket 另行构建。左侧按电脑、项目和 Agent 导航，中间在对话与交互终端之间切换，右侧浏览并下载工作区文件。目前为 0.1.0 开发预览版，尚无正式安装包。",
+      "added": "2026-11-08T02:29:20Z",
+      "score": 46.3,
+      "likes": 0,
+      "stars": 1,
+      "license": "NOASSERTION",
+      "icon": "assets/icons/herdr-desktop.webp",
+      "shot": "assets/shots/herdr-desktop.webp"
     },
     {
       "slug": "herdrup-desktop",
@@ -7912,6 +7912,28 @@
       "shot": "assets/shots/pinnote.webp"
     },
     {
+      "slug": "pith",
+      "name": "Pith",
+      "author": "Kel077",
+      "kind": "native",
+      "platforms": [
+        "mac"
+      ],
+      "group": "network",
+      "category": "UtilitiesApplication",
+      "url": "https://github.com/Kel077/pith",
+      "repo": "Kel077/pith",
+      "summary": "Mac 菜单栏应用，按应用、域名或 IP 让连接走你选定的网络接口。",
+      "description": "用 MyGo 原生 UI 绘制的 Mac 菜单栏应用，支持 Apple 芯片与 macOS 13 及以上版本。按应用、域名或 IP 编写规则，让新连接从以太网、Wi-Fi 或手机热点出去，一个接口连不上就换下一个；Activity 页面显示每个连接实际走了哪个接口。路由由输入管理员密码后安装的辅助程序完成，不解密任何流量。",
+      "added": "2026-11-05T05:02:32Z",
+      "score": 48.9,
+      "likes": 0,
+      "stars": 7,
+      "license": "MIT",
+      "icon": "assets/icons/pith.webp",
+      "shot": "assets/shots/pith.webp"
+    },
+    {
       "slug": "pith-desk",
       "name": "Pith Desk",
       "author": "minifish-org",
@@ -7933,28 +7955,6 @@
       "license": "AGPL-3.0",
       "icon": "assets/icons/pith-desk.webp",
       "shot": "assets/shots/pith-desk.webp"
-    },
-    {
-      "slug": "pith",
-      "name": "Pith",
-      "author": "Kel077",
-      "kind": "native",
-      "platforms": [
-        "mac"
-      ],
-      "group": "network",
-      "category": "UtilitiesApplication",
-      "url": "https://github.com/Kel077/pith",
-      "repo": "Kel077/pith",
-      "summary": "Mac 菜单栏应用，按应用、域名或 IP 让连接走你选定的网络接口。",
-      "description": "用 MyGo 原生 UI 绘制的 Mac 菜单栏应用，支持 Apple 芯片与 macOS 13 及以上版本。按应用、域名或 IP 编写规则，让新连接从以太网、Wi-Fi 或手机热点出去，一个接口连不上就换下一个；Activity 页面显示每个连接实际走了哪个接口。路由由输入管理员密码后安装的辅助程序完成，不解密任何流量。",
-      "added": "2026-11-05T05:02:32Z",
-      "score": 48.9,
-      "likes": 0,
-      "stars": 7,
-      "license": "MIT",
-      "icon": "assets/icons/pith.webp",
-      "shot": "assets/shots/pith.webp"
     },
     {
       "slug": "pitstop",
@@ -8068,28 +8068,6 @@
       "shot": "assets/shots/polyfork.webp"
     },
     {
-      "slug": "pomodoro-mygo",
-      "name": "番茄钟",
-      "author": "azzliang6",
-      "kind": "native",
-      "platforms": [
-        "win"
-      ],
-      "group": "system",
-      "category": null,
-      "url": "https://github.com/azzliang6/pomodoro-mygo",
-      "repo": "azzliang6/pomodoro-mygo",
-      "summary": "番茄钟计时器：专注与休息模式、时长预设，还有置顶的迷你窗口。",
-      "description": "用 MyGo 原生 UI 绘制的 Windows 番茄钟，没有 WebView，深色主题，界面为简体中文。支持专注、短休息、长休息三种模式，时长可调并带三个预设；可缩成无边框、永远置顶的迷你窗口，每段结束时弹出系统通知。目前只提供 Windows 构建，安装包未做代码签名。",
-      "added": "2026-11-05T15:15:40Z",
-      "score": 29.0,
-      "likes": 0,
-      "stars": 0,
-      "license": "MIT",
-      "icon": "assets/icons/pomodoro-mygo.webp",
-      "shot": "assets/shots/pomodoro-mygo.webp"
-    },
-    {
       "slug": "pomodoro",
       "name": "Pomodoro",
       "author": "mintonight",
@@ -8112,6 +8090,28 @@
       "license": null,
       "icon": "assets/icons/pomodoro.webp",
       "shot": "assets/shots/pomodoro.webp"
+    },
+    {
+      "slug": "pomodoro-mygo",
+      "name": "番茄钟",
+      "author": "azzliang6",
+      "kind": "native",
+      "platforms": [
+        "win"
+      ],
+      "group": "system",
+      "category": null,
+      "url": "https://github.com/azzliang6/pomodoro-mygo",
+      "repo": "azzliang6/pomodoro-mygo",
+      "summary": "番茄钟计时器：专注与休息模式、时长预设，还有置顶的迷你窗口。",
+      "description": "用 MyGo 原生 UI 绘制的 Windows 番茄钟，没有 WebView，深色主题，界面为简体中文。支持专注、短休息、长休息三种模式，时长可调并带三个预设；可缩成无边框、永远置顶的迷你窗口，每段结束时弹出系统通知。目前只提供 Windows 构建，安装包未做代码签名。",
+      "added": "2026-11-05T15:15:40Z",
+      "score": 29.0,
+      "likes": 0,
+      "stars": 0,
+      "license": "MIT",
+      "icon": "assets/icons/pomodoro-mygo.webp",
+      "shot": "assets/shots/pomodoro-mygo.webp"
     },
     {
       "slug": "popmind",
@@ -8291,28 +8291,6 @@
       "shot": "assets/shots/pudmusic.webp"
     },
     {
-      "slug": "pulse-17130239-coder",
-      "name": "Pulse",
-      "author": "17130239-coder",
-      "kind": "native",
-      "platforms": [
-        "mac"
-      ],
-      "group": "system",
-      "category": null,
-      "url": "https://github.com/17130239-coder/Pulse",
-      "repo": "17130239-coder/Pulse",
-      "summary": "macOS 系统监视器：查看 CPU、内存、GPU、磁盘、网络与电池，附进程列表。",
-      "description": "用 Go 编写、由 MyGo 原生 UI 通过 Apple Metal 绘制的 macOS 系统监视器，没有 Web 视图。它以点阵图显示 CPU、内存、GPU、磁盘、网络和电池在 1 分钟到 1 小时内的变化，按应用细分内存与耗电，并提供可搜索、可结束进程的进程列表。数据取自 macOS 自带的工具，无需 sudo。",
-      "added": "2026-11-05T14:40:59Z",
-      "score": 15.4,
-      "likes": 0,
-      "stars": 0,
-      "license": null,
-      "icon": "assets/icons/pulse-17130239-coder.webp",
-      "shot": "assets/shots/pulse-17130239-coder.webp"
-    },
-    {
       "slug": "pulse",
       "name": "Pulse",
       "author": "egoist",
@@ -8335,6 +8313,28 @@
       "license": null,
       "icon": "assets/icons/pulse.webp",
       "shot": "assets/shots/pulse.webp"
+    },
+    {
+      "slug": "pulse-17130239-coder",
+      "name": "Pulse",
+      "author": "17130239-coder",
+      "kind": "native",
+      "platforms": [
+        "mac"
+      ],
+      "group": "system",
+      "category": null,
+      "url": "https://github.com/17130239-coder/Pulse",
+      "repo": "17130239-coder/Pulse",
+      "summary": "macOS 系统监视器：查看 CPU、内存、GPU、磁盘、网络与电池，附进程列表。",
+      "description": "用 Go 编写、由 MyGo 原生 UI 通过 Apple Metal 绘制的 macOS 系统监视器，没有 Web 视图。它以点阵图显示 CPU、内存、GPU、磁盘、网络和电池在 1 分钟到 1 小时内的变化，按应用细分内存与耗电，并提供可搜索、可结束进程的进程列表。数据取自 macOS 自带的工具，无需 sudo。",
+      "added": "2026-11-05T14:40:59Z",
+      "score": 15.4,
+      "likes": 0,
+      "stars": 0,
+      "license": null,
+      "icon": "assets/icons/pulse-17130239-coder.webp",
+      "shot": "assets/shots/pulse-17130239-coder.webp"
     },
     {
       "slug": "qmdr",
@@ -9740,28 +9740,6 @@
       "shot": "assets/shots/stage-manager-for-windows.webp"
     },
     {
-      "slug": "stockfloat-native",
-      "name": "StockFloat Native",
-      "author": "lesenelir",
-      "kind": "native",
-      "platforms": [
-        "mac"
-      ],
-      "group": "system",
-      "category": null,
-      "url": "https://github.com/lesenelir/stock-float-mygo-native",
-      "repo": "lesenelir/stock-float-mygo-native",
-      "summary": "置顶显示美股、港股与 A 股实时行情的 macOS 浮动面板，支持到价提醒。",
-      "description": "用 MyGo 原生 UI 绘制的 macOS 置顶浮动面板，不使用 WebView，实时显示美股、港股和 A 股的价格与当日涨跌，能停留在全屏应用之上，也不会抢走焦点。行情默认来自腾讯，美股还可改用 Longbridge 或 Finnhub；到价提醒以 macOS 通知送达。同一应用的网页版是 stock-float-mygo。",
-      "added": "2026-11-05T16:30:17Z",
-      "score": 37.9,
-      "likes": 0,
-      "stars": 0,
-      "license": "MIT",
-      "icon": "assets/icons/stockfloat-native.webp",
-      "shot": "assets/shots/stockfloat-native.webp"
-    },
-    {
       "slug": "stockfloat",
       "name": "StockFloat",
       "author": "lesenelir",
@@ -9782,6 +9760,28 @@
       "license": "MIT",
       "icon": "assets/icons/stockfloat.webp",
       "shot": "assets/shots/stockfloat.webp"
+    },
+    {
+      "slug": "stockfloat-native",
+      "name": "StockFloat Native",
+      "author": "lesenelir",
+      "kind": "native",
+      "platforms": [
+        "mac"
+      ],
+      "group": "system",
+      "category": null,
+      "url": "https://github.com/lesenelir/stock-float-mygo-native",
+      "repo": "lesenelir/stock-float-mygo-native",
+      "summary": "置顶显示美股、港股与 A 股实时行情的 macOS 浮动面板，支持到价提醒。",
+      "description": "用 MyGo 原生 UI 绘制的 macOS 置顶浮动面板，不使用 WebView，实时显示美股、港股和 A 股的价格与当日涨跌，能停留在全屏应用之上，也不会抢走焦点。行情默认来自腾讯，美股还可改用 Longbridge 或 Finnhub；到价提醒以 macOS 通知送达。同一应用的网页版是 stock-float-mygo。",
+      "added": "2026-11-05T16:30:17Z",
+      "score": 37.9,
+      "likes": 0,
+      "stars": 0,
+      "license": "MIT",
+      "icon": "assets/icons/stockfloat-native.webp",
+      "shot": "assets/shots/stockfloat-native.webp"
     },
     {
       "slug": "sun-ray",
