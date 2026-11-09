@@ -2,11 +2,55 @@
 
 English · [中文](README.zh-CN.md)
 
-A native cross-platform app marketplace for projects built with [MyGo](https://github.com/egoist/mygo), inspired by [Applite](https://github.com/milanvarady/Applite). It browses the [Awesome MyGo showcase](https://awesomemygo.dev/showcase): 504 apps, grouped by category, with scores, screenshots and links to each project. It runs on macOS, Windows and Linux.
+A native cross-platform app marketplace for projects built with [MyGo](https://github.com/egoist/mygo), inspired by [Applite](https://github.com/milanvarady/Applite). It browses the [Awesome MyGo showcase](https://awesomemygo.dev/showcase): hundreds of apps, grouped by category, with scores, screenshots and links to each project. It runs on macOS, Windows and Linux.
 
 ![MyGo Store](docs/screenshot.png)
 
 ![An app detail page](docs/detail.png)
+
+## Features
+
+- **Discover** — top-scored apps and a shelf per category.
+- **Browse** — a virtualized grid for categories, favorites, acquired apps and search results. Filter by native/web and platform, and sort by score, date or likes.
+- **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
+- **Get** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store` and revealed in the file manager; the button then opens the downloaded installer. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
+- **Favorites and history** — favorites, acquired apps and downloaded installer paths are saved to `state.json` in the config directory.
+- **Automatic updates** — checks shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** also check manually. See [Updates](#updates).
+- **Catalog sync** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background. See [Catalog updates](#catalog-updates).
+
+## Requirements
+
+| Platform | Support |
+|---|---|
+| macOS 12 or later | Apple silicon and Intel, universal build |
+| Windows 10/11 | x64 and ARM64 installers |
+| Linux | x64 and ARM64; GTK 3 is required, the native UI does not need WebKitGTK |
+
+## Download
+
+Download from [Releases](https://github.com/tk103331/mygo-store/releases/latest):
+
+- **macOS**: `mygo-store-<version>.dmg`. Open it and drag MyGo Store into Applications.
+- **Windows**: `mygo-store-setup-<version>-amd64.exe` or `mygo-store-setup-<version>-arm64.exe`.
+- **Linux**: the `.deb` or `.tar.gz`, or the install script:
+
+```sh
+curl -fsSL https://github.com/tk103331/mygo-store/releases/latest/download/install.sh | sh
+```
+
+macOS builds use an ad-hoc signature. If Gatekeeper blocks the first launch, allow the app in **System Settings → Privacy & Security**. Windows installers are unsigned, so SmartScreen may warn; choose **More info → Run anyway**.
+
+## Updates
+
+Since 0.2.0 the app updates itself through MyGo's signed update feed:
+
+- It checks about 10 seconds after launch, then once a day while it runs.
+- Choose **检查更新…** in the app menu, or **检查更新** at the bottom of the sidebar, to check manually.
+- Updates are signed with Ed25519; the app accepts only an update that matches the public key in `mygo.json`.
+- A downloaded update can be installed and the app restarted right away, or it takes effect at the next launch.
+- Development builds and apps installed by a package manager do not update themselves.
+
+Publishing an update needs the `MYGO_UPDATER_PRIVATE_KEY` repository secret. The private key is written to `~/Library/Application Support/mygo/update-keys/mygo-update.key`; keep it safe, because losing it strands installed apps.
 
 ## Catalog updates
 
@@ -55,18 +99,6 @@ MYGO_UPDATER_PRIVATE_KEY="$(cat "$HOME/Library/Application Support/mygo/update-k
   go tool mygo build -platform darwin/universal
 ```
 
-## Updates
-
-Since 0.2.0 the app updates itself through MyGo's signed update feed:
-
-- It checks about 10 seconds after launch, then once a day while it runs.
-- Choose **Check for Updates…** in the app menu, or **检查更新** at the bottom of the sidebar, to check manually.
-- Updates are signed with Ed25519; the app accepts only an update that matches the public key in `mygo.json`.
-- A downloaded update can be installed and the app restarted right away, or it takes effect at the next launch.
-- Development builds and apps installed by a package manager do not update themselves.
-
-Publishing an update needs the `MYGO_UPDATER_PRIVATE_KEY` repository secret. The private key is written to `~/Library/Application Support/mygo/update-keys/mygo-update.key`; keep it safe, because losing it strands installed apps.
-
 ## Release
 
 Push a `v*` tag and GitHub Actions does the rest:
@@ -106,20 +138,11 @@ python3 scripts/sync.py --catalog DIR    # use an unpacked catalog/data director
 
 Only Python 3.11's standard library is needed. Icons and screenshots go to `assets/icons` and `assets/shots` and are embedded with `go:embed`. Apps whose images are missing fall back to a generated letter tile and a gradient placeholder.
 
-## How it works
-
-- **Discover** — top-scored apps and a shelf per category.
-- **Browse** — a virtualized grid per category, the favorites, the acquired apps, or a search. Filter by native/web and platform, and sort by score, date or likes.
-- **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
-- **获取** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store`, then revealed in Finder; the button becomes **打开安装包**. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
-- **Updates** — checks for a new version shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** check manually. See [Updates](#updates).
-- **Catalog** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background.
-
-Favorites, acquired apps and downloaded installer paths are saved to `state.json` under the user's config directory (`~/Library/Application Support/MyGo Store` on macOS). Set `MYGO_STORE_CONFIG` to use another directory, and `MYGO_STORE_DOWNLOADS` to change the download folder.
+## Environment
 
 | Variable | |
 |---|---|
-| `MYGO_STORE_CONFIG` | Override the config directory |
+| `MYGO_STORE_CONFIG` | Override the config directory (`~/Library/Application Support/MyGo Store` by default) |
 | `MYGO_STORE_DOWNLOADS` | Override the installer download directory |
 | `MYGO_STORE_CATALOG_URL` | Override the catalog URL |
 | `MYGO_STORE_CATALOG_INTERVAL` | Catalog check interval, for example `6h`; `0` disables it |
@@ -127,7 +150,9 @@ Favorites, acquired apps and downloaded installer paths are saved to `state.json
 | `MYGO_UPDATER_PRIVATE_KEY` | The update key used when building signed updates |
 | `GH_TOKEN` / `GITHUB_TOKEN` | Used when uploading a release |
 
-GitHub's unauthenticated API allows 60 requests an hour. A request is made only when you press 获取, and the app keeps the downloaded file so later presses open it directly.
+GitHub's unauthenticated API allows 60 requests an hour. A request is made only when you press **获取**, and the app keeps the downloaded file so later presses open it directly.
+
+## Shortcuts
 
 | Shortcut | Action |
 |---|---|
@@ -140,13 +165,13 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | File | |
 |---|---|
 | `main.go` | App state, window, sidebar and title bar |
-| `update.go` | Automatic update plugin and the **Check for Updates…** menu item |
+| `update.go` | Automatic update plugin and the **检查更新…** menu item |
 | `catalog.go` | Embedded catalog, groups, filtering and sorting |
 | `catalog_sync.go` | Runtime catalog refresh, cache and status |
 | `discover.go` | Discover page and app rows |
 | `browse.go` | Category, search, favorites and acquired grids |
 | `detail.go` | App detail page and installer actions |
-| `acquire.go` | 获取 flow, download seeding and fallback |
+| `acquire.go` | **获取** flow, download seeding and fallback |
 | `release.go` | GitHub Releases client, asset matching and downloads |
 | `assets.go` | Embedded images, bitmap cache and fallbacks |
 | `prefs.go` | Favorites, acquired apps and installer paths |
