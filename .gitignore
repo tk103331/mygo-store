@@ -1,0 +1,12 @@
+# Builds
+/build/
+/dist/
+/.mygo/
+/mygo-store
+
+# Editor and OS
+.DS_Store
+*.swp
+
+# Partial downloads
+*.part
