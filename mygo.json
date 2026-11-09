@@ -2,7 +2,7 @@
   "name": "MyGo Store",
   "slug": "mygo-store",
   "identifier": "dev.mygo.store",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "out": "build",
   "copyright": "© 2026 MyGo Store",
   "i18n": {

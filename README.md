@@ -13,9 +13,9 @@ A native cross-platform app marketplace for projects built with [MyGo](https://g
 - **Discover** — top-scored apps and a shelf per category.
 - **Browse** — a virtualized grid for categories, favorites, acquired apps and search results. Filter by native/web and platform, and sort by score, date or likes.
 - **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
-- **Get** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store` and revealed in the file manager; the button then opens the downloaded installer. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
+- **Get** — detects the current OS and architecture, reads the app repository's stable GitHub Releases newest first, and downloads the best matching installer: `.dmg` or `.pkg` on macOS, `.exe` or `.msi` on Windows, `.AppImage`, `.deb` or `.rpm` on Linux, with archives such as `.zip` and `.tar.gz` as fallbacks. Checksums, symbols and other auxiliary files are skipped. The file goes to the Downloads folder under `MyGo Store` (`~/Downloads/MyGo Store` on macOS); **Show in folder** reveals it, and the button then opens it with the system. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
 - **Favorites and history** — favorites, acquired apps and downloaded installer paths are saved to `state.json` in the config directory.
-- **Automatic updates** — checks shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** also check manually. See [Updates](#updates).
+- **Automatic updates** — checks about 10 seconds after launch and once a day, then offers to download, install and restart. **Check for Updates…** in the app menu and **Check for Updates** at the bottom of the sidebar also check manually. See [Updates](#updates).
 - **Languages** — English and Simplified Chinese, switched in the app menu under **Language**. **System** follows your system language. See [Languages](#languages).
 - **Catalog sync** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background. See [Catalog updates](#catalog-updates).
 
@@ -46,7 +46,7 @@ macOS builds use an ad-hoc signature. If Gatekeeper blocks the first launch, all
 Since 0.2.0 the app updates itself through MyGo's signed update feed:
 
 - It checks about 10 seconds after launch, then once a day while it runs.
-- Choose **检查更新…** in the app menu, or **检查更新** at the bottom of the sidebar, to check manually.
+- Choose **Check for Updates…** in the app menu, or **Check for Updates** at the bottom of the sidebar, to check manually.
 - Updates are signed with Ed25519; the app accepts only an update that matches the public key in `mygo.json`.
 - A downloaded update can be installed and the app restarted right away, or it takes effect at the next launch.
 - Development builds and apps installed by a package manager do not update themselves.
@@ -91,7 +91,7 @@ go tool mygo build -platform windows/amd64,windows/arm64
 go tool mygo build -platform linux/amd64,linux/arm64
 ```
 
-Packaged apps go to `build/<os>-<arch>/`. The app's name, identifier, version, icon and update settings are in `mygo.json` and `resources/icon.png`.
+Packaged apps go to `build/<os>-<arch>/`. The app's name, identifier, version, icon, languages and update settings are in `mygo.json`, `locales/` and `resources/icon.png`.
 
 A build with signed update files needs the update key:
 
@@ -105,8 +105,8 @@ MYGO_UPDATER_PRIVATE_KEY="$(cat "$HOME/Library/Application Support/mygo/update-k
 Push a `v*` tag and GitHub Actions does the rest:
 
 ```sh
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.3.0
+git push origin v0.3.0
 ```
 
 The workflow in `.github/workflows/release.yml` validates the tag, runs the tests, creates a draft release, and builds every platform in parallel:
@@ -115,7 +115,7 @@ The workflow in `.github/workflows/release.yml` validates the tag, runs the test
 - Windows: `windows/amd64` and `windows/arm64`, with installers.
 - Linux: `linux/amd64` and `linux/arm64`, with `.deb`, `.tar.gz` and `install.sh`.
 
-Each platform uploads its installers, signed update archives, deltas and `update-<platform>.json`. The workflow then publishes the release and merges `SHA256SUMS`. Tags with a suffix such as `v0.2.0-beta.1` become prereleases. You can also run it from the Actions page with an existing tag.
+Each platform uploads its installers, signed update archives, deltas and `update-<platform>.json`, and MyGo merges each platform's lines into the release's `SHA256SUMS`. The workflow then publishes the release. Tags with a suffix such as `v0.3.0-beta.1` become prereleases. You can also run it from the Actions page with an existing tag.
 
 - The version is written into `mygo.json` only for that build; nothing is committed back.
 - The release contains the macOS disk image, Windows installers, Linux packages, `install.sh`, `install.ps1`, `SHA256SUMS`, and the update manifests.
@@ -134,24 +134,25 @@ gh secret set MYGO_UPDATER_PRIVATE_KEY < "$HOME/Library/Application Support/mygo
 python3 scripts/sync.py                  # refresh catalog, icons and screenshots
 python3 scripts/sync.py --no-assets      # data only, keep existing images
 python3 scripts/sync.py --force-assets   # download images again
+python3 scripts/sync.py --keep-missing   # keep old images for apps that left
 python3 scripts/sync.py --catalog DIR    # use an unpacked catalog/data directory
 ```
 
-Only Python 3.11's standard library is needed. Icons and screenshots go to `assets/icons` and `assets/shots` and are embedded with `go:embed`. Apps whose images are missing fall back to a generated letter tile and a gradient placeholder.
+Python 3.11 or later is needed, with only its standard library. Icons and screenshots go to `assets/icons` and `assets/shots` and are embedded with `go:embed`. Apps whose images are missing fall back to a generated letter tile and a gradient placeholder.
 
 ## Environment
 
 | Variable | Purpose |
 |---|---|
-| `MYGO_STORE_CONFIG` | Override the config directory (`~/Library/Application Support/MyGo Store` by default) |
-| `MYGO_STORE_DOWNLOADS` | Override the installer download directory |
+| `MYGO_STORE_CONFIG` | Override the config directory: the user config directory plus `MyGo Store`, as `~/Library/Application Support/MyGo Store` on macOS |
+| `MYGO_STORE_DOWNLOADS` | Override the installer download directory (the Downloads folder plus `MyGo Store` by default) |
 | `MYGO_STORE_CATALOG_URL` | Override the catalog URL |
 | `MYGO_STORE_CATALOG_INTERVAL` | Catalog check interval, for example `6h`; `0` disables it |
 | `MYGO_STORE_CATALOG_DISABLE` | Set to `1` to disable runtime catalog sync |
 | `MYGO_UPDATER_PRIVATE_KEY` | The update key used when building signed updates |
 | `GH_TOKEN` / `GITHUB_TOKEN` | Used when uploading a release |
 
-GitHub's unauthenticated API allows 60 requests an hour. A request is made only when you press **获取**, and the app keeps the downloaded file so later presses open it directly.
+GitHub's unauthenticated API allows 60 requests an hour. A request is made only when you press **Get**, and the app keeps the downloaded file so later presses open it directly.
 
 ## Shortcuts
 
@@ -160,6 +161,8 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | `⌘F` | Focus the search field |
 | `⌘1` / `⌘2` / `⌘3` | Discover / Favorites / Acquired |
 | `⌘[` or `Esc` | Back from a detail page |
+
+On Windows and Linux, `Ctrl` takes the place of `⌘`.
 
 ## Languages
 
@@ -170,21 +173,23 @@ The interface is written in English and translated to Simplified Chinese. Choose
 
 MyGo's own controls, native dialogs and the update window follow the same choice. The app remembers it in `state.json`, so the next launch starts in it.
 
+To change a translation, edit `locales/zh-Hans.json` and run `go tool mygo generate`; `go tool mygo i18n check` verifies that both catalogs agree.
+
 ## Layout
 
 | File | Purpose |
 |---|---|
-| `main.go` | App state, window, sidebar and title bar |
-| `update.go` | Automatic update plugin and the **检查更新…** menu item |
+| `main.go` | App state, window, sidebar, title bar and locale wiring |
+| `update.go` | Automatic update plugin, update check and language menus |
 | `catalog.go` | Embedded catalog, groups, filtering and sorting |
 | `catalog_sync.go` | Runtime catalog refresh, cache and status |
 | `discover.go` | Discover page and app rows |
 | `browse.go` | Category, search, favorites and acquired grids |
 | `detail.go` | App detail page and installer actions |
-| `acquire.go` | **获取** flow, download seeding and fallback |
+| `acquire.go` | **Get** flow, download seeding and fallback |
 | `release.go` | GitHub Releases client, asset matching and downloads |
 | `assets.go` | Embedded images, bitmap cache and fallbacks |
-| `prefs.go` | Favorites, acquired apps and installer paths |
+| `prefs.go` | Favorites, acquired apps, installer paths and the saved language |
 | `icons.go` | Inline SVG icons |
 | `locales/` | English and Simplified Chinese messages |
 | `scripts/sync.py` | Catalog and image sync |
