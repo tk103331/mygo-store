@@ -8,9 +8,25 @@ A native cross-platform app marketplace for projects built with [MyGo](https://g
 
 ![An app detail page](docs/detail.png)
 
-## Why it is a snapshot
+## Catalog updates
 
-The showcase data and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog.
+The catalog and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog.
+
+At runtime the app also keeps its catalog fresh:
+
+- About 10 seconds after launch, then every 6 hours, it downloads `apps.json` from the fixed [`catalog-latest`](https://github.com/tk103331/mygo-store/releases/tag/catalog-latest) release.
+- Conditional requests through the ETag skip the download when nothing has changed.
+- Only a catalog newer than the current one is used; invalid or older files are ignored.
+- A successful check is cached as `catalog.json` in the config directory and preferred at the next launch.
+- The sidebar footer shows the catalog status; click it to check immediately.
+
+The workflow in `.github/workflows/catalog.yml` runs every day at 03:17 UTC, and can also be started from the Actions page:
+
+1. Run `scripts/sync.py` to refresh the catalog, icons and screenshots.
+2. Commit `data/` and `assets/` only when they changed, so an unchanged upstream does not create a daily commit.
+3. Make sure the `catalog-latest` release exists, and upload `apps.json` when it changed or is missing. The tag is never marked as the latest release, so `releases/latest` keeps pointing at the app.
+
+`scripts/sync.py` keeps the previous `syncedAt` when the source, date and apps are unchanged, so an idle day neither commits nor republishes the catalog.
 
 ## Run
 
@@ -97,8 +113,19 @@ Only Python 3.11's standard library is needed. Icons and screenshots go to `asse
 - **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
 - **获取** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store`, then revealed in Finder; the button becomes **打开安装包**. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
 - **Updates** — checks for a new version shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** check manually. See [Updates](#updates).
+- **Catalog** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background.
 
 Favorites, acquired apps and downloaded installer paths are saved to `state.json` under the user's config directory (`~/Library/Application Support/MyGo Store` on macOS). Set `MYGO_STORE_CONFIG` to use another directory, and `MYGO_STORE_DOWNLOADS` to change the download folder.
+
+| Variable | |
+|---|---|
+| `MYGO_STORE_CONFIG` | Override the config directory |
+| `MYGO_STORE_DOWNLOADS` | Override the installer download directory |
+| `MYGO_STORE_CATALOG_URL` | Override the catalog URL |
+| `MYGO_STORE_CATALOG_INTERVAL` | Catalog check interval, for example `6h`; `0` disables it |
+| `MYGO_STORE_CATALOG_DISABLE` | Set to `1` to disable runtime catalog sync |
+| `MYGO_UPDATER_PRIVATE_KEY` | The update key used when building signed updates |
+| `GH_TOKEN` / `GITHUB_TOKEN` | Used when uploading a release |
 
 GitHub's unauthenticated API allows 60 requests an hour. A request is made only when you press 获取, and the app keeps the downloaded file so later presses open it directly.
 
@@ -115,6 +142,7 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | `main.go` | App state, window, sidebar and title bar |
 | `update.go` | Automatic update plugin and the **Check for Updates…** menu item |
 | `catalog.go` | Embedded catalog, groups, filtering and sorting |
+| `catalog_sync.go` | Runtime catalog refresh, cache and status |
 | `discover.go` | Discover page and app rows |
 | `browse.go` | Category, search, favorites and acquired grids |
 | `detail.go` | App detail page and installer actions |

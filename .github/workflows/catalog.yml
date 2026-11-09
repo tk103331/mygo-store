@@ -1,0 +1,78 @@
+name: Sync catalog
+
+on:
+  schedule:
+    # Every day at 03:17 UTC. The app refreshes its own copy at runtime, so
+    # this only keeps the repository and the catalog release up to date.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TAG: catalog-latest
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Sync apps.json, icons and screenshots
+        run: python3 scripts/sync.py
+
+      - name: Commit the catalog when it changed
+        id: commit
+        run: |
+          if git diff --quiet -- data assets && [ -z "$(git ls-files --others --exclude-standard -- data assets)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "The catalog did not change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data assets
+          git commit -m "Sync catalog $(date -u +%Y-%m-%d)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure the catalog release exists
+        run: |
+          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --latest=false \
+              --title "MyGo Store 应用目录" \
+              --notes "应用目录 apps.json。MyGo Store 在运行时从这里获取最新的应用列表，这个 Release 不参与应用自身的更新。"
+          fi
+
+      - name: Publish apps.json when it changed
+        run: |
+          existing="$RUNNER_TEMP/apps.json"
+          rm -f "$existing"
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --pattern apps.json --dir "$RUNNER_TEMP" --clobber 2>/dev/null || true
+
+          current="$(sha256sum data/apps.json | cut -d' ' -f1)"
+          if [ -f "$existing" ]; then
+            published="$(sha256sum "$existing" | cut -d' ' -f1)"
+            if [ "$current" = "$published" ]; then
+              echo "apps.json is already up to date."
+              exit 0
+            fi
+          fi
+
+          gh release upload "$TAG" data/apps.json --repo "$GITHUB_REPOSITORY" --clobber
+          echo "Uploaded apps.json ($current)."

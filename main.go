@@ -15,11 +15,12 @@ const (
 
 // store is the app's state and the window's view.
 type store struct {
-	win        *mygo.Window
-	catalog    *Catalog
-	prefs      prefs
-	images     *imageCache
-	releaseMgr *releaseManager
+	win         *mygo.Window
+	catalog     *Catalog
+	catalogSync *catalogSyncer
+	prefs       prefs
+	images      *imageCache
+	releaseMgr  *releaseManager
 
 	// runOnMain moves preference changes to the UI thread. Tests replace it
 	// with a direct call; nil means mygo.RunOnMain.
@@ -152,12 +153,20 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 		ui.Column(c).Padding(10, 14, 10, 14).Gap(3).Shrink(0).Children(func() {
 			ui.Textf(c, "%d 款应用 · 数据截至 %s", len(s.catalog.Apps), s.catalog.AsOf).
 				FontSize(10.5).TextColor(t.TextMuted)
+			ui.Row(c).AlignItems(ui.Center).Gap(6).Children(func() {
+				ui.Link(c, "awesomemygo.dev", s.catalog.Source).FontSize(10.5).
+					Tooltip("数据来源：Awesome MyGo")
+				ui.Textf(c, "v%s", appVersion()).FontSize(10.5).TextColor(t.TextMuted)
+			})
 			ui.Row(c).AlignItems(ui.Center).Justify(ui.SpaceBetween).Children(func() {
-				ui.Row(c).AlignItems(ui.Center).Gap(6).Children(func() {
-					ui.Link(c, "awesomemygo.dev", s.catalog.Source).FontSize(10.5).
-						Tooltip("数据来源：Awesome MyGo")
-					ui.Textf(c, "v%s", appVersion()).FontSize(10.5).TextColor(t.TextMuted)
+				synced := ui.ButtonBase(c).Height(18).Padding(0, 4).Radius(4).
+					Cursor(ui.CursorPointer).Tooltip(s.catalogSync.tooltip())
+				synced.Children(func() {
+					ui.Text(c, s.catalogSync.statusText()).FontSize(10.5).TextColor(t.TextMuted)
 				})
+				if synced.Clicked() {
+					s.catalogSync.checkNow()
+				}
 				check := ui.ButtonBase(c).Label("检查更新").Height(18).Padding(0, 4).Radius(4).
 					Cursor(ui.CursorPointer).
 					Tooltip("启动后自动检查，也可以随时手动检查")
@@ -227,12 +236,13 @@ func main() {
 	mygo.App.SetMenu(appMenu())
 
 	s := &store{
-		catalog: loadCatalog(),
+		catalog: loadBestCatalog(),
 		prefs:   loadPrefs(),
 		images:  newImageCache(),
 		nav:     "discover",
 		sort:    sortRecommended,
 	}
+	s.catalogSync = newCatalogSyncer(s)
 	s.seedDownloads()
 	mygo.App.WhenReady(func() {
 		s.win = mygo.NewWindow(mygo.WindowOptions{
@@ -246,6 +256,7 @@ func main() {
 			StateKey:      "main",
 			Content:       ui.View(s.view),
 		})
+		s.catalogSync.start()
 	})
 	if err := mygo.App.Run(); err != nil {
 		log.Fatal(err)

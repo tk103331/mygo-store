@@ -18,6 +18,7 @@ Requires only Python 3.11+ (standard library).
 from __future__ import annotations
 
 import argparse
+import calendar
 import concurrent.futures
 import io
 import json
@@ -282,6 +283,23 @@ def sync_assets(apps: list[dict], force: bool) -> None:
     print(f"  {total - failed} downloaded, {failed} failed", flush=True)
 
 
+def next_synced_at(previous: str) -> str:
+    """A timestamp after the previous one, so a same-second change still wins."""
+    try:
+        before = calendar.timegm(time.strptime(previous, "%Y-%m-%dT%H:%M:%SZ"))
+    except (TypeError, ValueError):
+        before = 0
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(max(time.time(), before + 1)))
+
+
+def read_previous() -> dict:
+    try:
+        data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, help="unpacked packages/catalog/data directory")
@@ -307,6 +325,28 @@ def main() -> int:
             app["icon"] = f"assets/icons/{app['slug']}.webp"
         if (SHOT_DIR / f"{app['slug']}.webp").exists():
             app["shot"] = f"assets/shots/{app['slug']}.webp"
+
+    # When the upstream data did not change, keep the previous syncedAt so
+    # the daily action does not commit or publish a new catalog every day.
+    previous = read_previous()
+    if (
+        previous.get("syncedAt")
+        and previous.get("source") == catalog["source"]
+        and previous.get("asOf") == catalog["asOf"]
+        and previous.get("apps") == catalog["apps"]
+    ):
+        catalog["syncedAt"] = previous["syncedAt"]
+        print(f"✓ catalog unchanged since {catalog['syncedAt']}")
+    else:
+        catalog["syncedAt"] = next_synced_at(previous.get("syncedAt", ""))
+        print(f"✓ catalog synced at {catalog['syncedAt']}")
+
+    catalog = {
+        "source": catalog["source"],
+        "asOf": catalog["asOf"],
+        "syncedAt": catalog["syncedAt"],
+        "apps": catalog["apps"],
+    }
 
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
