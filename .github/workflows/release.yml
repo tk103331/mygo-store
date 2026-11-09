@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Existing release tag, for example v0.1.0"
+        description: "Existing release tag, for example v0.2.0"
         required: true
         type: string
 
@@ -18,9 +18,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  release:
-    runs-on: macos-latest
-    timeout-minutes: 30
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
       TAG: ${{ inputs.tag || github.ref_name }}
       GH_TOKEN: ${{ github.token }}
@@ -40,10 +40,91 @@ jobs:
 
       - name: Validate the tag
         run: |
-          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z]+)*$ ]]; then
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.]+)*$ ]]; then
             echo "::error::Tag $TAG must look like v1.2.3 or v1.2.3-beta.1"
             exit 1
           fi
+
+      - name: Test
+        run: go test ./...
+
+      - name: Compose the release notes
+        run: |
+          previous="$(git describe --tags --abbrev=0 "$TAG^" 2>/dev/null || true)"
+          {
+            echo "## MyGo Store ${TAG}"
+            echo
+            echo "原生 MyGo 应用市场，支持 macOS、Windows 和 Linux。"
+            echo
+            echo "### 下载"
+            echo "- **macOS**（Apple 芯片与 Intel）：\`mygo-store-<version>.dmg\`"
+            echo "- **Windows**：\`mygo-store-setup-<version>-amd64.exe\` 或 \`-arm64.exe\`"
+            echo "- **Linux**：\`.deb\`、\`.tar.gz\`，或 \`curl -fsSL https://github.com/${GITHUB_REPOSITORY}/releases/latest/download/install.sh | sh\`"
+            echo
+            echo "### 自动更新"
+            echo "应用启动后会检查新版本，也可以从菜单「检查更新…」或侧边栏底部的「检查更新」手动检查。下载完成后重启应用即可使用新版本。"
+            echo
+            echo "### 安装说明"
+            echo "- macOS 构建为 ad-hoc 签名；若首次打开被 Gatekeeper 拦截，请在「系统设置 → 隐私与安全性」中允许。"
+            echo "- Windows 安装包未签名，SmartScreen 可能提示，选择「更多信息 → 仍要运行」即可。"
+            echo "- Linux 使用 Debian 包、归档或 \`install.sh\` 安装。"
+            echo
+            echo "### 变更"
+            if [ -n "$previous" ]; then
+              git log --no-merges --pretty=format:'- %s (`%h`)' "$previous..$TAG"
+            else
+              git log --no-merges --pretty=format:'- %s (`%h`)' "$TAG"
+            fi
+            echo
+          } > "$RUNNER_TEMP/release-notes.md"
+          cat "$RUNNER_TEMP/release-notes.md"
+
+      - name: Create the draft release
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --title "MyGo Store $TAG" \
+              --notes-file "$RUNNER_TEMP/release-notes.md"
+          else
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --draft --verify-tag \
+              --title "MyGo Store $TAG" \
+              --notes-file "$RUNNER_TEMP/release-notes.md"
+          fi
+
+  build:
+    needs: prepare
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: macOS
+            os: macos-latest
+            platform: darwin/universal
+          - name: Windows
+            os: ubuntu-latest
+            platform: windows/amd64,windows/arm64
+          - name: Linux
+            os: ubuntu-latest
+            platform: linux/amd64,linux/arm64
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Check out the tag
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache: true
 
       - name: Set the app version from the tag
         run: |
@@ -61,63 +142,34 @@ jobs:
           print(f"Building version {version}")
           PY
 
-      - name: Test
-        run: go test ./...
+      - name: Install NSIS, for the Windows installers
+        if: matrix.name == 'Windows'
+        run: sudo apt-get update && sudo apt-get install -y nsis
 
-      - name: Build the universal macOS app
-        run: go tool mygo build -platform darwin/universal
+      - name: Build and upload
+        env:
+          MYGO_UPDATER_PRIVATE_KEY: ${{ secrets.MYGO_UPDATER_PRIVATE_KEY }}
+        run: go tool mygo build -platform "${{ matrix.platform }}" -upload
 
-      - name: Collect the installer and checksums
-        run: |
-          ls -lh build/darwin-universal
-          cd build/darwin-universal
-          shasum -a 256 *.dmg > SHA256SUMS
-          cat SHA256SUMS
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
 
-      - name: Compose the release notes
-        run: |
-          previous="$(git describe --tags --abbrev=0 "$TAG^" 2>/dev/null || true)"
-          {
-            echo "## MyGo Store ${TAG}"
-            echo
-            echo "macOS 通用安装包，适用于 Apple 芯片与 Intel Mac。"
-            echo
-            echo "### 安装"
-            echo "1. 下载 \`.dmg\`，打开后把 MyGo Store 拖入「应用程序」。"
-            echo "2. 当前构建为 ad-hoc 签名；若首次打开被 Gatekeeper 拦截，请在「系统设置 → 隐私与安全性」中允许。"
-            echo
-            echo "### 变更"
-            if [ -n "$previous" ]; then
-              git log --no-merges --pretty=format:'- %s (`%h`)' "$previous..$TAG"
-            else
-              git log --no-merges --pretty=format:'- %s (`%h`)' "$TAG"
-            fi
-            echo
-          } > "$RUNNER_TEMP/release-notes.md"
-          cat "$RUNNER_TEMP/release-notes.md"
-
+    steps:
       - name: Publish the release
         run: |
-          files=(build/darwin-universal/*.dmg build/darwin-universal/SHA256SUMS)
-          prerelease=()
           case "$TAG" in
-            *-*) prerelease=(--prerelease) ;;
+            *-*) gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
+                    --draft=false --prerelease --latest=false ;;
+            *)   gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
+                    --draft=false --latest ;;
           esac
-
-          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
-              --title "MyGo Store $TAG" \
-              --notes-file "$RUNNER_TEMP/release-notes.md" \
-              "${prerelease[@]}"
-            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
-              "${files[@]}" --clobber
-          else
-            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
-              --title "MyGo Store $TAG" \
-              --notes-file "$RUNNER_TEMP/release-notes.md" \
-              "${prerelease[@]}" \
-              "${files[@]}"
-          fi
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
+            --json assets --jq '.assets[].name'
 
       - name: Summarize
         run: |
@@ -125,6 +177,7 @@ jobs:
             echo "### MyGo Store $TAG"
             echo
             echo '```'
-            cat build/darwin-universal/SHA256SUMS
+            gh release view "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --json assets --jq '.assets[] | "\(.size)\t\(.name)"'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"

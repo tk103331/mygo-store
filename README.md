@@ -1,6 +1,8 @@
 # MyGo Store
 
-A native macOS app marketplace for projects built with [MyGo](https://github.com/egoist/mygo), inspired by [Applite](https://github.com/milanvarady/Applite). It browses the [Awesome MyGo showcase](https://awesomemygo.dev/showcase): 504 apps, grouped by category, with scores, screenshots and links to each project.
+English · [中文](README.zh-CN.md)
+
+A native cross-platform app marketplace for projects built with [MyGo](https://github.com/egoist/mygo), inspired by [Applite](https://github.com/milanvarady/Applite). It browses the [Awesome MyGo showcase](https://awesomemygo.dev/showcase): 504 apps, grouped by category, with scores, screenshots and links to each project. It runs on macOS, Windows and Linux.
 
 ![MyGo Store](docs/screenshot.png)
 
@@ -22,10 +24,32 @@ go run .             # a quick run without the app bundle
 ## Build
 
 ```sh
-go tool mygo build   # packaged apps in build/
+go tool mygo build                                  # the current platform
+go tool mygo build -platform darwin/universal       # macOS, Apple silicon and Intel
+go tool mygo build -platform windows/amd64,windows/arm64
+go tool mygo build -platform linux/amd64,linux/arm64
 ```
 
-The app's name, identifier, version and icon are in `mygo.json` and `resources/icon.png`.
+Packaged apps go to `build/<os>-<arch>/`. The app's name, identifier, version, icon and update settings are in `mygo.json` and `resources/icon.png`.
+
+A build with signed update files needs the update key:
+
+```sh
+MYGO_UPDATER_PRIVATE_KEY="$(cat "$HOME/Library/Application Support/mygo/update-keys/mygo-update.key")" \
+  go tool mygo build -platform darwin/universal
+```
+
+## Updates
+
+Since 0.2.0 the app updates itself through MyGo's signed update feed:
+
+- It checks about 10 seconds after launch, then once a day while it runs.
+- Choose **Check for Updates…** in the app menu, or **检查更新** at the bottom of the sidebar, to check manually.
+- Updates are signed with Ed25519; the app accepts only an update that matches the public key in `mygo.json`.
+- A downloaded update can be installed and the app restarted right away, or it takes effect at the next launch.
+- Development builds and apps installed by a package manager do not update themselves.
+
+Publishing an update needs the `MYGO_UPDATER_PRIVATE_KEY` repository secret. The private key is written to `~/Library/Application Support/mygo/update-keys/mygo-update.key`; keep it safe, because losing it strands installed apps.
 
 ## Release
 
@@ -36,11 +60,22 @@ git tag v0.2.0
 git push origin v0.2.0
 ```
 
-The workflow in `.github/workflows/release.yml` runs the tests, takes the version from the tag, builds a universal macOS app for Apple silicon and Intel, writes `SHA256SUMS`, and creates the GitHub Release. Tags with a suffix such as `v0.2.0-beta.1` become prereleases. You can also run it from the Actions page with an existing tag.
+The workflow in `.github/workflows/release.yml` validates the tag, runs the tests, creates a draft release, and builds every platform in parallel:
+
+- macOS: `darwin/universal`, with a `.dmg`.
+- Windows: `windows/amd64` and `windows/arm64`, with installers.
+- Linux: `linux/amd64` and `linux/arm64`, with `.deb`, `.tar.gz` and `install.sh`.
+
+Each platform uploads its installers, signed update archives, deltas and `update-<platform>.json`. The workflow then publishes the release and merges `SHA256SUMS`. Tags with a suffix such as `v0.2.0-beta.1` become prereleases. You can also run it from the Actions page with an existing tag.
 
 - The version is written into `mygo.json` only for that build; nothing is committed back.
-- The release contains `mygo-store-<version>.dmg` and `SHA256SUMS`.
-- Builds use MyGo's default ad-hoc signature. To distribute without Gatekeeper warnings, configure `macos.signingIdentity` and `macos.notarize` in `mygo.json`, add the Developer ID certificate and notary credentials as Actions secrets, and import them in the workflow.
+- The release contains the macOS disk image, Windows installers, Linux packages, `install.sh`, `install.ps1`, `SHA256SUMS`, and the update manifests.
+- macOS builds use MyGo's default ad-hoc signature. To distribute without Gatekeeper warnings, configure `macos.signingIdentity` and `macos.notarize` in `mygo.json`, add the Developer ID certificate and notary credentials as Actions secrets, and import them in the workflow.
+- Add the update key before the first release:
+
+```sh
+gh secret set MYGO_UPDATER_PRIVATE_KEY < "$HOME/Library/Application Support/mygo/update-keys/mygo-update.key"
+```
 
 ## Data
 
@@ -61,6 +96,7 @@ Only Python 3.11's standard library is needed. Icons and screenshots go to `asse
 - **Browse** — a virtualized grid per category, the favorites, the acquired apps, or a search. Filter by native/web and platform, and sort by score, date or likes.
 - **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
 - **获取** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store`, then revealed in Finder; the button becomes **打开安装包**. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
+- **Updates** — checks for a new version shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** check manually. See [Updates](#updates).
 
 Favorites, acquired apps and downloaded installer paths are saved to `state.json` under the user's config directory (`~/Library/Application Support/MyGo Store` on macOS). Set `MYGO_STORE_CONFIG` to use another directory, and `MYGO_STORE_DOWNLOADS` to change the download folder.
 
@@ -77,6 +113,7 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | File | |
 |---|---|
 | `main.go` | App state, window, sidebar and title bar |
+| `update.go` | Automatic update plugin and the **Check for Updates…** menu item |
 | `catalog.go` | Embedded catalog, groups, filtering and sorting |
 | `discover.go` | Discover page and app rows |
 | `browse.go` | Category, search, favorites and acquired grids |

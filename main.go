@@ -152,7 +152,22 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 		ui.Column(c).Padding(10, 14, 10, 14).Gap(3).Shrink(0).Children(func() {
 			ui.Textf(c, "%d 款应用 · 数据截至 %s", len(s.catalog.Apps), s.catalog.AsOf).
 				FontSize(10.5).TextColor(t.TextMuted)
-			ui.Link(c, "数据来源 awesomemygo.dev", s.catalog.Source).FontSize(10.5)
+			ui.Row(c).AlignItems(ui.Center).Justify(ui.SpaceBetween).Children(func() {
+				ui.Row(c).AlignItems(ui.Center).Gap(6).Children(func() {
+					ui.Link(c, "awesomemygo.dev", s.catalog.Source).FontSize(10.5).
+						Tooltip("数据来源：Awesome MyGo")
+					ui.Textf(c, "v%s", appVersion()).FontSize(10.5).TextColor(t.TextMuted)
+				})
+				check := ui.ButtonBase(c).Label("检查更新").Height(18).Padding(0, 4).Radius(4).
+					Cursor(ui.CursorPointer).
+					Tooltip("启动后自动检查，也可以随时手动检查")
+				check.Children(func() {
+					ui.Text(c, "检查更新").FontSize(10.5).TextColor(t.TextMuted)
+				})
+				if check.Clicked() {
+					checkUpdates()
+				}
+			})
 		})
 	})
 
@@ -208,6 +223,9 @@ func maxf(a, b float32) float32 {
 }
 
 func main() {
+	mygo.Use(updaterPlugin())
+	mygo.App.SetMenu(appMenu())
+
 	s := &store{
 		catalog: loadCatalog(),
 		prefs:   loadPrefs(),
