@@ -34,6 +34,7 @@ func TestSnapshots(t *testing.T) {
 	tt := ui.NewTester(s.view, 1180, 780)
 	tt.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
 	tt.SetDark(true)
+	tt.SetLocale("zh-Hans")
 	tt.Frame()
 
 	shot := func(name string) {
@@ -72,7 +73,6 @@ func TestSnapshots(t *testing.T) {
 		Progress: 0.63,
 		Asset:    "Denova-1.2.0-arm64.dmg",
 		Tag:      "v1.2.0",
-		Message:  "正在下载安装包…",
 	})
 	shot("04b-detail-downloading")
 	installer := filepath.Join(t.TempDir(), "Denova-1.2.0-arm64.dmg")
@@ -80,12 +80,11 @@ func TestSnapshots(t *testing.T) {
 		t.Fatal(err)
 	}
 	s.releases().set("denova", acquireState{
-		Phase:   phaseReady,
-		Path:    installer,
-		Asset:   "Denova-1.2.0-arm64.dmg",
-		Tag:     "v1.2.0",
-		Source:  "https://github.com/alfredxw/denova/releases",
-		Message: "安装包已下载",
+		Phase:  phaseReady,
+		Path:   installer,
+		Asset:  "Denova-1.2.0-arm64.dmg",
+		Tag:    "v1.2.0",
+		Source: "https://github.com/alfredxw/denova/releases",
 	})
 	shot("04c-detail-ready")
 	s.releases().reset("denova")
@@ -135,4 +134,30 @@ func TestSnapshots(t *testing.T) {
 	smallShot("09-small-discover")
 	s.openDetail("denova")
 	smallShot("10-small-detail")
+
+	// The English interface.
+	en := ui.NewTester(s.view, 1180, 780)
+	en.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
+	en.SetDark(true)
+	en.SetLocale("en")
+	en.Frame()
+	enShot := func(name string) {
+		t.Helper()
+		en.Frame()
+		file, err := os.Create(filepath.Join(dir, name+".png"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		defer file.Close()
+		if err := png.Encode(file, en.Image()); err != nil {
+			t.Fatal(err)
+		}
+	}
+	s.detail = ""
+	s.selectNav("discover")
+	enShot("11-discover-en")
+	s.selectNav("group:dev")
+	enShot("12-group-dev-en")
+	s.openDetail("denova")
+	enShot("13-detail-denova-en")
 }

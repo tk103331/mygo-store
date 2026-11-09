@@ -5,6 +5,10 @@
   "version": "0.2.0",
   "out": "build",
   "copyright": "© 2026 MyGo Store",
+  "i18n": {
+    "dir": "locales",
+    "source": "en"
+  },
   "updates": {
     "publicKey": "bg/wdJqQzAfjHNnASIMwiuDeqm1y+CbFMkcDaFdxivM=",
     "github": "tk103331/mygo-store"

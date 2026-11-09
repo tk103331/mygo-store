@@ -1,0 +1,311 @@
+{
+  "@@locale": "en",
+  "app_title": "MyGo Store",
+  "@app_title": {
+    "description": "The app's name, in its window titles and the header."
+  },
+  "search_placeholder": "Search apps or categories",
+  "search_apps_label": "Search apps",
+  "nav_discover": "Discover",
+  "nav_favorites": "Favorites",
+  "nav_acquired": "Acquired",
+  "sidebar_categories": "Categories",
+  "sidebar_label": "Browse",
+  "footer_stats": "{count} apps · data as of {date}",
+  "@footer_stats": {
+    "description": "The sidebar's catalog line.",
+    "placeholders": {
+      "count": { "type": "int" },
+      "date": { "type": "String" }
+    }
+  },
+  "footer_source_tooltip": "Data from Awesome MyGo",
+  "check_updates": "Check for Updates",
+  "check_updates_menu": "Check for Updates…",
+  "check_updates_tooltip": "Checks after launch automatically; you can also check at any time",
+  "sort_by_label": "Sort by",
+  "language_menu": "Language",
+  "language_system": "System",
+  "sort_recommended": "Highest rated",
+  "sort_newest": "Recently added",
+  "sort_hottest": "Most liked",
+
+  "group_agents_label": "AI coding",
+  "group_agents_blurb": "Terminals, workspaces, usage and skills for coding agents.",
+  "group_dev_label": "Developer tools",
+  "group_dev_blurb": "Git, editors, terminals, SSH, databases, APIs and cloud storage.",
+  "group_ai_label": "AI assistants",
+  "group_ai_blurb": "Chat, writing, translation, voice input and local models.",
+  "group_media_label": "Media",
+  "group_media_blurb": "Music, video, audio and images.",
+  "group_system_label": "System tools",
+  "group_system_blurb": "Cleaning, files, clipboard, screenshots, remote desktop and menu bar tools.",
+  "group_notes_label": "Notes & documents",
+  "group_notes_blurb": "Markdown, PDF, OCR, RSS and reading.",
+  "group_network_label": "Network & proxy",
+  "group_network_blurb": "Proxy, VPN and network debugging clients.",
+  "group_game_label": "Games",
+  "group_game_blurb": "Games and game launchers.",
+  "group_devices_label": "Smart devices",
+  "group_devices_blurb": "Chargers, displays, peripherals and smart home.",
+  "group_chat_label": "Communication",
+  "group_chat_blurb": "Messages, mail and notifications.",
+
+  "discover_title": "Discover",
+  "discover_subtitle": "{count} desktop apps built with Go and MyGo.",
+  "@discover_subtitle": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "editors_pick": "Editor's picks",
+  "editors_pick_blurb": "The highest rated apps, scored by popularity, activity and openness.",
+  "discover_footer": "Data from the Awesome MyGo showcase.",
+  "see_all": "See all",
+  "see_all_named": "See all {title}",
+  "@see_all_named": {
+    "placeholders": {
+      "title": { "type": "String" }
+    }
+  },
+  "app_row_label": "{name}, {summary}",
+  "@app_row_label": {
+    "description": "The accessible name of an app row.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "summary": { "type": "String" }
+    }
+  },
+  "get": "Get",
+  "searching_short": "Finding…",
+  "downloading_short": "Downloading…",
+  "downloaded": "Downloaded",
+  "retry": "Retry",
+  "open_website": "Open website",
+  "acquired": "Acquired",
+
+  "search_title": "Search",
+  "search_results": "“{query}” · {count} results",
+  "@search_results": {
+    "placeholders": {
+      "query": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "favorites_title": "Favorites",
+  "favorites_subtitle": "{count} apps kept here.",
+  "@favorites_subtitle": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "acquired_title": "Acquired",
+  "acquired_subtitle": "{count} apps acquired from the store.",
+  "@acquired_subtitle": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "group_subtitle": "{blurb} · {count} apps",
+  "@group_subtitle": {
+    "placeholders": {
+      "blurb": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "apps_title": "Apps",
+  "apps_subtitle": "{count} apps",
+  "@apps_subtitle": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "filter_all": "All",
+  "filter_native": "Native UI",
+  "filter_web": "Web frontend",
+  "platform_label": "Platform",
+  "all_platforms": "All platforms",
+  "app_count": "{count} apps",
+  "@app_count": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "empty_title": "Nothing here yet",
+  "empty_message": "Try another category, or clear the search.",
+  "no_matches_title": "No matching apps",
+  "no_matches_message": "No names, authors or categories match “{query}”.",
+  "@no_matches_message": {
+    "placeholders": {
+      "query": { "type": "String" }
+    }
+  },
+  "no_favorites_title": "No favorites yet",
+  "no_favorites_message": "Tap the heart on an app's detail page and it will stay here.",
+  "no_acquired_title": "No acquired apps yet",
+  "no_acquired_message": "Open an app and choose Get; it will appear here.",
+  "clear_filters": "Clear filters",
+
+  "by_author": "by {author}",
+  "@by_author": {
+    "placeholders": {
+      "author": { "type": "String" }
+    }
+  },
+  "about": "About",
+  "other_works": "More from {author}",
+  "@other_works": {
+    "placeholders": {
+      "author": { "type": "String" }
+    }
+  },
+  "detail_footer": "Data from Awesome MyGo; Get detects your system and prefers the matching GitHub Release installer.",
+  "back": "Back",
+  "score_out_of": "Score / 100",
+  "find_installer": "Finding installer…",
+  "downloading_percent": "Downloading {percent}%",
+  "@downloading_percent": {
+    "placeholders": {
+      "percent": { "type": "int" }
+    }
+  },
+  "downloading_installer": "Downloading…",
+  "open_installer": "Open installer",
+  "retry_get": "Retry",
+  "get_installer": "Get installer",
+  "open_site": "Open site",
+  "view_source": "View source",
+  "source": "Source",
+  "favorite": "Favorite",
+  "favorite_app": "Favorite app",
+  "unfavorite_app": "Unfavorite app",
+  "hint_searching": "Reading GitHub Releases…",
+  "hint_downloading": "Saved to Downloads/MyGo Store when the download finishes.",
+  "hint_ready": "The installer is saved; clicking opens it with the system.",
+  "hint_failed": "Retry, or open the app's official page.",
+  "hint_no_asset": "No installer matches this system; its official page is open.",
+  "hint_auto_detect": "Detects your system and downloads the matching installer from GitHub Releases.",
+  "hint_no_repo": "This app has no public repository; Get opens its official page.",
+  "download_progress": "Download progress",
+  "downloaded_file": "Downloaded {asset}",
+  "@downloaded_file": {
+    "placeholders": {
+      "asset": { "type": "String" }
+    }
+  },
+  "show_in_folder": "Show in folder",
+  "downloading_file": "Downloading {asset} · {percent}%",
+  "@downloading_file": {
+    "placeholders": {
+      "asset": { "type": "String" },
+      "percent": { "type": "int" }
+    }
+  },
+  "downloading_file_indeterminate": "Downloading {asset}",
+  "@downloading_file_indeterminate": {
+    "placeholders": {
+      "asset": { "type": "String" }
+    }
+  },
+  "screenshot_missing": "No screenshot",
+  "not_specified": "Not specified",
+  "information": "Information",
+  "fact_category": "Category",
+  "fact_kind": "Interface",
+  "fact_platform": "Platforms",
+  "fact_author": "Author",
+  "fact_added": "Added",
+  "fact_score": "Score",
+  "fact_source": "Source",
+  "closed_source": "Closed source",
+  "fact_license": "License",
+  "fact_likes": "Likes",
+  "fact_stars": "Stars",
+  "kind_native": "Native UI",
+  "kind_web": "Web frontend",
+  "kind_native_short": "Native",
+  "kind_web_short": "Web",
+
+  "searching_releases": "Checking GitHub Releases…",
+  "no_releases": "This repository has no GitHub Release available.",
+  "lookup_failed": "Could not check GitHub Releases.",
+  "rate_limited": "The GitHub API rate limit is exhausted. Try again later.",
+  "no_published_releases": "This repository has not published a GitHub Release yet.",
+  "no_matching_asset": "The release has no installer for {platform}.",
+  "@no_matching_asset": {
+    "placeholders": {
+      "platform": { "type": "String" }
+    }
+  },
+  "downloading_installer_message": "Downloading installer…",
+  "download_failed": "Download failed: {detail}",
+  "@download_failed": {
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "installer_downloaded": "Installer downloaded",
+  "arch_apple_silicon": "Apple silicon / ARM64",
+  "arch_intel": "Intel / AMD64",
+  "arch_x86_32": "32-bit x86",
+  "arch_arm": "ARM",
+  "platform_with_arch": "{os} ({arch})",
+  "@platform_with_arch": {
+    "placeholders": {
+      "os": { "type": "String" },
+      "arch": { "type": "String" }
+    }
+  },
+
+  "catalog_unchecked": "Not checked",
+  "catalog_disabled": "Sync off",
+  "catalog_checking": "Syncing…",
+  "catalog_failed": "Sync failed",
+  "catalog_synced": "Synced {time}",
+  "@catalog_synced": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+  "catalog_checked": "Checked",
+  "catalog_tooltip_idle": "Click to check for catalog updates now",
+  "catalog_tooltip_disabled": "Catalog sync is disabled by an environment variable",
+  "catalog_tooltip_checking": "Checking GitHub Releases for a catalog update",
+  "catalog_tooltip_failed": "Last check failed: {detail}\nClick to retry",
+  "@catalog_tooltip_failed": {
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "catalog_tooltip_never": "Checks after launch; click to check now",
+  "catalog_tooltip_last": "Last checked {time}\nClick to check now",
+  "@catalog_tooltip_last": {
+    "placeholders": {
+      "time": { "type": "String" }
+    }
+  },
+  "catalog_too_large": "The catalog file is larger than {mb} MB",
+  "@catalog_too_large": {
+    "placeholders": {
+      "mb": { "type": "int" }
+    }
+  },
+  "catalog_invalid": "Invalid catalog format: {detail}",
+  "@catalog_invalid": {
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "catalog_cache_error": "Could not save the catalog cache: {detail}",
+  "@catalog_cache_error": {
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "server_returned": "The server returned {status}",
+  "@server_returned": {
+    "placeholders": {
+      "status": { "type": "String" }
+    }
+  }
+}

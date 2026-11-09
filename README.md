@@ -16,6 +16,7 @@ A native cross-platform app marketplace for projects built with [MyGo](https://g
 - **Get** — detects the current OS and architecture, queries the app's GitHub Releases, and downloads the best matching installer (`.dmg`/`.pkg` on macOS, `.exe`/`.msi` on Windows, `.AppImage`/`.deb`/`.rpm` on Linux). The file is saved to `~/Downloads/MyGo Store` and revealed in the file manager; the button then opens the downloaded installer. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
 - **Favorites and history** — favorites, acquired apps and downloaded installer paths are saved to `state.json` in the config directory.
 - **Automatic updates** — checks shortly after launch and once a day, then offers to download, install and restart. The app menu and the sidebar's **检查更新** also check manually. See [Updates](#updates).
+- **Languages** — English and Simplified Chinese, switched in the app menu under **Language**. **System** follows your system language. See [Languages](#languages).
 - **Catalog sync** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background. See [Catalog updates](#catalog-updates).
 
 ## Requirements
@@ -160,6 +161,15 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | `⌘1` / `⌘2` / `⌘3` | Discover / Favorites / Acquired |
 | `⌘[` or `Esc` | Back from a detail page |
 
+## Languages
+
+The interface is written in English and translated to Simplified Chinese. Choose **Language** in the app menu:
+
+- **System** follows your system language, and English when it is neither.
+- **English** and **简体中文** keep that language.
+
+MyGo's own controls, native dialogs and the update window follow the same choice. The app remembers it in `state.json`, so the next launch starts in it.
+
 ## Layout
 
 | File | Purpose |
@@ -176,6 +186,7 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 | `assets.go` | Embedded images, bitmap cache and fallbacks |
 | `prefs.go` | Favorites, acquired apps and installer paths |
 | `icons.go` | Inline SVG icons |
+| `locales/` | English and Simplified Chinese messages |
 | `scripts/sync.py` | Catalog and image sync |
 | `*_test.go` | Headless interaction tests and snapshots |
 

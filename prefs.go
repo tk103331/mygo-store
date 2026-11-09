@@ -11,6 +11,7 @@ type prefs struct {
 	Favorites map[string]bool   `json:"favorites"`
 	Acquired  map[string]bool   `json:"acquired"`
 	Downloads map[string]string `json:"downloads"` // slug -> installer path
+	Locale    string            `json:"locale,omitempty"`
 }
 
 func newPrefs() prefs {

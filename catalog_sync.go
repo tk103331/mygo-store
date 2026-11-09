@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -10,6 +11,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"mygo-store/locales"
 )
 
 const (
@@ -41,7 +44,7 @@ type catalogSyncer struct {
 	etag      string
 	checking  bool
 	lastCheck time.Time
-	lastErr   string
+	lastErr   error
 }
 
 func newCatalogSyncer(s *store) *catalogSyncer {
@@ -127,9 +130,9 @@ func (c *catalogSyncer) finish(err error) {
 	c.checking = false
 	c.lastCheck = time.Now()
 	if err != nil {
-		c.lastErr = err.Error()
+		c.lastErr = err
 	} else {
-		c.lastErr = ""
+		c.lastErr = nil
 	}
 	c.mu.Unlock()
 	c.store.onMain(c.store.invalidate)
@@ -160,7 +163,7 @@ func (c *catalogSyncer) fetch() error {
 		return nil
 	case http.StatusOK:
 	default:
-		return fmt.Errorf("服务器返回 %s", resp.Status)
+		return &catalogError{kind: "server", detail: resp.Status}
 	}
 
 	data, err := io.ReadAll(io.LimitReader(resp.Body, maxCatalogSize+1))
@@ -168,11 +171,11 @@ func (c *catalogSyncer) fetch() error {
 		return err
 	}
 	if len(data) > maxCatalogSize {
-		return fmt.Errorf("目录文件超过 %d MB", maxCatalogSize>>20)
+		return &catalogError{kind: "too-large", mb: maxCatalogSize >> 20}
 	}
 	catalog, err := parseCatalog(data)
 	if err != nil {
-		return fmt.Errorf("目录格式无效：%w", err)
+		return &catalogError{kind: "format", detail: err.Error(), err: err}
 	}
 
 	etag := resp.Header.Get("ETag")
@@ -181,7 +184,7 @@ func (c *catalogSyncer) fetch() error {
 		return nil
 	}
 	if err := saveCatalogCache(c.cacheDir, data, etag); err != nil {
-		return fmt.Errorf("无法保存目录缓存：%w", err)
+		return &catalogError{kind: "cache", detail: err.Error(), err: err}
 	}
 	c.setETag(etag)
 	c.store.onMain(func() {
@@ -215,10 +218,52 @@ func (c *catalogSyncer) setETag(etag string) {
 	c.mu.Unlock()
 }
 
+// catalogError says what a check failed at, so the view can say it in the
+// language of the frame.
+type catalogError struct {
+	kind   string // server, too-large, format or cache
+	detail string
+	mb     int
+	err    error
+}
+
+func (e *catalogError) Error() string {
+	switch e.kind {
+	case "server":
+		return "the server returned " + e.detail
+	case "too-large":
+		return fmt.Sprintf("the catalog file exceeds %d MB", e.mb)
+	case "format":
+		return "invalid catalog format: " + e.detail
+	case "cache":
+		return "cannot save the catalog cache: " + e.detail
+	}
+	return e.detail
+}
+
+func (e *catalogError) Unwrap() error { return e.err }
+
+func catalogErrorMessage(msgs locales.Messages, err error) string {
+	var ce *catalogError
+	if errors.As(err, &ce) {
+		switch ce.kind {
+		case "server":
+			return msgs.ServerReturned(ce.detail)
+		case "too-large":
+			return msgs.CatalogTooLarge(ce.mb)
+		case "format":
+			return msgs.CatalogInvalid(ce.detail)
+		case "cache":
+			return msgs.CatalogCacheError(ce.detail)
+		}
+	}
+	return err.Error()
+}
+
 // statusText is the short line in the sidebar. The tooltip has the detail.
-func (c *catalogSyncer) statusText() string {
+func (c *catalogSyncer) statusText(msgs locales.Messages) string {
 	if c == nil {
-		return "目录未检查"
+		return msgs.CatalogUnchecked()
 	}
 	c.mu.Lock()
 	checking, disabled, lastCheck, lastErr := c.checking, c.disabled, c.lastCheck, c.lastErr
@@ -227,24 +272,24 @@ func (c *catalogSyncer) statusText() string {
 
 	switch {
 	case disabled:
-		return "目录自动同步已关闭"
+		return msgs.CatalogDisabled()
 	case checking:
-		return "正在检查目录…"
-	case lastErr != "":
-		return "目录检查失败"
+		return msgs.CatalogChecking()
+	case lastErr != nil:
+		return msgs.CatalogFailed()
 	}
 	if at := catalogTime(current); !at.IsZero() {
-		return "目录已同步 " + catalogShortTime(at)
+		return msgs.CatalogSynced(catalogShortTime(at))
 	}
 	if lastCheck.IsZero() {
-		return "目录未检查"
+		return msgs.CatalogUnchecked()
 	}
-	return "目录已检查"
+	return msgs.CatalogChecked()
 }
 
-func (c *catalogSyncer) tooltip() string {
+func (c *catalogSyncer) tooltip(msgs locales.Messages) string {
 	if c == nil {
-		return "点击立即检查目录更新"
+		return msgs.CatalogTooltipIdle()
 	}
 	c.mu.Lock()
 	checking, disabled, lastCheck, lastErr := c.checking, c.disabled, c.lastCheck, c.lastErr
@@ -252,16 +297,15 @@ func (c *catalogSyncer) tooltip() string {
 
 	switch {
 	case disabled:
-		return "已通过环境变量关闭目录自动同步"
+		return msgs.CatalogTooltipDisabled()
 	case checking:
-		return "正在从 GitHub Release 检查目录更新"
-	case lastErr != "":
-		return "上次检查失败：" + lastErr + "\n点击重试"
+		return msgs.CatalogTooltipChecking()
+	case lastErr != nil:
+		return msgs.CatalogTooltipFailed(catalogErrorMessage(msgs, lastErr))
 	case lastCheck.IsZero():
-		return "启动后自动检查，点击立即检查"
+		return msgs.CatalogTooltipNever()
 	default:
-		return "上次检查：" + lastCheck.Local().Format("2006-01-02 15:04") +
-			"\n点击立即检查"
+		return msgs.CatalogTooltipLast(lastCheck.Local().Format("2006-01-02 15:04"))
 	}
 }
 

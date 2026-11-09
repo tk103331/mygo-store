@@ -15,6 +15,8 @@ import (
 	"time"
 
 	"github.com/egoist/mygo"
+
+	"mygo-store/locales"
 )
 
 // acquirePhase is where an app's installer is in its acquisition.
@@ -38,8 +40,18 @@ type acquireState struct {
 	Asset    string  // the release asset's file name
 	Tag      string  // the release tag
 	Source   string  // the release page
-	Message  string  // a short line for the user
+	Reason   string  // why a phase has nothing more to do, for the view
+	Detail   string  // the error behind a failure, for the view
 }
+
+// The reasons the view says in the user's language.
+const (
+	reasonNoReleases     = "no-releases"
+	reasonNoReleased     = "no-released-release"
+	reasonNoAsset        = "no-asset"
+	reasonRateLimited    = "rate-limited"
+	reasonDownloadFailed = "download-failed"
+)
 
 // release is the part of the GitHub Releases API the app uses.
 type release struct {
@@ -97,7 +109,7 @@ func (m *releaseManager) state(slug string) acquireState {
 // seed marks an installer that an earlier session downloaded as ready.
 func (m *releaseManager) seed(slug, path string) {
 	m.mu.Lock()
-	m.states[slug] = acquireState{Phase: phaseReady, Progress: 1, Path: path, Message: "安装包已下载"}
+	m.states[slug] = acquireState{Phase: phaseReady, Progress: 1, Path: path}
 	m.mu.Unlock()
 }
 
@@ -156,29 +168,29 @@ func (s *store) startAcquire(app *App) {
 	go func() {
 		defer m.end(app.Slug)
 
-		m.set(app.Slug, acquireState{Phase: phaseSearching, Progress: -1, Message: "正在查询 GitHub Releases…"})
+		m.set(app.Slug, acquireState{Phase: phaseSearching, Progress: -1})
 		releases, err := fetchReleases(app.Repo)
 		if err != nil {
 			if errors.Is(err, errNoReleases) {
 				m.set(app.Slug, acquireState{
 					Phase:    phaseNoAsset,
 					Progress: -1,
-					Message:  "这个仓库没有可用的 GitHub Release。",
+					Reason:   reasonNoReleases,
 				})
 				return
 			}
-			message := "无法查询 GitHub Releases。"
+			reason := ""
 			if errors.Is(err, errRateLimited) {
-				message = "GitHub API 请求过于频繁，请稍后再试。"
+				reason = reasonRateLimited
 			}
-			m.set(app.Slug, acquireState{Phase: phaseFailed, Progress: -1, Message: message})
+			m.set(app.Slug, acquireState{Phase: phaseFailed, Progress: -1, Reason: reason})
 			return
 		}
 		if len(releases) == 0 {
 			m.set(app.Slug, acquireState{
 				Phase:    phaseNoAsset,
 				Progress: -1,
-				Message:  "这个仓库还没有发布 GitHub Release。",
+				Reason:   reasonNoReleased,
 			})
 			return
 		}
@@ -188,7 +200,7 @@ func (s *store) startAcquire(app *App) {
 			m.set(app.Slug, acquireState{
 				Phase:    phaseNoAsset,
 				Progress: -1,
-				Message:  fmt.Sprintf("Release 里没有适用于 %s 的安装包。", platformTitle(runtime.GOOS, runtime.GOARCH)),
+				Reason:   reasonNoAsset,
 			})
 			return
 		}
@@ -199,7 +211,6 @@ func (s *store) startAcquire(app *App) {
 			Asset:    asset.Name,
 			Tag:      rel.TagName,
 			Source:   rel.HTMLURL,
-			Message:  "正在下载安装包…",
 		}
 		m.set(app.Slug, base)
 		path, err := m.download(app.Slug, base, asset)
@@ -210,7 +221,8 @@ func (s *store) startAcquire(app *App) {
 				Asset:    asset.Name,
 				Tag:      rel.TagName,
 				Source:   rel.HTMLURL,
-				Message:  "下载失败：" + err.Error(),
+				Reason:   reasonDownloadFailed,
+				Detail:   err.Error(),
 			})
 			return
 		}
@@ -221,7 +233,6 @@ func (s *store) startAcquire(app *App) {
 			Asset:    asset.Name,
 			Tag:      rel.TagName,
 			Source:   rel.HTMLURL,
-			Message:  "安装包已下载",
 		})
 	}()
 }
@@ -260,7 +271,7 @@ func (m *releaseManager) download(slug string, base acquireState, asset releaseA
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode < 200 || resp.StatusCode > 299 {
-		return "", fmt.Errorf("服务器返回 %s", resp.Status)
+		return "", fmt.Errorf("server returned %s", resp.Status)
 	}
 
 	file, err := os.Create(temp)
@@ -392,7 +403,7 @@ func uniquePath(dir, name string) (string, error) {
 			return candidate, nil
 		}
 	}
-	return "", fmt.Errorf("找不到可用的文件名：%s", name)
+	return "", fmt.Errorf("no available file name: %s", name)
 }
 
 func splitExt(name string) (string, string) {
@@ -448,7 +459,7 @@ func fetchReleases(repo string) ([]release, error) {
 		return nil, errRateLimited
 	}
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("GitHub 返回 %s", resp.Status)
+		return nil, fmt.Errorf("GitHub returned %s", resp.Status)
 	}
 	var releases []release
 	if err := json.NewDecoder(io.LimitReader(resp.Body, 8<<20)).Decode(&releases); err != nil {
@@ -626,19 +637,19 @@ func containsAny(s string, subs ...string) bool {
 	return false
 }
 
-func platformTitle(goos, goarch string) string {
+func platformTitle(msgs locales.Messages, goos, goarch string) string {
 	os := map[string]string{"darwin": "macOS", "windows": "Windows", "linux": "Linux"}[goos]
 	if os == "" {
 		os = goos
 	}
 	arch := map[string]string{
-		"arm64": "Apple 芯片 / ARM64",
-		"amd64": "Intel / AMD64",
-		"386":   "32 位 x86",
-		"arm":   "ARM",
+		"arm64": msgs.ArchAppleSilicon(),
+		"amd64": msgs.ArchIntel(),
+		"386":   msgs.ArchX8632(),
+		"arm":   msgs.ArchArm(),
 	}[goarch]
 	if arch == "" {
 		arch = goarch
 	}
-	return fmt.Sprintf("%s（%s）", os, arch)
+	return msgs.PlatformWithArch(os, arch)
 }

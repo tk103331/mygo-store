@@ -28,6 +28,7 @@ func TestFooterCheckUpdates(t *testing.T) {
 	small := ui.NewTester(s.view, 900, 600)
 	small.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
 	small.SetDark(true)
+	small.SetLocale("zh-Hans")
 	small.Frame()
 	if err := small.Click("检查更新"); err != nil {
 		t.Fatalf("click 检查更新 in the smallest window: %v", err)

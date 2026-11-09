@@ -11,6 +11,8 @@ import (
 	"time"
 
 	"github.com/egoist/mygo/ui"
+
+	"mygo-store/locales"
 )
 
 func testCatalog(syncedAt string, slugs ...string) *Catalog {
@@ -140,8 +142,8 @@ func TestCatalogSyncUsesConditionalRequests(t *testing.T) {
 	if s.catalog != before {
 		t.Error("a 304 response replaced the catalog")
 	}
-	if c.lastErr != "" {
-		t.Errorf("lastErr = %q after a 304", c.lastErr)
+	if c.lastErr != nil {
+		t.Errorf("lastErr = %v after a 304", c.lastErr)
 	}
 }
 
@@ -154,7 +156,7 @@ func TestCatalogSyncRejectsInvalidAndOlderCatalogs(t *testing.T) {
 		})
 
 		err := c.fetch()
-		if err == nil || !strings.Contains(err.Error(), "目录格式无效") {
+		if err == nil || !strings.Contains(err.Error(), "invalid catalog format") {
 			t.Fatalf("fetch error = %v, want a format error", err)
 		}
 		if s.catalog != before {
@@ -246,7 +248,7 @@ func TestFooterChecksTheCatalog(t *testing.T) {
 		}
 	}
 
-	if err := tt.Click(c.statusText()); err != nil {
+	if err := tt.Click(c.statusText(locales.In("zh-Hans"))); err != nil {
 		t.Fatalf("click the catalog status: %v", err)
 	}
 	wait()
@@ -255,8 +257,9 @@ func TestFooterChecksTheCatalog(t *testing.T) {
 	small := ui.NewTester(s.view, 900, 600)
 	small.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
 	small.SetDark(true)
+	small.SetLocale("zh-Hans")
 	small.Frame()
-	if err := small.Click(c.statusText()); err != nil {
+	if err := small.Click(c.statusText(locales.In("zh-Hans"))); err != nil {
 		t.Fatalf("click the catalog status at 900x600: %v", err)
 	}
 	wait()

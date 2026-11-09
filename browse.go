@@ -1,10 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 
 	"github.com/egoist/mygo/ui"
+
+	"mygo-store/locales"
 )
 
 // browseView lists the apps of a category, the favorites, the acquired
@@ -33,50 +34,70 @@ func (s *store) browseView(c *ui.Context, t *ui.Theme) {
 }
 
 func (s *store) browseHeading(apps []App) (string, string) {
+	msgs := s.messages()
 	query := strings.TrimSpace(s.query)
 	if query != "" {
-		return "搜索", fmt.Sprintf("“%s” · %d 个结果", query, len(apps))
+		return msgs.SearchTitle(), msgs.SearchResults(query, len(apps))
 	}
 	switch s.nav {
 	case "favorites":
-		return "收藏", fmt.Sprintf("%d 款应用留在了这里。", len(apps))
+		return msgs.FavoritesTitle(), msgs.FavoritesSubtitle(len(apps))
 	case "acquired":
-		return "已获取", fmt.Sprintf("从应用市场获取过的 %d 款应用。", len(apps))
+		return msgs.AcquiredTitle(), msgs.AcquiredSubtitle(len(apps))
 	}
 	if strings.HasPrefix(s.nav, "group:") {
-		group := groupByID(strings.TrimPrefix(s.nav, "group:"))
-		return group.Label, fmt.Sprintf("%s · %d 款", group.Blurb, len(apps))
+		group := strings.TrimPrefix(s.nav, "group:")
+		return groupLabel(s.locale, group),
+			msgs.GroupSubtitle(groupBlurb(s.locale, group), len(apps))
 	}
-	return "应用", fmt.Sprintf("%d 款应用", len(apps))
+	return msgs.AppsTitle(), msgs.AppsSubtitle(len(apps))
 }
 
 func (s *store) filterBar(c *ui.Context, t *ui.Theme, count int) {
+	msgs := s.messages()
 	ui.Row(c).Gap(7).AlignItems(ui.Center).Padding(10, 0, 8).Children(func() {
-		s.filterChip(c, t, "全部", s.kind == "", func() {
+		s.filterChip(c, t, msgs.FilterAll(), s.kind == "", func() {
 			s.kind = ""
 			s.resetBrowsing()
 		})
-		s.filterChip(c, t, "原生 UI", s.kind == "native", func() {
+		s.filterChip(c, t, msgs.FilterNative(), s.kind == "native", func() {
 			s.kind = "native"
 			s.resetBrowsing()
 		})
-		s.filterChip(c, t, "Web 前端", s.kind == "web", func() {
+		s.filterChip(c, t, msgs.FilterWeb(), s.kind == "web", func() {
 			s.kind = "web"
 			s.resetBrowsing()
 		})
 
 		ui.Box(c).Width(1).Height(16).Background(t.Border).MarginX(3)
 
-		platform := platformLabel(s.platform)
-		options := []string{"全部平台", "macOS", "Windows", "Linux"}
-		sel := ui.Select(c, &platform, options).Label("平台").Width(108).Height(26)
-		if sel.Changed() {
-			s.platform = platformID(platform)
+		platform := s.platform
+		sel := ui.SelectBase(c, &s.platform)
+		sel.Trigger.Gap(6).Padding(2, 9).Radius(7).Height(26).Border(1, t.Border).
+			FontSize(11.5).Label(msgs.PlatformLabel())
+		sel.Trigger.Children(func() {
+			ui.Text(c, platformLabel(s.platform, msgs)).FontSize(11.5)
+			ui.Icon(c, iconChevron).Size(9, 9).TextColor(t.TextMuted)
+		})
+		sel.Popup(func(panel ui.Element) {
+			panel.Margin(4, 0, 0, 0).Padding(4).Radius(8).Background(t.Background).
+				Border(1, t.Border)
+			for _, platform := range []string{"", "mac", "win", "linux"} {
+				item := sel.Item(platform).Padding(5, 8).Radius(5)
+				if item.Highlighted() {
+					item.Background(t.Accent).TextColor(t.AccentText)
+				}
+				item.Children(func() {
+					ui.Text(c, platformLabel(platform, msgs)).FontSize(11.5)
+				})
+			}
+		})
+		if s.platform != platform {
 			s.resetBrowsing()
 		}
 
 		ui.Spacer(c)
-		ui.Textf(c, "%d 款", count).FontSize(11.5).TextColor(t.TextMuted)
+		ui.Text(c, msgs.AppCount(count)).FontSize(11.5).TextColor(t.TextMuted)
 	})
 }
 
@@ -97,29 +118,30 @@ func (s *store) filterChip(c *ui.Context, t *ui.Theme, label string, chosen bool
 }
 
 func (s *store) emptyState(c *ui.Context, t *ui.Theme) {
+	msgs := s.messages()
 	icon := iconSparkle
-	title := "这里还什么都没有"
-	message := "换一个分类，或清空搜索看看。"
+	title := msgs.EmptyTitle()
+	message := msgs.EmptyMessage()
 	switch {
 	case strings.TrimSpace(s.query) != "":
 		icon = iconDev
-		title = "没有找到匹配的应用"
-		message = fmt.Sprintf("“%s” 没有匹配的名称、作者或分类。", strings.TrimSpace(s.query))
+		title = msgs.NoMatchesTitle()
+		message = msgs.NoMatchesMessage(strings.TrimSpace(s.query))
 	case s.nav == "favorites":
 		icon = iconHeart
-		title = "还没有收藏"
-		message = "在应用详情里点一下心形，就会留在这里。"
+		title = msgs.NoFavoritesTitle()
+		message = msgs.NoFavoritesMessage()
 	case s.nav == "acquired":
 		icon = iconDownload
-		title = "还没有获取过应用"
-		message = "打开一个应用，点“获取”就会出现在这里。"
+		title = msgs.NoAcquiredTitle()
+		message = msgs.NoAcquiredMessage()
 	}
 	ui.Column(c).Grow(1).Center().Gap(10).Children(func() {
 		ui.Icon(c, icon).Size(34, 34).TextColor(t.TextMuted).Opacity(0.5)
 		ui.Text(c, title).FontSize(17).Bold()
 		ui.Text(c, message).FontSize(12.5).TextColor(t.TextMuted)
 		if s.kind != "" || s.platform != "" {
-			if ui.Button(c, "清除筛选").Clicked() {
+			if ui.Button(c, msgs.ClearFilters()).Clicked() {
 				s.kind = ""
 				s.platform = ""
 				s.resetBrowsing()
@@ -128,7 +150,9 @@ func (s *store) emptyState(c *ui.Context, t *ui.Theme) {
 	})
 }
 
-func platformLabel(platform string) string {
+// platformLabel names a platform filter's choice: "" is all platforms and
+// the others keep the vendors' names.
+func platformLabel(platform string, msgs locales.Messages) string {
 	switch platform {
 	case "mac":
 		return "macOS"
@@ -137,19 +161,6 @@ func platformLabel(platform string) string {
 	case "linux":
 		return "Linux"
 	default:
-		return "全部平台"
-	}
-}
-
-func platformID(label string) string {
-	switch label {
-	case "macOS":
-		return "mac"
-	case "Windows":
-		return "win"
-	case "Linux":
-		return "linux"
-	default:
-		return ""
+		return msgs.AllPlatforms()
 	}
 }

@@ -9,6 +9,8 @@ import (
 	"time"
 
 	"github.com/egoist/mygo/ui"
+
+	"mygo-store/locales"
 )
 
 //go:embed data/apps.json
@@ -129,25 +131,24 @@ func loadBestCatalog() *Catalog {
 	return embedded
 }
 
-// Group is one category of the showcase.
+// Group is one category of the showcase. Its label and blurb are messages
+// in the app's catalogs, named after its ID.
 type Group struct {
-	ID    string
-	Label string
-	Blurb string
-	Icon  *ui.SVG
+	ID   string
+	Icon *ui.SVG
 }
 
 var groups = []Group{
-	{"agents", "AI 编程", "给编程 Agent 用的终端、工作区、用量与技能。", iconAgents},
-	{"dev", "开发工具", "Git、编辑器、终端、SSH、数据库、API 与云存储。", iconDev},
-	{"ai", "AI 助手", "聊天、写作、翻译、语音输入和本地模型。", iconAI},
-	{"media", "影音", "音乐、视频、音频与图片。", iconMedia},
-	{"system", "系统工具", "清理、文件、剪贴板、截图、远程桌面与菜单栏工具。", iconSystem},
-	{"notes", "笔记文档", "Markdown、PDF、OCR、RSS 与阅读。", iconNotes},
-	{"network", "网络代理", "代理、VPN 与网络调试客户端。", iconNetwork},
-	{"game", "游戏", "游戏与游戏启动器。", iconGame},
-	{"devices", "智能硬件", "充电器、显示器、外设与智能家居。", iconDevices},
-	{"chat", "通讯", "消息、邮件与通知。", iconChat},
+	{"agents", iconAgents},
+	{"dev", iconDev},
+	{"ai", iconAI},
+	{"media", iconMedia},
+	{"system", iconSystem},
+	{"notes", iconNotes},
+	{"network", iconNetwork},
+	{"game", iconGame},
+	{"devices", iconDevices},
+	{"chat", iconChat},
 }
 
 func groupByID(id string) Group {
@@ -156,21 +157,31 @@ func groupByID(id string) Group {
 			return g
 		}
 	}
-	return Group{ID: id, Label: id, Icon: iconSparkle}
+	return Group{ID: id, Icon: iconSparkle}
 }
 
-func (a *App) kindLabel() string {
-	if a.Kind == "web" {
-		return "Web 前端"
-	}
-	return "原生 UI"
+// groupLabel and groupBlurb say a group's name and description in the
+// language of locale, "" for the source language.
+func groupLabel(locale, id string) string {
+	return locales.Catalog.Format(locale, "group_"+id+"_label", nil)
 }
 
-func (a *App) kindShort() string {
+func groupBlurb(locale, id string) string {
+	return locales.Catalog.Format(locale, "group_"+id+"_blurb", nil)
+}
+
+func (a *App) kindLabel(msgs locales.Messages) string {
 	if a.Kind == "web" {
-		return "Web"
+		return msgs.KindWeb()
 	}
-	return "原生"
+	return msgs.KindNative()
+}
+
+func (a *App) kindShort(msgs locales.Messages) string {
+	if a.Kind == "web" {
+		return msgs.KindWebShort()
+	}
+	return msgs.KindNativeShort()
 }
 
 func (a *App) platformLabels() []string {
@@ -200,8 +211,8 @@ func (a *App) platformShort() string {
 	return strings.Join(out, " · ")
 }
 
-func (a *App) categoryLabel() string {
-	return groupByID(a.Group).Label
+func (a *App) categoryLabel(locale string) string {
+	return groupLabel(locale, a.Group)
 }
 
 func (a *App) starsText() string {
@@ -237,14 +248,14 @@ const (
 	sortHottest                     // likes, then stars
 )
 
-func (m SortMode) Label() string {
+func (m SortMode) Label(msgs locales.Messages) string {
 	switch m {
 	case sortNewest:
-		return "最新收录"
+		return msgs.SortNewest()
 	case sortHottest:
-		return "最多点赞"
+		return msgs.SortHottest()
 	default:
-		return "评分最高"
+		return msgs.SortRecommended()
 	}
 }
 
@@ -279,15 +290,17 @@ func sortApps(apps []App, mode SortMode) {
 }
 
 // matches reports whether query matches the app: its name, author, summary,
-// description, group or repository, case-insensitively.
-func (a *App) matches(query string) bool {
+// description, group or repository, case-insensitively. The group and kind
+// are matched in the language of locale.
+func (a *App) matches(query, locale string) bool {
 	q := strings.ToLower(strings.TrimSpace(query))
 	if q == "" {
 		return true
 	}
+	msgs := locales.In(locale)
 	hay := strings.ToLower(strings.Join([]string{
 		a.Name, a.Author, a.Slug, a.Summary, a.Description,
-		a.categoryLabel(), a.kindLabel(), a.Repo, a.platformShort(),
+		a.categoryLabel(locale), a.kindLabel(msgs), a.Repo, a.platformShort(),
 	}, " "))
 	return strings.Contains(hay, q)
 }
@@ -298,7 +311,7 @@ func (s *store) filterApps() []App {
 	query := strings.TrimSpace(s.query)
 	for _, app := range s.catalog.Apps {
 		if query != "" {
-			if !app.matches(query) {
+			if !app.matches(query, s.locale) {
 				continue
 			}
 		} else {

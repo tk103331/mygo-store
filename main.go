@@ -6,6 +6,8 @@ import (
 
 	"github.com/egoist/mygo"
 	"github.com/egoist/mygo/ui"
+
+	"mygo-store/locales"
 )
 
 const (
@@ -39,10 +41,20 @@ type store struct {
 	discoverScroll ui.ScrollState
 	grid           ui.GridState
 	visible        []App
+
+	// locale is the language of the frame being drawn, as Context.Locale
+	// says it.
+	locale string
+}
+
+// messages says the UI's strings in the language of the frame.
+func (s *store) messages() locales.Messages {
+	return locales.In(s.locale)
 }
 
 func (s *store) view(c *ui.Context) {
 	t := c.Theme()
+	s.locale = c.Locale()
 
 	if c.Shortcut(ui.Cmd, ui.KeyF) {
 		s.focus = "search"
@@ -99,6 +111,7 @@ func (s *store) openDetail(slug string) {
 
 // sidebar draws the search field, the navigation and the categories.
 func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
+	msgs := s.messages()
 	bar := c.TitleBar()
 	side := ui.Column(c).Width(sidebarWidth).Shrink(0)
 	if !vibrant {
@@ -109,8 +122,8 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 		top.DragWindow()
 
 		ui.Box(c).Padding(12, 12, 8, 12).Shrink(0).Children(func() {
-			field := ui.SearchField(c, &s.query).Placeholder("搜索应用、作者或分类").
-				Label("搜索应用").FocusBind(&s.focus, "search").Width(sidebarWidth - 24)
+			field := ui.SearchField(c, &s.query).Placeholder(msgs.SearchPlaceholder()).
+				Label(msgs.SearchAppsLabel()).FocusBind(&s.focus, "search").Width(sidebarWidth - 24)
 			if field.Changed() {
 				s.detail = ""
 				s.discoverScroll.Y = 0
@@ -119,19 +132,20 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 		})
 
 		sb := ui.Sidebar(c, &s.nav, func() {
-			ui.SidebarItem(c, "discover", iconSparkle, "发现")
-			item := ui.SidebarItem(c, "favorites", iconHeart, "收藏")
+			ui.SidebarItem(c, "discover", iconSparkle, msgs.NavDiscover())
+			item := ui.SidebarItem(c, "favorites", iconHeart, msgs.NavFavorites())
 			if n := len(s.prefs.Favorites); n > 0 {
 				item.Children(func() { ui.Textf(c, "%d", n).FontSize(11).Opacity(0.65) })
 			}
-			item = ui.SidebarItem(c, "acquired", iconDownload, "已获取")
+			item = ui.SidebarItem(c, "acquired", iconDownload, msgs.NavAcquired())
 			if n := len(s.prefs.Acquired); n > 0 {
 				item.Children(func() { ui.Textf(c, "%d", n).FontSize(11).Opacity(0.65) })
 			}
 
-			ui.SidebarSection(c, "分类", nil, func() {
+			ui.SidebarSection(c, msgs.SidebarCategories(), nil, func() {
 				for _, group := range groups {
-					item := ui.SidebarItem(c, "group:"+group.ID, group.Icon, group.Label)
+					item := ui.SidebarItem(c, "group:"+group.ID, group.Icon,
+						groupLabel(s.locale, group.ID))
 					item.Children(func() {
 						ui.Textf(c, "%d", s.groupCount(group.ID)).FontSize(11).Opacity(0.55)
 					})
@@ -141,7 +155,7 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 		if vibrant {
 			sb.Background(ui.Transparent)
 		}
-		sb.Grow(1).Label("浏览")
+		sb.Grow(1).Label(msgs.SidebarLabel())
 		if sb.Changed() {
 			s.query = ""
 			s.detail = ""
@@ -151,27 +165,27 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 
 		ui.Divider(c).MarginX(12)
 		ui.Column(c).Padding(10, 14, 10, 14).Gap(3).Shrink(0).Children(func() {
-			ui.Textf(c, "%d 款应用 · 数据截至 %s", len(s.catalog.Apps), s.catalog.AsOf).
+			ui.Text(c, msgs.FooterStats(len(s.catalog.Apps), s.catalog.AsOf)).
 				FontSize(10.5).TextColor(t.TextMuted)
 			ui.Row(c).AlignItems(ui.Center).Gap(6).Children(func() {
 				ui.Link(c, "awesomemygo.dev", s.catalog.Source).FontSize(10.5).
-					Tooltip("数据来源：Awesome MyGo")
+					Tooltip(msgs.FooterSourceTooltip())
 				ui.Textf(c, "v%s", appVersion()).FontSize(10.5).TextColor(t.TextMuted)
 			})
 			ui.Row(c).AlignItems(ui.Center).Justify(ui.SpaceBetween).Children(func() {
 				synced := ui.ButtonBase(c).Height(18).Padding(0, 4).Radius(4).
-					Cursor(ui.CursorPointer).Tooltip(s.catalogSync.tooltip())
+					Cursor(ui.CursorPointer).Tooltip(s.catalogSync.tooltip(msgs))
 				synced.Children(func() {
-					ui.Text(c, s.catalogSync.statusText()).FontSize(10.5).TextColor(t.TextMuted)
+					ui.Text(c, s.catalogSync.statusText(msgs)).FontSize(10.5).TextColor(t.TextMuted)
 				})
 				if synced.Clicked() {
 					s.catalogSync.checkNow()
 				}
-				check := ui.ButtonBase(c).Label("检查更新").Height(18).Padding(0, 4).Radius(4).
+				check := ui.ButtonBase(c).Label(msgs.CheckUpdates()).Height(18).Padding(0, 4).Radius(4).
 					Cursor(ui.CursorPointer).
-					Tooltip("启动后自动检查，也可以随时手动检查")
+					Tooltip(msgs.CheckUpdatesTooltip())
 				check.Children(func() {
-					ui.Text(c, "检查更新").FontSize(10.5).TextColor(t.TextMuted)
+					ui.Text(c, msgs.CheckUpdates()).FontSize(10.5).TextColor(t.TextMuted)
 				})
 				if check.Clicked() {
 					checkUpdates()
@@ -183,16 +197,17 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 }
 
 func (s *store) content(c *ui.Context, t *ui.Theme) {
+	msgs := s.messages()
 	bar := c.TitleBar()
 	main := ui.Column(c).Grow(1).MinWidth(0).Background(t.Background)
 	main.Children(func() {
 		ui.Row(c).Height(maxf(bar.Height, titleBarMin)).Shrink(0).AlignItems(ui.Center).
 			Padding(0, bar.Right+20, 0, 22).Gap(10).DragWindow().Children(func() {
 			ui.Icon(c, iconSparkle).Size(14, 14).TextColor(t.Accent)
-			ui.Text(c, "MyGo 应用市场").FontSize(12).Bold().TextColor(t.TextMuted)
+			ui.Text(c, msgs.AppTitle()).FontSize(12).Bold().TextColor(t.TextMuted)
 			ui.Spacer(c)
 			if s.detail == "" && s.nav != "" {
-				s.sortControl(c, t)
+				s.sortControl(c, t, msgs)
 			}
 		})
 		ui.Divider(c)
@@ -212,15 +227,15 @@ func (s *store) content(c *ui.Context, t *ui.Theme) {
 	})
 }
 
-func (s *store) sortControl(c *ui.Context, t *ui.Theme) {
-	ui.MenuButton(c, s.sort.Label(), func(m *ui.Menu) {
+func (s *store) sortControl(c *ui.Context, t *ui.Theme, msgs locales.Messages) {
+	ui.MenuButton(c, s.sort.Label(msgs), func(m *ui.Menu) {
 		for _, mode := range []SortMode{sortRecommended, sortNewest, sortHottest} {
-			if m.Item(mode.Label()).Radio(true).Checked(mode == s.sort).Chosen() {
+			if m.Item(mode.Label(msgs)).Radio(true).Checked(mode == s.sort).Chosen() {
 				s.sort = mode
 				s.resetBrowsing()
 			}
 		}
-	}).Label("排序方式").Height(28).Padding(0, 10).Radius(8).
+	}).Label(msgs.SortByLabel()).Height(28).Padding(0, 10).Radius(8).
 		Border(1, t.Border).FontSize(12)
 }
 
@@ -233,7 +248,6 @@ func maxf(a, b float32) float32 {
 
 func main() {
 	mygo.Use(updaterPlugin())
-	mygo.App.SetMenu(appMenu())
 
 	s := &store{
 		catalog: loadBestCatalog(),
@@ -242,11 +256,29 @@ func main() {
 		nav:     "discover",
 		sort:    sortRecommended,
 	}
+	languageChoice = s.prefs.Locale
+	menu := appMenu(func(tag string) {
+		s.prefs.Locale = tag
+		savePrefs(s.prefs)
+	})
+	mygo.App.SetMenu(menu)
+
 	s.catalogSync = newCatalogSyncer(s)
 	s.seedDownloads()
+	mygo.App.OnLocaleChanged(func(locale string) {
+		relabelAppMenu(menu, locale)
+		if s.win != nil {
+			s.win.SetTitle(locales.In(locale).AppTitle())
+		}
+	})
 	mygo.App.WhenReady(func() {
+		if s.prefs.Locale != "" {
+			mygo.App.SetLocale(s.prefs.Locale)
+		}
+		locale := mygo.App.Locale()
+		relabelAppMenu(menu, locale)
 		s.win = mygo.NewWindow(mygo.WindowOptions{
-			Title:         "MyGo 应用市场",
+			Title:         locales.In(locale).AppTitle(),
 			Width:         1180,
 			Height:        780,
 			MinWidth:      900,

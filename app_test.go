@@ -23,6 +23,7 @@ func newTestStore(t *testing.T) (*store, *ui.Tester) {
 	tt := ui.NewTester(s.view, 1180, 780)
 	tt.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
 	tt.SetDark(true)
+	tt.SetLocale("zh-Hans")
 	tt.Frame()
 	return s, tt
 }
@@ -104,7 +105,6 @@ func TestDetailShowsDownloadState(t *testing.T) {
 		Phase:    phaseDownloading,
 		Progress: 0.42,
 		Asset:    "Denova-1.2.0-arm64.dmg",
-		Message:  "正在下载安装包…",
 	})
 	s.openDetail("denova")
 	tt.Frame()
@@ -127,17 +127,16 @@ func TestDetailShowsDownloadedInstaller(t *testing.T) {
 		t.Fatal(err)
 	}
 	s.releases().set("denova", acquireState{
-		Phase:   phaseReady,
-		Path:    path,
-		Asset:   "Denova-1.2.0-arm64.dmg",
-		Tag:     "v1.2.0",
-		Source:  "https://example.com/release",
-		Message: "安装包已下载",
+		Phase:  phaseReady,
+		Path:   path,
+		Asset:  "Denova-1.2.0-arm64.dmg",
+		Tag:    "v1.2.0",
+		Source: "https://example.com/release",
 	})
 	s.openDetail("denova")
 	tt.Frame()
 
-	if !tt.HasText("打开安装包") || !tt.HasText("在 Finder 中显示") {
+	if !tt.HasText("打开安装包") || !tt.HasText("在文件夹中显示") {
 		t.Errorf("texts %q after downloading", tt.Texts())
 	}
 }
@@ -260,5 +259,79 @@ func TestCommandOneLeavesDetail(t *testing.T) {
 	}
 	if s.nav != "discover" {
 		t.Errorf("nav = %q after Cmd+1", s.nav)
+	}
+}
+
+func TestEnglishInterface(t *testing.T) {
+	s, tt := newTestStore(t)
+	tt.SetLocale("en")
+	tt.Frame()
+
+	for _, text := range []string{
+		"Discover", "Favorites", "Acquired", "Categories",
+		"Developer tools", "Check for Updates", "MyGo Store", "Sort by",
+	} {
+		if !tt.HasText(text) {
+			t.Errorf("the English interface does not show %q: %q", text, tt.Texts())
+		}
+	}
+
+	if err := tt.Click("Developer tools"); err != nil {
+		t.Fatalf("click the English category: %v", err)
+	}
+	if s.nav != "group:dev" {
+		t.Fatalf("nav = %q after clicking Developer tools", s.nav)
+	}
+	for _, text := range []string{"All", "Native UI", "Web frontend", "Platform", "All platforms"} {
+		if !tt.HasText(text) {
+			t.Errorf("the English category page does not show %q: %q", text, tt.Texts())
+		}
+	}
+
+	s.openDetail("denova")
+	tt.Frame()
+	for _, text := range []string{"Back", "About", "Information", "Category", "Interface"} {
+		if !tt.HasText(text) {
+			t.Errorf("the English detail page does not show %q: %q", text, tt.Texts())
+		}
+	}
+}
+
+func TestLocaleSwitchRedrawsTheView(t *testing.T) {
+	s, tt := newTestStore(t)
+	tt.SetLocale("en")
+	tt.Frame()
+	if !tt.HasText("Developer tools") || tt.HasText("开发工具") {
+		t.Fatalf("the view did not start in English: %q", tt.Texts())
+	}
+
+	tt.SetLocale("zh-Hans")
+	tt.Frame()
+	if !tt.HasText("开发工具") || tt.HasText("Developer tools") {
+		t.Fatalf("the view did not redraw in Chinese: %q", tt.Texts())
+	}
+	if s.nav != "discover" {
+		t.Errorf("nav = %q after switching the language", s.nav)
+	}
+}
+
+func TestAcquireMessagesFollowTheLocale(t *testing.T) {
+	s, tt := newTestStore(t)
+	if s.appBySlug("denova") == nil {
+		t.Skip("denova is not in the catalog")
+	}
+	s.releases().set("denova", acquireState{Phase: phaseNoAsset, Reason: reasonNoAsset})
+	s.openDetail("denova")
+
+	tt.SetLocale("en")
+	tt.Frame()
+	if texts := strings.Join(tt.Texts(), "\n"); !strings.Contains(texts, "The release has no installer for") {
+		t.Errorf("the English failure message is missing: %q", texts)
+	}
+
+	tt.SetLocale("zh-Hans")
+	tt.Frame()
+	if texts := strings.Join(tt.Texts(), "\n"); !strings.Contains(texts, "Release 里没有适用于") {
+		t.Errorf("the Chinese failure message is missing: %q", texts)
 	}
 }
