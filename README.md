@@ -27,6 +27,21 @@ go tool mygo build   # packaged apps in build/
 
 The app's name, identifier, version and icon are in `mygo.json` and `resources/icon.png`.
 
+## Release
+
+Push a `v*` tag and GitHub Actions does the rest:
+
+```sh
+git tag v0.2.0
+git push origin v0.2.0
+```
+
+The workflow in `.github/workflows/release.yml` runs the tests, takes the version from the tag, builds a universal macOS app for Apple silicon and Intel, writes `SHA256SUMS`, and creates the GitHub Release. Tags with a suffix such as `v0.2.0-beta.1` become prereleases. You can also run it from the Actions page with an existing tag.
+
+- The version is written into `mygo.json` only for that build; nothing is committed back.
+- The release contains `mygo-store-<version>.dmg` and `SHA256SUMS`.
+- Builds use MyGo's default ad-hoc signature. To distribute without Gatekeeper warnings, configure `macos.signingIdentity` and `macos.notarize` in `mygo.json`, add the Developer ID certificate and notary credentials as Actions secrets, and import them in the workflow.
+
 ## Data
 
 `data/apps.json` is generated from [`yldm-tech/awesome-mygo`](https://github.com/yldm-tech/awesome-mygo), which also builds the showcase site. The score is a port of the site's `packages/catalog/src/score.ts`, so the numbers match awesomemygo.dev.

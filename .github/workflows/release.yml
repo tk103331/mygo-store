@@ -1,0 +1,130 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing release tag, for example v0.1.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Check out the tag
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+          fetch-depth: 0
+
+      - name: Set up Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Validate the tag
+        run: |
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z]+)*$ ]]; then
+            echo "::error::Tag $TAG must look like v1.2.3 or v1.2.3-beta.1"
+            exit 1
+          fi
+
+      - name: Set the app version from the tag
+        run: |
+          python3 - "$TAG" <<'PY'
+          import json
+          import sys
+
+          version = sys.argv[1][1:]
+          with open("mygo.json", encoding="utf-8") as file:
+              config = json.load(file)
+          config["version"] = version
+          with open("mygo.json", "w", encoding="utf-8") as file:
+              json.dump(config, file, ensure_ascii=False, indent=2)
+              file.write("\n")
+          print(f"Building version {version}")
+          PY
+
+      - name: Test
+        run: go test ./...
+
+      - name: Build the universal macOS app
+        run: go tool mygo build -platform darwin/universal
+
+      - name: Collect the installer and checksums
+        run: |
+          ls -lh build/darwin-universal
+          cd build/darwin-universal
+          shasum -a 256 *.dmg > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Compose the release notes
+        run: |
+          previous="$(git describe --tags --abbrev=0 "$TAG^" 2>/dev/null || true)"
+          {
+            echo "## MyGo Store ${TAG}"
+            echo
+            echo "macOS 通用安装包，适用于 Apple 芯片与 Intel Mac。"
+            echo
+            echo "### 安装"
+            echo "1. 下载 \`.dmg\`，打开后把 MyGo Store 拖入「应用程序」。"
+            echo "2. 当前构建为 ad-hoc 签名；若首次打开被 Gatekeeper 拦截，请在「系统设置 → 隐私与安全性」中允许。"
+            echo
+            echo "### 变更"
+            if [ -n "$previous" ]; then
+              git log --no-merges --pretty=format:'- %s (`%h`)' "$previous..$TAG"
+            else
+              git log --no-merges --pretty=format:'- %s (`%h`)' "$TAG"
+            fi
+            echo
+          } > "$RUNNER_TEMP/release-notes.md"
+          cat "$RUNNER_TEMP/release-notes.md"
+
+      - name: Publish the release
+        run: |
+          files=(build/darwin-universal/*.dmg build/darwin-universal/SHA256SUMS)
+          prerelease=()
+          case "$TAG" in
+            *-*) prerelease=(--prerelease) ;;
+          esac
+
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --title "MyGo Store $TAG" \
+              --notes-file "$RUNNER_TEMP/release-notes.md" \
+              "${prerelease[@]}"
+            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+              "${files[@]}" --clobber
+          else
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" \
+              --title "MyGo Store $TAG" \
+              --notes-file "$RUNNER_TEMP/release-notes.md" \
+              "${prerelease[@]}" \
+              "${files[@]}"
+          fi
+
+      - name: Summarize
+        run: |
+          {
+            echo "### MyGo Store $TAG"
+            echo
+            echo '```'
+            cat build/darwin-universal/SHA256SUMS
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
