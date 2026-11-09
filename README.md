@@ -140,7 +140,7 @@ Only Python 3.11's standard library is needed. Icons and screenshots go to `asse
 
 ## Environment
 
-| Variable | |
+| Variable | Purpose |
 |---|---|
 | `MYGO_STORE_CONFIG` | Override the config directory (`~/Library/Application Support/MyGo Store` by default) |
 | `MYGO_STORE_DOWNLOADS` | Override the installer download directory |
@@ -162,7 +162,7 @@ GitHub's unauthenticated API allows 60 requests an hour. A request is made only 
 
 ## Layout
 
-| File | |
+| File | Purpose |
 |---|---|
 | `main.go` | App state, window, sidebar and title bar |
 | `update.go` | Automatic update plugin and the **检查更新…** menu item |
