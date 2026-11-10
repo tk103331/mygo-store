@@ -108,7 +108,10 @@ func (s *store) scoreRow(c *ui.Context, t *ui.Theme, app *App) {
 			ui.Textf(c, "%.1f", app.Score).FontSize(11.5).Bold().TextColor(color)
 		})
 		ui.Text(c, msgs.ScoreOutOf()).FontSize(10.5).TextColor(t.TextMuted)
-		if s.prefs.Acquired[app.Slug] {
+		if _, ok := s.installedApp(app.Slug); ok {
+			ui.Text(c, "·").FontSize(10.5).TextColor(t.TextMuted)
+			ui.Text(c, msgs.Installed()).FontSize(10.5).TextColor(t.Accent)
+		} else if s.prefs.Acquired[app.Slug] {
 			ui.Text(c, "·").FontSize(10.5).TextColor(t.TextMuted)
 			ui.Text(c, msgs.Acquired()).FontSize(10.5).TextColor(t.Accent)
 		}
@@ -129,7 +132,19 @@ func (s *store) actions(c *ui.Context, t *ui.Theme, app *App) {
 			ui.Text(c, label).FontSize(12).Bold()
 		})
 		if primary.Clicked() && !busy {
-			s.acquire(app)
+			if state.Phase != phaseIdle || !s.openInstalled(app.Slug) {
+				s.acquire(app)
+			}
+		}
+
+		if _, ok := s.installedApp(app.Slug); ok && state.Phase == phaseIdle && app.Repo != "" {
+			if ui.Button(c, "").Height(30).Padding(0, 12).Radius(7).Gap(6).
+				Label(msgs.GetInstaller()).Tooltip(msgs.HintAutoDetect()).Children(func() {
+				ui.Icon(c, iconDownload).Size(13, 13)
+				ui.Text(c, msgs.GetInstaller()).FontSize(12)
+			}).Clicked() {
+				s.acquire(app)
+			}
 		}
 
 		if app.Repo != "" {
@@ -182,6 +197,9 @@ func (s *store) primaryAction(app *App, state acquireState, msgs locales.Message
 	case phaseNoAsset:
 		return msgs.OpenWebsite(), iconOpen, false
 	}
+	if _, ok := s.installedApp(app.Slug); ok {
+		return msgs.OpenApp(), iconOpen, false
+	}
 	if s.prefs.Acquired[app.Slug] {
 		if app.Repo != "" {
 			return msgs.GetInstaller(), iconDownload, false
@@ -203,6 +221,12 @@ func (s *store) actionHint(app *App, state acquireState, msgs locales.Messages) 
 		return msgs.HintFailed()
 	case phaseNoAsset:
 		return msgs.HintNoAsset()
+	}
+	if installed, ok := s.installedApp(app.Slug); ok {
+		if installed.Version != "" {
+			return msgs.InstalledVersion(installed.Version)
+		}
+		return msgs.Installed()
 	}
 	if app.Repo != "" {
 		return msgs.HintAutoDetect()

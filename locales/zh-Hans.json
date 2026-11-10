@@ -62,7 +62,7 @@
   "favorites_title": "收藏",
   "favorites_subtitle": "{count} 款应用留在了这里。",
   "acquired_title": "已获取",
-  "acquired_subtitle": "从应用市场获取过的 {count} 款应用。",
+  "acquired_subtitle": "从应用市场获取过或已安装在系统中的 {count} 款应用。",
   "group_subtitle": "{blurb} · {count} 款",
   "apps_title": "应用",
   "apps_subtitle": "{count} 款应用",
@@ -79,7 +79,10 @@
   "no_favorites_title": "还没有收藏",
   "no_favorites_message": "在应用详情里点一下心形，就会留在这里。",
   "no_acquired_title": "还没有获取过应用",
-  "no_acquired_message": "打开一个应用，点“获取”就会出现在这里。",
+  "no_acquired_message": "打开一个应用，点“获取”就会出现在这里；系统中已安装的 MyGo 应用也会自动显示。",
+  "detect_installed": "检测已安装应用",
+  "detect_installed_tooltip": "查找通过其他方式安装的 MyGo 应用，例如从应用自己的安装包安装的。",
+  "detecting_installed": "正在检测已安装应用…",
   "clear_filters": "清除筛选",
 
   "by_author": "作者 {author}",
@@ -95,6 +98,14 @@
   "retry_get": "重试获取",
   "get_installer": "获取安装包",
   "open_site": "打开网站",
+  "open_app": "打开",
+  "installed": "已安装",
+  "installed_version": "已安装 {version}",
+  "@installed_version": {
+    "placeholders": {
+      "version": { "type": "String" }
+    }
+  },
   "view_source": "查看源码",
   "source": "源码",
   "favorite": "收藏",

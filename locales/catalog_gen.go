@@ -640,11 +640,11 @@ func (msgs Messages) AcquiredTitle() string {
 	return Catalog.Format(msgs.locale, "acquired_title", nil)
 }
 
-// AcquiredSubtitle says "{count} apps acquired from the store."
+// AcquiredSubtitle says "{count} apps got from the store or installed on this computer."
 // in the language the app shows.
 func AcquiredSubtitle(count int) string { return In(i18n.Locale()).AcquiredSubtitle(count) }
 
-// AcquiredSubtitle says "{count} apps acquired from the store."
+// AcquiredSubtitle says "{count} apps got from the store or installed on this computer."
 // in the language of msgs.
 func (msgs Messages) AcquiredSubtitle(count int) string {
 	return Catalog.Format(msgs.locale, "acquired_subtitle", map[string]any{"count": count})
@@ -812,14 +812,44 @@ func (msgs Messages) NoAcquiredTitle() string {
 	return Catalog.Format(msgs.locale, "no_acquired_title", nil)
 }
 
-// NoAcquiredMessage says "Open an app and choose Get; it will appear here."
+// NoAcquiredMessage says "Open an app and choose Get; MyGo apps already installed on this computer appear here too."
 // in the language the app shows.
 func NoAcquiredMessage() string { return In(i18n.Locale()).NoAcquiredMessage() }
 
-// NoAcquiredMessage says "Open an app and choose Get; it will appear here."
+// NoAcquiredMessage says "Open an app and choose Get; MyGo apps already installed on this computer appear here too."
 // in the language of msgs.
 func (msgs Messages) NoAcquiredMessage() string {
 	return Catalog.Format(msgs.locale, "no_acquired_message", nil)
+}
+
+// DetectInstalled says "Detect installed apps"
+// in the language the app shows.
+func DetectInstalled() string { return In(i18n.Locale()).DetectInstalled() }
+
+// DetectInstalled says "Detect installed apps"
+// in the language of msgs.
+func (msgs Messages) DetectInstalled() string {
+	return Catalog.Format(msgs.locale, "detect_installed", nil)
+}
+
+// DetectInstalledTooltip says "Looks for MyGo apps installed outside the store, such as ones from an app's own installer."
+// in the language the app shows.
+func DetectInstalledTooltip() string { return In(i18n.Locale()).DetectInstalledTooltip() }
+
+// DetectInstalledTooltip says "Looks for MyGo apps installed outside the store, such as ones from an app's own installer."
+// in the language of msgs.
+func (msgs Messages) DetectInstalledTooltip() string {
+	return Catalog.Format(msgs.locale, "detect_installed_tooltip", nil)
+}
+
+// DetectingInstalled says "Detecting installed apps…"
+// in the language the app shows.
+func DetectingInstalled() string { return In(i18n.Locale()).DetectingInstalled() }
+
+// DetectingInstalled says "Detecting installed apps…"
+// in the language of msgs.
+func (msgs Messages) DetectingInstalled() string {
+	return Catalog.Format(msgs.locale, "detecting_installed", nil)
 }
 
 // ClearFilters says "Clear filters"
@@ -960,6 +990,36 @@ func OpenSite() string { return In(i18n.Locale()).OpenSite() }
 // in the language of msgs.
 func (msgs Messages) OpenSite() string {
 	return Catalog.Format(msgs.locale, "open_site", nil)
+}
+
+// OpenApp says "Open"
+// in the language the app shows.
+func OpenApp() string { return In(i18n.Locale()).OpenApp() }
+
+// OpenApp says "Open"
+// in the language of msgs.
+func (msgs Messages) OpenApp() string {
+	return Catalog.Format(msgs.locale, "open_app", nil)
+}
+
+// Installed says "Installed"
+// in the language the app shows.
+func Installed() string { return In(i18n.Locale()).Installed() }
+
+// Installed says "Installed"
+// in the language of msgs.
+func (msgs Messages) Installed() string {
+	return Catalog.Format(msgs.locale, "installed", nil)
+}
+
+// InstalledVersion says "Installed, version {version}"
+// in the language the app shows.
+func InstalledVersion(version string) string { return In(i18n.Locale()).InstalledVersion(version) }
+
+// InstalledVersion says "Installed, version {version}"
+// in the language of msgs.
+func (msgs Messages) InstalledVersion(version string) string {
+	return Catalog.Format(msgs.locale, "installed_version", map[string]any{"version": version})
 }
 
 // ViewSource says "View source"

@@ -102,7 +102,21 @@ func TestSnapshots(t *testing.T) {
 	s.selectNav("favorites")
 	shot("06-favorites")
 
-	// The empty favorites state.
+	// The acquired page with an app that is installed on this computer.
+	s.prefs.Acquired = map[string]bool{}
+	s.setInstalled([]installedApp{{
+		Name:       "Denova",
+		Version:    "1.2.0",
+		Identifier: "com.example.denova",
+		Path:       "/Applications/Denova.app",
+	}})
+	s.selectNav("acquired")
+	shot("07-acquired-installed")
+	s.openDetail("denova")
+	shot("07b-detail-installed")
+	s.setInstalled(nil)
+
+	// The empty acquired state.
 	s.prefs.Favorites = map[string]bool{}
 	s.selectNav("acquired")
 	s.prefs.Acquired = map[string]bool{}
@@ -160,4 +174,26 @@ func TestSnapshots(t *testing.T) {
 	enShot("12-group-dev-en")
 	s.openDetail("denova")
 	enShot("13-detail-denova-en")
+
+	// The language menu in the window, for the platforms whose title bar
+	// leaves no menu bar, as Windows does.
+	s.detail = ""
+	s.selectNav("discover")
+	menu := ui.NewTester(s.view, 1180, 780)
+	menu.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
+	menu.SetDark(true)
+	menu.SetLocale("zh-Hans")
+	menu.Frame()
+	if err := menu.Click("语言"); err != nil {
+		t.Fatal(err)
+	}
+	menu.Frame()
+	file, err := os.Create(filepath.Join(dir, "14-language-menu.png"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer file.Close()
+	if err := png.Encode(file, menu.Image()); err != nil {
+		t.Fatal(err)
+	}
 }

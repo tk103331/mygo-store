@@ -97,8 +97,29 @@ func (s *store) filterBar(c *ui.Context, t *ui.Theme, count int) {
 		}
 
 		ui.Spacer(c)
+		if s.nav == "acquired" {
+			s.detectButton(c, t)
+		}
 		ui.Text(c, msgs.AppCount(count)).FontSize(11.5).TextColor(t.TextMuted)
 	})
+}
+
+// detectButton looks for MyGo apps installed on this computer again, for
+// the apps that were installed after the scan at launch.
+func (s *store) detectButton(c *ui.Context, t *ui.Theme) {
+	msgs := s.messages()
+	label := msgs.DetectInstalled()
+	if s.installedBusy {
+		label = msgs.DetectingInstalled()
+	}
+	button := ui.ButtonBase(c).Height(26).Padding(0, 9).Radius(7).Border(1, t.Border).
+		Label(label).Tooltip(msgs.DetectInstalledTooltip())
+	button.Children(func() {
+		ui.Text(c, label).FontSize(11.5).TextColor(t.TextMuted)
+	})
+	if button.Clicked() && !s.installedBusy {
+		s.refreshInstalled()
+	}
 }
 
 func (s *store) filterChip(c *ui.Context, t *ui.Theme, label string, chosen bool, action func()) {

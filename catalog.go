@@ -27,6 +27,7 @@ type App struct {
 	Category    string   `json:"category"`
 	URL         string   `json:"url"`
 	Repo        string   `json:"repo"`
+	Identifier  string   `json:"identifier,omitempty"` // the app's bundle identifier
 	Summary     string   `json:"summary"`
 	Description string   `json:"description"`
 	Added       string   `json:"added"`
@@ -323,7 +324,7 @@ func (s *store) filterApps() []App {
 					continue
 				}
 			case s.nav == "acquired":
-				if !s.prefs.Acquired[app.Slug] {
+				if !s.isAcquired(app.Slug) {
 					continue
 				}
 			case strings.HasPrefix(s.nav, "group:"):

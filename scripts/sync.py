@@ -4,11 +4,13 @@
 The site is built from yldm-tech/awesome-mygo: one JSON file per app in
 packages/catalog/data/apps, plus packages/catalog/data/scores.json. This
 script downloads that data, computes the same 0-100 score the site shows,
-downloads each app's icon and screenshot, and writes data/apps.json.
+reads each app's bundle identifier from its repository, downloads each
+app's icon and screenshot, and writes data/apps.json.
 
 Usage:
     python3 scripts/sync.py                 # sync everything
     python3 scripts/sync.py --no-assets     # data only
+    python3 scripts/sync.py --no-identifiers  # skip the identifiers too
     python3 scripts/sync.py --force-assets  # download images again
     python3 scripts/sync.py --catalog DIR   # use an unpacked catalog/data
 
@@ -24,6 +26,7 @@ import io
 import json
 import math
 import os
+import re
 import shutil
 import sys
 import tarfile
@@ -43,6 +46,12 @@ AILOGO_ICON = "https://ailogo.yldm.ai/avatar/{id}.webp"
 SHOT = "https://awesomemygo.dev/shots/{file}"
 
 UA = "MyGoStore/1.0 (+https://awesomemygo.dev/showcase)"
+
+# The files of an app's repository that name its bundle identifier, which
+# tells an installed app apart from the others, whatever its name.
+IDENTIFIER_FILES = ("mygo.json", "mygo.config.ts", "mygo.config.js", "mygo.config.mjs")
+IDENTIFIER_TS_RE = re.compile(r"""\bidentifier\s*:\s*["']([^"']+)["']""")
+IDENTIFIER_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 
 GROUPS = ["agents", "dev", "ai", "network", "notes", "system", "devices", "media", "game", "chat"]
 PLATFORMS = ["win", "linux", "mac"]
@@ -257,6 +266,95 @@ def download(url: str, dest: Path, force: bool = False, retries: int = 3) -> boo
     return False
 
 
+def repo_slug(repo: str) -> str:
+    """The owner/name of a repository, as "owner/name" URLs give it."""
+    repo = (repo or "").strip()
+    for prefix in ("https://github.com/", "http://github.com/", "github.com/"):
+        if repo.startswith(prefix):
+            repo = repo[len(prefix) :]
+            break
+    repo = repo.removesuffix(".git").strip("/")
+    parts = repo.split("/")
+    if len(parts) < 2 or not parts[0] or not parts[1]:
+        return ""
+    return f"{parts[0]}/{parts[1]}"
+
+
+def parse_identifier(text: str, filename: str) -> str:
+    """The identifier a mygo.json or mygo.config.ts names, or ""."""
+    identifier = ""
+    if filename.endswith(".json"):
+        try:
+            data = json.loads(text)
+        except ValueError:
+            return ""
+        if isinstance(data, dict):
+            identifier = data.get("identifier", "")
+    else:
+        found = IDENTIFIER_TS_RE.search(text)
+        if found:
+            identifier = found.group(1)
+    identifier = identifier.strip() if isinstance(identifier, str) else ""
+    return identifier if IDENTIFIER_RE.match(identifier) else ""
+
+
+def fetch_identifier(repo: str) -> str:
+    """The identifier of an app, from the configuration of its repository."""
+    repo = repo_slug(repo)
+    if not repo:
+        return ""
+    for name in IDENTIFIER_FILES:
+        url = f"https://raw.githubusercontent.com/{repo}/HEAD/{name}"
+        request = urllib.request.Request(url, headers={"User-Agent": UA})
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                text = response.read(1 << 20).decode("utf-8", "replace")
+        except Exception:
+            continue
+        if identifier := parse_identifier(text, name):
+            return identifier
+    return ""
+
+
+def sync_identifiers(apps: list[dict], previous: dict) -> dict[str, str]:
+    """Fetch the bundle identifiers of the apps, keeping the ones a failed
+    fetch loses from the previous catalog."""
+    known = {
+        app["slug"]: app["identifier"]
+        for app in previous.get("apps", [])
+        if isinstance(app, dict) and app.get("identifier")
+    }
+    jobs = [(app["slug"], app.get("repo", "")) for app in apps if app.get("repo")]
+    print(f"↓ identifiers of {len(jobs)} apps", flush=True)
+    found: dict[str, str] = {}
+    done = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
+        futures = {pool.submit(fetch_identifier, repo): (slug, repo) for slug, repo in jobs}
+        for future in concurrent.futures.as_completed(futures):
+            slug, _ = futures[future]
+            if identifier := future.result() or known.get(slug, ""):
+                found[slug] = identifier
+            done += 1
+            if done % 50 == 0 or done == len(jobs):
+                print(f"  {done}/{len(jobs)}", flush=True)
+    print(f"  {len(found)} identifiers", flush=True)
+    return found
+
+
+def add_identifiers(apps: list[dict], identifiers: dict[str, str]) -> list[dict]:
+    """Add the identifier of each app after its repository, where it sits in
+    the catalog a reader browses."""
+    out = []
+    for app in apps:
+        item = {}
+        for key, value in app.items():
+            item[key] = value
+            if key == "repo" and app["slug"] in identifiers:
+                item["identifier"] = identifiers[app["slug"]]
+        out.append(item)
+    return out
+
+
 def sync_assets(apps: list[dict], force: bool) -> None:
     ICON_DIR.mkdir(parents=True, exist_ok=True)
     SHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -304,6 +402,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, help="unpacked packages/catalog/data directory")
     parser.add_argument("--no-assets", action="store_true", help="skip icons and screenshots")
+    parser.add_argument("--no-identifiers", action="store_true", help="skip reading the apps' bundle identifiers")
     parser.add_argument("--force-assets", action="store_true", help="download images even if present")
     parser.add_argument("--keep-missing", action="store_true", help="keep old images for apps that left")
     args = parser.parse_args()
@@ -313,7 +412,11 @@ def main() -> int:
     else:
         apps, scores = read_remote_catalog()
 
+    previous = read_previous()
     catalog = build_catalog(apps, scores)
+    if not args.no_identifiers:
+        identifiers = sync_identifiers(catalog["apps"], previous)
+        catalog["apps"] = add_identifiers(catalog["apps"], identifiers)
     print(f"✓ {len(catalog['apps'])} apps · scores as of {catalog['asOf']}")
 
     if not args.no_assets:
@@ -328,7 +431,6 @@ def main() -> int:
 
     # When the upstream data did not change, keep the previous syncedAt so
     # the daily action does not commit or publish a new catalog every day.
-    previous = read_previous()
     if (
         previous.get("syncedAt")
         and previous.get("source") == catalog["source"]

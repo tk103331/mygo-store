@@ -66,13 +66,27 @@ func appMenu(onLocale func(tag string)) *mygo.Menu {
 	})
 }
 
+// applyLocale makes the app show the language of tag, "" for the system's.
+// It is a variable so that tests can record the choice without an app.
+var applyLocale = mygo.App.SetLocale
+
+// languageChoices are the languages the user may choose, with "" for the
+// system's: the tag to set and the name the language calls itself.
+func languageChoices(msgs locales.Messages) []struct{ tag, label string } {
+	return []struct{ tag, label string }{
+		{"", msgs.LanguageSystem()},
+		{"en", i18n.Autonym("en")},
+		{"zh-Hans", i18n.Autonym("zh-Hans")},
+	}
+}
+
 // chooseLocale returns the click that makes the app show the language of
 // tag, "" to follow the user's languages again.
 func chooseLocale(tag string, onLocale func(string)) func(*mygo.MenuItem, *mygo.Window) {
 	return func(*mygo.MenuItem, *mygo.Window) {
 		languageChoice = tag
 		onLocale(tag)
-		mygo.App.SetLocale(tag)
+		applyLocale(tag)
 	}
 }
 

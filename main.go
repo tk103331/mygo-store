@@ -24,9 +24,18 @@ type store struct {
 	images      *imageCache
 	releaseMgr  *releaseManager
 
+	// installedBySlug is what this computer has installed, from the scan
+	// the acquired page merges with the apps got here.
+	installedBySlug map[string]installedApp
+	installedBusy   bool
+
 	// runOnMain moves preference changes to the UI thread. Tests replace it
 	// with a direct call; nil means mygo.RunOnMain.
 	runOnMain func(func())
+
+	// async runs the installed apps scan in the background. Tests replace it
+	// with a direct call; nil means a goroutine.
+	async func(func())
 
 	// nav is the sidebar's choice: discover, favorites, acquired, or
 	// "group:<id>".
@@ -88,6 +97,30 @@ func (s *store) view(c *ui.Context) {
 	})
 }
 
+// setLanguage shows the language of tag, "" for the system's, and keeps it
+// for the next launches.
+func (s *store) setLanguage(tag string) {
+	s.prefs.Locale = tag
+	savePrefs(s.prefs)
+	languageChoice = tag
+	applyLocale(tag)
+	s.invalidate()
+}
+
+// languageMenu changes the interface language from the window itself: on
+// Windows with the title bar hidden, the app menu bar is not shown.
+func (s *store) languageMenu(c *ui.Context) {
+	msgs := s.messages()
+	ui.PopoverMenuButton(c, msgs.LanguageMenu(), func(m *ui.Menu) {
+		for _, choice := range languageChoices(msgs) {
+			if m.Item(choice.label).Radio(true).Checked(languageChoice == choice.tag).Chosen() {
+				s.setLanguage(choice.tag)
+			}
+		}
+	}).Height(18).Padding(0, 4).Radius(4).FontSize(10.5).
+		Label(msgs.LanguageMenu()).Tooltip(msgs.LanguageMenu())
+}
+
 func (s *store) selectNav(nav string) {
 	if s.nav == nav && s.query == "" && s.detail == "" {
 		return
@@ -138,7 +171,7 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 				item.Children(func() { ui.Textf(c, "%d", n).FontSize(11).Opacity(0.65) })
 			}
 			item = ui.SidebarItem(c, "acquired", iconDownload, msgs.NavAcquired())
-			if n := len(s.prefs.Acquired); n > 0 {
+			if n := s.acquiredCount(); n > 0 {
 				item.Children(func() { ui.Textf(c, "%d", n).FontSize(11).Opacity(0.65) })
 			}
 
@@ -171,6 +204,8 @@ func (s *store) sidebar(c *ui.Context, t *ui.Theme, vibrant bool) {
 				ui.Link(c, "awesomemygo.dev", s.catalog.Source).FontSize(10.5).
 					Tooltip(msgs.FooterSourceTooltip())
 				ui.Textf(c, "v%s", appVersion()).FontSize(10.5).TextColor(t.TextMuted)
+				ui.Spacer(c)
+				s.languageMenu(c)
 			})
 			ui.Row(c).AlignItems(ui.Center).Justify(ui.SpaceBetween).Children(func() {
 				synced := ui.ButtonBase(c).Height(18).Padding(0, 4).Radius(4).
@@ -289,6 +324,7 @@ func main() {
 			Content:       ui.View(s.view),
 		})
 		s.catalogSync.start()
+		s.refreshInstalled()
 	})
 	if err := mygo.App.Run(); err != nil {
 		log.Fatal(err)

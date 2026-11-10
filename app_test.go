@@ -19,6 +19,7 @@ func newTestStore(t *testing.T) (*store, *ui.Tester) {
 		nav:       "discover",
 		sort:      sortRecommended,
 		runOnMain: func(fn func()) { fn() },
+		async:     func(fn func()) { fn() },
 	}
 	tt := ui.NewTester(s.view, 1180, 780)
 	tt.SetTitleBar(ui.TitleBar{Height: 52, Left: 78, Right: 14})
@@ -259,6 +260,36 @@ func TestCommandOneLeavesDetail(t *testing.T) {
 	}
 	if s.nav != "discover" {
 		t.Errorf("nav = %q after Cmd+1", s.nav)
+	}
+}
+
+func TestLanguageMenuChangesTheLanguage(t *testing.T) {
+	s, tt := newTestStore(t)
+	var applied []string
+	previous := applyLocale
+	applyLocale = func(tag string) { applied = append(applied, tag) }
+	t.Cleanup(func() {
+		applyLocale = previous
+		languageChoice = ""
+	})
+
+	if err := tt.Click("语言"); err != nil {
+		t.Fatalf("open the language menu: %v", err)
+	}
+	tt.Frame()
+	if err := tt.Click("English"); err != nil {
+		t.Fatalf("choose English: %v", err)
+	}
+	if len(applied) != 1 || applied[0] != "en" {
+		t.Fatalf("applied languages %q, want en", applied)
+	}
+	if s.prefs.Locale != "en" {
+		t.Errorf("saved locale = %q, want en", s.prefs.Locale)
+	}
+	tt.SetLocale("en")
+	tt.Frame()
+	if !tt.HasText("Language") || !tt.HasText("Discover") {
+		t.Errorf("the interface did not switch to English: %q", tt.Texts())
 	}
 }
 

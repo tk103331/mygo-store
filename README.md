@@ -12,11 +12,12 @@ A native cross-platform app marketplace for projects built with [MyGo](https://g
 
 - **Discover** — top-scored apps and a shelf per category.
 - **Browse** — a virtualized grid for categories, favorites, acquired apps and search results. Filter by native/web and platform, and sort by score, date or likes.
+- **Installed apps** — the acquired page also lists MyGo apps that are installed on this computer but were not got from the store: Windows uninstall entries whose executable `mygo build` marked, `.app` bundles of the Applications folders, and Linux desktop entries. An installed app shows its version and opens from its detail page; downloading an app again still works. Detection only reads the system and never changes what the app remembers.
 - **Detail** — icon, tags, score, screenshot, description, facts, source link and the author's other apps.
 - **Get** — detects the current OS and architecture, reads the app repository's stable GitHub Releases newest first, and downloads the best matching installer: `.dmg` or `.pkg` on macOS, `.exe` or `.msi` on Windows, `.AppImage`, `.deb` or `.rpm` on Linux, with archives such as `.zip` and `.tar.gz` as fallbacks. Checksums, symbols and other auxiliary files are skipped. The file goes to the Downloads folder under `MyGo Store` (`~/Downloads/MyGo Store` on macOS); **Show in folder** reveals it, and the button then opens it with the system. If a release has no matching asset, or the project has no repository, the official page opens instead. Installers are never run automatically.
 - **Favorites and history** — favorites, acquired apps and downloaded installer paths are saved to `state.json` in the config directory.
 - **Automatic updates** — checks about 10 seconds after launch and once a day, then offers to download, install and restart. **Check for Updates…** in the app menu and **Check for Updates** at the bottom of the sidebar also check manually. See [Updates](#updates).
-- **Languages** — English and Simplified Chinese, switched in the app menu under **Language**. **System** follows your system language. See [Languages](#languages).
+- **Languages** — English and Simplified Chinese, switched in the app menu under **Language**, or from the menu at the bottom of the sidebar where a platform shows no menu bar, as Windows with the hidden title bar. **System** follows your system language. See [Languages](#languages).
 - **Catalog sync** — starts from the bundled snapshot and refreshes the app list from the `catalog-latest` release in the background. See [Catalog updates](#catalog-updates).
 
 ## Requirements
@@ -55,7 +56,7 @@ Publishing an update needs the `MYGO_UPDATER_PRIVATE_KEY` repository secret. The
 
 ## Catalog updates
 
-The catalog and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog.
+The catalog and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog, and reads each app's bundle identifier from its repository so that the installed-apps scan can match an installed app exactly.
 
 At runtime the app also keeps its catalog fresh:
 
@@ -166,7 +167,7 @@ On Windows and Linux, `Ctrl` takes the place of `⌘`.
 
 ## Languages
 
-The interface is written in English and translated to Simplified Chinese. Choose **Language** in the app menu:
+The interface is written in English and translated to Simplified Chinese. Choose **Language** in the app menu, or at the bottom of the sidebar where a platform shows no menu bar, as Windows with the hidden title bar:
 
 - **System** follows your system language, and English when it is neither.
 - **English** and **简体中文** keep that language.
@@ -187,6 +188,8 @@ To change a translation, edit `locales/zh-Hans.json` and run `go tool mygo gener
 | `browse.go` | Category, search, favorites and acquired grids |
 | `detail.go` | App detail page and installer actions |
 | `acquire.go` | **Get** flow, download seeding and fallback |
+| `installed.go` | Finds the MyGo apps installed on this computer and matches them to the catalog |
+| `installed_windows.go` etc. | The scan of each system: uninstall entries, `.app` bundles, desktop entries |
 | `release.go` | GitHub Releases client, asset matching and downloads |
 | `assets.go` | Embedded images, bitmap cache and fallbacks |
 | `prefs.go` | Favorites, acquired apps, installer paths and the saved language |

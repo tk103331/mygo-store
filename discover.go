@@ -155,7 +155,11 @@ func (s *store) cardAction(c *ui.Context, t *ui.Theme, app *App) {
 		fg = t.TextMuted
 		bg = t.Text.Alpha(0.07)
 	default:
-		if s.prefs.Acquired[app.Slug] {
+		if _, ok := s.installedApp(app.Slug); ok {
+			label = msgs.Installed()
+			fg = t.TextMuted
+			bg = t.Text.Alpha(0.07)
+		} else if s.prefs.Acquired[app.Slug] {
 			label = msgs.Acquired()
 			fg = t.TextMuted
 			bg = t.Text.Alpha(0.07)

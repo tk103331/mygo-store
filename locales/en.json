@@ -100,7 +100,7 @@
     }
   },
   "acquired_title": "Acquired",
-  "acquired_subtitle": "{count} apps acquired from the store.",
+  "acquired_subtitle": "{count} apps got from the store or installed on this computer.",
   "@acquired_subtitle": {
     "placeholders": {
       "count": { "type": "int" }
@@ -143,7 +143,10 @@
   "no_favorites_title": "No favorites yet",
   "no_favorites_message": "Tap the heart on an app's detail page and it will stay here.",
   "no_acquired_title": "No acquired apps yet",
-  "no_acquired_message": "Open an app and choose Get; it will appear here.",
+  "no_acquired_message": "Open an app and choose Get; MyGo apps already installed on this computer appear here too.",
+  "detect_installed": "Detect installed apps",
+  "detect_installed_tooltip": "Looks for MyGo apps installed outside the store, such as ones from an app's own installer.",
+  "detecting_installed": "Detecting installed apps…",
   "clear_filters": "Clear filters",
 
   "by_author": "by {author}",
@@ -174,6 +177,14 @@
   "retry_get": "Retry",
   "get_installer": "Get installer",
   "open_site": "Open site",
+  "open_app": "Open",
+  "installed": "Installed",
+  "installed_version": "Installed, version {version}",
+  "@installed_version": {
+    "placeholders": {
+      "version": { "type": "String" }
+    }
+  },
   "view_source": "View source",
   "source": "Source",
   "favorite": "Favorite",
