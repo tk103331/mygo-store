@@ -160,6 +160,18 @@ class DownloadTest(unittest.TestCase):
             self.assertEqual(updated["url"], "https://x/new.webp")
             self.assertEqual(updated["etag"], '"e2"')
 
+    def test_identical_content_keeps_the_entry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = pathlib.Path(tmp) / "a.webp"
+            dest.write_bytes(b"same")
+            entry = {"url": "https://x/a.webp", "etag": '"old"'}
+            response = FakeResponse(b"same", {"ETag": '"new"'})
+            with mock.patch.object(sync.urllib.request, "urlopen", return_value=response):
+                ok, kept, fetched = sync.download("https://x/a.webp", dest, entry)
+        self.assertTrue(ok)
+        self.assertFalse(fetched)
+        self.assertEqual(kept, entry)
+
     def test_a_missing_image_is_not_retried(self):
         error = urllib.error.HTTPError("https://x/a.webp", 404, "Not Found", {}, None)
         with tempfile.TemporaryDirectory() as tmp:

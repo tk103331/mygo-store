@@ -24,6 +24,7 @@ from __future__ import annotations
 import argparse
 import calendar
 import concurrent.futures
+import filecmp
 import json
 import math
 import os
@@ -330,6 +331,14 @@ def download(
                 if temp.stat().st_size == 0:
                     temp.unlink()
                     raise ValueError("empty response")
+                if dest.exists() and filecmp.cmp(dest, temp, shallow=False):
+                    # The host asked for it again, but it says the same: keep
+                    # the validators the manifest had, as some hosts rotate
+                    # them with every response, which would churn the file.
+                    temp.unlink()
+                    if entry.get("url") == url:
+                        return True, entry, False
+                    return True, {"url": url}, False
                 temp.replace(dest)
                 updated = {"url": url}
                 for header, key in (("ETag", "etag"), ("Last-Modified", "lastModified")):
