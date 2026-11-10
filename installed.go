@@ -102,11 +102,15 @@ func (s *store) setInstalled(detected []installedApp) {
 // runs from.
 func matchInstalled(catalog *Catalog, detected []installedApp) []installedApp {
 	byIdentifier := make(map[string]string, len(catalog.Apps))
+	shared := make(map[string]bool)
 	byName := make(map[string]string, len(catalog.Apps)*2)
 	for i := range catalog.Apps {
 		app := &catalog.Apps[i]
 		if identifier := normalizeIdentifier(app.Identifier); identifier != "" {
-			if _, ok := byIdentifier[identifier]; !ok {
+			if _, ok := byIdentifier[identifier]; ok {
+				// Forks share an identifier: the name or file decides between them.
+				shared[identifier] = true
+			} else {
 				byIdentifier[identifier] = app.Slug
 			}
 		}
@@ -125,7 +129,7 @@ func matchInstalled(catalog *Catalog, detected []installedApp) []installedApp {
 	apps := make([]installedApp, 0, len(detected))
 	for _, app := range detected {
 		slug := ""
-		if identifier := normalizeIdentifier(app.Identifier); identifier != "" {
+		if identifier := normalizeIdentifier(app.Identifier); identifier != "" && !shared[identifier] {
 			slug = byIdentifier[identifier]
 		}
 		if slug == "" {

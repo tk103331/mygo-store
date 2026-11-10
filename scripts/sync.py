@@ -355,6 +355,20 @@ def add_identifiers(apps: list[dict], identifiers: dict[str, str]) -> list[dict]
     return out
 
 
+def report_shared_identifiers(identifiers: dict[str, str]) -> None:
+    """Tell which identifiers two apps share, as a fork keeps the one of the
+    app it was copied from; the app matches those by name instead."""
+    by_identifier: dict[str, list[str]] = {}
+    for slug, identifier in identifiers.items():
+        by_identifier.setdefault(identifier.lower(), []).append(slug)
+    shared = {identifier: slugs for identifier, slugs in by_identifier.items() if len(slugs) > 1}
+    if not shared:
+        return
+    print(f"  ! {len(shared)} identifiers are shared; their apps match by name:", file=sys.stderr)
+    for identifier, slugs in sorted(shared.items()):
+        print(f"    {identifier}: {', '.join(sorted(slugs))}", file=sys.stderr)
+
+
 def sync_assets(apps: list[dict], force: bool) -> None:
     ICON_DIR.mkdir(parents=True, exist_ok=True)
     SHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -416,6 +430,7 @@ def main() -> int:
     catalog = build_catalog(apps, scores)
     if not args.no_identifiers:
         identifiers = sync_identifiers(catalog["apps"], previous)
+        report_shared_identifiers(identifiers)
         catalog["apps"] = add_identifiers(catalog["apps"], identifiers)
     print(f"✓ {len(catalog['apps'])} apps · scores as of {catalog['asOf']}")
 

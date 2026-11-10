@@ -51,6 +51,22 @@ func TestDefaultIdentifierMatchesCatalog(t *testing.T) {
 	}
 }
 
+func TestSharedIdentifierMatchesByName(t *testing.T) {
+	// Forks may keep the identifier of the app they were copied from. The
+	// identifier then names neither: the name of the installed app tells.
+	catalog := &Catalog{Apps: []App{
+		{Slug: "crypto-panel", Name: "Crypto Panel", Identifier: "dev.davirain.crypto-panel"},
+		{Slug: "lintel", Name: "Lintel", Identifier: "dev.davirain.crypto-panel"},
+	}}
+	apps := matchInstalled(catalog, []installedApp{
+		{Name: "Lintel", Identifier: "dev.davirain.crypto-panel", Path: "/Applications/Lintel.app"},
+		{Name: "Something Else", Identifier: "dev.davirain.crypto-panel", Path: "/Applications/Other.app"},
+	})
+	if len(apps) != 1 || apps[0].Slug != "lintel" {
+		t.Fatalf("matched %+v, want lintel by name only", apps)
+	}
+}
+
 func TestInstalledAppsJoinAcquired(t *testing.T) {
 	s, tt := newTestStore(t)
 	s.setInstalled([]installedApp{{
