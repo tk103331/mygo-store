@@ -6,6 +6,11 @@ on:
     # this only keeps the repository and the catalog release up to date.
     - cron: "17 3 * * *"
   workflow_dispatch:
+    inputs:
+      refresh_identifiers:
+        description: Read every app's bundle identifier again
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,8 +36,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Test the sync script
+        run: python3 -m unittest scripts/test_sync.py
+
       - name: Sync apps.json, icons and screenshots
-        run: python3 scripts/sync.py
+        run: |
+          args=""
+          if [ "${{ inputs.refresh_identifiers }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then
+            args="--refresh-identifiers"
+          fi
+          python3 scripts/sync.py $args
 
       - name: Commit the catalog when it changed
         id: commit

@@ -1,0 +1,5290 @@
+{
+  "assets/icons/2048.webp": {
+    "url": "https://awesomemygo.dev/icons/2048.webp",
+    "etag": "\"f61c68a3b6aaa8371402ddf5837b957d\"",
+    "size": 2120
+  },
+  "assets/icons/advanced-rdp.webp": {
+    "url": "https://awesomemygo.dev/icons/advanced-rdp.webp",
+    "etag": "\"d186dbc3ab92a045038773c24e9b6b57\"",
+    "size": 1596
+  },
+  "assets/icons/agent-kanban.webp": {
+    "url": "https://awesomemygo.dev/icons/agent-kanban.webp",
+    "etag": "\"a15657deaa75482434b72f74b601b310\"",
+    "size": 2526
+  },
+  "assets/icons/agent-runner.webp": {
+    "url": "https://awesomemygo.dev/icons/agent-runner.webp",
+    "etag": "\"27c24b3a14a11a44a24a8b7c7add35c5\"",
+    "size": 2552
+  },
+  "assets/icons/agent-usage-metrics.webp": {
+    "url": "https://awesomemygo.dev/icons/agent-usage-metrics.webp",
+    "etag": "\"55e806543d677bd9042f27fb70d3931a\"",
+    "size": 2294
+  },
+  "assets/icons/agentd.webp": {
+    "url": "https://awesomemygo.dev/icons/agentd.webp",
+    "etag": "\"b2e7e9c969fc3cbe6b1717115c5ed7ef\"",
+    "size": 900
+  },
+  "assets/icons/agentic-accounting.webp": {
+    "url": "https://awesomemygo.dev/icons/agentic-accounting.webp",
+    "etag": "\"0f1c405bc335c40902c9f5d64988499c\"",
+    "size": 454
+  },
+  "assets/icons/agentmeter.webp": {
+    "url": "https://awesomemygo.dev/icons/agentmeter.webp",
+    "etag": "\"d3f1dd175ff307c031cceaaa0ff1f69d\"",
+    "size": 2990
+  },
+  "assets/icons/agentsmd.webp": {
+    "url": "https://awesomemygo.dev/icons/agentsmd.webp",
+    "etag": "\"7f39e30d92a9333aa4c93f008363b5e7\"",
+    "size": 1570
+  },
+  "assets/icons/ai-limit.webp": {
+    "url": "https://awesomemygo.dev/icons/ai-limit.webp",
+    "etag": "\"38cbbc752d8c22614b631f993a3994ec\"",
+    "size": 920
+  },
+  "assets/icons/ai-usage.webp": {
+    "url": "https://awesomemygo.dev/icons/ai-usage.webp",
+    "etag": "\"7d37cd1019e63110dcf7eda2d38abcff\"",
+    "size": 2004
+  },
+  "assets/icons/aio-proxy.webp": {
+    "url": "https://awesomemygo.dev/icons/aio-proxy.webp",
+    "etag": "\"0acf4e89f9c6897b18274c3962ea599d\"",
+    "size": 2092
+  },
+  "assets/icons/ally.webp": {
+    "url": "https://awesomemygo.dev/icons/ally.webp",
+    "etag": "\"fcc2f468f1899675676addca94b75255\"",
+    "size": 962
+  },
+  "assets/icons/althea.webp": {
+    "url": "https://awesomemygo.dev/icons/althea.webp",
+    "etag": "\"efae124ab612f111b8bcd8a7fffa7595\"",
+    "size": 2056
+  },
+  "assets/icons/always-on-top-desktop-timer.webp": {
+    "url": "https://awesomemygo.dev/icons/always-on-top-desktop-timer.webp",
+    "etag": "\"c2a8cc74e449a8a3cead66359f4a3d5f\"",
+    "size": 1856
+  },
+  "assets/icons/android-tools.webp": {
+    "url": "https://awesomemygo.dev/icons/android-tools.webp",
+    "etag": "\"5a5cca148a6cbb51c948d676d375b625\"",
+    "size": 1166
+  },
+  "assets/icons/anker-prime-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/anker-prime-desktop.webp",
+    "etag": "\"da4781a153e76711d7904216d58c09e5\"",
+    "size": 2520
+  },
+  "assets/icons/aozora.webp": {
+    "url": "https://awesomemygo.dev/icons/aozora.webp",
+    "etag": "\"9a85859d7e35358d0da5f539f12d00ab\"",
+    "size": 1936
+  },
+  "assets/icons/ape-player.webp": {
+    "url": "https://awesomemygo.dev/icons/ape-player.webp",
+    "etag": "\"36d904311248e997ebd7582b492ed0b6\"",
+    "size": 1330
+  },
+  "assets/icons/apex-runner.webp": {
+    "url": "https://awesomemygo.dev/icons/apex-runner.webp",
+    "etag": "\"49f183b504942e7bace012b01463fbd2\"",
+    "size": 3576
+  },
+  "assets/icons/apigo.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/apigo.webp",
+    "etag": "\"6af31d5a-5830\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:18 GMT",
+    "size": 22576
+  },
+  "assets/icons/arcmd.webp": {
+    "url": "https://awesomemygo.dev/icons/arcmd.webp",
+    "etag": "\"972fe6d62da95ef041aa5c84cd02ca09\"",
+    "size": 1002
+  },
+  "assets/icons/arion.webp": {
+    "url": "https://awesomemygo.dev/icons/arion.webp",
+    "etag": "\"f72976bed39b013f3d84d2611040e104\"",
+    "size": 1716
+  },
+  "assets/icons/aster.webp": {
+    "url": "https://awesomemygo.dev/icons/aster.webp",
+    "etag": "\"4d9e0c4a3aaba357a4b9b799048a9d3d\"",
+    "size": 2688
+  },
+  "assets/icons/atlas.webp": {
+    "url": "https://awesomemygo.dev/icons/atlas.webp",
+    "etag": "\"dcc46998d02a73cbc28603ce5514427e\"",
+    "size": 2086
+  },
+  "assets/icons/atrust-hub.webp": {
+    "url": "https://awesomemygo.dev/icons/atrust-hub.webp",
+    "etag": "\"cd6e9b56ae6717e8b2b85262e8cd5ecf\"",
+    "size": 2384
+  },
+  "assets/icons/atvloadly.webp": {
+    "url": "https://awesomemygo.dev/icons/atvloadly.webp",
+    "etag": "\"51d49923b15558da3be0ff710a4ef219\"",
+    "size": 1816
+  },
+  "assets/icons/audiosmith.webp": {
+    "url": "https://awesomemygo.dev/icons/audiosmith.webp",
+    "etag": "\"b0fd10fee83d6024c205957f77db78d8\"",
+    "size": 2060
+  },
+  "assets/icons/auralink.webp": {
+    "url": "https://awesomemygo.dev/icons/auralink.webp",
+    "etag": "\"173cca8e0e4ab9aa887b2c318e4a42e0\"",
+    "size": 2268
+  },
+  "assets/icons/aurelia.webp": {
+    "url": "https://awesomemygo.dev/icons/aurelia.webp",
+    "etag": "\"271a9494f0969f3bb39b51b3cd919305\"",
+    "size": 2336
+  },
+  "assets/icons/aurora.webp": {
+    "url": "https://awesomemygo.dev/icons/aurora.webp",
+    "etag": "\"e67849bda1e443fd17ee183ce4932e24\"",
+    "size": 1390
+  },
+  "assets/icons/badrename.webp": {
+    "url": "https://awesomemygo.dev/icons/badrename.webp",
+    "etag": "\"d8f9898cb6744f412843f430d5f72402\"",
+    "size": 700
+  },
+  "assets/icons/baggy.webp": {
+    "url": "https://awesomemygo.dev/icons/baggy.webp",
+    "etag": "\"712c02f4931f02331602045fd1840a81\"",
+    "size": 1618
+  },
+  "assets/icons/baidunetgo.webp": {
+    "url": "https://awesomemygo.dev/icons/baidunetgo.webp",
+    "etag": "\"31b06ed2568d882699577add09d637fd\"",
+    "size": 2704
+  },
+  "assets/icons/bamboo.webp": {
+    "url": "https://awesomemygo.dev/icons/bamboo.webp",
+    "etag": "\"0feeeb1681b301957ebf26b3490b7e34\"",
+    "size": 2996
+  },
+  "assets/icons/baudscan.webp": {
+    "url": "https://awesomemygo.dev/icons/baudscan.webp",
+    "etag": "\"e03d6d425a9cba0e655daf7124c1c08d\"",
+    "size": 1632
+  },
+  "assets/icons/beekb.webp": {
+    "url": "https://awesomemygo.dev/icons/beekb.webp",
+    "etag": "\"60bb5845c0df2b77825bd456f5a4b2c5\"",
+    "size": 968
+  },
+  "assets/icons/bentomail.webp": {
+    "url": "https://awesomemygo.dev/icons/bentomail.webp",
+    "etag": "\"0f2c37feeea5ee7fce4678abd45a0576\"",
+    "size": 1672
+  },
+  "assets/icons/berth.webp": {
+    "url": "https://awesomemygo.dev/icons/berth.webp",
+    "etag": "\"7ece0960805ea597f0833366f3d972e2\"",
+    "size": 2340
+  },
+  "assets/icons/bigo-live-recorder.webp": {
+    "url": "https://awesomemygo.dev/icons/bigo-live-recorder.webp",
+    "etag": "\"1754a83172338c63283dfd77df2ccdf3\"",
+    "size": 1948
+  },
+  "assets/icons/bili-fm.webp": {
+    "url": "https://awesomemygo.dev/icons/bili-fm.webp",
+    "etag": "\"b208b41988afd83b2d4eb53b0f3de9a8\"",
+    "size": 1940
+  },
+  "assets/icons/biternet.webp": {
+    "url": "https://awesomemygo.dev/icons/biternet.webp",
+    "etag": "\"0de5ae665b1b475d773faba300283d6e\"",
+    "size": 1792
+  },
+  "assets/icons/bookdesk.webp": {
+    "url": "https://awesomemygo.dev/icons/bookdesk.webp",
+    "etag": "\"2f880ec53480ec95c12a3a2d8ebd01eb\"",
+    "size": 1586
+  },
+  "assets/icons/bootease.webp": {
+    "url": "https://awesomemygo.dev/icons/bootease.webp",
+    "etag": "\"92e14c277fa81404c548013d88eb8cf0\"",
+    "size": 4440
+  },
+  "assets/icons/bootie.webp": {
+    "url": "https://awesomemygo.dev/icons/bootie.webp",
+    "etag": "\"8245722371159302e6a2ca5ec8894609\"",
+    "size": 1394
+  },
+  "assets/icons/bowel.webp": {
+    "url": "https://awesomemygo.dev/icons/bowel.webp",
+    "etag": "\"a43415d4c8dd0aad0fc43ba5bd1587a9\"",
+    "size": 4376
+  },
+  "assets/icons/bowerbird.webp": {
+    "url": "https://awesomemygo.dev/icons/bowerbird.webp",
+    "etag": "\"106a7f6117153bd013dd35f2b6a33593\"",
+    "size": 3460
+  },
+  "assets/icons/bucketeer.webp": {
+    "url": "https://awesomemygo.dev/icons/bucketeer.webp",
+    "etag": "\"1c2df60e4c9d805a630fe317e15e4625\"",
+    "size": 5986
+  },
+  "assets/icons/bunnybox.webp": {
+    "url": "https://awesomemygo.dev/icons/bunnybox.webp",
+    "etag": "\"a49f4093eaca25303abf41a8e4b1ce32\"",
+    "size": 2484
+  },
+  "assets/icons/burrow-diikhanh.webp": {
+    "url": "https://awesomemygo.dev/icons/burrow-diikhanh.webp",
+    "etag": "\"fb99eb05f67fd88df8b6c7a7aaaec919\"",
+    "size": 1874
+  },
+  "assets/icons/burrow.webp": {
+    "url": "https://awesomemygo.dev/icons/burrow.webp",
+    "etag": "\"36ea659d946015d9f6899de6d7a19d78\"",
+    "size": 3044
+  },
+  "assets/icons/byop.webp": {
+    "url": "https://awesomemygo.dev/icons/byop.webp",
+    "etag": "\"fa9ff6d1dda303f0e7b2e5031c6edb6b\"",
+    "size": 3226
+  },
+  "assets/icons/byr-client.webp": {
+    "url": "https://awesomemygo.dev/icons/byr-client.webp",
+    "etag": "\"ac17617898a89393ccf5af15aa5eca09\"",
+    "size": 4158
+  },
+  "assets/icons/calc.webp": {
+    "url": "https://awesomemygo.dev/icons/calc.webp",
+    "etag": "\"f78b44a4f6457c6d2f3d87a0347fe59d\"",
+    "size": 2438
+  },
+  "assets/icons/calculus.webp": {
+    "url": "https://awesomemygo.dev/icons/calculus.webp",
+    "etag": "\"62c504b5e82f14290cb5ef61b9211f28\"",
+    "size": 2274
+  },
+  "assets/icons/candle.webp": {
+    "url": "https://awesomemygo.dev/icons/candle.webp",
+    "etag": "\"20f477d903eaa5d6937d13be377c3421\"",
+    "size": 1676
+  },
+  "assets/icons/capy.webp": {
+    "url": "https://awesomemygo.dev/icons/capy.webp",
+    "etag": "\"b7ed5737f4272c6b8a47212b1733864d\"",
+    "size": 1060
+  },
+  "assets/icons/catview.webp": {
+    "url": "https://awesomemygo.dev/icons/catview.webp",
+    "etag": "\"149a17001d4859d39483ddd65f4e5c1b\"",
+    "size": 1628
+  },
+  "assets/icons/ccguanjia.webp": {
+    "url": "https://awesomemygo.dev/icons/ccguanjia.webp",
+    "etag": "\"231fc2c396ed505fbbd7708e745dedcc\"",
+    "size": 1890
+  },
+  "assets/icons/ccmail.webp": {
+    "url": "https://awesomemygo.dev/icons/ccmail.webp",
+    "etag": "\"938654175d3ff83defedeed296d31893\"",
+    "size": 1180
+  },
+  "assets/icons/ceramic.webp": {
+    "url": "https://awesomemygo.dev/icons/ceramic.webp",
+    "etag": "\"a07eea6aa267ca8b8518eb5a5f35a5b0\"",
+    "size": 2036
+  },
+  "assets/icons/chaos.webp": {
+    "url": "https://awesomemygo.dev/icons/chaos.webp",
+    "etag": "\"a75b2d225ebded0463e5023e018a89aa\"",
+    "size": 2530
+  },
+  "assets/icons/charker.webp": {
+    "url": "https://awesomemygo.dev/icons/charker.webp",
+    "etag": "\"a317a133ce42f9073f0c1b958c305d51\"",
+    "size": 2188
+  },
+  "assets/icons/chatgo.webp": {
+    "url": "https://awesomemygo.dev/icons/chatgo.webp",
+    "etag": "\"6d452ff0e84da110517b3c18fdefc993\"",
+    "size": 1832
+  },
+  "assets/icons/chisacloudcode.webp": {
+    "url": "https://awesomemygo.dev/icons/chisacloudcode.webp",
+    "etag": "\"f97c529d6f6976f67a6576a40afbe403\"",
+    "size": 2310
+  },
+  "assets/icons/chrome-profile-router.webp": {
+    "url": "https://awesomemygo.dev/icons/chrome-profile-router.webp",
+    "etag": "\"43928e2cc61c9cb814ebb48234e12e12\"",
+    "size": 1844
+  },
+  "assets/icons/clarity.webp": {
+    "url": "https://awesomemygo.dev/icons/clarity.webp",
+    "etag": "\"2bd9f1850e8c2b98fdf09af6bbc839f6\"",
+    "size": 1876
+  },
+  "assets/icons/clash-go.webp": {
+    "url": "https://awesomemygo.dev/icons/clash-go.webp",
+    "etag": "\"d19247e50ac1126404cb1cbf7a50db29\"",
+    "size": 978
+  },
+  "assets/icons/clash-traffic.webp": {
+    "url": "https://awesomemygo.dev/icons/clash-traffic.webp",
+    "etag": "\"eb7ffc72d5106b9c3807d5056a465dfb\"",
+    "size": 1482
+  },
+  "assets/icons/clashx-go.webp": {
+    "url": "https://awesomemygo.dev/icons/clashx-go.webp",
+    "etag": "\"ff009fb1e63f3ba2d8a24235c5ff791b\"",
+    "size": 2284
+  },
+  "assets/icons/cleanzo.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/cleanzo.webp",
+    "etag": "\"6af31d59-38c4\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 14532
+  },
+  "assets/icons/clipboard-go.webp": {
+    "url": "https://awesomemygo.dev/icons/clipboard-go.webp",
+    "etag": "\"9dd544267a106fea4291870472df4ba4\"",
+    "size": 3306
+  },
+  "assets/icons/clipnest.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/clipnest.webp",
+    "etag": "\"6af31d59-28c8\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 10440
+  },
+  "assets/icons/cliprecorder.webp": {
+    "url": "https://awesomemygo.dev/icons/cliprecorder.webp",
+    "etag": "\"35b34f5aa806728b603d11b1a058e198\"",
+    "size": 1134
+  },
+  "assets/icons/clips.webp": {
+    "url": "https://awesomemygo.dev/icons/clips.webp",
+    "etag": "\"02df40e188ea78108bc3d892eee74f92\"",
+    "size": 1656
+  },
+  "assets/icons/cloudshuttle.webp": {
+    "url": "https://awesomemygo.dev/icons/cloudshuttle.webp",
+    "etag": "\"4e59aa6e9bf204e0b0cdaef2b5fa6f00\"",
+    "size": 1954
+  },
+  "assets/icons/codei18n.webp": {
+    "url": "https://awesomemygo.dev/icons/codei18n.webp",
+    "etag": "\"69320ef35d513a76feb07654163ef140\"",
+    "size": 1146
+  },
+  "assets/icons/collate.webp": {
+    "url": "https://awesomemygo.dev/icons/collate.webp",
+    "etag": "\"ad97229a868f210f093afbde73910188\"",
+    "size": 2846
+  },
+  "assets/icons/contr.webp": {
+    "url": "https://awesomemygo.dev/icons/contr.webp",
+    "etag": "\"7ba85362e6fbe9abe502120add248ca7\"",
+    "size": 1834
+  },
+  "assets/icons/copiggy.webp": {
+    "url": "https://awesomemygo.dev/icons/copiggy.webp",
+    "etag": "\"be8312245f9e0f7f06580f4f551d0cab\"",
+    "size": 4666
+  },
+  "assets/icons/copilot-chat.webp": {
+    "url": "https://awesomemygo.dev/icons/copilot-chat.webp",
+    "etag": "\"da0ee82009ef1428155502adc5a7dacb\"",
+    "size": 754
+  },
+  "assets/icons/corra.webp": {
+    "url": "https://awesomemygo.dev/icons/corra.webp",
+    "etag": "\"07304c4ff37100765ebc6f17bbac2367\"",
+    "size": 3156
+  },
+  "assets/icons/countdowner.webp": {
+    "url": "https://awesomemygo.dev/icons/countdowner.webp",
+    "etag": "\"7056578a9519093ffdbb891d0d16064d\"",
+    "size": 1382
+  },
+  "assets/icons/courrier.webp": {
+    "url": "https://awesomemygo.dev/icons/courrier.webp",
+    "etag": "\"fc832b692945d392e0b9bb7466b597f4\"",
+    "size": 1734
+  },
+  "assets/icons/cove.webp": {
+    "url": "https://awesomemygo.dev/icons/cove.webp",
+    "etag": "\"4c939729470bc74014292c1a476dee6e\"",
+    "size": 1978
+  },
+  "assets/icons/cpa-bar.webp": {
+    "url": "https://awesomemygo.dev/icons/cpa-bar.webp",
+    "etag": "\"cd8e228a52d94034c748a00c0f5496bd\"",
+    "size": 2642
+  },
+  "assets/icons/crypto-panel.webp": {
+    "url": "https://awesomemygo.dev/icons/crypto-panel.webp",
+    "etag": "\"d033048d9b8fde0227993ed1c5d1c58b\"",
+    "size": 2000
+  },
+  "assets/icons/cubbix.webp": {
+    "url": "https://awesomemygo.dev/icons/cubbix.webp",
+    "etag": "\"2e87d6f4a058f8befb959f5bbc1f1813\"",
+    "size": 2126
+  },
+  "assets/icons/cue.webp": {
+    "url": "https://awesomemygo.dev/icons/cue.webp",
+    "etag": "\"7c5a1434c487c6191efc54c22bb2f59f\"",
+    "size": 2624
+  },
+  "assets/icons/curb.webp": {
+    "url": "https://awesomemygo.dev/icons/curb.webp",
+    "etag": "\"9ceae53e3adb8390b622173661b3a06d\"",
+    "size": 1266
+  },
+  "assets/icons/curlgo.webp": {
+    "url": "https://awesomemygo.dev/icons/curlgo.webp",
+    "etag": "\"14e1bf737dda029e5da4138d7c1e323a\"",
+    "size": 1544
+  },
+  "assets/icons/cyberme.webp": {
+    "url": "https://awesomemygo.dev/icons/cyberme.webp",
+    "etag": "\"ddfac386855a4936c6bd7b786c972d95\"",
+    "size": 2530
+  },
+  "assets/icons/cyrene-terminal.webp": {
+    "url": "https://awesomemygo.dev/icons/cyrene-terminal.webp",
+    "etag": "\"e80e7bac1dd0afaef08a2a1136491bcc\"",
+    "size": 1246
+  },
+  "assets/icons/dalibre.webp": {
+    "url": "https://awesomemygo.dev/icons/dalibre.webp",
+    "etag": "\"c4a792e15fb02524d75acabd847321b2\"",
+    "size": 4700
+  },
+  "assets/icons/darkslide-gr.webp": {
+    "url": "https://awesomemygo.dev/icons/darkslide-gr.webp",
+    "etag": "\"411f5a0062e7b1601f53b3ab6919b992\"",
+    "size": 1256
+  },
+  "assets/icons/daybee.webp": {
+    "url": "https://awesomemygo.dev/icons/daybee.webp",
+    "etag": "\"8feba9869223b55e86b2169a1eeae65f\"",
+    "size": 1532
+  },
+  "assets/icons/db-g.webp": {
+    "url": "https://awesomemygo.dev/icons/db-g.webp",
+    "etag": "\"94a51a681becb0fea9f7407fba8c471c\"",
+    "size": 1570
+  },
+  "assets/icons/deckle.webp": {
+    "url": "https://awesomemygo.dev/icons/deckle.webp",
+    "etag": "\"a8c319915f6da21c6284dab98e065534\"",
+    "size": 4388
+  },
+  "assets/icons/deepseek-harness.webp": {
+    "url": "https://awesomemygo.dev/icons/deepseek-harness.webp",
+    "etag": "\"17d3c7fbf3e63975b4c80fe124a25b6a\"",
+    "size": 4662
+  },
+  "assets/icons/denova.webp": {
+    "url": "https://awesomemygo.dev/icons/denova.webp",
+    "etag": "\"6a7ff758b51b37facc104c8a5897be4e\"",
+    "size": 2830
+  },
+  "assets/icons/desk.webp": {
+    "url": "https://awesomemygo.dev/icons/desk.webp",
+    "etag": "\"95d497d56991cc65cd93e9bebca65f4d\"",
+    "size": 1696
+  },
+  "assets/icons/dew.webp": {
+    "url": "https://awesomemygo.dev/icons/dew.webp",
+    "etag": "\"b4a50bd0b1e6a1208f79e2de5351f2d0\"",
+    "size": 1174
+  },
+  "assets/icons/dgopher.webp": {
+    "url": "https://awesomemygo.dev/icons/dgopher.webp",
+    "etag": "\"624e12c001c2f05c85a6924664055ff2\"",
+    "size": 3120
+  },
+  "assets/icons/disklens.webp": {
+    "url": "https://awesomemygo.dev/icons/disklens.webp",
+    "etag": "\"00e903a2db747a411b1e1d8f15ab07c6\"",
+    "size": 2100
+  },
+  "assets/icons/distill.webp": {
+    "url": "https://awesomemygo.dev/icons/distill.webp",
+    "etag": "\"d7d36801314988494132018ba5088a87\"",
+    "size": 1620
+  },
+  "assets/icons/dji-mic.webp": {
+    "url": "https://awesomemygo.dev/icons/dji-mic.webp",
+    "etag": "\"4f224d248a2db26dde78eb151db5c840\"",
+    "size": 2262
+  },
+  "assets/icons/downloader.webp": {
+    "url": "https://awesomemygo.dev/icons/downloader.webp",
+    "etag": "\"1576ba389653648237db16037d56c912\"",
+    "size": 1296
+  },
+  "assets/icons/driga.webp": {
+    "url": "https://awesomemygo.dev/icons/driga.webp",
+    "etag": "\"fa9c79ab230e7d4334aa916aedb76793\"",
+    "size": 2160
+  },
+  "assets/icons/droi.webp": {
+    "url": "https://awesomemygo.dev/icons/droi.webp",
+    "etag": "\"81a835c1fddab72622668b9fd1359b3c\"",
+    "size": 1670
+  },
+  "assets/icons/ds-search.webp": {
+    "url": "https://awesomemygo.dev/icons/ds-search.webp",
+    "etag": "\"ffed7d59895113c9d7e1e18fc1a4fd20\"",
+    "size": 1734
+  },
+  "assets/icons/dsh-gtk.webp": {
+    "url": "https://awesomemygo.dev/icons/dsh-gtk.webp",
+    "etag": "\"3434b242f3d7d7ddc1a4dfed14d41450\"",
+    "size": 1494
+  },
+  "assets/icons/dsh-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/dsh-mygo.webp",
+    "etag": "\"9c74c426387c95c911a26daed91219c6\"",
+    "size": 1414
+  },
+  "assets/icons/dsh-trading.webp": {
+    "url": "https://awesomemygo.dev/icons/dsh-trading.webp",
+    "etag": "\"875c951dea1e8afce0216a5ffeb4b332\"",
+    "size": 5016
+  },
+  "assets/icons/dual-png.webp": {
+    "url": "https://awesomemygo.dev/icons/dual-png.webp",
+    "etag": "\"02019888ea60fd9c73ddc8a669bd64bc\"",
+    "size": 2094
+  },
+  "assets/icons/ducter.webp": {
+    "url": "https://awesomemygo.dev/icons/ducter.webp",
+    "etag": "\"8c56004cd60fafc0fe8f9baa671b7060\"",
+    "size": 3196
+  },
+  "assets/icons/dumpingground.webp": {
+    "url": "https://awesomemygo.dev/icons/dumpingground.webp",
+    "etag": "\"16f53856f3a8460db32560f2ea8e60c5\"",
+    "size": 6542
+  },
+  "assets/icons/easy-ssh-port.webp": {
+    "url": "https://awesomemygo.dev/icons/easy-ssh-port.webp",
+    "etag": "\"2d7ad95f71c3cf456379ff3c0a3d2ec8\"",
+    "size": 2224
+  },
+  "assets/icons/easydict-for-linux.webp": {
+    "url": "https://awesomemygo.dev/icons/easydict-for-linux.webp",
+    "etag": "\"e9eff44ce5be87e344eed6a646643f0e\"",
+    "size": 2112
+  },
+  "assets/icons/easylpac.webp": {
+    "url": "https://awesomemygo.dev/icons/easylpac.webp",
+    "etag": "\"7c550d641177f1a35600677605ec099d\"",
+    "size": 3724
+  },
+  "assets/icons/easytier-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/easytier-mygo.webp",
+    "etag": "\"0c9cff32fd3c3b9d501e528611afa5ce\"",
+    "size": 2896
+  },
+  "assets/icons/echo.webp": {
+    "url": "https://awesomemygo.dev/icons/echo.webp",
+    "etag": "\"21a643559e4f43fbf442de8caeff4242\"",
+    "size": 1618
+  },
+  "assets/icons/elir.webp": {
+    "url": "https://awesomemygo.dev/icons/elir.webp",
+    "etag": "\"d340eba9a5455b35bad20176eb7e776d\"",
+    "size": 3198
+  },
+  "assets/icons/enowx.webp": {
+    "url": "https://awesomemygo.dev/icons/enowx.webp",
+    "etag": "\"abfdf5e594a958d905268112f09a689c\"",
+    "size": 2956
+  },
+  "assets/icons/envman.webp": {
+    "url": "https://awesomemygo.dev/icons/envman.webp",
+    "etag": "\"b77adc26c645d63313e151524ad66a33\"",
+    "size": 1554
+  },
+  "assets/icons/esp32-mini-tv.webp": {
+    "url": "https://awesomemygo.dev/icons/esp32-mini-tv.webp",
+    "etag": "\"591f05165d949405b48bcc2aefb41f37\"",
+    "size": 2996
+  },
+  "assets/icons/febuildergba.webp": {
+    "url": "https://awesomemygo.dev/icons/febuildergba.webp",
+    "etag": "\"b56f56a03a68138972b3a52f5693cff2\"",
+    "size": 3776
+  },
+  "assets/icons/felicia.webp": {
+    "url": "https://awesomemygo.dev/icons/felicia.webp",
+    "etag": "\"b434afb9d87877bd7cbf05ec6250ba1c\"",
+    "size": 2044
+  },
+  "assets/icons/ferry.webp": {
+    "url": "https://awesomemygo.dev/icons/ferry.webp",
+    "etag": "\"020b382145762a9e1477a5f0d6377fd3\"",
+    "size": 1356
+  },
+  "assets/icons/finallyshell.webp": {
+    "url": "https://awesomemygo.dev/icons/finallyshell.webp",
+    "etag": "\"4f1f39187272fbd8c470e01d88abb007\"",
+    "size": 2686
+  },
+  "assets/icons/firn.webp": {
+    "url": "https://awesomemygo.dev/icons/firn.webp",
+    "etag": "\"3069cc7e3a86d88c97771787fc6d006a\"",
+    "size": 7484
+  },
+  "assets/icons/flashmusic.webp": {
+    "url": "https://awesomemygo.dev/icons/flashmusic.webp",
+    "etag": "\"a891e452a4157737d79e0fc0de784edd\"",
+    "size": 3620
+  },
+  "assets/icons/floater.webp": {
+    "url": "https://awesomemygo.dev/icons/floater.webp",
+    "etag": "\"5eb01bcfcb92f20822f9df6d7e264ae1\"",
+    "size": 2522
+  },
+  "assets/icons/fnmovie.webp": {
+    "url": "https://awesomemygo.dev/icons/fnmovie.webp",
+    "etag": "\"d3400a212be244f00ac4c381fcdbedb5\"",
+    "size": 2726
+  },
+  "assets/icons/framepicker.webp": {
+    "url": "https://awesomemygo.dev/icons/framepicker.webp",
+    "etag": "\"383044d3d689e935ef88b2b40af81384\"",
+    "size": 1034
+  },
+  "assets/icons/frpc.webp": {
+    "url": "https://awesomemygo.dev/icons/frpc.webp",
+    "etag": "\"75a3d00fd0800a29b22a695d8b11dd52\"",
+    "size": 770
+  },
+  "assets/icons/fsearch-gui.webp": {
+    "url": "https://awesomemygo.dev/icons/fsearch-gui.webp",
+    "etag": "\"03b76352164546925206fbdbbf922258\"",
+    "size": 534
+  },
+  "assets/icons/fx-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/fx-desktop.webp",
+    "etag": "\"72d8bb5b0ad8e59ad04db86a0c1f6da2\"",
+    "size": 1040
+  },
+  "assets/icons/game-presence.webp": {
+    "url": "https://awesomemygo.dev/icons/game-presence.webp",
+    "etag": "\"75204be547b1852b8f9c17b24a5d36a2\"",
+    "size": 1434
+  },
+  "assets/icons/gamesave-manager.webp": {
+    "url": "https://awesomemygo.dev/icons/gamesave-manager.webp",
+    "etag": "\"3f66b847f40a4aa52ddd5ed3e8ae7a54\"",
+    "size": 1426
+  },
+  "assets/icons/gatelock.webp": {
+    "url": "https://awesomemygo.dev/icons/gatelock.webp",
+    "etag": "\"bafaa9f3eb68e26903f36cab62838a49\"",
+    "size": 2082
+  },
+  "assets/icons/gh-agent.webp": {
+    "url": "https://awesomemygo.dev/icons/gh-agent.webp",
+    "etag": "\"469271a701baa0aae09f4786392dfadc\"",
+    "size": 3172
+  },
+  "assets/icons/gist.webp": {
+    "url": "https://awesomemygo.dev/icons/gist.webp",
+    "etag": "\"c4c629de2291cffeac48a9b4c911308e\"",
+    "size": 3926
+  },
+  "assets/icons/git-viewer.webp": {
+    "url": "https://awesomemygo.dev/icons/git-viewer.webp",
+    "etag": "\"9d22a2884cf2959e77db32fd2218d5d1\"",
+    "size": 748
+  },
+  "assets/icons/glint.webp": {
+    "url": "https://awesomemygo.dev/icons/glint.webp",
+    "etag": "\"97cf46c47667636a8dc3d13f1875ea40\"",
+    "size": 2326
+  },
+  "assets/icons/gloss.webp": {
+    "url": "https://awesomemygo.dev/icons/gloss.webp",
+    "etag": "\"9526ba111c0fd477217a0e61b8308c18\"",
+    "size": 1952
+  },
+  "assets/icons/gocode.webp": {
+    "url": "https://awesomemygo.dev/icons/gocode.webp",
+    "etag": "\"b21ba983bd2179745f1effc0084dcf0a\"",
+    "size": 5366
+  },
+  "assets/icons/gocompare.webp": {
+    "url": "https://awesomemygo.dev/icons/gocompare.webp",
+    "etag": "\"93732594d6c1e8810bf5e112e4a0d0a7\"",
+    "size": 1440
+  },
+  "assets/icons/godiff.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/godiff.webp",
+    "etag": "\"6af31d5a-3cb8\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:18 GMT",
+    "size": 15544
+  },
+  "assets/icons/godraw.webp": {
+    "url": "https://awesomemygo.dev/icons/godraw.webp",
+    "etag": "\"f61c68a3b6aaa8371402ddf5837b957d\"",
+    "size": 2120
+  },
+  "assets/icons/godrome.webp": {
+    "url": "https://awesomemygo.dev/icons/godrome.webp",
+    "etag": "\"d68672b3de9cd2e13d1ea3782567d076\"",
+    "size": 3634
+  },
+  "assets/icons/godwit.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/godwit.webp",
+    "etag": "\"6af31d59-295e\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 10590
+  },
+  "assets/icons/gofolio.webp": {
+    "url": "https://awesomemygo.dev/icons/gofolio.webp",
+    "etag": "\"4fb103f5fdf12bfd8d5b58bac3bbff83\"",
+    "size": 1008
+  },
+  "assets/icons/gogo-explorer.webp": {
+    "url": "https://awesomemygo.dev/icons/gogo-explorer.webp",
+    "etag": "\"b034ec22ca799f50c51075ce76f5e868\"",
+    "size": 1866
+  },
+  "assets/icons/golauncher.webp": {
+    "url": "https://awesomemygo.dev/icons/golauncher.webp",
+    "etag": "\"1dbdc68622e6604a4880d1506fce065f\"",
+    "size": 2174
+  },
+  "assets/icons/golder.webp": {
+    "url": "https://awesomemygo.dev/icons/golder.webp",
+    "etag": "\"6a0ee90650c0bc81c759cb86d9e43d48\"",
+    "size": 756
+  },
+  "assets/icons/gopaste.webp": {
+    "url": "https://awesomemygo.dev/icons/gopaste.webp",
+    "etag": "\"9b0a214ea2c012b7d9dca67854d249c5\"",
+    "size": 1032
+  },
+  "assets/icons/gorequest.webp": {
+    "url": "https://awesomemygo.dev/icons/gorequest.webp",
+    "etag": "\"b6d8c671b2754980a635f7400ea2b85b\"",
+    "size": 2332
+  },
+  "assets/icons/gorex.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/gorex.webp",
+    "etag": "\"6af31d59-33f8\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 13304
+  },
+  "assets/icons/gorss.webp": {
+    "url": "https://awesomemygo.dev/icons/gorss.webp",
+    "etag": "\"2ab108b6ac0c9a5ffb910dd91987423d\"",
+    "size": 1472
+  },
+  "assets/icons/gosidian.webp": {
+    "url": "https://awesomemygo.dev/icons/gosidian.webp",
+    "etag": "\"a44c90b18a1f9a710a974a6ec3cf7d87\"",
+    "size": 2302
+  },
+  "assets/icons/gospeak.webp": {
+    "url": "https://awesomemygo.dev/icons/gospeak.webp",
+    "etag": "\"4a070380be7d0988917aecdcd32f700d\"",
+    "size": 4222
+  },
+  "assets/icons/gossh.webp": {
+    "url": "https://awesomemygo.dev/icons/gossh.webp",
+    "etag": "\"4f2e02fa0b609801ada13d6736dd8d84\"",
+    "size": 1662
+  },
+  "assets/icons/gotify-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/gotify-desktop.webp",
+    "etag": "\"0ca4512039d23620cd46839a5711aa97\"",
+    "size": 1326
+  },
+  "assets/icons/gotrust.webp": {
+    "url": "https://awesomemygo.dev/icons/gotrust.webp",
+    "etag": "\"47e723038b495e09f4e46f552230ebd5\"",
+    "size": 1926
+  },
+  "assets/icons/grove.webp": {
+    "url": "https://awesomemygo.dev/icons/grove.webp",
+    "etag": "\"6011d81d983f166e058d90375c78df9d\"",
+    "size": 1660
+  },
+  "assets/icons/guart.webp": {
+    "url": "https://awesomemygo.dev/icons/guart.webp",
+    "etag": "\"a1e9720c9cee192a34219f53ee170315\"",
+    "size": 2302
+  },
+  "assets/icons/gzist-netkeeper.webp": {
+    "url": "https://awesomemygo.dev/icons/gzist-netkeeper.webp",
+    "etag": "\"8f991596ca634baa7dcdb4b648315fa6\"",
+    "size": 1916
+  },
+  "assets/icons/hand.webp": {
+    "url": "https://awesomemygo.dev/icons/hand.webp",
+    "etag": "\"ec480fae7a875ffbbb71caec2c2a9944\"",
+    "size": 4588
+  },
+  "assets/icons/handbean.webp": {
+    "url": "https://awesomemygo.dev/icons/handbean.webp",
+    "etag": "\"935a067a321923d02c81309e6682ddcc\"",
+    "size": 1528
+  },
+  "assets/icons/hangman.webp": {
+    "url": "https://awesomemygo.dev/icons/hangman.webp",
+    "etag": "\"3a2ab4a955eace84c0f41fc716e0100c\"",
+    "size": 2080
+  },
+  "assets/icons/haruhikage-app.webp": {
+    "url": "https://awesomemygo.dev/icons/haruhikage-app.webp",
+    "etag": "\"87e61dd5437dddbad3ef16c662f1a703\"",
+    "size": 3014
+  },
+  "assets/icons/hd2-font-maker.webp": {
+    "url": "https://awesomemygo.dev/icons/hd2-font-maker.webp",
+    "etag": "\"903de5c2725ab69d7296435a9e636919\"",
+    "size": 1694
+  },
+  "assets/icons/he-music.webp": {
+    "url": "https://awesomemygo.dev/icons/he-music.webp",
+    "etag": "\"a3a0b50f70558305827d307a31a873ee\"",
+    "size": 1942
+  },
+  "assets/icons/healthsync.webp": {
+    "url": "https://awesomemygo.dev/icons/healthsync.webp",
+    "etag": "\"8c1ab6000f022faaa27c079bfedc8550\"",
+    "size": 1740
+  },
+  "assets/icons/herdr-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/herdr-desktop.webp",
+    "etag": "\"92d0ff19badca552c52d4e0d00164358\"",
+    "size": 788
+  },
+  "assets/icons/herdr.webp": {
+    "url": "https://awesomemygo.dev/icons/herdr.webp",
+    "etag": "\"b158e74e2a108d5b7139ed046d091824\"",
+    "size": 2238
+  },
+  "assets/icons/herdrup-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/herdrup-desktop.webp",
+    "etag": "\"aaf205379781ae7730f5fb904bf7225c\"",
+    "size": 1032
+  },
+  "assets/icons/hergo.webp": {
+    "url": "https://awesomemygo.dev/icons/hergo.webp",
+    "etag": "\"5e7db8302a466b72243443e64df4a80b\"",
+    "size": 3124
+  },
+  "assets/icons/hku-vpn.webp": {
+    "url": "https://awesomemygo.dev/icons/hku-vpn.webp",
+    "etag": "\"5c127745468a143cc56c1363a40fea2e\"",
+    "size": 1556
+  },
+  "assets/icons/hop.webp": {
+    "url": "https://awesomemygo.dev/icons/hop.webp",
+    "etag": "\"d8550ff1f3c95c38a50c2ca362568e08\"",
+    "size": 1544
+  },
+  "assets/icons/hoyo-gacha.webp": {
+    "url": "https://awesomemygo.dev/icons/hoyo-gacha.webp",
+    "etag": "\"c9ae5ca44de21f919a47dd288d6862af\"",
+    "size": 5866
+  },
+  "assets/icons/hyla.webp": {
+    "url": "https://awesomemygo.dev/icons/hyla.webp",
+    "etag": "\"4de67d0485486ab1ab8005f04cb8cd5c\"",
+    "size": 2478
+  },
+  "assets/icons/hyperai.webp": {
+    "url": "https://awesomemygo.dev/icons/hyperai.webp",
+    "etag": "\"5b4693b5f2d0346c61492dfad8f21b64\"",
+    "size": 2086
+  },
+  "assets/icons/iloader-cert-export.webp": {
+    "url": "https://awesomemygo.dev/icons/iloader-cert-export.webp",
+    "etag": "\"340e8ec2475746a01b400bb65bb534ef\"",
+    "size": 1680
+  },
+  "assets/icons/image-min.webp": {
+    "url": "https://awesomemygo.dev/icons/image-min.webp",
+    "etag": "\"5eb6c93ab0e11e7b1c56563b20500d07\"",
+    "size": 2544
+  },
+  "assets/icons/imyemail-cloud-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/imyemail-cloud-mygo.webp",
+    "etag": "\"f8d220450a51ebbe5c1abbf722d66de7\"",
+    "size": 1284
+  },
+  "assets/icons/inferyard-studio.webp": {
+    "url": "https://awesomemygo.dev/icons/inferyard-studio.webp",
+    "etag": "\"93f1b1e625ba0c18d3f801c07ba8bc77\"",
+    "size": 7006
+  },
+  "assets/icons/inkgo.webp": {
+    "url": "https://awesomemygo.dev/icons/inkgo.webp",
+    "etag": "\"fa723ab74c0962757a17c1ab9a3b3efc\"",
+    "size": 2278
+  },
+  "assets/icons/ipatlas.webp": {
+    "url": "https://awesomemygo.dev/icons/ipatlas.webp",
+    "etag": "\"652d7d8ee377d71e6be72b355c989043\"",
+    "size": 3454
+  },
+  "assets/icons/ivy.webp": {
+    "url": "https://awesomemygo.dev/icons/ivy.webp",
+    "etag": "\"cbe8a7c7b5421b4677e445112a7f7f71\"",
+    "size": 4078
+  },
+  "assets/icons/jalin.webp": {
+    "url": "https://awesomemygo.dev/icons/jalin.webp",
+    "etag": "\"02b2c7840a9590de982a4324b605aef8\"",
+    "size": 1590
+  },
+  "assets/icons/jianshan.webp": {
+    "url": "https://awesomemygo.dev/icons/jianshan.webp",
+    "etag": "\"1fc941165240aee10abb25415fe6e2e4\"",
+    "size": 1206
+  },
+  "assets/icons/joplin-lite.webp": {
+    "url": "https://awesomemygo.dev/icons/joplin-lite.webp",
+    "etag": "\"8c8a3a3d0bde116134fe8ef691ac2926\"",
+    "size": 1116
+  },
+  "assets/icons/jstv-player.webp": {
+    "url": "https://awesomemygo.dev/icons/jstv-player.webp",
+    "etag": "\"2cffa8cd4433f73747ad5f7f3b594aea\"",
+    "size": 850
+  },
+  "assets/icons/jun.webp": {
+    "url": "https://awesomemygo.dev/icons/jun.webp",
+    "etag": "\"65ca4891d4e2b99afbf29687ea59b563\"",
+    "size": 1866
+  },
+  "assets/icons/kacha.webp": {
+    "url": "https://awesomemygo.dev/icons/kacha.webp",
+    "etag": "\"4f2e6c8b23cf963acba9fe9f2e944f5c\"",
+    "size": 1550
+  },
+  "assets/icons/kaixinguo.webp": {
+    "url": "https://awesomemygo.dev/icons/kaixinguo.webp",
+    "etag": "\"5d24acfc34bae2f245f606785e2cb589\"",
+    "size": 1392
+  },
+  "assets/icons/kami.webp": {
+    "url": "https://awesomemygo.dev/icons/kami.webp",
+    "etag": "\"f5d2ab09ceaa9b46ad0e023201fb805f\"",
+    "size": 1328
+  },
+  "assets/icons/kando.webp": {
+    "url": "https://awesomemygo.dev/icons/kando.webp",
+    "etag": "\"7e7233aa6b406d66f86c634242c7c8a4\"",
+    "size": 2218
+  },
+  "assets/icons/kanso.webp": {
+    "url": "https://awesomemygo.dev/icons/kanso.webp",
+    "etag": "\"ca82a54b52629dcb5d3e08d7eacc0061\"",
+    "size": 2446
+  },
+  "assets/icons/kata.webp": {
+    "url": "https://awesomemygo.dev/icons/kata.webp",
+    "etag": "\"f2913f7a8cf77f3daaee68cb90ff93d1\"",
+    "size": 2190
+  },
+  "assets/icons/keeps.webp": {
+    "url": "https://awesomemygo.dev/icons/keeps.webp",
+    "etag": "\"c1b7ac3c9bc30e34e7346bd35b2164bc\"",
+    "size": 1992
+  },
+  "assets/icons/kero.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/kero.webp",
+    "etag": "\"6af31d59-4966\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 18790
+  },
+  "assets/icons/keyboard-lock.webp": {
+    "url": "https://awesomemygo.dev/icons/keyboard-lock.webp",
+    "etag": "\"f43f18c066adcffaf5f06dad8907619f\"",
+    "size": 2784
+  },
+  "assets/icons/keydepot.webp": {
+    "url": "https://awesomemygo.dev/icons/keydepot.webp",
+    "etag": "\"d498abc9efaf880a45c5951a53c248a7\"",
+    "size": 1686
+  },
+  "assets/icons/kim-quy.webp": {
+    "url": "https://awesomemygo.dev/icons/kim-quy.webp",
+    "etag": "\"aa00bb69e89c9311deb62b95eb8d32c9\"",
+    "size": 3396
+  },
+  "assets/icons/kivrix.webp": {
+    "url": "https://awesomemygo.dev/icons/kivrix.webp",
+    "etag": "\"9c1ba27e3537554ff1eb38c3986469f5\"",
+    "size": 1136
+  },
+  "assets/icons/klip.webp": {
+    "url": "https://awesomemygo.dev/icons/klip.webp",
+    "etag": "\"331965e095a3c04123a7448bd00e06a6\"",
+    "size": 3906
+  },
+  "assets/icons/knack.webp": {
+    "url": "https://awesomemygo.dev/icons/knack.webp",
+    "etag": "\"a07e4d2a11724a0c9dc9e89c75092626\"",
+    "size": 1492
+  },
+  "assets/icons/kopi.webp": {
+    "url": "https://awesomemygo.dev/icons/kopi.webp",
+    "etag": "\"2cc11d05a50953892948617d3e2b4325\"",
+    "size": 3650
+  },
+  "assets/icons/kotae.webp": {
+    "url": "https://awesomemygo.dev/icons/kotae.webp",
+    "etag": "\"6974b99baa53081522b272fbeccf1b32\"",
+    "size": 1132
+  },
+  "assets/icons/kube-desk.webp": {
+    "url": "https://awesomemygo.dev/icons/kube-desk.webp",
+    "etag": "\"1533e1dc95af68fd999850ae8be4e9f7\"",
+    "size": 594
+  },
+  "assets/icons/kumo.webp": {
+    "url": "https://awesomemygo.dev/icons/kumo.webp",
+    "etag": "\"76d1db22244c8efb9e6e41490d5acf08\"",
+    "size": 4342
+  },
+  "assets/icons/kunpengclash.webp": {
+    "url": "https://awesomemygo.dev/icons/kunpengclash.webp",
+    "etag": "\"e00b9ba0150d12fe7b28be789b967c36\"",
+    "size": 6926
+  },
+  "assets/icons/kura.webp": {
+    "url": "https://awesomemygo.dev/icons/kura.webp",
+    "etag": "\"649389b6242ea38639038b66c6df01ae\"",
+    "size": 2000
+  },
+  "assets/icons/kyokai.webp": {
+    "url": "https://awesomemygo.dev/icons/kyokai.webp",
+    "etag": "\"f22f7524f8152933448fd97388c8165e\"",
+    "size": 1418
+  },
+  "assets/icons/la-pluma.webp": {
+    "url": "https://awesomemygo.dev/icons/la-pluma.webp",
+    "etag": "\"bbc3fdc83917a177eb793137f6fd552d\"",
+    "size": 1964
+  },
+  "assets/icons/lan-notify.webp": {
+    "url": "https://awesomemygo.dev/icons/lan-notify.webp",
+    "etag": "\"963dfa6e0dd9af30845a54e889a972fc\"",
+    "size": 3764
+  },
+  "assets/icons/lan-share.webp": {
+    "url": "https://awesomemygo.dev/icons/lan-share.webp",
+    "etag": "\"a6791695a39e68eabbfed46df2f49e13\"",
+    "size": 1954
+  },
+  "assets/icons/lanscout.webp": {
+    "url": "https://awesomemygo.dev/icons/lanscout.webp",
+    "etag": "\"9317a1990296fb305a7c020c71d4c637\"",
+    "size": 1884
+  },
+  "assets/icons/lark-music.webp": {
+    "url": "https://awesomemygo.dev/icons/lark-music.webp",
+    "etag": "\"4b4bc538795f3682460755fdb6372c2d\"",
+    "size": 10352
+  },
+  "assets/icons/launchr.webp": {
+    "url": "https://awesomemygo.dev/icons/launchr.webp",
+    "etag": "\"c393f3b6580faaac3b9e537aa3cd69e6\"",
+    "size": 1068
+  },
+  "assets/icons/leaflet.webp": {
+    "url": "https://awesomemygo.dev/icons/leaflet.webp",
+    "etag": "\"5a8e7ace8a3e75324d65fe3cc1ac0737\"",
+    "size": 2954
+  },
+  "assets/icons/leafmark.webp": {
+    "url": "https://awesomemygo.dev/icons/leafmark.webp",
+    "etag": "\"04ded3d00c071b8de6f8c8c2303eb303\"",
+    "size": 3798
+  },
+  "assets/icons/leagueakari-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/leagueakari-mygo.webp",
+    "etag": "\"478acd50a2025fb1afe2d58b43b555b8\"",
+    "size": 2116
+  },
+  "assets/icons/leeway.webp": {
+    "url": "https://awesomemygo.dev/icons/leeway.webp",
+    "etag": "\"9d1ad2c6ce4f68efe2cfe063b80a2b43\"",
+    "size": 2942
+  },
+  "assets/icons/lilt.webp": {
+    "url": "https://awesomemygo.dev/icons/lilt.webp",
+    "etag": "\"acbf7bc7a10556c5ce84085e658643cd\"",
+    "size": 3192
+  },
+  "assets/icons/linkdeck.webp": {
+    "url": "https://awesomemygo.dev/icons/linkdeck.webp",
+    "etag": "\"79c4f5785594d92c40aa113eb5dab1fc\"",
+    "size": 1968
+  },
+  "assets/icons/lintel.webp": {
+    "url": "https://awesomemygo.dev/icons/lintel.webp",
+    "etag": "\"d9514e9c4e4a5cdc449e4980ac844da2\"",
+    "size": 970
+  },
+  "assets/icons/little-reef.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/littlereef.webp",
+    "etag": "\"6af31d59-5434\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 21556
+  },
+  "assets/icons/liubai.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/liubai.webp",
+    "etag": "\"6af31d59-1ca0\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 7328
+  },
+  "assets/icons/live-calendar.webp": {
+    "url": "https://awesomemygo.dev/icons/live-calendar.webp",
+    "etag": "\"e6ef4992d02f4f5ef5df977ffd3dbe8c\"",
+    "size": 2410
+  },
+  "assets/icons/live-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/live-mygo.webp",
+    "etag": "\"42fb5294608f3eebe246d4fab712b1fc\"",
+    "size": 4356
+  },
+  "assets/icons/llama-cpp-manager.webp": {
+    "url": "https://awesomemygo.dev/icons/llama-cpp-manager.webp",
+    "etag": "\"0556daa625589f0e379015ab8e0abec2\"",
+    "size": 3060
+  },
+  "assets/icons/locklark.webp": {
+    "url": "https://awesomemygo.dev/icons/locklark.webp",
+    "etag": "\"ce938f94f93ce8f6d1d4d65b002ea21a\"",
+    "size": 4648
+  },
+  "assets/icons/locus.webp": {
+    "url": "https://awesomemygo.dev/icons/locus.webp",
+    "etag": "\"6b1c0bff9614ae05313c87d9b57ca015\"",
+    "size": 2788
+  },
+  "assets/icons/lody-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/lody-mygo.webp",
+    "etag": "\"1370e8431340b7a7a2ade7ec44d8ab3d\"",
+    "size": 1588
+  },
+  "assets/icons/lom-dx2metal.webp": {
+    "url": "https://awesomemygo.dev/icons/lom-dx2metal.webp",
+    "etag": "\"191467a6bb07f6ccad59f13a15c0430a\"",
+    "size": 2016
+  },
+  "assets/icons/lookback.webp": {
+    "url": "https://awesomemygo.dev/icons/lookback.webp",
+    "etag": "\"07815bfd3dcfbf441243eb24d717af46\"",
+    "size": 2852
+  },
+  "assets/icons/lorca.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/lorca.webp",
+    "etag": "\"6af31d59-4922\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 18722
+  },
+  "assets/icons/lslan.webp": {
+    "url": "https://awesomemygo.dev/icons/lslan.webp",
+    "etag": "\"05dfd090d0f51ced1de38880ab8f8d69\"",
+    "size": 1716
+  },
+  "assets/icons/lucia.webp": {
+    "url": "https://awesomemygo.dev/icons/lucia.webp",
+    "etag": "\"6b3e0664b6d8d379a38f2b54b9935858\"",
+    "size": 188
+  },
+  "assets/icons/lumilo.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/lumilo.webp",
+    "etag": "\"6af31d59-331e\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 13086
+  },
+  "assets/icons/lumiwerk.webp": {
+    "url": "https://awesomemygo.dev/icons/lumiwerk.webp",
+    "etag": "\"f8f5d653c60d154b815c07c31386dab5\"",
+    "size": 1362
+  },
+  "assets/icons/lunabox.webp": {
+    "url": "https://awesomemygo.dev/icons/lunabox.webp",
+    "etag": "\"a85c145d5bf1abffdca926a2be647b9c\"",
+    "size": 1842
+  },
+  "assets/icons/lzsync.webp": {
+    "url": "https://awesomemygo.dev/icons/lzsync.webp",
+    "etag": "\"298ed8d90f2d7564f58e6a36aac8d116\"",
+    "size": 1624
+  },
+  "assets/icons/mac2mqtt.webp": {
+    "url": "https://awesomemygo.dev/icons/mac2mqtt.webp",
+    "etag": "\"1e372b54ad35cff1a43473d55fd4e250\"",
+    "size": 1690
+  },
+  "assets/icons/magpie-native-routing.webp": {
+    "url": "https://awesomemygo.dev/icons/magpie-native-routing.webp",
+    "etag": "\"31c63247e78043249c6859e0804f840c\"",
+    "size": 2370
+  },
+  "assets/icons/mami.webp": {
+    "url": "https://awesomemygo.dev/icons/mami.webp",
+    "etag": "\"16dd9d5f8cf2620dfb81b864f3869a92\"",
+    "size": 3154
+  },
+  "assets/icons/mangatrans.webp": {
+    "url": "https://awesomemygo.dev/icons/mangatrans.webp",
+    "etag": "\"4b75a7e4bc7ef6052090c39f57706a53\"",
+    "size": 1564
+  },
+  "assets/icons/marginalia.webp": {
+    "url": "https://awesomemygo.dev/icons/marginalia.webp",
+    "etag": "\"cd0ac2e1c9d7188ea3a2e234d31588d1\"",
+    "size": 1354
+  },
+  "assets/icons/mayoi.webp": {
+    "url": "https://awesomemygo.dev/icons/mayoi.webp",
+    "etag": "\"bbbeff9c0adf407610dc2e8581b8f0c0\"",
+    "size": 5718
+  },
+  "assets/icons/mcpctl.webp": {
+    "url": "https://awesomemygo.dev/icons/mcpctl.webp",
+    "etag": "\"38cbbc752d8c22614b631f993a3994ec\"",
+    "size": 920
+  },
+  "assets/icons/mediago.webp": {
+    "url": "https://awesomemygo.dev/icons/mediago.webp",
+    "etag": "\"5d5f6e13ca462f8c25caee14d417e5dc\"",
+    "size": 1228
+  },
+  "assets/icons/meiro.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/meiro.webp",
+    "etag": "\"6af31d59-6810\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 26640
+  },
+  "assets/icons/melo.webp": {
+    "url": "https://awesomemygo.dev/icons/melo.webp",
+    "etag": "\"dab7bc1bd17ac63016849863ae3c0d59\"",
+    "size": 2382
+  },
+  "assets/icons/menubloom.webp": {
+    "url": "https://awesomemygo.dev/icons/menubloom.webp",
+    "etag": "\"55e1ad6e77dcae8d4c82ee52b95fb0b0\"",
+    "size": 848
+  },
+  "assets/icons/meow-craft-launcher.webp": {
+    "url": "https://awesomemygo.dev/icons/meow-craft-launcher.webp",
+    "etag": "\"ea7429a8c6c357d928d33d9590001bb7\"",
+    "size": 3336
+  },
+  "assets/icons/meowx-traffic.webp": {
+    "url": "https://awesomemygo.dev/icons/meowx-traffic.webp",
+    "etag": "\"1b8e273887cafbecdc574a1bb016c250\"",
+    "size": 1388
+  },
+  "assets/icons/meridian.webp": {
+    "url": "https://awesomemygo.dev/icons/meridian.webp",
+    "etag": "\"1fbfab285fce044eaf9bd14f3e189f30\"",
+    "size": 3156
+  },
+  "assets/icons/miaomiao-todo.webp": {
+    "url": "https://awesomemygo.dev/icons/miaomiao-todo.webp",
+    "etag": "\"c115e3616dc0e6cb7b7ff18694eb217b\"",
+    "size": 2722
+  },
+  "assets/icons/mica.webp": {
+    "url": "https://awesomemygo.dev/icons/mica.webp",
+    "etag": "\"122e9ef8b56db8d89a82fd9d8f6f56a7\"",
+    "size": 1668
+  },
+  "assets/icons/miguwave.webp": {
+    "url": "https://awesomemygo.dev/icons/miguwave.webp",
+    "etag": "\"972719b16d9e2a29e3c628683b231da9\"",
+    "size": 2478
+  },
+  "assets/icons/minicode.webp": {
+    "url": "https://awesomemygo.dev/icons/minicode.webp",
+    "etag": "\"a2ccdad3fa68afae391dda673b64eb20\"",
+    "size": 1536
+  },
+  "assets/icons/minimuse.webp": {
+    "url": "https://awesomemygo.dev/icons/minimuse.webp",
+    "etag": "\"028a084728ada77f6a9039c3dd43ae93\"",
+    "size": 3228
+  },
+  "assets/icons/mixmusic.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/mixmusic.webp",
+    "etag": "\"6af31d5a-8062\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:18 GMT",
+    "size": 32866
+  },
+  "assets/icons/mochi.webp": {
+    "url": "https://awesomemygo.dev/icons/mochi.webp",
+    "etag": "\"9902efaf1c679bb525ba362b621a55c4\"",
+    "size": 3620
+  },
+  "assets/icons/mojian.webp": {
+    "url": "https://awesomemygo.dev/icons/mojian.webp",
+    "etag": "\"8834a75749287f9cc06f3fc05c6028bc\"",
+    "size": 2006
+  },
+  "assets/icons/moko.webp": {
+    "url": "https://awesomemygo.dev/icons/moko.webp",
+    "etag": "\"bd7a5fbc38e4730162bf0ae04db81837\"",
+    "size": 2372
+  },
+  "assets/icons/moli-tutu.webp": {
+    "url": "https://awesomemygo.dev/icons/moli-tutu.webp",
+    "etag": "\"6e579269580bf1cfe23277dc5bea7136\"",
+    "size": 2718
+  },
+  "assets/icons/moniflip.webp": {
+    "url": "https://awesomemygo.dev/icons/moniflip.webp",
+    "etag": "\"9545279e4eb40e73e90cf55c5d2c154e\"",
+    "size": 2770
+  },
+  "assets/icons/monitorbar.webp": {
+    "url": "https://awesomemygo.dev/icons/monitorbar.webp",
+    "etag": "\"9ab1a79c0cc7fed208f1c71cdaa8329e\"",
+    "size": 2218
+  },
+  "assets/icons/morilo.webp": {
+    "url": "https://awesomemygo.dev/icons/morilo.webp",
+    "etag": "\"7e6016ac0c831392f1fe0623aabf4d4d\"",
+    "size": 1602
+  },
+  "assets/icons/mote.webp": {
+    "url": "https://awesomemygo.dev/icons/mote.webp",
+    "etag": "\"9e7bfbc0e6cc9d3e9f0838f76d94b184\"",
+    "size": 1250
+  },
+  "assets/icons/motionduo.webp": {
+    "url": "https://awesomemygo.dev/icons/motionduo.webp",
+    "etag": "\"21d200070c612eb643c9a571f8f3fdf7\"",
+    "size": 1550
+  },
+  "assets/icons/motrix-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/motrix-mygo.webp",
+    "etag": "\"5b616185040fb75849a86e74d0502ed4\"",
+    "size": 2110
+  },
+  "assets/icons/mouse-mapper.webp": {
+    "url": "https://awesomemygo.dev/icons/mouse-mapper.webp",
+    "etag": "\"ec04799fc25069dabf69c4dd68dc6c6c\"",
+    "size": 1874
+  },
+  "assets/icons/mqtt-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/mqtt-desktop.webp",
+    "etag": "\"b2b5dd8273b6c6f3c776f79d984b8246\"",
+    "size": 1190
+  },
+  "assets/icons/mswplayr.webp": {
+    "url": "https://awesomemygo.dev/icons/mswplayr.webp",
+    "etag": "\"202d521740167ac1d8a1f7e790702392\"",
+    "size": 1044
+  },
+  "assets/icons/mu.webp": {
+    "url": "https://awesomemygo.dev/icons/mu.webp",
+    "etag": "\"da08db44073235219b2eac32f910e4f3\"",
+    "size": 1164
+  },
+  "assets/icons/mujicacut.webp": {
+    "url": "https://awesomemygo.dev/icons/mujicacut.webp",
+    "etag": "\"3fa555d1957d6115f00c3dddbe3eb226\"",
+    "size": 496
+  },
+  "assets/icons/muo.webp": {
+    "url": "https://awesomemygo.dev/icons/muo.webp",
+    "etag": "\"786c1ab7c1dbd61a8bb51c22c55c0913\"",
+    "size": 1594
+  },
+  "assets/icons/musiccomments.webp": {
+    "url": "https://awesomemygo.dev/icons/musiccomments.webp",
+    "etag": "\"2a79d953f48c8161b1b2447e6570d26e\"",
+    "size": 2570
+  },
+  "assets/icons/mux.webp": {
+    "url": "https://awesomemygo.dev/icons/mux.webp",
+    "etag": "\"a7ee0c67c508b34233564660e90fdc28\"",
+    "size": 1844
+  },
+  "assets/icons/my-quickstart-go.webp": {
+    "url": "https://awesomemygo.dev/icons/my-quickstart-go.webp",
+    "etag": "\"33535b65eb94db8323560e5d0c68ef7b\"",
+    "size": 842
+  },
+  "assets/icons/my-vm.webp": {
+    "url": "https://awesomemygo.dev/icons/my-vm.webp",
+    "etag": "\"19d3de663d351aeb8de2a861dc854bdf\"",
+    "size": 1642
+  },
+  "assets/icons/mycast.webp": {
+    "url": "https://awesomemygo.dev/icons/mycast.webp",
+    "etag": "\"b5789700a356af77203f75849065216c\"",
+    "size": 1194
+  },
+  "assets/icons/myclip.webp": {
+    "url": "https://awesomemygo.dev/icons/myclip.webp",
+    "etag": "\"0fe50ce4c277791e2f3db1eeb6718360\"",
+    "size": 4266
+  },
+  "assets/icons/mycode.webp": {
+    "url": "https://awesomemygo.dev/icons/mycode.webp",
+    "etag": "\"2f173504b4109c497fade4dba406991c\"",
+    "size": 6222
+  },
+  "assets/icons/mygit.webp": {
+    "url": "https://awesomemygo.dev/icons/mygit.webp",
+    "etag": "\"043d281de5217b76b2d64e6da4d0bdf7\"",
+    "size": 2294
+  },
+  "assets/icons/mygo-agent.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-agent.webp",
+    "etag": "\"3fa555d1957d6115f00c3dddbe3eb226\"",
+    "size": 496
+  },
+  "assets/icons/mygo-browser.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-browser.webp",
+    "etag": "\"9a1a3ea0b429822a8e3c184b3dff3181\"",
+    "size": 2766
+  },
+  "assets/icons/mygo-clash.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-clash.webp",
+    "etag": "\"68225aedf836ba7b42acebc8e64613b4\"",
+    "size": 4802
+  },
+  "assets/icons/mygo-kgou.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-kgou.webp",
+    "etag": "\"911689a6c4a3c8aaa317253772823506\"",
+    "size": 1494
+  },
+  "assets/icons/mygo-launcher.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-launcher.webp",
+    "etag": "\"d8146e73e4ed0643b3d70d096e183836\"",
+    "size": 2100
+  },
+  "assets/icons/mygo-music.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-music.webp",
+    "etag": "\"9808d604ab524017e42eca349cc0efa0\"",
+    "size": 2718
+  },
+  "assets/icons/mygo-snake.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-snake.webp",
+    "etag": "\"c0bbb462dedff66b4219273711185ddf\"",
+    "size": 1400
+  },
+  "assets/icons/mygo-store.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-store.webp",
+    "etag": "\"0271063ab9cd2c026fcc5869ff430e98\"",
+    "size": 1442
+  },
+  "assets/icons/mygo-translate.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-translate.webp",
+    "etag": "\"07300ac243dff38d43cacd92043916d8\"",
+    "size": 2072
+  },
+  "assets/icons/mygo-vaultwarden.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-vaultwarden.webp",
+    "etag": "\"421ca1b36f3c358107e76dfc2a564942\"",
+    "size": 2726
+  },
+  "assets/icons/mygost.webp": {
+    "url": "https://awesomemygo.dev/icons/mygost.webp",
+    "etag": "\"08d8b767efb0184fd336f2e37458e2e2\"",
+    "size": 1568
+  },
+  "assets/icons/mygotion.webp": {
+    "url": "https://awesomemygo.dev/icons/mygotion.webp",
+    "etag": "\"f485d517fe41a3536ea1bb9accdd153a\"",
+    "size": 502
+  },
+  "assets/icons/mylock.webp": {
+    "url": "https://awesomemygo.dev/icons/mylock.webp",
+    "etag": "\"98e76f6371476184c624966c432e0270\"",
+    "size": 12130
+  },
+  "assets/icons/myshoes.webp": {
+    "url": "https://awesomemygo.dev/icons/myshoes.webp",
+    "etag": "\"eb94ddef84b62101b34900b89a38d3d9\"",
+    "size": 2220
+  },
+  "assets/icons/myskills.webp": {
+    "url": "https://awesomemygo.dev/icons/myskills.webp",
+    "etag": "\"6d650a7ed32696468fdabe2f7a69b2bf\"",
+    "size": 2212
+  },
+  "assets/icons/myslack.webp": {
+    "url": "https://awesomemygo.dev/icons/myslack.webp",
+    "etag": "\"d71a87c7d026c93b68a0abfb4708d414\"",
+    "size": 1726
+  },
+  "assets/icons/myspotify.webp": {
+    "url": "https://awesomemygo.dev/icons/myspotify.webp",
+    "etag": "\"3ecec8990c34328dcbc3123be4841d37\"",
+    "size": 2716
+  },
+  "assets/icons/mytoken.webp": {
+    "url": "https://awesomemygo.dev/icons/mytoken.webp",
+    "etag": "\"047ec39c48413397297f6fdf579d0e09\"",
+    "size": 2682
+  },
+  "assets/icons/mytools.webp": {
+    "url": "https://awesomemygo.dev/icons/mytools.webp",
+    "etag": "\"7c3aae7ac3368fc4815acb9c8e7de5e3\"",
+    "size": 1942
+  },
+  "assets/icons/mytwig.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/mytwig.webp",
+    "etag": "\"6af31d5a-55fe\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:18 GMT",
+    "size": 22014
+  },
+  "assets/icons/myvnc.webp": {
+    "url": "https://awesomemygo.dev/icons/myvnc.webp",
+    "etag": "\"e24b69965deb4ad1bcf7c890e620228f\"",
+    "size": 1568
+  },
+  "assets/icons/nagi.webp": {
+    "url": "https://awesomemygo.dev/icons/nagi.webp",
+    "etag": "\"0a5200d7056c1e9e2d92e626654be4f3\"",
+    "size": 3968
+  },
+  "assets/icons/naive-client.webp": {
+    "url": "https://awesomemygo.dev/icons/naive-client.webp",
+    "etag": "\"def1b0a2adcae221086d0c562dd20caa\"",
+    "size": 3096
+  },
+  "assets/icons/nanoapi.webp": {
+    "url": "https://awesomemygo.dev/icons/nanoapi.webp",
+    "etag": "\"bbbe736e3804c781977738cbd497e3e8\"",
+    "size": 1558
+  },
+  "assets/icons/ndor.webp": {
+    "url": "https://awesomemygo.dev/icons/ndor.webp",
+    "etag": "\"7371e62360b240b847762d8d3f50572f\"",
+    "size": 3272
+  },
+  "assets/icons/nekossh.webp": {
+    "url": "https://awesomemygo.dev/icons/nekossh.webp",
+    "etag": "\"63d9db828b82c8530698014a42d4402b\"",
+    "size": 3018
+  },
+  "assets/icons/nemorous.webp": {
+    "url": "https://awesomemygo.dev/icons/nemorous.webp",
+    "etag": "\"34acce38c3d352a73d849570b107179d\"",
+    "size": 1964
+  },
+  "assets/icons/neohm.webp": {
+    "url": "https://awesomemygo.dev/icons/neohm.webp",
+    "etag": "\"551923d1470e609d0fa655d1d4829d08\"",
+    "size": 1686
+  },
+  "assets/icons/nether.webp": {
+    "url": "https://awesomemygo.dev/icons/nether.webp",
+    "etag": "\"81e10e11c705b5cfbde842598c62e08f\"",
+    "size": 1258
+  },
+  "assets/icons/neural-breach.webp": {
+    "url": "https://awesomemygo.dev/icons/neural-breach.webp",
+    "etag": "\"cbdbb6fec7bbe2f413d67b7a9ac14b4b\"",
+    "size": 2280
+  },
+  "assets/icons/new-century-renamer.webp": {
+    "url": "https://awesomemygo.dev/icons/new-century-renamer.webp",
+    "etag": "\"026504433643fc3faaa106cf83a851c0\"",
+    "size": 1706
+  },
+  "assets/icons/nihongo-stack.webp": {
+    "url": "https://awesomemygo.dev/icons/nihongo-stack.webp",
+    "etag": "\"e1467b86e72e0e4c9740b677ea5d0302\"",
+    "size": 2860
+  },
+  "assets/icons/nomo.webp": {
+    "url": "https://awesomemygo.dev/icons/nomo.webp",
+    "etag": "\"992443aeb50fe1dc68a1dd33eb2ecbd4\"",
+    "size": 960
+  },
+  "assets/icons/notefloat.webp": {
+    "url": "https://awesomemygo.dev/icons/notefloat.webp",
+    "etag": "\"b2ab3a8e24f5101d847930b8edc2dcba\"",
+    "size": 1544
+  },
+  "assets/icons/nova.webp": {
+    "url": "https://awesomemygo.dev/icons/nova.webp",
+    "etag": "\"46861cccbe6db6bf712956ca45912ee0\"",
+    "size": 1546
+  },
+  "assets/icons/numbo.webp": {
+    "url": "https://awesomemygo.dev/icons/numbo.webp",
+    "etag": "\"dc2c5f86afc78c640a21cbca243e339e\"",
+    "size": 2174
+  },
+  "assets/icons/nutty.webp": {
+    "url": "https://awesomemygo.dev/icons/nutty.webp",
+    "etag": "\"47a850e6bc8232c242f920204cd50072\"",
+    "size": 1668
+  },
+  "assets/icons/nvflasher.webp": {
+    "url": "https://awesomemygo.dev/icons/nvflasher.webp",
+    "etag": "\"178cdb709898ba887958aa211409b4d1\"",
+    "size": 9674
+  },
+  "assets/icons/nvr-status.webp": {
+    "url": "https://awesomemygo.dev/icons/nvr-status.webp",
+    "etag": "\"9ee6a74d4700bee0615f5921d9592b80\"",
+    "size": 1410
+  },
+  "assets/icons/nyadb.webp": {
+    "url": "https://awesomemygo.dev/icons/nyadb.webp",
+    "etag": "\"8de32af0aa8d9695055f89cad6a2601d\"",
+    "size": 3902
+  },
+  "assets/icons/oci-sync.webp": {
+    "url": "https://awesomemygo.dev/icons/oci-sync.webp",
+    "etag": "\"d3f2c99492e16fb2031d0e87629a8409\"",
+    "size": 488
+  },
+  "assets/icons/omaterm.webp": {
+    "url": "https://awesomemygo.dev/icons/omaterm.webp",
+    "etag": "\"4fa5466a9668f15ce14b988fdba6c7c9\"",
+    "size": 1828
+  },
+  "assets/icons/omo.webp": {
+    "url": "https://awesomemygo.dev/icons/omo.webp",
+    "etag": "\"b15c3872646f0238f38b981ae437bf2d\"",
+    "size": 300
+  },
+  "assets/icons/onegit.webp": {
+    "url": "https://awesomemygo.dev/icons/onegit.webp",
+    "etag": "\"a3cf7d7706f8f44a7ef0f36094c86060\"",
+    "size": 1828
+  },
+  "assets/icons/ooxml-translator.webp": {
+    "url": "https://awesomemygo.dev/icons/ooxml-translator.webp",
+    "etag": "\"3f41ed87fe59226651d4edd78081dc6f\"",
+    "size": 1880
+  },
+  "assets/icons/open-aria-exporter.webp": {
+    "url": "https://awesomemygo.dev/icons/open-aria-exporter.webp",
+    "etag": "\"d711e575d206f41327afb3d6f7aba886\"",
+    "size": 1558
+  },
+  "assets/icons/open-tj.webp": {
+    "url": "https://awesomemygo.dev/icons/open-tj.webp",
+    "etag": "\"ac1c2a68f6f9c9bdd7ffbafb686e3e46\"",
+    "size": 2706
+  },
+  "assets/icons/openbee.webp": {
+    "url": "https://awesomemygo.dev/icons/openbee.webp",
+    "etag": "\"ab6d69b8b7eb3eea12d011c8c4607533\"",
+    "size": 2748
+  },
+  "assets/icons/openconnector.webp": {
+    "url": "https://awesomemygo.dev/icons/openconnector.webp",
+    "etag": "\"6a7f5aa2b926d49c4c307a2f3e7e2d7b\"",
+    "size": 2296
+  },
+  "assets/icons/opendl.webp": {
+    "url": "https://awesomemygo.dev/icons/opendl.webp",
+    "etag": "\"5d68b176cbe224d6ed9f355ac4bd39bf\"",
+    "size": 3972
+  },
+  "assets/icons/opensynapse.webp": {
+    "url": "https://awesomemygo.dev/icons/opensynapse.webp",
+    "etag": "\"4edb5b7f94857a5949decfba3ba867e4\"",
+    "size": 1924
+  },
+  "assets/icons/openuxp-installer.webp": {
+    "url": "https://awesomemygo.dev/icons/openuxp-installer.webp",
+    "etag": "\"9745e5e421c4418a2d05d0b1d1553366\"",
+    "size": 2288
+  },
+  "assets/icons/orb.webp": {
+    "url": "https://awesomemygo.dev/icons/orb.webp",
+    "etag": "\"77522c273fcc2caa3a6e03e06c64ad66\"",
+    "size": 3610
+  },
+  "assets/icons/orbit.webp": {
+    "url": "https://awesomemygo.dev/icons/orbit.webp",
+    "etag": "\"b9a3b16ecaed6c4306a9330bc9383705\"",
+    "size": 2282
+  },
+  "assets/icons/orbit360.webp": {
+    "url": "https://awesomemygo.dev/icons/orbit360.webp",
+    "etag": "\"d3517d81c7e73e416195480febef6a67\"",
+    "size": 3162
+  },
+  "assets/icons/oriel.webp": {
+    "url": "https://awesomemygo.dev/icons/oriel.webp",
+    "etag": "\"de5b8709bfde6ee3f037cd751f087805\"",
+    "size": 2024
+  },
+  "assets/icons/orole-os.webp": {
+    "url": "https://awesomemygo.dev/icons/orole-os.webp",
+    "etag": "\"fe30b8d8829d493ed0a0ebeff5f6ce3a\"",
+    "size": 594
+  },
+  "assets/icons/oshell-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/oshell-desktop.webp",
+    "etag": "\"073da483c6d67426763d8d5aecac8c26\"",
+    "size": 2610
+  },
+  "assets/icons/osprey.webp": {
+    "url": "https://awesomemygo.dev/icons/osprey.webp",
+    "etag": "\"e39341e00802d075b9765ed1067e4c55\"",
+    "size": 2314
+  },
+  "assets/icons/otool.webp": {
+    "url": "https://awesomemygo.dev/icons/otool.webp",
+    "etag": "\"ca638dc8fe084d797f30d58be331e2b6\"",
+    "size": 2156
+  },
+  "assets/icons/ottr.webp": {
+    "url": "https://awesomemygo.dev/icons/ottr.webp",
+    "etag": "\"0283c20d18ca2b784b32d20847513286\"",
+    "size": 3942
+  },
+  "assets/icons/outrash.webp": {
+    "url": "https://awesomemygo.dev/icons/outrash.webp",
+    "etag": "\"e2114826ddae304a917be74052a0520a\"",
+    "size": 1920
+  },
+  "assets/icons/pail.webp": {
+    "url": "https://awesomemygo.dev/icons/pail.webp",
+    "etag": "\"807df34fb88f179fa74fbb4d45a9b7b6\"",
+    "size": 1174
+  },
+  "assets/icons/para-term.webp": {
+    "url": "https://awesomemygo.dev/icons/para-term.webp",
+    "etag": "\"5263b5866264677cf6e17d21ace39c36\"",
+    "size": 3602
+  },
+  "assets/icons/patch.webp": {
+    "url": "https://awesomemygo.dev/icons/patch.webp",
+    "etag": "\"4fc039426aca735b8d5da5f13b0c70f3\"",
+    "size": 4188
+  },
+  "assets/icons/peek.webp": {
+    "url": "https://awesomemygo.dev/icons/peek.webp",
+    "etag": "\"5e66058a59308be17dd2a1f14f3b8856\"",
+    "size": 1806
+  },
+  "assets/icons/pi-web-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/pi-web-desktop.webp",
+    "etag": "\"c0b11d474bacff669ecb614cf3a086b3\"",
+    "size": 2340
+  },
+  "assets/icons/pickphoto.webp": {
+    "url": "https://awesomemygo.dev/icons/pickphoto.webp",
+    "etag": "\"6bb66c5c8a392e8e189b9ddb2a47f070\"",
+    "size": 3280
+  },
+  "assets/icons/pinion.webp": {
+    "url": "https://awesomemygo.dev/icons/pinion.webp",
+    "etag": "\"31f5291ee53b62a1eac9176705f483de\"",
+    "size": 870
+  },
+  "assets/icons/pinnote.webp": {
+    "url": "https://awesomemygo.dev/icons/pinnote.webp",
+    "etag": "\"1cd813146bfcca07e08a08ea8b02bfa6\"",
+    "size": 848
+  },
+  "assets/icons/pith-desk.webp": {
+    "url": "https://awesomemygo.dev/icons/pith-desk.webp",
+    "etag": "\"eb8503f3184fb6a88447bde6cfdf7273\"",
+    "size": 2286
+  },
+  "assets/icons/pith.webp": {
+    "url": "https://awesomemygo.dev/icons/pith.webp",
+    "etag": "\"6b6f6685bd9865506d15816ca87f638e\"",
+    "size": 2038
+  },
+  "assets/icons/pitstop.webp": {
+    "url": "https://awesomemygo.dev/icons/pitstop.webp",
+    "etag": "\"dcb83bdfac08357b73a510fcf9b45dfe\"",
+    "size": 1902
+  },
+  "assets/icons/planet-windows.webp": {
+    "url": "https://awesomemygo.dev/icons/planet-windows.webp",
+    "etag": "\"cd66e03bf62f94ada3ba0d3d3f2c59ce\"",
+    "size": 910
+  },
+  "assets/icons/png-to-ico.webp": {
+    "url": "https://awesomemygo.dev/icons/png-to-ico.webp",
+    "etag": "\"278fe309ea29c9cafa0a84f90fa013f2\"",
+    "size": 5614
+  },
+  "assets/icons/polish.webp": {
+    "url": "https://awesomemygo.dev/icons/polish.webp",
+    "etag": "\"4fb482f6d8c605d76ce9f4745eada360\"",
+    "size": 4374
+  },
+  "assets/icons/polyfork.webp": {
+    "url": "https://awesomemygo.dev/icons/polyfork.webp",
+    "etag": "\"634d61f55d69a6d53989a99eca10c2bd\"",
+    "size": 1684
+  },
+  "assets/icons/pomodoro-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/pomodoro-mygo.webp",
+    "etag": "\"464d30154faa6747f3ec5b6b790571b9\"",
+    "size": 1592
+  },
+  "assets/icons/pomodoro.webp": {
+    "url": "https://awesomemygo.dev/icons/pomodoro.webp",
+    "etag": "\"85ef8e004e29cddd20eecf2af8d62c3e\"",
+    "size": 1242
+  },
+  "assets/icons/popmind.webp": {
+    "url": "https://awesomemygo.dev/icons/popmind.webp",
+    "etag": "\"aa691509c774b4d09b02b917666013c9\"",
+    "size": 2374
+  },
+  "assets/icons/portglass.webp": {
+    "url": "https://awesomemygo.dev/icons/portglass.webp",
+    "etag": "\"6594e69f404dd7b3fe85623ab6b30b2c\"",
+    "size": 2034
+  },
+  "assets/icons/portpilot.webp": {
+    "url": "https://awesomemygo.dev/icons/portpilot.webp",
+    "etag": "\"b2b5dd8273b6c6f3c776f79d984b8246\"",
+    "size": 1190
+  },
+  "assets/icons/portproxy.webp": {
+    "url": "https://awesomemygo.dev/icons/portproxy.webp",
+    "etag": "\"865473081a113401aef6186212ed8877\"",
+    "size": 1242
+  },
+  "assets/icons/posse.webp": {
+    "url": "https://awesomemygo.dev/icons/posse.webp",
+    "etag": "\"01bf3e56e01eb73df67648c961089725\"",
+    "size": 1630
+  },
+  "assets/icons/proton-drive-sync.webp": {
+    "url": "https://awesomemygo.dev/icons/proton-drive-sync.webp",
+    "etag": "\"5db5b240328f2248daa7bbe9d120ddcf\"",
+    "size": 7562
+  },
+  "assets/icons/proxy-bridge.webp": {
+    "url": "https://awesomemygo.dev/icons/proxy-bridge.webp",
+    "etag": "\"5d4f69feab1c9fabcea8f5841b2dde13\"",
+    "size": 1292
+  },
+  "assets/icons/proxygo.webp": {
+    "url": "https://awesomemygo.dev/icons/proxygo.webp",
+    "etag": "\"3a64ec0c446830db0713e78d896f8a1f\"",
+    "size": 3044
+  },
+  "assets/icons/pudmusic.webp": {
+    "url": "https://awesomemygo.dev/icons/pudmusic.webp",
+    "etag": "\"0f6875c7e296cf1618dc9bd729169545\"",
+    "size": 3112
+  },
+  "assets/icons/pulse-17130239-coder.webp": {
+    "url": "https://awesomemygo.dev/icons/pulse-17130239-coder.webp",
+    "etag": "\"7d82406cc6074a84fb3733fa3aa5c395\"",
+    "size": 3116
+  },
+  "assets/icons/pulse.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/pulse.webp",
+    "etag": "\"6af31d59-6454\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 25684
+  },
+  "assets/icons/qmdr.webp": {
+    "url": "https://awesomemygo.dev/icons/qmdr.webp",
+    "etag": "\"087244db1d6e414d6b8cecf5850d6537\"",
+    "size": 2556
+  },
+  "assets/icons/quarry.webp": {
+    "url": "https://awesomemygo.dev/icons/quarry.webp",
+    "etag": "\"e6540b55c925f9af72a92037b1c5b3bd\"",
+    "size": 1306
+  },
+  "assets/icons/quaver-astra.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/quaverastra.webp",
+    "etag": "\"6af31d59-4f7a\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 20346
+  },
+  "assets/icons/quesora-native.webp": {
+    "url": "https://awesomemygo.dev/icons/quesora-native.webp",
+    "etag": "\"1f92bd0ad702429bb2fb37fd597bca4c\"",
+    "size": 3876
+  },
+  "assets/icons/quick-scan.webp": {
+    "url": "https://awesomemygo.dev/icons/quick-scan.webp",
+    "etag": "\"c16f40cbf91a74667bfa6a7e97b97515\"",
+    "size": 1938
+  },
+  "assets/icons/quickcleaner.webp": {
+    "url": "https://awesomemygo.dev/icons/quickcleaner.webp",
+    "etag": "\"6a8cd258a071c47f35cb82433bd0bdf4\"",
+    "size": 4364
+  },
+  "assets/icons/quosparr.webp": {
+    "url": "https://awesomemygo.dev/icons/quosparr.webp",
+    "etag": "\"63d7500caeced3f20e74ed18a7152359\"",
+    "size": 3042
+  },
+  "assets/icons/qwen-image.webp": {
+    "url": "https://awesomemygo.dev/icons/qwen-image.webp",
+    "etag": "\"36eaac971c2727d432f8d540358cc184\"",
+    "size": 1634
+  },
+  "assets/icons/radio-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/radio-desktop.webp",
+    "etag": "\"c3af9424c02c2c8a4b607d56f1cf938e\"",
+    "size": 2706
+  },
+  "assets/icons/rainforest.webp": {
+    "url": "https://awesomemygo.dev/icons/rainforest.webp",
+    "etag": "\"80fa8d5d79fa776d2f83c0bd40c9d814\"",
+    "size": 3024
+  },
+  "assets/icons/raydock.webp": {
+    "url": "https://awesomemygo.dev/icons/raydock.webp",
+    "etag": "\"802ffaf0bebdd576a8f77e792775b103\"",
+    "size": 1866
+  },
+  "assets/icons/rclonedrive.webp": {
+    "url": "https://awesomemygo.dev/icons/rclonedrive.webp",
+    "etag": "\"687e919efce6efb39289dab107edd587\"",
+    "size": 1866
+  },
+  "assets/icons/rclonego.webp": {
+    "url": "https://awesomemygo.dev/icons/rclonego.webp",
+    "etag": "\"3b74b295350ced7769e1f2a35ab72e66\"",
+    "size": 1326
+  },
+  "assets/icons/reconnascan.webp": {
+    "url": "https://awesomemygo.dev/icons/reconnascan.webp",
+    "etag": "\"24a6d755dcb0914252bb80986e8f55e3\"",
+    "size": 4540
+  },
+  "assets/icons/redis-manager.webp": {
+    "url": "https://awesomemygo.dev/icons/redis-manager.webp",
+    "etag": "\"12b48ad20463c836249def90280c28a8\"",
+    "size": 2008
+  },
+  "assets/icons/rediscli.webp": {
+    "url": "https://awesomemygo.dev/icons/rediscli.webp",
+    "etag": "\"45f0809220fdab650700e52dee722e01\"",
+    "size": 3086
+  },
+  "assets/icons/renew.webp": {
+    "url": "https://awesomemygo.dev/icons/renew.webp",
+    "etag": "\"2138a752657d24948c6f41b72b7ffdb7\"",
+    "size": 1300
+  },
+  "assets/icons/repo-hopper.webp": {
+    "url": "https://awesomemygo.dev/icons/repo-hopper.webp",
+    "etag": "\"9b1976fa936f1824f0483403c3d96146\"",
+    "size": 2668
+  },
+  "assets/icons/repodock.webp": {
+    "url": "https://awesomemygo.dev/icons/repodock.webp",
+    "etag": "\"9286a4132a3093e3407ffdb21c548b42\"",
+    "size": 1162
+  },
+  "assets/icons/reqflow.webp": {
+    "url": "https://awesomemygo.dev/icons/reqflow.webp",
+    "etag": "\"cd5c73f3c9ec0f653056c9e84963aa1d\"",
+    "size": 1412
+  },
+  "assets/icons/reso-backup.webp": {
+    "url": "https://awesomemygo.dev/icons/reso-backup.webp",
+    "etag": "\"960eb9e5b6417abdf66de24d659ae6a6\"",
+    "size": 10252
+  },
+  "assets/icons/ressu.webp": {
+    "url": "https://awesomemygo.dev/icons/ressu.webp",
+    "etag": "\"639cb3e836fa6e559c76c35ad5459df7\"",
+    "size": 3874
+  },
+  "assets/icons/revda-next.webp": {
+    "url": "https://awesomemygo.dev/icons/revda-next.webp",
+    "etag": "\"96e2383f493f31af8df5fe3635b268a1\"",
+    "size": 2404
+  },
+  "assets/icons/rightconvert.webp": {
+    "url": "https://awesomemygo.dev/icons/rightconvert.webp",
+    "etag": "\"47f697336375ea2caa089c8613e24373\"",
+    "size": 1372
+  },
+  "assets/icons/riichi-studio.webp": {
+    "url": "https://awesomemygo.dev/icons/riichi-studio.webp",
+    "etag": "\"ca3c8602aec8f739ba76949a03fa8531\"",
+    "size": 854
+  },
+  "assets/icons/rivu.webp": {
+    "url": "https://awesomemygo.dev/icons/rivu.webp",
+    "etag": "\"4f521bb9660af7977d56ab970ce16295\"",
+    "size": 1926
+  },
+  "assets/icons/rnaxray-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/rnaxray-desktop.webp",
+    "etag": "\"fddb380e9633a43bd07be0ff2a30c1f0\"",
+    "size": 2188
+  },
+  "assets/icons/rocom-egg-check.webp": {
+    "url": "https://awesomemygo.dev/icons/rocom-egg-check.webp",
+    "etag": "\"70c2452a6c71c90f76f318130bc551bb\"",
+    "size": 4412
+  },
+  "assets/icons/roost.webp": {
+    "url": "https://awesomemygo.dev/icons/roost.webp",
+    "etag": "\"99fcbbf57390ada0416fccf1ee49b29b\"",
+    "size": 1678
+  },
+  "assets/icons/rubick.webp": {
+    "url": "https://awesomemygo.dev/icons/rubick.webp",
+    "etag": "\"890dda6a00b01a575eb874f6a3f06b8c\"",
+    "size": 2322
+  },
+  "assets/icons/sakamoto.webp": {
+    "url": "https://awesomemygo.dev/icons/sakamoto.webp",
+    "etag": "\"985ccd3fc72e89fcfc12eced696ef4e3\"",
+    "size": 2144
+  },
+  "assets/icons/sakana.webp": {
+    "url": "https://awesomemygo.dev/icons/sakana.webp",
+    "etag": "\"4aef70596720ced6913f75059710617a\"",
+    "size": 1184
+  },
+  "assets/icons/saundo.webp": {
+    "url": "https://awesomemygo.dev/icons/saundo.webp",
+    "etag": "\"a72061cd0a83844f6427b4433890c0a8\"",
+    "size": 1464
+  },
+  "assets/icons/sbdb.webp": {
+    "url": "https://awesomemygo.dev/icons/sbdb.webp",
+    "etag": "\"fd60b1b67e553e6b0d9f6ec8baa19739\"",
+    "size": 1384
+  },
+  "assets/icons/scan-image.webp": {
+    "url": "https://awesomemygo.dev/icons/scan-image.webp",
+    "etag": "\"e2d6010f848e5cc5f322d05e864b3c8c\"",
+    "size": 2974
+  },
+  "assets/icons/security-sentinel.webp": {
+    "url": "https://awesomemygo.dev/icons/security-sentinel.webp",
+    "etag": "\"4832e1536b8fee5a83bd9740cb9852b7\"",
+    "size": 1532
+  },
+  "assets/icons/see.webp": {
+    "url": "https://awesomemygo.dev/icons/see.webp",
+    "etag": "\"c95343c5bec69843dd5da4c5f96e0d4f\"",
+    "size": 3182
+  },
+  "assets/icons/seismic.webp": {
+    "url": "https://awesomemygo.dev/icons/seismic.webp",
+    "etag": "\"a026c4d4bf3ce3c2e281241935290b4e\"",
+    "size": 968
+  },
+  "assets/icons/sessionary.webp": {
+    "url": "https://awesomemygo.dev/icons/sessionary.webp",
+    "etag": "\"191ce3f25dc6ecd22305e29e77876914\"",
+    "size": 2074
+  },
+  "assets/icons/shixin-input.webp": {
+    "url": "https://awesomemygo.dev/icons/shixin-input.webp",
+    "etag": "\"f9623923626f8ae8e443ed5bea66b940\"",
+    "size": 650
+  },
+  "assets/icons/shun.webp": {
+    "url": "https://awesomemygo.dev/icons/shun.webp",
+    "etag": "\"1d10ae9ea8e29c8c081492833cdc6c93\"",
+    "size": 1802
+  },
+  "assets/icons/sift.webp": {
+    "url": "https://awesomemygo.dev/icons/sift.webp",
+    "etag": "\"bcef3298e0f55d3711b32259e080af9a\"",
+    "size": 3842
+  },
+  "assets/icons/silverwing.webp": {
+    "url": "https://awesomemygo.dev/icons/silverwing.webp",
+    "etag": "\"638f20f24de2f3a0fbbfff0ef0f86d8f\"",
+    "size": 1818
+  },
+  "assets/icons/simpletoggle.webp": {
+    "url": "https://awesomemygo.dev/icons/simpletoggle.webp",
+    "etag": "\"b132217c31655df7031c54eac94dc664\"",
+    "size": 1568
+  },
+  "assets/icons/sing-box-drover-go.webp": {
+    "url": "https://awesomemygo.dev/icons/sing-box-drover-go.webp",
+    "etag": "\"ae3551883fd232af575a70110269e192\"",
+    "size": 886
+  },
+  "assets/icons/sit-and-play.webp": {
+    "url": "https://awesomemygo.dev/icons/sit-and-play.webp",
+    "etag": "\"8e3502dc13a7edd21e3dbc0f1462e94d\"",
+    "size": 1664
+  },
+  "assets/icons/site-sucker.webp": {
+    "url": "https://awesomemygo.dev/icons/site-sucker.webp",
+    "etag": "\"6db66b0de8f780b76adab4def4b5eef0\"",
+    "size": 2676
+  },
+  "assets/icons/skills-hub.webp": {
+    "url": "https://awesomemygo.dev/icons/skills-hub.webp",
+    "etag": "\"85b9139cc9de8c05f6d2dbd49143c398\"",
+    "size": 2230
+  },
+  "assets/icons/skills-reader.webp": {
+    "url": "https://awesomemygo.dev/icons/skills-reader.webp",
+    "etag": "\"e22547296e6bc6fd8d54f0109f097e56\"",
+    "size": 3672
+  },
+  "assets/icons/sleepdock.webp": {
+    "url": "https://awesomemygo.dev/icons/sleepdock.webp",
+    "etag": "\"efac241e74473226f78a94d81ba25a13\"",
+    "size": 1512
+  },
+  "assets/icons/smartar-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/smartar-desktop.webp",
+    "etag": "\"dcafe093a350817bfb156f8b9fdf7d45\"",
+    "size": 1014
+  },
+  "assets/icons/smartimage-toolkit.webp": {
+    "url": "https://awesomemygo.dev/icons/smartimage-toolkit.webp",
+    "etag": "\"37cd88d406a3fc8b26543a28f9f21a7c\"",
+    "size": 1650
+  },
+  "assets/icons/snip.webp": {
+    "url": "https://awesomemygo.dev/icons/snip.webp",
+    "etag": "\"c7a4ab8214bdec74fcf64b5b31af49d1\"",
+    "size": 766
+  },
+  "assets/icons/sokki.webp": {
+    "url": "https://awesomemygo.dev/icons/sokki.webp",
+    "etag": "\"a310f115be7d163ae807cafcf69c6b90\"",
+    "size": 3272
+  },
+  "assets/icons/sona.webp": {
+    "url": "https://awesomemygo.dev/icons/sona.webp",
+    "etag": "\"bcf1a29a557a13df6f53d3247768561b\"",
+    "size": 2166
+  },
+  "assets/icons/spark.webp": {
+    "url": "https://awesomemygo.dev/icons/spark.webp",
+    "etag": "\"f967c7f128a8c4a5ee6f6db67bc02417\"",
+    "size": 1800
+  },
+  "assets/icons/spool.webp": {
+    "url": "https://awesomemygo.dev/icons/spool.webp",
+    "etag": "\"4d3c0c0ff13d33ca21f33d881a12644f\"",
+    "size": 3906
+  },
+  "assets/icons/sprobo.webp": {
+    "url": "https://awesomemygo.dev/icons/sprobo.webp",
+    "etag": "\"c9c18e8aca36c968b2294a98f8973cf1\"",
+    "size": 1476
+  },
+  "assets/icons/ssh-keyselect.webp": {
+    "url": "https://awesomemygo.dev/icons/ssh-keyselect.webp",
+    "etag": "\"65982701a444a93831468fe303d218fa\"",
+    "size": 4320
+  },
+  "assets/icons/sshgo.webp": {
+    "url": "https://awesomemygo.dev/icons/sshgo.webp",
+    "etag": "\"f0ef3554f8e89dd0230cb6f51b422ab7\"",
+    "size": 1508
+  },
+  "assets/icons/sshyard.webp": {
+    "url": "https://awesomemygo.dev/icons/sshyard.webp",
+    "etag": "\"5f96fdb91654849236b8af5ec5755166\"",
+    "size": 1930
+  },
+  "assets/icons/sso-glow.webp": {
+    "url": "https://awesomemygo.dev/icons/sso-glow.webp",
+    "etag": "\"d31c0fca03078292f31883eda1babc38\"",
+    "size": 2360
+  },
+  "assets/icons/stage-manager-for-windows.webp": {
+    "url": "https://awesomemygo.dev/icons/stage-manager-for-windows.webp",
+    "etag": "\"c0f86ba9d59702a818d8cf5a0c0b8e74\"",
+    "size": 1352
+  },
+  "assets/icons/stockfloat-native.webp": {
+    "url": "https://awesomemygo.dev/icons/stockfloat-native.webp",
+    "etag": "\"32902c8957442b82e653022562f8ce5e\"",
+    "size": 2168
+  },
+  "assets/icons/stockfloat.webp": {
+    "url": "https://awesomemygo.dev/icons/stockfloat.webp",
+    "etag": "\"32902c8957442b82e653022562f8ce5e\"",
+    "size": 2168
+  },
+  "assets/icons/sun-ray.webp": {
+    "url": "https://awesomemygo.dev/icons/sun-ray.webp",
+    "etag": "\"6b60265c5af13a77c98c8d36a5003a96\"",
+    "size": 2322
+  },
+  "assets/icons/sunvale.webp": {
+    "url": "https://awesomemygo.dev/icons/sunvale.webp",
+    "etag": "\"fe1e62d99fe5e7c2027c98651f4c5f62\"",
+    "size": 1536
+  },
+  "assets/icons/sweep.webp": {
+    "url": "https://awesomemygo.dev/icons/sweep.webp",
+    "etag": "\"f2913f7a8cf77f3daaee68cb90ff93d1\"",
+    "size": 2190
+  },
+  "assets/icons/switchhosts-native.webp": {
+    "url": "https://awesomemygo.dev/icons/switchhosts-native.webp",
+    "etag": "\"8eb0f26cb60c40d7bddb2655e7d93949\"",
+    "size": 2358
+  },
+  "assets/icons/tangentry.webp": {
+    "url": "https://awesomemygo.dev/icons/tangentry.webp",
+    "etag": "\"9e8ec06dfd5d3bf39f395133650fd03a\"",
+    "size": 992
+  },
+  "assets/icons/tangit.webp": {
+    "url": "https://awesomemygo.dev/icons/tangit.webp",
+    "etag": "\"08687d37d9ac676c6a6b22bd2fe3b8ca\"",
+    "size": 3054
+  },
+  "assets/icons/tavu.webp": {
+    "url": "https://awesomemygo.dev/icons/tavu.webp",
+    "etag": "\"d121028949b8ca6a8314db73916528bd\"",
+    "size": 3546
+  },
+  "assets/icons/tcpconnbenchmark.webp": {
+    "url": "https://awesomemygo.dev/icons/tcpconnbenchmark.webp",
+    "etag": "\"b7d99d1cabb86d8993027b08985a4b62\"",
+    "size": 1378
+  },
+  "assets/icons/tcs3200-sensor-kit.webp": {
+    "url": "https://awesomemygo.dev/icons/tcs3200-sensor-kit.webp",
+    "etag": "\"7a05a81443656ccaa3f41d26549baa6b\"",
+    "size": 2710
+  },
+  "assets/icons/tendedero-in-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/tendedero-in-mygo.webp",
+    "etag": "\"3fa555d1957d6115f00c3dddbe3eb226\"",
+    "size": 496
+  },
+  "assets/icons/textrouter.webp": {
+    "url": "https://awesomemygo.dev/icons/textrouter.webp",
+    "etag": "\"39d39b9cb5d8c9a7a992b9e1f0d7e62c\"",
+    "size": 2038
+  },
+  "assets/icons/textviewer.webp": {
+    "url": "https://awesomemygo.dev/icons/textviewer.webp",
+    "etag": "\"1a77827bfdf81779b8018158aaed4ced\"",
+    "size": 3216
+  },
+  "assets/icons/thesio.webp": {
+    "url": "https://awesomemygo.dev/icons/thesio.webp",
+    "etag": "\"76865732b6e00273a38274a39e257ad4\"",
+    "size": 2640
+  },
+  "assets/icons/thunderstrike-controller-tool.webp": {
+    "url": "https://awesomemygo.dev/icons/thunderstrike-controller-tool.webp",
+    "etag": "\"550a9af90007e11583bde3549b2f6ecc\"",
+    "size": 5966
+  },
+  "assets/icons/tiergo.webp": {
+    "url": "https://awesomemygo.dev/icons/tiergo.webp",
+    "etag": "\"fead97de5bc96094e4304fc3ee6382c5\"",
+    "size": 1490
+  },
+  "assets/icons/tiktok-live-recorder.webp": {
+    "url": "https://awesomemygo.dev/icons/tiktok-live-recorder.webp",
+    "etag": "\"2afe9da60f68c01fd0ea0cc0f52d60c5\"",
+    "size": 1704
+  },
+  "assets/icons/tingsub.webp": {
+    "url": "https://awesomemygo.dev/icons/tingsub.webp",
+    "etag": "\"3309929af305093b02a1c5b8eeb86a3a\"",
+    "size": 1646
+  },
+  "assets/icons/tingyu.webp": {
+    "url": "https://awesomemygo.dev/icons/tingyu.webp",
+    "etag": "\"a90e38856b65ad362f22f23c5b5e548c\"",
+    "size": 2358
+  },
+  "assets/icons/titen.webp": {
+    "url": "https://awesomemygo.dev/icons/titen.webp",
+    "etag": "\"976842f044045c06a9374bc39476bdcf\"",
+    "size": 1474
+  },
+  "assets/icons/todo.webp": {
+    "url": "https://awesomemygo.dev/icons/todo.webp",
+    "etag": "\"0f3f2da54136f1240d7835d8b1ad2006\"",
+    "size": 2490
+  },
+  "assets/icons/tolk.webp": {
+    "url": "https://awesomemygo.dev/icons/tolk.webp",
+    "etag": "\"c53504e4ce6e95906d869f227fe382a5\"",
+    "size": 1972
+  },
+  "assets/icons/tomoru.webp": {
+    "url": "https://awesomemygo.dev/icons/tomoru.webp",
+    "etag": "\"94e79d1ce4d0679187418f063d3a1d98\"",
+    "size": 3636
+  },
+  "assets/icons/touko.webp": {
+    "url": "https://awesomemygo.dev/icons/touko.webp",
+    "etag": "\"0674eeb675195ecfd2b1bb3cc283f999\"",
+    "size": 2216
+  },
+  "assets/icons/trae.webp": {
+    "url": "https://awesomemygo.dev/icons/trae.webp",
+    "etag": "\"7726d3711b8e20db60e2304ef8e27329\"",
+    "size": 1382
+  },
+  "assets/icons/transflowy.webp": {
+    "url": "https://awesomemygo.dev/icons/transflowy.webp",
+    "etag": "\"6f9babe95e4724e06a231652256b552d\"",
+    "size": 1658
+  },
+  "assets/icons/translator233.webp": {
+    "url": "https://awesomemygo.dev/icons/translator233.webp",
+    "etag": "\"8ef3598eb0699706a408b7c8c2b162f6\"",
+    "size": 2370
+  },
+  "assets/icons/trot.webp": {
+    "url": "https://awesomemygo.dev/icons/trot.webp",
+    "etag": "\"883f4c5bca1647cccfe8ed54cf2f7758\"",
+    "size": 5688
+  },
+  "assets/icons/ttoy.webp": {
+    "url": "https://awesomemygo.dev/icons/ttoy.webp",
+    "etag": "\"8e5a7471fca66b2768ce8f7d80a988c2\"",
+    "size": 3850
+  },
+  "assets/icons/tuck.webp": {
+    "url": "https://awesomemygo.dev/icons/tuck.webp",
+    "etag": "\"4645c59bfd7698abfc16d7fac5d0f3f2\"",
+    "size": 3012
+  },
+  "assets/icons/twill.webp": {
+    "url": "https://awesomemygo.dev/icons/twill.webp",
+    "etag": "\"03a73829113c8fb69214ac6cce57ae7e\"",
+    "size": 2616
+  },
+  "assets/icons/twintrail.webp": {
+    "url": "https://awesomemygo.dev/icons/twintrail.webp",
+    "etag": "\"b74bb6c077fd3875c953ac670b1ce15a\"",
+    "size": 5470
+  },
+  "assets/icons/type.webp": {
+    "url": "https://awesomemygo.dev/icons/type.webp",
+    "etag": "\"10aae3a2f41e760873f2d912213c6008\"",
+    "size": 7064
+  },
+  "assets/icons/uma.webp": {
+    "url": "https://awesomemygo.dev/icons/uma.webp",
+    "etag": "\"f61c68a3b6aaa8371402ddf5837b957d\"",
+    "size": 2120
+  },
+  "assets/icons/unipac.webp": {
+    "url": "https://awesomemygo.dev/icons/unipac.webp",
+    "etag": "\"a7e27272ae9ce9d72205bff0d6a8d105\"",
+    "size": 1638
+  },
+  "assets/icons/universal-s3-ui.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/universals3ui.webp",
+    "etag": "\"6af31d59-3992\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 14738
+  },
+  "assets/icons/unscan.webp": {
+    "url": "https://awesomemygo.dev/icons/unscan.webp",
+    "etag": "\"f2ed3743ec7a49a85fe55ce306714964\"",
+    "size": 2406
+  },
+  "assets/icons/vfox-plus.webp": {
+    "url": "https://awesomemygo.dev/icons/vfox-plus.webp",
+    "etag": "\"a4bb7ea089bcc9c0beed003b924554c2\"",
+    "size": 2346
+  },
+  "assets/icons/vibe-cook.webp": {
+    "url": "https://awesomemygo.dev/icons/vibe-cook.webp",
+    "etag": "\"fdb4af2313e9bf2c21b4474852c6b4b1\"",
+    "size": 2558
+  },
+  "assets/icons/video-downloader.webp": {
+    "url": "https://ailogo.yldm.ai/avatar/videodownloadermygo.webp",
+    "etag": "\"6af31d59-301c\"",
+    "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
+    "size": 12316
+  },
+  "assets/icons/video-player.webp": {
+    "url": "https://awesomemygo.dev/icons/video-player.webp",
+    "etag": "\"785b04915753ff82fd188966cc2428f9\"",
+    "size": 2802
+  },
+  "assets/icons/videodown.webp": {
+    "url": "https://awesomemygo.dev/icons/videodown.webp",
+    "etag": "\"a9ccae8ccb9dd2e82cd32d81f9013c78\"",
+    "size": 2470
+  },
+  "assets/icons/videohelper.webp": {
+    "url": "https://awesomemygo.dev/icons/videohelper.webp",
+    "etag": "\"f253d9bf66099120029429af516f2461\"",
+    "size": 1402
+  },
+  "assets/icons/videopress.webp": {
+    "url": "https://awesomemygo.dev/icons/videopress.webp",
+    "etag": "\"dc37f9c6eab95f5ea6b4aba675e5177a\"",
+    "size": 1152
+  },
+  "assets/icons/viper.webp": {
+    "url": "https://awesomemygo.dev/icons/viper.webp",
+    "etag": "\"4db934b9606953fe194947c57cc11f9e\"",
+    "size": 3560
+  },
+  "assets/icons/vitals.webp": {
+    "url": "https://awesomemygo.dev/icons/vitals.webp",
+    "etag": "\"a40669fe5070afa09aacd2a3a4b9f478\"",
+    "size": 1276
+  },
+  "assets/icons/vocabox.webp": {
+    "url": "https://awesomemygo.dev/icons/vocabox.webp",
+    "etag": "\"dddf92a4c9f71bb5720038befb21f7f2\"",
+    "size": 1182
+  },
+  "assets/icons/voicemore.webp": {
+    "url": "https://awesomemygo.dev/icons/voicemore.webp",
+    "etag": "\"67a55c5892546b40bc03ad559b894f90\"",
+    "size": 1684
+  },
+  "assets/icons/voicemorph.webp": {
+    "url": "https://awesomemygo.dev/icons/voicemorph.webp",
+    "etag": "\"7f8c6009ffd2015f26fc4f0e83ef5d1c\"",
+    "size": 2922
+  },
+  "assets/icons/voir.webp": {
+    "url": "https://awesomemygo.dev/icons/voir.webp",
+    "etag": "\"963f01cf0c44edf4056607e0994a3e9d\"",
+    "size": 3520
+  },
+  "assets/icons/voke.webp": {
+    "url": "https://awesomemygo.dev/icons/voke.webp",
+    "etag": "\"8d143ce8a476d0dd8e7959f8d1f4627a\"",
+    "size": 1560
+  },
+  "assets/icons/voxflow.webp": {
+    "url": "https://awesomemygo.dev/icons/voxflow.webp",
+    "etag": "\"a80561a31a4578066e13ce5f5e434cd2\"",
+    "size": 978
+  },
+  "assets/icons/voxi.webp": {
+    "url": "https://awesomemygo.dev/icons/voxi.webp",
+    "etag": "\"22a3df575c053fdb196d53ed2c1123d0\"",
+    "size": 1120
+  },
+  "assets/icons/voxt.webp": {
+    "url": "https://awesomemygo.dev/icons/voxt.webp",
+    "etag": "\"9099951ee2efb8f6286825a39b9c40d9\"",
+    "size": 3866
+  },
+  "assets/icons/voxtmini.webp": {
+    "url": "https://awesomemygo.dev/icons/voxtmini.webp",
+    "etag": "\"2273d7de9c92c2cd3fb286860a9415cb\"",
+    "size": 3888
+  },
+  "assets/icons/vray.webp": {
+    "url": "https://awesomemygo.dev/icons/vray.webp",
+    "etag": "\"e74c02ac2ca80af270cf73d69f020f53\"",
+    "size": 1930
+  },
+  "assets/icons/wada-cowork.webp": {
+    "url": "https://awesomemygo.dev/icons/wada-cowork.webp",
+    "etag": "\"affa66dd1509684a6e69dea4a5a76530\"",
+    "size": 2238
+  },
+  "assets/icons/wada-terminal.webp": {
+    "url": "https://awesomemygo.dev/icons/wada-terminal.webp",
+    "etag": "\"ecbdb910da1a682b1212cf3c9ecdd2c7\"",
+    "size": 2132
+  },
+  "assets/icons/wagyu-music.webp": {
+    "url": "https://awesomemygo.dev/icons/wagyu-music.webp",
+    "etag": "\"784580f2c589c0f3ebfecb54cc901b3c\"",
+    "size": 2850
+  },
+  "assets/icons/wallpaper.webp": {
+    "url": "https://awesomemygo.dev/icons/wallpaper.webp",
+    "etag": "\"bb72110fa7ef838f35fd53579a6815f1\"",
+    "size": 3444
+  },
+  "assets/icons/wavealign.webp": {
+    "url": "https://awesomemygo.dev/icons/wavealign.webp",
+    "etag": "\"785d6aa0faf87c93973552be96b877f2\"",
+    "size": 4120
+  },
+  "assets/icons/webdd.webp": {
+    "url": "https://awesomemygo.dev/icons/webdd.webp",
+    "etag": "\"f0b5db787d6b575919edb7e8e0959464\"",
+    "size": 568
+  },
+  "assets/icons/wgm.webp": {
+    "url": "https://awesomemygo.dev/icons/wgm.webp",
+    "etag": "\"d21512159bcc98134101a85a91c8bb8b\"",
+    "size": 3462
+  },
+  "assets/icons/win-xinai-de-tools-mygo.webp": {
+    "url": "https://awesomemygo.dev/icons/win-xinai-de-tools-mygo.webp",
+    "etag": "\"d4599eca20d96452f6052cf237162491\"",
+    "size": 1716
+  },
+  "assets/icons/winswx.webp": {
+    "url": "https://awesomemygo.dev/icons/winswx.webp",
+    "etag": "\"9e19846cf6280bcb920fe33e11e2896d\"",
+    "size": 6180
+  },
+  "assets/icons/wintray.webp": {
+    "url": "https://awesomemygo.dev/icons/wintray.webp",
+    "etag": "\"9aed42200ad9644d4053e2fe03fc2e42\"",
+    "size": 2376
+  },
+  "assets/icons/withdo.webp": {
+    "url": "https://awesomemygo.dev/icons/withdo.webp",
+    "etag": "\"33018b2e6ece4b194306c8c08980e708\"",
+    "size": 1014
+  },
+  "assets/icons/wondervision.webp": {
+    "url": "https://awesomemygo.dev/icons/wondervision.webp",
+    "etag": "\"ca96cba4d7843dca65d71cb35dfd783a\"",
+    "size": 2136
+  },
+  "assets/icons/wslpilot.webp": {
+    "url": "https://awesomemygo.dev/icons/wslpilot.webp",
+    "etag": "\"1ff1e3ea813986caa8e4a75f0f9a7498\"",
+    "size": 2812
+  },
+  "assets/icons/xiangqi-go.webp": {
+    "url": "https://awesomemygo.dev/icons/xiangqi-go.webp",
+    "etag": "\"b8c0f552fb89f89767492de96a545f03\"",
+    "size": 2028
+  },
+  "assets/icons/xiangzhuan.webp": {
+    "url": "https://awesomemygo.dev/icons/xiangzhuan.webp",
+    "etag": "\"05515b82f9a66d1e38860efa878ad7e0\"",
+    "size": 2448
+  },
+  "assets/icons/yeek.webp": {
+    "url": "https://awesomemygo.dev/icons/yeek.webp",
+    "etag": "\"7c4130057543121c9235f14c212cd043\"",
+    "size": 2376
+  },
+  "assets/icons/yoho-music.webp": {
+    "url": "https://awesomemygo.dev/icons/yoho-music.webp",
+    "etag": "\"87e61dd5437dddbad3ef16c662f1a703\"",
+    "size": 3014
+  },
+  "assets/icons/yolomcl.webp": {
+    "url": "https://awesomemygo.dev/icons/yolomcl.webp",
+    "etag": "\"c66c4d8200a93966881e7e37e76f8ef4\"",
+    "size": 1112
+  },
+  "assets/icons/yourun.webp": {
+    "url": "https://awesomemygo.dev/icons/yourun.webp",
+    "etag": "\"2faddb96fa9a8f6dec58911c653ff889\"",
+    "size": 3612
+  },
+  "assets/icons/yt-music-player.webp": {
+    "url": "https://awesomemygo.dev/icons/yt-music-player.webp",
+    "etag": "\"58953e08e0aaf4de3756dbcbb2010ac2\"",
+    "size": 3276
+  },
+  "assets/icons/ytbplus.webp": {
+    "url": "https://awesomemygo.dev/icons/ytbplus.webp",
+    "etag": "\"7ee84dadd7df7652ecad1f338b836f3b\"",
+    "size": 1848
+  },
+  "assets/icons/ytmgo.webp": {
+    "url": "https://awesomemygo.dev/icons/ytmgo.webp",
+    "etag": "\"689ee41bfd2914bc82f7e7ed10f1049f\"",
+    "size": 1704
+  },
+  "assets/icons/yunji-uml.webp": {
+    "url": "https://awesomemygo.dev/icons/yunji-uml.webp",
+    "etag": "\"f786084e30f0636c481db3726e504f93\"",
+    "size": 1774
+  },
+  "assets/icons/z63.webp": {
+    "url": "https://awesomemygo.dev/icons/z63.webp",
+    "etag": "\"d7e4ffa3218908439cfb98fcb7571715\"",
+    "size": 588
+  },
+  "assets/icons/zakki.webp": {
+    "url": "https://awesomemygo.dev/icons/zakki.webp",
+    "etag": "\"ecd1301192b8e6df83a4eb14256f27c5\"",
+    "size": 2418
+  },
+  "assets/icons/zeokeel-super-agent.webp": {
+    "url": "https://awesomemygo.dev/icons/zeokeel-super-agent.webp",
+    "etag": "\"38910b1841810252549b03bd67bfaa41\"",
+    "size": 1296
+  },
+  "assets/icons/zeus.webp": {
+    "url": "https://awesomemygo.dev/icons/zeus.webp",
+    "etag": "\"cf4a363117977f15d091a7721fd080ae\"",
+    "size": 2012
+  },
+  "assets/shots/2048.webp": {
+    "url": "https://awesomemygo.dev/shots/2048.webp",
+    "etag": "\"ff4f37dd5970e78a004aeed637d1a8c1\"",
+    "size": 12826
+  },
+  "assets/shots/advanced-rdp.webp": {
+    "url": "https://awesomemygo.dev/shots/advanced-rdp.webp",
+    "etag": "\"a0ce794ca07b4a191c55e87bd2fd1167\"",
+    "size": 18932
+  },
+  "assets/shots/agent-kanban.webp": {
+    "url": "https://awesomemygo.dev/shots/agent-kanban.webp",
+    "etag": "\"e1a9d0a0b58408b286118ddb05df32d5\"",
+    "size": 20598
+  },
+  "assets/shots/agent-runner.webp": {
+    "url": "https://awesomemygo.dev/shots/agent-runner.webp",
+    "etag": "\"d59a486451638b37b5a572a9ff8d00ba\"",
+    "size": 38638
+  },
+  "assets/shots/agent-usage-metrics.webp": {
+    "url": "https://awesomemygo.dev/shots/agent-usage-metrics.webp",
+    "etag": "\"ef665a13d268bdf607312cc360ee4954\"",
+    "size": 35366
+  },
+  "assets/shots/agentd.webp": {
+    "url": "https://awesomemygo.dev/shots/agentd.webp",
+    "etag": "\"d313fecf8f76d656c157e36f6f40d08b\"",
+    "size": 34288
+  },
+  "assets/shots/agentic-accounting.webp": {
+    "url": "https://awesomemygo.dev/shots/agentic-accounting.webp",
+    "etag": "\"4ada8bd7a453f8cc9c9c628eed4f81ea\"",
+    "size": 23764
+  },
+  "assets/shots/agentmeter.webp": {
+    "url": "https://awesomemygo.dev/shots/agentmeter.webp",
+    "etag": "\"0108b24ebd7b5f146dea200c779682dd\"",
+    "size": 47800
+  },
+  "assets/shots/agentsmd.webp": {
+    "url": "https://awesomemygo.dev/shots/agentsmd.webp",
+    "etag": "\"60fc7a0fefaf37d54ac2c72f6710e20a\"",
+    "size": 27206
+  },
+  "assets/shots/ai-limit.webp": {
+    "url": "https://awesomemygo.dev/shots/ai-limit.webp",
+    "etag": "\"dac60d21d6e28263a86e20b0fc321488\"",
+    "size": 10882
+  },
+  "assets/shots/ai-usage.webp": {
+    "url": "https://awesomemygo.dev/shots/ai-usage.webp",
+    "etag": "\"200d619f73c32262dca1dc0d18e65f2f\"",
+    "size": 20490
+  },
+  "assets/shots/aio-proxy.webp": {
+    "url": "https://awesomemygo.dev/shots/aio-proxy.webp",
+    "etag": "\"7204e906cf7bf86b6ce798284d837f3d\"",
+    "size": 24786
+  },
+  "assets/shots/ally.webp": {
+    "url": "https://awesomemygo.dev/shots/ally.webp",
+    "etag": "\"9c8dea83982da4f3029cb2a3010948b7\"",
+    "size": 36024
+  },
+  "assets/shots/althea.webp": {
+    "url": "https://awesomemygo.dev/shots/althea.webp",
+    "etag": "\"2170a072d3ae06c0e40b4e4cecb4bf8f\"",
+    "size": 8056
+  },
+  "assets/shots/always-on-top-desktop-timer.webp": {
+    "url": "https://awesomemygo.dev/shots/always-on-top-desktop-timer.webp",
+    "etag": "\"c0886246d398165f775fc70c0bec6b41\"",
+    "size": 12112
+  },
+  "assets/shots/android-tools.webp": {
+    "url": "https://awesomemygo.dev/shots/android-tools.webp",
+    "etag": "\"a33291f24d0d873fb56ea890187cd94c\"",
+    "size": 13532
+  },
+  "assets/shots/anker-prime-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/anker-prime-desktop.webp",
+    "etag": "\"59b6f144c6cf6f33da9fcdcf9f054a4f\"",
+    "size": 25796
+  },
+  "assets/shots/aozora.webp": {
+    "url": "https://awesomemygo.dev/shots/aozora.webp",
+    "etag": "\"cb9dc125ca3879e5b6bbc7ddd09b2e0f\"",
+    "size": 36336
+  },
+  "assets/shots/ape-player.webp": {
+    "url": "https://awesomemygo.dev/shots/ape-player.webp",
+    "etag": "\"15d09b33252d1ad2dcee551c6836339a\"",
+    "size": 12776
+  },
+  "assets/shots/apex-runner.webp": {
+    "url": "https://awesomemygo.dev/shots/apex-runner.webp",
+    "etag": "\"8ccb80e845ab83e344a3feb8e026eefa\"",
+    "size": 36872
+  },
+  "assets/shots/apigo.webp": {
+    "url": "https://awesomemygo.dev/shots/apigo.webp",
+    "etag": "\"3fb10040d9994527f8b082bba1fbdf83\"",
+    "size": 24460
+  },
+  "assets/shots/arcmd.webp": {
+    "url": "https://awesomemygo.dev/shots/arcmd.webp",
+    "etag": "\"1619a47e23ecb351a8cad08df86a29f3\"",
+    "size": 46950
+  },
+  "assets/shots/arion.webp": {
+    "url": "https://awesomemygo.dev/shots/arion.webp",
+    "etag": "\"7d01d711321f5c3cd0d95a233b966f52\"",
+    "size": 30610
+  },
+  "assets/shots/aster.webp": {
+    "url": "https://awesomemygo.dev/shots/aster.webp",
+    "etag": "\"bf612bfc134f92f1cc433b04ca427169\"",
+    "size": 46930
+  },
+  "assets/shots/atlas.webp": {
+    "url": "https://awesomemygo.dev/shots/atlas.webp",
+    "etag": "\"f1722b85767433f67c9424b327ce0cff\"",
+    "size": 6800
+  },
+  "assets/shots/atrust-hub.webp": {
+    "url": "https://awesomemygo.dev/shots/atrust-hub.webp",
+    "etag": "\"93439b3db69ee5384df58cedf0ad29a7\"",
+    "size": 37228
+  },
+  "assets/shots/atvloadly.webp": {
+    "url": "https://awesomemygo.dev/shots/atvloadly.webp",
+    "etag": "\"07105ff75d97f60cbdd52fb96b70e8b4\"",
+    "size": 24640
+  },
+  "assets/shots/audiosmith.webp": {
+    "url": "https://awesomemygo.dev/shots/audiosmith.webp",
+    "etag": "\"9567db30f136b3ed548f827e384f98ac\"",
+    "size": 30258
+  },
+  "assets/shots/auralink.webp": {
+    "url": "https://awesomemygo.dev/shots/auralink.webp",
+    "etag": "\"40db7bdffad75bb8ea2757b85d68dd23\"",
+    "size": 12826
+  },
+  "assets/shots/aurelia.webp": {
+    "url": "https://awesomemygo.dev/shots/aurelia.webp",
+    "etag": "\"d95088716014410143c1dcb62de18c6d\"",
+    "size": 42246
+  },
+  "assets/shots/aurora.webp": {
+    "url": "https://awesomemygo.dev/shots/aurora.webp",
+    "etag": "\"2f5b4ce541d359c3bbe326ebb85f5233\"",
+    "size": 41350
+  },
+  "assets/shots/badrename.webp": {
+    "url": "https://awesomemygo.dev/shots/badrename.webp",
+    "etag": "\"fc631de4f7dd51f47ede2edf56d481b0\"",
+    "size": 23458
+  },
+  "assets/shots/baggy.webp": {
+    "url": "https://awesomemygo.dev/shots/baggy.webp",
+    "etag": "\"3910f9126c29442e15346a0cf39c3378\"",
+    "size": 20456
+  },
+  "assets/shots/baidunetgo.webp": {
+    "url": "https://awesomemygo.dev/shots/baidunetgo.webp",
+    "etag": "\"16a037774fa44518f00e45e679f29e8c\"",
+    "size": 24434
+  },
+  "assets/shots/bamboo.webp": {
+    "url": "https://awesomemygo.dev/shots/bamboo.webp",
+    "etag": "\"b5e1b148898d4b86578d8ae1249cb481\"",
+    "size": 34598
+  },
+  "assets/shots/baudscan.webp": {
+    "url": "https://awesomemygo.dev/shots/baudscan.webp",
+    "etag": "\"c8d5be262377725984d74ad492b2a80a\"",
+    "size": 44518
+  },
+  "assets/shots/beekb.webp": {
+    "url": "https://awesomemygo.dev/shots/beekb.webp",
+    "etag": "\"b5394f614d95d9633a14816f26d08550\"",
+    "size": 57422
+  },
+  "assets/shots/bentomail.webp": {
+    "url": "https://awesomemygo.dev/shots/bentomail.webp",
+    "etag": "\"5700ad5de391a32dbfb5ee3190ca1cc7\"",
+    "size": 50912
+  },
+  "assets/shots/berth.webp": {
+    "url": "https://awesomemygo.dev/shots/berth.webp",
+    "etag": "\"13a29cabf2954f8f7efaaaafba8a1ca2\"",
+    "size": 21350
+  },
+  "assets/shots/bigo-live-recorder.webp": {
+    "url": "https://awesomemygo.dev/shots/bigo-live-recorder.webp",
+    "etag": "\"cecaa252aacb1af9fb1188a2c2e3d174\"",
+    "size": 37336
+  },
+  "assets/shots/bili-fm.webp": {
+    "url": "https://awesomemygo.dev/shots/bili-fm.webp",
+    "etag": "\"cbdb69a5ae3721c75bad504bbdabf16c\"",
+    "size": 70684
+  },
+  "assets/shots/biternet.webp": {
+    "url": "https://awesomemygo.dev/shots/biternet.webp",
+    "etag": "\"3ac93500d1a24b250a6cad2d460de970\"",
+    "size": 13080
+  },
+  "assets/shots/bookdesk.webp": {
+    "url": "https://awesomemygo.dev/shots/bookdesk.webp",
+    "etag": "\"9239aef54e223fe9b38afa7ba089c9e8\"",
+    "size": 14790
+  },
+  "assets/shots/bootease.webp": {
+    "url": "https://awesomemygo.dev/shots/bootease.webp",
+    "etag": "\"14c69fd0333f76e735db7dd2a950e84f\"",
+    "size": 24442
+  },
+  "assets/shots/bootie.webp": {
+    "url": "https://awesomemygo.dev/shots/bootie.webp",
+    "etag": "\"b373f59904b879de18d25c63b84de8f9\"",
+    "size": 24092
+  },
+  "assets/shots/bowel.webp": {
+    "url": "https://awesomemygo.dev/shots/bowel.webp",
+    "etag": "\"6c126d235390b5f5fbbe65f5e5cbf3a6\"",
+    "size": 52714
+  },
+  "assets/shots/bowerbird.webp": {
+    "url": "https://awesomemygo.dev/shots/bowerbird.webp",
+    "etag": "\"b603486ce46039ee53d99a3f50c72670\"",
+    "size": 23484
+  },
+  "assets/shots/bucketeer.webp": {
+    "url": "https://awesomemygo.dev/shots/bucketeer.webp",
+    "etag": "\"113cfc2978c4cd8a0e703077a9da6ae9\"",
+    "size": 18094
+  },
+  "assets/shots/bunnybox.webp": {
+    "url": "https://awesomemygo.dev/shots/bunnybox.webp",
+    "etag": "\"0cf0b2a7da2572787938c10421d5b239\"",
+    "size": 20992
+  },
+  "assets/shots/burrow-diikhanh.webp": {
+    "url": "https://awesomemygo.dev/shots/burrow-diikhanh.webp",
+    "etag": "\"f66d5af628a3712d6c0219935a9199a9\"",
+    "size": 12784
+  },
+  "assets/shots/burrow.webp": {
+    "url": "https://awesomemygo.dev/shots/burrow.webp",
+    "etag": "\"99f59769d554c29af6cb2b1b7d10e99c\"",
+    "size": 48812
+  },
+  "assets/shots/byop.webp": {
+    "url": "https://awesomemygo.dev/shots/byop.webp",
+    "etag": "\"864241c834062cc9cbd772621acaeaae\"",
+    "size": 16330
+  },
+  "assets/shots/byr-client.webp": {
+    "url": "https://awesomemygo.dev/shots/byr-client.webp",
+    "etag": "\"280975244af6bbd9e75390043cac2b20\"",
+    "size": 52526
+  },
+  "assets/shots/calc.webp": {
+    "url": "https://awesomemygo.dev/shots/calc.webp",
+    "etag": "\"dcfcad0660b0580c68495eef2c5d4dd1\"",
+    "size": 5874
+  },
+  "assets/shots/calculus.webp": {
+    "url": "https://awesomemygo.dev/shots/calculus.webp",
+    "etag": "\"5ab7753d8812fa3814b2b56866c1cc31\"",
+    "size": 12382
+  },
+  "assets/shots/candle.webp": {
+    "url": "https://awesomemygo.dev/shots/candle.webp",
+    "etag": "\"7a491b4c8a676daab3902fc228e09689\"",
+    "size": 39604
+  },
+  "assets/shots/capy.webp": {
+    "url": "https://awesomemygo.dev/shots/capy.webp",
+    "etag": "\"7889cea3ff3dc9c37113bb9650121986\"",
+    "size": 10654
+  },
+  "assets/shots/catview.webp": {
+    "url": "https://awesomemygo.dev/shots/catview.webp",
+    "etag": "\"382fa8765a78a6636c86380acdf0a020\"",
+    "size": 63022
+  },
+  "assets/shots/ccguanjia.webp": {
+    "url": "https://awesomemygo.dev/shots/ccguanjia.webp",
+    "etag": "\"ee45a7902a6a42c6cea51277c3619431\"",
+    "size": 46346
+  },
+  "assets/shots/ccmail.webp": {
+    "url": "https://awesomemygo.dev/shots/ccmail.webp",
+    "etag": "\"9275f3484a635b8587b4ac133cf5c30c\"",
+    "size": 46660
+  },
+  "assets/shots/ceramic.webp": {
+    "url": "https://awesomemygo.dev/shots/ceramic.webp",
+    "etag": "\"6f1eba48c45f995367f0f3648a3ce1d6\"",
+    "size": 75594
+  },
+  "assets/shots/chaos.webp": {
+    "url": "https://awesomemygo.dev/shots/chaos.webp",
+    "etag": "\"48dd63ad1a1eaeb9938bcb16978bb3f3\"",
+    "size": 13472
+  },
+  "assets/shots/charker.webp": {
+    "url": "https://awesomemygo.dev/shots/charker.webp",
+    "etag": "\"d54ec6fe7e3b7c107a8006d6e22eeff8\"",
+    "size": 29296
+  },
+  "assets/shots/chatgo.webp": {
+    "url": "https://awesomemygo.dev/shots/chatgo.webp",
+    "etag": "\"7619b0d5c280f7ce39f81eac0680becd\"",
+    "size": 21110
+  },
+  "assets/shots/chisacloudcode.webp": {
+    "url": "https://awesomemygo.dev/shots/chisacloudcode.webp",
+    "etag": "\"490f2be66d149788fc949a30deb64dbb\"",
+    "size": 27058
+  },
+  "assets/shots/chrome-profile-router.webp": {
+    "url": "https://awesomemygo.dev/shots/chrome-profile-router.webp",
+    "etag": "\"4bbf03cafac4d18cecb74cfa189da8af\"",
+    "size": 23656
+  },
+  "assets/shots/clarity.webp": {
+    "url": "https://awesomemygo.dev/shots/clarity.webp",
+    "etag": "\"fff21a64560f7950d40b03314e0503e8\"",
+    "size": 13276
+  },
+  "assets/shots/clash-go.webp": {
+    "url": "https://awesomemygo.dev/shots/clash-go.webp",
+    "etag": "\"138492dc4273086047f0b9816dc694f8\"",
+    "size": 4492
+  },
+  "assets/shots/clash-traffic.webp": {
+    "url": "https://awesomemygo.dev/shots/clash-traffic.webp",
+    "etag": "\"ceb3a821890ec818ce74c9cf32e1a0af\"",
+    "size": 36216
+  },
+  "assets/shots/clashx-go.webp": {
+    "url": "https://awesomemygo.dev/shots/clashx-go.webp",
+    "etag": "\"3b94590703f03363350ecaea3e59294d\"",
+    "size": 16402
+  },
+  "assets/shots/cleanzo.webp": {
+    "url": "https://awesomemygo.dev/shots/cleanzo.webp",
+    "etag": "\"29e821c203333c0fee5bdd03c063c81d\"",
+    "size": 29162
+  },
+  "assets/shots/clipboard-go.webp": {
+    "url": "https://awesomemygo.dev/shots/clipboard-go.webp",
+    "etag": "\"6d811d396ac72ee55b48190857a44996\"",
+    "size": 22782
+  },
+  "assets/shots/clipnest.webp": {
+    "url": "https://awesomemygo.dev/shots/clipnest.webp",
+    "etag": "\"22b00b64c611b2cd48571a33d0fbddf3\"",
+    "size": 26234
+  },
+  "assets/shots/cliprecorder.webp": {
+    "url": "https://awesomemygo.dev/shots/cliprecorder.webp",
+    "etag": "\"205518e232c3b3d668aebbb85b513b56\"",
+    "size": 4928
+  },
+  "assets/shots/clips.webp": {
+    "url": "https://awesomemygo.dev/shots/clips-home.webp",
+    "etag": "\"c48f21c92d836c1a4e0db79f08f21ec7\"",
+    "size": 43498
+  },
+  "assets/shots/cloudshuttle.webp": {
+    "url": "https://awesomemygo.dev/shots/cloudshuttle.webp",
+    "etag": "\"cae5cec9f253328330a5fbf384da15a2\"",
+    "size": 27912
+  },
+  "assets/shots/codei18n.webp": {
+    "url": "https://awesomemygo.dev/shots/codei18n.webp",
+    "etag": "\"779e657a13275742d39be2a925f3853b\"",
+    "size": 25622
+  },
+  "assets/shots/collate.webp": {
+    "url": "https://awesomemygo.dev/shots/collate.webp",
+    "etag": "\"bced0beb3ac2bf0c2eac2fc2b226a2fd\"",
+    "size": 25206
+  },
+  "assets/shots/contr.webp": {
+    "url": "https://awesomemygo.dev/shots/contr.webp",
+    "etag": "\"f67bbf5c4fccb3a3d265b03c690d9fa6\"",
+    "size": 35018
+  },
+  "assets/shots/copiggy.webp": {
+    "url": "https://awesomemygo.dev/shots/copiggy.webp",
+    "etag": "\"f727b50e50f0ae884e43abf991689a03\"",
+    "size": 21820
+  },
+  "assets/shots/copilot-chat.webp": {
+    "url": "https://awesomemygo.dev/shots/copilot-chat.webp",
+    "etag": "\"14210327c030af28f52a09233fe4f235\"",
+    "size": 26938
+  },
+  "assets/shots/corra.webp": {
+    "url": "https://awesomemygo.dev/shots/corra.webp",
+    "etag": "\"c0f3daf829310205dfefad3707721e0b\"",
+    "size": 16074
+  },
+  "assets/shots/countdowner.webp": {
+    "url": "https://awesomemygo.dev/shots/countdowner.webp",
+    "etag": "\"fe98fc073f0fcab3f7252bc671178750\"",
+    "size": 39718
+  },
+  "assets/shots/courrier.webp": {
+    "url": "https://awesomemygo.dev/shots/courrier.webp",
+    "etag": "\"e6d106e2d60b01f5b8d41c2b4c7d5496\"",
+    "size": 26390
+  },
+  "assets/shots/cove.webp": {
+    "url": "https://awesomemygo.dev/shots/cove.webp",
+    "etag": "\"e41bab51dc1f12367dde600b3fc9c844\"",
+    "size": 38884
+  },
+  "assets/shots/cpa-bar.webp": {
+    "url": "https://awesomemygo.dev/shots/cpa-bar.webp",
+    "etag": "\"7aa131c8140a69d73cb30e7d74f04480\"",
+    "size": 38658
+  },
+  "assets/shots/crypto-panel.webp": {
+    "url": "https://awesomemygo.dev/shots/crypto-panel.webp",
+    "etag": "\"d9e39c0fef53ea3814c6cc58807e81cb\"",
+    "size": 18220
+  },
+  "assets/shots/cubbix.webp": {
+    "url": "https://awesomemygo.dev/shots/cubbix.webp",
+    "etag": "\"9f06e77cdb3f729ce8b717ef1b9daa61\"",
+    "size": 12148
+  },
+  "assets/shots/cue.webp": {
+    "url": "https://awesomemygo.dev/shots/cue.webp",
+    "etag": "\"1e9d434c7d2b96fe728bc386f1b11459\"",
+    "size": 22036
+  },
+  "assets/shots/curb.webp": {
+    "url": "https://awesomemygo.dev/shots/curb.webp",
+    "etag": "\"4baa397fc1c1c629dfe6b82a8a1bfaa9\"",
+    "size": 7536
+  },
+  "assets/shots/curlgo.webp": {
+    "url": "https://awesomemygo.dev/shots/curlgo.webp",
+    "etag": "\"22db3910fe6cf78d38b22b24c55cc8da\"",
+    "size": 25540
+  },
+  "assets/shots/cyberme.webp": {
+    "url": "https://awesomemygo.dev/shots/cyberme.webp",
+    "etag": "\"e66b9a9d2e46434a494b8575238ce3c0\"",
+    "size": 27654
+  },
+  "assets/shots/cyrene-terminal.webp": {
+    "url": "https://awesomemygo.dev/shots/cyrene-terminal.webp",
+    "etag": "\"325379a1a9ad52c6a47db105522ffc8e\"",
+    "size": 6824
+  },
+  "assets/shots/dalibre.webp": {
+    "url": "https://awesomemygo.dev/shots/dalibre.webp",
+    "etag": "\"4aa9586573c6ee8782e2d981a1f723de\"",
+    "size": 7922
+  },
+  "assets/shots/darkslide-gr.webp": {
+    "url": "https://awesomemygo.dev/shots/darkslide-gr.webp",
+    "etag": "\"b5a1c8204e6c8e74cff011d0e3fbafca\"",
+    "size": 59432
+  },
+  "assets/shots/daybee.webp": {
+    "url": "https://awesomemygo.dev/shots/daybee.webp",
+    "etag": "\"3d336f0917551f4db53ebc4139ba2460\"",
+    "size": 19066
+  },
+  "assets/shots/db-g.webp": {
+    "url": "https://awesomemygo.dev/shots/db-g.webp",
+    "etag": "\"1a6fc28ca0ee2fad5247c1d842fefdbc\"",
+    "size": 24642
+  },
+  "assets/shots/deckle.webp": {
+    "url": "https://awesomemygo.dev/shots/deckle.webp",
+    "etag": "\"66d3f4686b2528e88ad11a275378cc20\"",
+    "size": 37744
+  },
+  "assets/shots/deepseek-harness.webp": {
+    "url": "https://awesomemygo.dev/shots/deepseek-harness.webp",
+    "etag": "\"a0c8b085d02e230dfc818e5f14a0bc1c\"",
+    "size": 28882
+  },
+  "assets/shots/denova.webp": {
+    "url": "https://awesomemygo.dev/shots/denova.webp",
+    "etag": "\"60b8a8a1ee8640334c5b1c5fcceb1318\"",
+    "size": 74746
+  },
+  "assets/shots/desk.webp": {
+    "url": "https://awesomemygo.dev/shots/desk.webp",
+    "etag": "\"fa76b8d545a926ac6e947822b40cc02a\"",
+    "size": 55050
+  },
+  "assets/shots/dew.webp": {
+    "url": "https://awesomemygo.dev/shots/dew.webp",
+    "etag": "\"9809704746afc23146b23667026779fa\"",
+    "size": 22576
+  },
+  "assets/shots/dgopher.webp": {
+    "url": "https://awesomemygo.dev/shots/dgopher.webp",
+    "etag": "\"5ba3ba178e602a0d8993d055b24ee793\"",
+    "size": 38134
+  },
+  "assets/shots/disklens.webp": {
+    "url": "https://awesomemygo.dev/shots/disklens.webp",
+    "etag": "\"a65ca0a4dcea56a26afc46ee70047cab\"",
+    "size": 25272
+  },
+  "assets/shots/distill.webp": {
+    "url": "https://awesomemygo.dev/shots/distill.webp",
+    "etag": "\"9a91cff844e42e5b3171bf9e50421a4e\"",
+    "size": 23850
+  },
+  "assets/shots/dji-mic.webp": {
+    "url": "https://awesomemygo.dev/shots/dji-mic.webp",
+    "etag": "\"0e48eff862636452a3c9a82fd72002b2\"",
+    "size": 25634
+  },
+  "assets/shots/downloader.webp": {
+    "url": "https://awesomemygo.dev/shots/downloader.webp",
+    "etag": "\"ee5175be19599f8a908781f233f9177e\"",
+    "size": 29234
+  },
+  "assets/shots/driga.webp": {
+    "url": "https://awesomemygo.dev/shots/driga.webp",
+    "etag": "\"b39761d0cb7bf0cc80c4dde389e5bbb3\"",
+    "size": 47544
+  },
+  "assets/shots/droi.webp": {
+    "url": "https://awesomemygo.dev/shots/droi.webp",
+    "etag": "\"f373312e040bd7d89d084fc96cb66ebc\"",
+    "size": 38968
+  },
+  "assets/shots/ds-search.webp": {
+    "url": "https://awesomemygo.dev/shots/ds-search.webp",
+    "etag": "\"d0b70c35b2182cdac71cd7575bc86318\"",
+    "size": 15090
+  },
+  "assets/shots/dsh-gtk.webp": {
+    "url": "https://awesomemygo.dev/shots/dsh-gtk.webp",
+    "etag": "\"5257a76a0e65ae8610654561535bfa89\"",
+    "size": 13960
+  },
+  "assets/shots/dsh-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/dsh-mygo.webp",
+    "etag": "\"5cf7920a36891f292e5973231619e139\"",
+    "size": 8220
+  },
+  "assets/shots/dsh-trading.webp": {
+    "url": "https://awesomemygo.dev/shots/dsh-trading.webp",
+    "etag": "\"ba2e8440722061b7819829a196873de6\"",
+    "size": 50256
+  },
+  "assets/shots/dual-png.webp": {
+    "url": "https://awesomemygo.dev/shots/dual-png.webp",
+    "etag": "\"34c998c5c34ff6d2b87a9e5b74780734\"",
+    "size": 56698
+  },
+  "assets/shots/ducter.webp": {
+    "url": "https://awesomemygo.dev/shots/ducter.webp",
+    "etag": "\"c2668028c7485e65cd6d58638bfbcfce\"",
+    "size": 40816
+  },
+  "assets/shots/dumpingground.webp": {
+    "url": "https://awesomemygo.dev/shots/dumpingground.webp",
+    "etag": "\"d643a11a513ff4cb2c13159629321e9e\"",
+    "size": 33232
+  },
+  "assets/shots/easy-ssh-port.webp": {
+    "url": "https://awesomemygo.dev/shots/easy-ssh-port.webp",
+    "etag": "\"8be1c73e4e04340361f065a54cca88df\"",
+    "size": 26084
+  },
+  "assets/shots/easydict-for-linux.webp": {
+    "url": "https://awesomemygo.dev/shots/easydict-for-linux.webp",
+    "etag": "\"8c3811998cfc29a53709e909f26e3007\"",
+    "size": 30266
+  },
+  "assets/shots/easylpac.webp": {
+    "url": "https://awesomemygo.dev/shots/easylpac.webp",
+    "etag": "\"3459579109ecab8e2369b9f12923fe84\"",
+    "size": 30022
+  },
+  "assets/shots/easytier-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/easytier-mygo.webp",
+    "etag": "\"146de1548995572222245e6305095026\"",
+    "size": 37166
+  },
+  "assets/shots/echo.webp": {
+    "url": "https://awesomemygo.dev/shots/echo.webp",
+    "etag": "\"cda87cc7ee6cae22751aacda69c5b575\"",
+    "size": 47844
+  },
+  "assets/shots/elir.webp": {
+    "url": "https://awesomemygo.dev/shots/elir.webp",
+    "etag": "\"b6924a81b0a237b3d42f83c0faf579e4\"",
+    "size": 12666
+  },
+  "assets/shots/enowx.webp": {
+    "url": "https://awesomemygo.dev/shots/enowx.webp",
+    "etag": "\"1374998fb95e45d29e3a035f96143f18\"",
+    "size": 33382
+  },
+  "assets/shots/envman.webp": {
+    "url": "https://awesomemygo.dev/shots/envman.webp",
+    "etag": "\"2fbc69277bdd8ee7e5b90eec0c98c10d\"",
+    "size": 24782
+  },
+  "assets/shots/esp32-mini-tv.webp": {
+    "url": "https://awesomemygo.dev/shots/esp32-mini-tv.webp",
+    "etag": "\"d8279e550978e330cd7ab534c8715fde\"",
+    "size": 18794
+  },
+  "assets/shots/febuildergba.webp": {
+    "url": "https://awesomemygo.dev/shots/febuildergba.webp",
+    "etag": "\"814cf07dda0bf9d58b01385d10b2c02e\"",
+    "size": 19318
+  },
+  "assets/shots/felicia.webp": {
+    "url": "https://awesomemygo.dev/shots/felicia.webp",
+    "etag": "\"4b98bad1f9d0adbdac81fa75d6f304cf\"",
+    "size": 12824
+  },
+  "assets/shots/ferry.webp": {
+    "url": "https://awesomemygo.dev/shots/ferry.webp",
+    "etag": "\"084b88eaba1cf3f31ee814e4495dda6b\"",
+    "size": 23988
+  },
+  "assets/shots/finallyshell.webp": {
+    "url": "https://awesomemygo.dev/shots/finallyshell.webp",
+    "etag": "\"fd56443eb913616175b6c43e8339109d\"",
+    "size": 53516
+  },
+  "assets/shots/firn.webp": {
+    "url": "https://awesomemygo.dev/shots/firn.webp",
+    "etag": "\"820c44a5a5dadf8ea453329f2863c16c\"",
+    "size": 33182
+  },
+  "assets/shots/flashmusic.webp": {
+    "url": "https://awesomemygo.dev/shots/flashmusic.webp",
+    "etag": "\"211addff4a52f7cd0b64e88bd9ff3687\"",
+    "size": 28692
+  },
+  "assets/shots/floater.webp": {
+    "url": "https://awesomemygo.dev/shots/floater.webp",
+    "etag": "\"27b0c5211eac92313e81b4bbee98f342\"",
+    "size": 14590
+  },
+  "assets/shots/fnmovie.webp": {
+    "url": "https://awesomemygo.dev/shots/fnmovie.webp",
+    "etag": "\"080067c0f2edebd6005fb80956ba6277\"",
+    "size": 40094
+  },
+  "assets/shots/framepicker.webp": {
+    "url": "https://awesomemygo.dev/shots/framepicker.webp",
+    "etag": "\"f4181aadc77183386eb887c067d0f2fb\"",
+    "size": 16264
+  },
+  "assets/shots/frpc.webp": {
+    "url": "https://awesomemygo.dev/shots/frpc.webp",
+    "etag": "\"84e1eec9089df07ac1c3f31b0b82a100\"",
+    "size": 18390
+  },
+  "assets/shots/fsearch-gui.webp": {
+    "url": "https://awesomemygo.dev/shots/fsearch-gui.webp",
+    "etag": "\"be6518ba961e705cc353d63ea4e7c09f\"",
+    "size": 11460
+  },
+  "assets/shots/fx-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/fx-desktop.webp",
+    "etag": "\"5d6f65329a3a69a6e259504e2c131745\"",
+    "size": 42826
+  },
+  "assets/shots/game-presence.webp": {
+    "url": "https://awesomemygo.dev/shots/game-presence.webp",
+    "etag": "\"64c0b50b4caa32853bb95ec0582f05bb\"",
+    "size": 12296
+  },
+  "assets/shots/gamesave-manager.webp": {
+    "url": "https://awesomemygo.dev/shots/gamesave-manager.webp",
+    "etag": "\"ac61e64fd9d45e5edbe7a30665bbc707\"",
+    "size": 18998
+  },
+  "assets/shots/gatelock.webp": {
+    "url": "https://awesomemygo.dev/shots/gatelock.webp",
+    "etag": "\"5b32964e8ab0f12a633fcb0816a41691\"",
+    "size": 15700
+  },
+  "assets/shots/gh-agent.webp": {
+    "url": "https://awesomemygo.dev/shots/gh-agent.webp",
+    "etag": "\"f2239cb54119db7d3eeb6bb98a7a97e7\"",
+    "size": 19802
+  },
+  "assets/shots/gist.webp": {
+    "url": "https://awesomemygo.dev/shots/gist.webp",
+    "etag": "\"122e190d0c333aacaf9b65ad60b46b34\"",
+    "size": 33612
+  },
+  "assets/shots/git-viewer.webp": {
+    "url": "https://awesomemygo.dev/shots/git-viewer.webp",
+    "etag": "\"529e686829e049f6c1c636b3e31df333\"",
+    "size": 32554
+  },
+  "assets/shots/glint.webp": {
+    "url": "https://awesomemygo.dev/shots/glint.webp",
+    "etag": "\"1ada966e73d9830ed6af16cd25af8150\"",
+    "size": 20160
+  },
+  "assets/shots/gloss.webp": {
+    "url": "https://awesomemygo.dev/shots/gloss.webp",
+    "etag": "\"a141adfddb5e7fc9ad300b5e94ebd0c0\"",
+    "size": 17548
+  },
+  "assets/shots/gocode.webp": {
+    "url": "https://awesomemygo.dev/shots/gocode.webp",
+    "etag": "\"68814bdfb29a78c890c8f68290dbcae5\"",
+    "size": 24944
+  },
+  "assets/shots/gocompare.webp": {
+    "url": "https://awesomemygo.dev/shots/gocompare.webp",
+    "etag": "\"fb40236e3c6b6ddd209e5d8db826c614\"",
+    "size": 47698
+  },
+  "assets/shots/godiff.webp": {
+    "url": "https://awesomemygo.dev/shots/godiff.webp",
+    "etag": "\"4ce569ca57dc1916f5e20f2670bb20c8\"",
+    "size": 45500
+  },
+  "assets/shots/godraw.webp": {
+    "url": "https://awesomemygo.dev/shots/godraw.webp",
+    "etag": "\"0e05244003db4bad8f62139487347a2e\"",
+    "size": 50862
+  },
+  "assets/shots/godrome.webp": {
+    "url": "https://awesomemygo.dev/shots/godrome.webp",
+    "etag": "\"cc1558f589962db09c3ac53f573f23a7\"",
+    "size": 27536
+  },
+  "assets/shots/godwit.webp": {
+    "url": "https://awesomemygo.dev/shots/godwit.webp",
+    "etag": "\"41a8265e4bf07b8bd29f4d9dbd33dd19\"",
+    "size": 50330
+  },
+  "assets/shots/gofolio.webp": {
+    "url": "https://awesomemygo.dev/shots/gofolio.webp",
+    "etag": "\"805f5dbc1a53c1ed401b16424c90536b\"",
+    "size": 31942
+  },
+  "assets/shots/gogo-explorer.webp": {
+    "url": "https://awesomemygo.dev/shots/gogo-explorer.webp",
+    "etag": "\"747949c1dd3381e2d526f6788162db21\"",
+    "size": 33124
+  },
+  "assets/shots/golauncher.webp": {
+    "url": "https://awesomemygo.dev/shots/golauncher.webp",
+    "etag": "\"172368183a3a9bf8a1be65eea8003f32\"",
+    "size": 45156
+  },
+  "assets/shots/golder.webp": {
+    "url": "https://awesomemygo.dev/shots/golder.webp",
+    "etag": "\"738f0bd7ba41e529fbcdb2bf9457191b\"",
+    "size": 65896
+  },
+  "assets/shots/gopaste.webp": {
+    "url": "https://awesomemygo.dev/shots/gopaste.webp",
+    "etag": "\"d1267c4462ca2bbca2d3500a20506413\"",
+    "size": 18676
+  },
+  "assets/shots/gorequest.webp": {
+    "url": "https://awesomemygo.dev/shots/gorequest.webp",
+    "etag": "\"7a4d0bef99e5bfe762c743e25f509fe5\"",
+    "size": 38590
+  },
+  "assets/shots/gorex.webp": {
+    "url": "https://awesomemygo.dev/shots/gorex.webp",
+    "etag": "\"2c79377ecf5d2b84ab41b49cc7f7b992\"",
+    "size": 66206
+  },
+  "assets/shots/gorss.webp": {
+    "url": "https://awesomemygo.dev/shots/gorss.webp",
+    "etag": "\"f8d72c9727fdb57911e09c33dfab6ac8\"",
+    "size": 37062
+  },
+  "assets/shots/gosidian.webp": {
+    "url": "https://awesomemygo.dev/shots/gosidian.webp",
+    "etag": "\"d289c6c549a7f1cff785e319a00b2188\"",
+    "size": 18960
+  },
+  "assets/shots/gospeak.webp": {
+    "url": "https://awesomemygo.dev/shots/gospeak.webp",
+    "etag": "\"5c9d341261a8a7bbe15490c33297f19f\"",
+    "size": 17436
+  },
+  "assets/shots/gossh.webp": {
+    "url": "https://awesomemygo.dev/shots/gossh.webp",
+    "etag": "\"247ea31c7540413e67040e578e540bc3\"",
+    "size": 26408
+  },
+  "assets/shots/gotify-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/gotify-desktop.webp",
+    "etag": "\"9466ac3495d1f9b7cd5e4bd99a919447\"",
+    "size": 41214
+  },
+  "assets/shots/gotrust.webp": {
+    "url": "https://awesomemygo.dev/shots/gotrust.webp",
+    "etag": "\"ed80363743783ab89ed0df779279bf1b\"",
+    "size": 26240
+  },
+  "assets/shots/grove.webp": {
+    "url": "https://awesomemygo.dev/shots/grove.webp",
+    "etag": "\"510fc59c959607f6da444a9524056fba\"",
+    "size": 84886
+  },
+  "assets/shots/guart.webp": {
+    "url": "https://awesomemygo.dev/shots/guart.webp",
+    "etag": "\"f9741fc4d978ac6c063f6b5788edfb5e\"",
+    "size": 51754
+  },
+  "assets/shots/gzist-netkeeper.webp": {
+    "url": "https://awesomemygo.dev/shots/gzist-netkeeper.webp",
+    "etag": "\"5536e13122a5412cff9b5c1904b0b5fd\"",
+    "size": 14530
+  },
+  "assets/shots/hand.webp": {
+    "url": "https://awesomemygo.dev/shots/hand.webp",
+    "etag": "\"3f236f76ce99687679130f5cfb8a5212\"",
+    "size": 17960
+  },
+  "assets/shots/handbean.webp": {
+    "url": "https://awesomemygo.dev/shots/handbean.webp",
+    "etag": "\"16a384e30959791d2b19a58f539d9997\"",
+    "size": 19462
+  },
+  "assets/shots/hangman.webp": {
+    "url": "https://awesomemygo.dev/shots/hangman.webp",
+    "etag": "\"03db7d58afc935a56a0ace7152cd4b95\"",
+    "size": 13064
+  },
+  "assets/shots/haruhikage-app.webp": {
+    "url": "https://awesomemygo.dev/shots/haruhikage-app.webp",
+    "etag": "\"b57172192921ed418452d898b5c6c863\"",
+    "size": 60596
+  },
+  "assets/shots/hd2-font-maker.webp": {
+    "url": "https://awesomemygo.dev/shots/hd2-font-maker.webp",
+    "etag": "\"9bbe2384f718fa6da2b1a263dd2e6782\"",
+    "size": 53588
+  },
+  "assets/shots/he-music.webp": {
+    "url": "https://awesomemygo.dev/shots/he-music.webp",
+    "etag": "\"34b7fa136a7c944ad0f6e29680747cb1\"",
+    "size": 10814
+  },
+  "assets/shots/healthsync.webp": {
+    "url": "https://awesomemygo.dev/shots/healthsync.webp",
+    "etag": "\"8fd1d783dd23932f312d16a2f7515133\"",
+    "size": 31468
+  },
+  "assets/shots/herdr-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/herdr-desktop.webp",
+    "etag": "\"2148921ad7d88f612e431a91035be162\"",
+    "size": 9340
+  },
+  "assets/shots/herdr.webp": {
+    "url": "https://awesomemygo.dev/shots/herdr.webp",
+    "etag": "\"1af8ab4c4f23753ec9ba46a20a38bd95\"",
+    "size": 88376
+  },
+  "assets/shots/herdrup-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/herdrup-desktop.webp",
+    "etag": "\"bbe87e42e47ef7081d35115343873081\"",
+    "size": 69932
+  },
+  "assets/shots/hergo.webp": {
+    "url": "https://awesomemygo.dev/shots/hergo.webp",
+    "etag": "\"ae2c95972bba691861050c43261abefe\"",
+    "size": 18900
+  },
+  "assets/shots/hku-vpn.webp": {
+    "url": "https://awesomemygo.dev/shots/hku-vpn.webp",
+    "etag": "\"fbdc54628d2f19f8b48cde349e98c4db\"",
+    "size": 30356
+  },
+  "assets/shots/hop.webp": {
+    "url": "https://awesomemygo.dev/shots/hop.webp",
+    "etag": "\"a184f9a0f7b5d0096477b6ac9d419f00\"",
+    "size": 48932
+  },
+  "assets/shots/hoyo-gacha.webp": {
+    "url": "https://awesomemygo.dev/shots/hoyo-gacha.webp",
+    "etag": "\"30f837d1be46cb02c30e790d81a1a4fb\"",
+    "size": 13634
+  },
+  "assets/shots/hyla.webp": {
+    "url": "https://awesomemygo.dev/shots/hyla.webp",
+    "etag": "\"1c25bc43241540aa7d94bd708ea55ad3\"",
+    "size": 29272
+  },
+  "assets/shots/hyperai.webp": {
+    "url": "https://awesomemygo.dev/shots/hyperai.webp",
+    "etag": "\"00705fc9c21613a9df5c8b33ac819fd5\"",
+    "size": 15938
+  },
+  "assets/shots/iloader-cert-export.webp": {
+    "url": "https://awesomemygo.dev/shots/iloader-cert-export.webp",
+    "etag": "\"465ced66db27ddcff5740d9fc844e1a8\"",
+    "size": 23840
+  },
+  "assets/shots/image-min.webp": {
+    "url": "https://awesomemygo.dev/shots/image-min.webp",
+    "etag": "\"385d0fe27a9abee54160289e514f92c9\"",
+    "size": 15132
+  },
+  "assets/shots/imyemail-cloud-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/imyemail-cloud-mygo.webp",
+    "etag": "\"3f34d964256e887e1ade73f129a91474\"",
+    "size": 21078
+  },
+  "assets/shots/inferyard-studio.webp": {
+    "url": "https://awesomemygo.dev/shots/inferyard-studio.webp",
+    "etag": "\"9cae55a24e3addc6f8d1401d0f6e6734\"",
+    "size": 12800
+  },
+  "assets/shots/inkgo.webp": {
+    "url": "https://awesomemygo.dev/shots/inkgo.webp",
+    "etag": "\"b04c0d30679c434452aa8b43c053b8d8\"",
+    "size": 29710
+  },
+  "assets/shots/ipatlas.webp": {
+    "url": "https://awesomemygo.dev/shots/ipatlas.webp",
+    "etag": "\"b8483223d789a005ee2cdd8f551ee0b5\"",
+    "size": 17644
+  },
+  "assets/shots/ivy.webp": {
+    "url": "https://awesomemygo.dev/shots/ivy.webp",
+    "etag": "\"a0b351ff256b8c4a35a877a12b1ea539\"",
+    "size": 23174
+  },
+  "assets/shots/jalin.webp": {
+    "url": "https://awesomemygo.dev/shots/jalin.webp",
+    "etag": "\"95064a58dd7b7b14c925c7419058ee45\"",
+    "size": 19092
+  },
+  "assets/shots/jianshan.webp": {
+    "url": "https://awesomemygo.dev/shots/jianshan.webp",
+    "etag": "\"2dd7cb37359a67739d8a040f25627655\"",
+    "size": 62370
+  },
+  "assets/shots/joplin-lite.webp": {
+    "url": "https://awesomemygo.dev/shots/joplin-lite.webp",
+    "etag": "\"5f8a58246ecae21f7978f1c195841dc5\"",
+    "size": 25082
+  },
+  "assets/shots/jstv-player.webp": {
+    "url": "https://awesomemygo.dev/shots/jstv-player.webp",
+    "etag": "\"37ca865b901c2bdba91d05bed24aaed8\"",
+    "size": 14482
+  },
+  "assets/shots/jun.webp": {
+    "url": "https://awesomemygo.dev/shots/jun.webp",
+    "etag": "\"981d6f72590f31884c81028b2f714040\"",
+    "size": 71416
+  },
+  "assets/shots/kacha.webp": {
+    "url": "https://awesomemygo.dev/shots/kacha.webp",
+    "etag": "\"4faf65637c5f0dcdc38236e6b8d06098\"",
+    "size": 7234
+  },
+  "assets/shots/kaixinguo.webp": {
+    "url": "https://awesomemygo.dev/shots/kaixinguo.webp",
+    "etag": "\"7dfb7dc239080e3b895b830088804a2d\"",
+    "size": 110492
+  },
+  "assets/shots/kami.webp": {
+    "url": "https://awesomemygo.dev/shots/kami.webp",
+    "etag": "\"20fc0206dbe35b50f10abfd9f703e537\"",
+    "size": 50818
+  },
+  "assets/shots/kando.webp": {
+    "url": "https://awesomemygo.dev/shots/kando.webp",
+    "etag": "\"1867c27979dd693f5b7a81026dca95b0\"",
+    "size": 35548
+  },
+  "assets/shots/kanso.webp": {
+    "url": "https://awesomemygo.dev/shots/kanso.webp",
+    "etag": "\"ca8e94cc8ce804acde285e8f0d0de08a\"",
+    "size": 30526
+  },
+  "assets/shots/kata.webp": {
+    "url": "https://awesomemygo.dev/shots/kata.webp",
+    "etag": "\"505999ee452bbfdc5add63a5fe245356\"",
+    "size": 34118
+  },
+  "assets/shots/keeps.webp": {
+    "url": "https://awesomemygo.dev/shots/keeps.webp",
+    "etag": "\"23e42ae949563e44728e992b3bd1bd11\"",
+    "size": 47118
+  },
+  "assets/shots/kero.webp": {
+    "url": "https://awesomemygo.dev/shots/kero.webp",
+    "etag": "\"4dcc71dd8bf9b99a147ea087d8889c1d\"",
+    "size": 40268
+  },
+  "assets/shots/keyboard-lock.webp": {
+    "url": "https://awesomemygo.dev/shots/keyboard-lock.webp",
+    "etag": "\"8536dd76792c7c75a09acd63c66c4fb9\"",
+    "size": 9888
+  },
+  "assets/shots/keydepot.webp": {
+    "url": "https://awesomemygo.dev/shots/keydepot.webp",
+    "etag": "\"a0bc1352f6381f44da30b964cfafb8fe\"",
+    "size": 13376
+  },
+  "assets/shots/kim-quy.webp": {
+    "url": "https://awesomemygo.dev/shots/kim-quy.webp",
+    "etag": "\"ada3f145291f8a98be1311d0fcfeb44d\"",
+    "size": 7756
+  },
+  "assets/shots/kivrix.webp": {
+    "url": "https://awesomemygo.dev/shots/kivrix.webp",
+    "etag": "\"ebfea2bbf57c759c81856cf4631cf07f\"",
+    "size": 10680
+  },
+  "assets/shots/klip.webp": {
+    "url": "https://awesomemygo.dev/shots/klip.webp",
+    "etag": "\"f2e5eb74605d775aaed2cf100cc6cbc7\"",
+    "size": 19916
+  },
+  "assets/shots/knack.webp": {
+    "url": "https://awesomemygo.dev/shots/knack.webp",
+    "etag": "\"34015d888b202c7d7d01547eb3759316\"",
+    "size": 31924
+  },
+  "assets/shots/kopi.webp": {
+    "url": "https://awesomemygo.dev/shots/kopi.webp",
+    "etag": "\"b072c92bbfa495e741b3d68c508c6764\"",
+    "size": 30594
+  },
+  "assets/shots/kotae.webp": {
+    "url": "https://awesomemygo.dev/shots/kotae.webp",
+    "etag": "\"9a5d05cec81dbba39ac59dc5e4b1a8db\"",
+    "size": 31178
+  },
+  "assets/shots/kube-desk.webp": {
+    "url": "https://awesomemygo.dev/shots/kube-desk.webp",
+    "etag": "\"453c4a0de760d6888195d91f1f6452f2\"",
+    "size": 27978
+  },
+  "assets/shots/kumo.webp": {
+    "url": "https://awesomemygo.dev/shots/kumo.webp",
+    "etag": "\"4304b1798e39a25b27df1a3d4a08af41\"",
+    "size": 23932
+  },
+  "assets/shots/kunpengclash.webp": {
+    "url": "https://awesomemygo.dev/shots/kunpengclash.webp",
+    "etag": "\"4db22fc605660c3f199f596e9461a114\"",
+    "size": 30540
+  },
+  "assets/shots/kura.webp": {
+    "url": "https://awesomemygo.dev/shots/kura.webp",
+    "etag": "\"2e7ec47579044053c49117115ede69b8\"",
+    "size": 33852
+  },
+  "assets/shots/kyokai.webp": {
+    "url": "https://awesomemygo.dev/shots/kyokai.webp",
+    "etag": "\"6d4c5f8f548df0cd6dfe43c711983113\"",
+    "size": 25766
+  },
+  "assets/shots/la-pluma.webp": {
+    "url": "https://awesomemygo.dev/shots/la-pluma.webp",
+    "etag": "\"d2ead7861dd91eace7c27b76ea494553\"",
+    "size": 29410
+  },
+  "assets/shots/lan-notify.webp": {
+    "url": "https://awesomemygo.dev/shots/lan-notify.webp",
+    "etag": "\"5061b41a03bcaf2303251af403a7555e\"",
+    "size": 7550
+  },
+  "assets/shots/lan-share.webp": {
+    "url": "https://awesomemygo.dev/shots/lan-share.webp",
+    "etag": "\"54ee3bb825ffbd2421d2f9f6d09af11b\"",
+    "size": 23580
+  },
+  "assets/shots/lanscout.webp": {
+    "url": "https://awesomemygo.dev/shots/lanscout.webp",
+    "etag": "\"cf422ec7a1b3429d27d716bea1dd556a\"",
+    "size": 43820
+  },
+  "assets/shots/lark-music.webp": {
+    "url": "https://awesomemygo.dev/shots/lark-music.webp",
+    "etag": "\"f5c34fdaeedb7f2748f4a464cacfac7c\"",
+    "size": 46586
+  },
+  "assets/shots/launchr.webp": {
+    "url": "https://awesomemygo.dev/shots/launchr.webp",
+    "etag": "\"be0fe3cc0869b2502df427f632d7767f\"",
+    "size": 23904
+  },
+  "assets/shots/leaflet.webp": {
+    "url": "https://awesomemygo.dev/shots/leaflet.webp",
+    "etag": "\"124b2d190f77666446691ff9bcd2e669\"",
+    "size": 53820
+  },
+  "assets/shots/leafmark.webp": {
+    "url": "https://awesomemygo.dev/shots/leafmark.webp",
+    "etag": "\"eec0931e928cca43f2bdd618740cd011\"",
+    "size": 25656
+  },
+  "assets/shots/leagueakari-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/leagueakari-mygo.webp",
+    "etag": "\"e0f9eadaaac194e98a23b030edc39f4d\"",
+    "size": 47022
+  },
+  "assets/shots/leeway.webp": {
+    "url": "https://awesomemygo.dev/shots/leeway.webp",
+    "etag": "\"c9ed5e00ea37ffd805b2c796fcdb03a8\"",
+    "size": 54936
+  },
+  "assets/shots/lilt.webp": {
+    "url": "https://awesomemygo.dev/shots/lilt.webp",
+    "etag": "\"f82e75250fa15c96e602f2c453ee4362\"",
+    "size": 44394
+  },
+  "assets/shots/linkdeck.webp": {
+    "url": "https://awesomemygo.dev/shots/linkdeck.webp",
+    "etag": "\"f7dfdf391387cc51a5c39e5bdc8e1e58\"",
+    "size": 23722
+  },
+  "assets/shots/lintel.webp": {
+    "url": "https://awesomemygo.dev/shots/lintel.webp",
+    "etag": "\"1c125b47db737ec9106d93d0aa192f9b\"",
+    "size": 4500
+  },
+  "assets/shots/little-reef.webp": {
+    "url": "https://awesomemygo.dev/shots/little-reef.webp",
+    "etag": "\"9c36aaf7c95d1afe9c0127263797d623\"",
+    "size": 26210
+  },
+  "assets/shots/liubai.webp": {
+    "url": "https://awesomemygo.dev/shots/liubai.webp",
+    "etag": "\"7585ebfbec8e7d60d9f5cebd88b40386\"",
+    "size": 47622
+  },
+  "assets/shots/live-calendar.webp": {
+    "url": "https://awesomemygo.dev/shots/live-calendar.webp",
+    "etag": "\"9357ba1de6a4956e8c181015a91e6df2\"",
+    "size": 51676
+  },
+  "assets/shots/live-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/live-mygo.webp",
+    "etag": "\"d16ea9553c7034f544cc6d908a7de188\"",
+    "size": 63410
+  },
+  "assets/shots/llama-cpp-manager.webp": {
+    "url": "https://awesomemygo.dev/shots/llama-cpp-manager.webp",
+    "etag": "\"ec4fdb63cb5d34a26047064a3750733e\"",
+    "size": 24206
+  },
+  "assets/shots/locklark.webp": {
+    "url": "https://awesomemygo.dev/shots/locklark.webp",
+    "etag": "\"e1a7583af9c8d46c367c8669605ffe4f\"",
+    "size": 28560
+  },
+  "assets/shots/locus.webp": {
+    "url": "https://awesomemygo.dev/shots/locus.webp",
+    "etag": "\"7d385c3781b852236728c5f6d0e75c09\"",
+    "size": 27188
+  },
+  "assets/shots/lody-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/lody-mygo.webp",
+    "etag": "\"c6365978e013c31bd04b53590ecaa389\"",
+    "size": 20780
+  },
+  "assets/shots/lom-dx2metal.webp": {
+    "url": "https://awesomemygo.dev/shots/lom-dx2metal.webp",
+    "etag": "\"0db8331957df8a66d512890cc77e1b75\"",
+    "size": 35876
+  },
+  "assets/shots/lookback.webp": {
+    "url": "https://awesomemygo.dev/shots/lookback.webp",
+    "etag": "\"93648541356bce1503bff5b9235e1726\"",
+    "size": 42694
+  },
+  "assets/shots/lorca.webp": {
+    "url": "https://awesomemygo.dev/shots/lorca.webp",
+    "etag": "\"604db0ca06dfcb517bc406b87ca14413\"",
+    "size": 45704
+  },
+  "assets/shots/lslan.webp": {
+    "url": "https://awesomemygo.dev/shots/lslan.webp",
+    "etag": "\"9f2dc3d1ba4f82f4fbd35156e39f1122\"",
+    "size": 22544
+  },
+  "assets/shots/lucia.webp": {
+    "url": "https://awesomemygo.dev/shots/lucia.webp",
+    "etag": "\"886bfd6b002013fcbe4adb06751299c9\"",
+    "size": 18396
+  },
+  "assets/shots/lumilo.webp": {
+    "url": "https://awesomemygo.dev/shots/lumilo.webp",
+    "etag": "\"316372e4779976e5ef861241185d4255\"",
+    "size": 41204
+  },
+  "assets/shots/lumiwerk.webp": {
+    "url": "https://awesomemygo.dev/shots/lumiwerk.webp",
+    "etag": "\"32e5d9fa2b63413bc5cf78f7cabc11a3\"",
+    "size": 101008
+  },
+  "assets/shots/lunabox.webp": {
+    "url": "https://awesomemygo.dev/shots/lunabox.webp",
+    "etag": "\"dccc484c3282ee3aa9279668efdcbc22\"",
+    "size": 57478
+  },
+  "assets/shots/lzsync.webp": {
+    "url": "https://awesomemygo.dev/shots/lzsync.webp",
+    "etag": "\"9d8cd42fea7cfa286b9da65db2753cc7\"",
+    "size": 14516
+  },
+  "assets/shots/mac2mqtt.webp": {
+    "url": "https://awesomemygo.dev/shots/mac2mqtt.webp",
+    "etag": "\"0edcdac1266c212aa3c93679d2fc5fd2\"",
+    "size": 34934
+  },
+  "assets/shots/magpie-native-routing.webp": {
+    "url": "https://awesomemygo.dev/shots/magpie-native-routing.webp",
+    "etag": "\"d7d5fb3a67631111f90b57f1bdfa98d4\"",
+    "size": 42078
+  },
+  "assets/shots/mami.webp": {
+    "url": "https://awesomemygo.dev/shots/mami.webp",
+    "etag": "\"954dec824b97470a02c4ec701c51cbd9\"",
+    "size": 32558
+  },
+  "assets/shots/mangatrans.webp": {
+    "url": "https://awesomemygo.dev/shots/mangatrans.webp",
+    "etag": "\"5d2fc32261eb4f4b82fb578b9d2a4c32\"",
+    "size": 12586
+  },
+  "assets/shots/marginalia.webp": {
+    "url": "https://awesomemygo.dev/shots/marginalia.webp",
+    "etag": "\"4e0e6bf41140be409232b653e50a72a8\"",
+    "size": 37094
+  },
+  "assets/shots/mayoi.webp": {
+    "url": "https://awesomemygo.dev/shots/mayoi.webp",
+    "etag": "\"b4ba20af05ae3205173522eb9c5b425d\"",
+    "size": 51036
+  },
+  "assets/shots/mcpctl.webp": {
+    "url": "https://awesomemygo.dev/shots/mcpctl.webp",
+    "etag": "\"debb3a817e27c086eae1690ead353c8c\"",
+    "size": 3540
+  },
+  "assets/shots/mediago.webp": {
+    "url": "https://awesomemygo.dev/shots/mediago.webp",
+    "etag": "\"ec9cd6d0b18c0af920963c21b009a536\"",
+    "size": 11786
+  },
+  "assets/shots/meiro.webp": {
+    "url": "https://awesomemygo.dev/shots/meiro.webp",
+    "etag": "\"36b2c0702b8109ce5bdb3e03dcf2e255\"",
+    "size": 47202
+  },
+  "assets/shots/melo.webp": {
+    "url": "https://awesomemygo.dev/shots/melo.webp",
+    "etag": "\"04e21bc6fb652e3cc804bb5a87c03c7b\"",
+    "size": 13610
+  },
+  "assets/shots/menubloom.webp": {
+    "url": "https://awesomemygo.dev/shots/menubloom.webp",
+    "etag": "\"906dea14ff5b39d05f33900a574a1982\"",
+    "size": 58092
+  },
+  "assets/shots/meow-craft-launcher.webp": {
+    "url": "https://awesomemygo.dev/shots/meow-craft-launcher.webp",
+    "etag": "\"0c12f1cb3b81400c2fc6663633cf7f53\"",
+    "size": 67968
+  },
+  "assets/shots/meowx-traffic.webp": {
+    "url": "https://awesomemygo.dev/shots/meowx-traffic.webp",
+    "etag": "\"82f21807ed3815f7b22a21a143eb2a5f\"",
+    "size": 32502
+  },
+  "assets/shots/meridian.webp": {
+    "url": "https://awesomemygo.dev/shots/meridian.webp",
+    "etag": "\"06b8708d588623658f9134311e8d48ea\"",
+    "size": 11064
+  },
+  "assets/shots/miaomiao-todo.webp": {
+    "url": "https://awesomemygo.dev/shots/miaomiao-todo.webp",
+    "etag": "\"cbef6a203f146735db45df7b8cbee1a7\"",
+    "size": 21578
+  },
+  "assets/shots/mica.webp": {
+    "url": "https://awesomemygo.dev/shots/mica.webp",
+    "etag": "\"9e36671797550054d6696748c09b6d22\"",
+    "size": 56392
+  },
+  "assets/shots/miguwave.webp": {
+    "url": "https://awesomemygo.dev/shots/miguwave.webp",
+    "etag": "\"0756ef691b17c101003717b11f9905f6\"",
+    "size": 58168
+  },
+  "assets/shots/minicode.webp": {
+    "url": "https://awesomemygo.dev/shots/minicode.webp",
+    "etag": "\"546d91e5dd805b94a29734803b69cfa1\"",
+    "size": 64790
+  },
+  "assets/shots/minimuse.webp": {
+    "url": "https://awesomemygo.dev/shots/minimuse.webp",
+    "etag": "\"bd65db2bb36cfb866391a9138184fc1d\"",
+    "size": 79442
+  },
+  "assets/shots/mixmusic.webp": {
+    "url": "https://awesomemygo.dev/shots/mixmusic.webp",
+    "etag": "\"ec9f679b043741aaf4a1f4b69bb5eb92\"",
+    "size": 79790
+  },
+  "assets/shots/mochi.webp": {
+    "url": "https://awesomemygo.dev/shots/mochi.webp",
+    "etag": "\"6065e65c707c53182d6137b6247457ed\"",
+    "size": 14362
+  },
+  "assets/shots/mojian.webp": {
+    "url": "https://awesomemygo.dev/shots/mojian.webp",
+    "etag": "\"a9fd3f6b64dc426be6b1d9fadb720202\"",
+    "size": 65444
+  },
+  "assets/shots/moko.webp": {
+    "url": "https://awesomemygo.dev/shots/moko.webp",
+    "etag": "\"880aeec4008bf7af3984fd6c04912866\"",
+    "size": 25500
+  },
+  "assets/shots/moli-tutu.webp": {
+    "url": "https://awesomemygo.dev/shots/moli-tutu.webp",
+    "etag": "\"da7b308ff4b84131088de269d2086224\"",
+    "size": 13156
+  },
+  "assets/shots/moniflip.webp": {
+    "url": "https://awesomemygo.dev/shots/moniflip.webp",
+    "etag": "\"8dcd1cbd33d7710ab3c078e736f80388\"",
+    "size": 19510
+  },
+  "assets/shots/monitorbar.webp": {
+    "url": "https://awesomemygo.dev/shots/monitorbar.webp",
+    "etag": "\"4f1945cad21d531713ba4f9a5374929f\"",
+    "size": 33222
+  },
+  "assets/shots/morilo.webp": {
+    "url": "https://awesomemygo.dev/shots/morilo.webp",
+    "etag": "\"08f5c10dd35b7ec572f7b7f0861504d6\"",
+    "size": 28734
+  },
+  "assets/shots/mote.webp": {
+    "url": "https://awesomemygo.dev/shots/mote.webp",
+    "etag": "\"1e45dddc4fc5a6394e19f4869b0888ec\"",
+    "size": 15958
+  },
+  "assets/shots/motionduo.webp": {
+    "url": "https://awesomemygo.dev/shots/motionduo.webp",
+    "etag": "\"3a3061ab1c525d3600d1a8cb80c53f8c\"",
+    "size": 10052
+  },
+  "assets/shots/motrix-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/motrix-mygo.webp",
+    "etag": "\"d08089776cfb534fa0d352524f92149f\"",
+    "size": 33222
+  },
+  "assets/shots/mouse-mapper.webp": {
+    "url": "https://awesomemygo.dev/shots/mouse-mapper.webp",
+    "etag": "\"46423e3f7f2779a6a330dede33371d6a\"",
+    "size": 18848
+  },
+  "assets/shots/mqtt-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/mqtt-desktop.webp",
+    "etag": "\"800ed25828b9e02e16d178e929dec22d\"",
+    "size": 23932
+  },
+  "assets/shots/mswplayr.webp": {
+    "url": "https://awesomemygo.dev/shots/mswplayr.webp",
+    "etag": "\"5f74fbb7371c16cb9719d474ef5b8571\"",
+    "size": 12756
+  },
+  "assets/shots/mu.webp": {
+    "url": "https://awesomemygo.dev/shots/mu.webp",
+    "etag": "\"cea2555a6e5414279397226e9e0af39f\"",
+    "size": 25998
+  },
+  "assets/shots/mujicacut.webp": {
+    "url": "https://awesomemygo.dev/shots/mujicacut.webp",
+    "etag": "\"127e192c916c8f0aa4dfe58a461b7aa4\"",
+    "size": 32724
+  },
+  "assets/shots/muo.webp": {
+    "url": "https://awesomemygo.dev/shots/muo.webp",
+    "etag": "\"5e45ee0e5842d3449f2e6a2ca8c00fa8\"",
+    "size": 49156
+  },
+  "assets/shots/musiccomments.webp": {
+    "url": "https://awesomemygo.dev/shots/musiccomments.webp",
+    "etag": "\"b1198c3545df3ac59777e4179a9ba683\"",
+    "size": 25526
+  },
+  "assets/shots/mux.webp": {
+    "url": "https://awesomemygo.dev/shots/mux.webp",
+    "etag": "\"04107011b5ba381d9bbda45af94f8294\"",
+    "size": 43982
+  },
+  "assets/shots/my-quickstart-go.webp": {
+    "url": "https://awesomemygo.dev/shots/my-quickstart-go.webp",
+    "etag": "\"e573e3dceb7acb95d77ee469839953b1\"",
+    "size": 7022
+  },
+  "assets/shots/my-vm.webp": {
+    "url": "https://awesomemygo.dev/shots/my-vm.webp",
+    "etag": "\"712ccb31d46f34cea013107a242f7bb9\"",
+    "size": 48682
+  },
+  "assets/shots/mycast.webp": {
+    "url": "https://awesomemygo.dev/shots/mycast.webp",
+    "etag": "\"63b3c57d91dc545b139870c6094005ca\"",
+    "size": 12492
+  },
+  "assets/shots/myclip.webp": {
+    "url": "https://awesomemygo.dev/shots/myclip.webp",
+    "etag": "\"dda69ce40bb22e17fa43b93686ecb0c4\"",
+    "size": 10674
+  },
+  "assets/shots/mycode.webp": {
+    "url": "https://awesomemygo.dev/shots/mycode.webp",
+    "etag": "\"af86b119d5c0a3f0fa747d1b151ff580\"",
+    "size": 41242
+  },
+  "assets/shots/mygit.webp": {
+    "url": "https://awesomemygo.dev/shots/mygit.webp",
+    "etag": "\"21635b9aa8f3c87256887cb18a34225c\"",
+    "size": 51936
+  },
+  "assets/shots/mygo-agent.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-agent.webp",
+    "etag": "\"a6fabe196f818e59f5bfa175ebea7066\"",
+    "size": 28692
+  },
+  "assets/shots/mygo-browser.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-browser.webp",
+    "etag": "\"cb606a0d26d89ac8c6dd074826b97375\"",
+    "size": 17310
+  },
+  "assets/shots/mygo-clash.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-clash.webp",
+    "etag": "\"587480ac727c3a695020e2cda6e44483\"",
+    "size": 12366
+  },
+  "assets/shots/mygo-kgou.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-kgou.webp",
+    "etag": "\"c325042b7c5ae48816c64302dd4effdc\"",
+    "size": 11622
+  },
+  "assets/shots/mygo-launcher.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-launcher.webp",
+    "etag": "\"40e27bc9ccd9210af275383713eebc04\"",
+    "size": 45986
+  },
+  "assets/shots/mygo-music.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-music.webp",
+    "etag": "\"f7b1a378ec3ed8512c66bfa38932ee67\"",
+    "size": 103622
+  },
+  "assets/shots/mygo-snake.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-snake.webp",
+    "etag": "\"f485e10592fd7d976da541ee0059690d\"",
+    "size": 9648
+  },
+  "assets/shots/mygo-store.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-store.webp",
+    "etag": "\"7615b88a90575716ae41fa340827f185\"",
+    "size": 58424
+  },
+  "assets/shots/mygo-translate.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-translate.webp",
+    "etag": "\"627acfcb1cbdd130b93c3b1a1ff16d2a\"",
+    "size": 136190
+  },
+  "assets/shots/mygo-vaultwarden.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-vaultwarden.webp",
+    "etag": "\"65eb6e4620270445a396f1f624bab87b\"",
+    "size": 17988
+  },
+  "assets/shots/mygost.webp": {
+    "url": "https://awesomemygo.dev/shots/mygost.webp",
+    "etag": "\"1694c060a616cc18038dea3abb3d3da5\"",
+    "size": 37150
+  },
+  "assets/shots/mygotion.webp": {
+    "url": "https://awesomemygo.dev/shots/mygotion.webp",
+    "etag": "\"0c60bc6e03d2e0203797953f9611d42a\"",
+    "size": 26644
+  },
+  "assets/shots/mylock.webp": {
+    "url": "https://awesomemygo.dev/shots/mylock.webp",
+    "etag": "\"f62c4d0551d513ed17467cdf2fdd3e5d\"",
+    "size": 26174
+  },
+  "assets/shots/myshoes.webp": {
+    "url": "https://awesomemygo.dev/shots/myshoes.webp",
+    "etag": "\"05d38e1420a93d4ebcadb6a31fd0cb78\"",
+    "size": 26326
+  },
+  "assets/shots/myskills.webp": {
+    "url": "https://awesomemygo.dev/shots/myskills.webp",
+    "etag": "\"648c650c39dddbaaa6dac7b72b371890\"",
+    "size": 48342
+  },
+  "assets/shots/myslack.webp": {
+    "url": "https://awesomemygo.dev/shots/myslack.webp",
+    "etag": "\"cbaac68fe6599e49ca5516bd434e6a27\"",
+    "size": 34120
+  },
+  "assets/shots/myspotify.webp": {
+    "url": "https://awesomemygo.dev/shots/myspotify.webp",
+    "etag": "\"8b881682edb7c89c6e2e2f40fd4166dc\"",
+    "size": 30164
+  },
+  "assets/shots/mytoken.webp": {
+    "url": "https://awesomemygo.dev/shots/mytoken.webp",
+    "etag": "\"c9fc948312456d758de4653531be53d2\"",
+    "size": 26322
+  },
+  "assets/shots/mytools.webp": {
+    "url": "https://awesomemygo.dev/shots/mytools.webp",
+    "etag": "\"9951cadc3dac3438bbe03876820ea9f5\"",
+    "size": 21516
+  },
+  "assets/shots/mytwig.webp": {
+    "url": "https://awesomemygo.dev/shots/mytwig.svg",
+    "etag": "\"e7c0d7819461d719c5c7a3575b220394\"",
+    "size": 158006
+  },
+  "assets/shots/myvnc.webp": {
+    "url": "https://awesomemygo.dev/shots/myvnc.webp",
+    "etag": "\"425e587f855e801c2fbb5c59d1abb4a8\"",
+    "size": 47390
+  },
+  "assets/shots/nagi.webp": {
+    "url": "https://awesomemygo.dev/shots/nagi.webp",
+    "etag": "\"a3766e247b79b55d484a9ef6076c8168\"",
+    "size": 36528
+  },
+  "assets/shots/naive-client.webp": {
+    "url": "https://awesomemygo.dev/shots/naive-client.webp",
+    "etag": "\"4892702b6364cd4a5069af18e1e74063\"",
+    "size": 36678
+  },
+  "assets/shots/nanoapi.webp": {
+    "url": "https://awesomemygo.dev/shots/nanoapi.webp",
+    "etag": "\"9fab1a29ac7d07fccca7536b41bbea4e\"",
+    "size": 30250
+  },
+  "assets/shots/ndor.webp": {
+    "url": "https://awesomemygo.dev/shots/ndor.webp",
+    "etag": "\"775700728acb5d64f987e07382907ea3\"",
+    "size": 80764
+  },
+  "assets/shots/nekossh.webp": {
+    "url": "https://awesomemygo.dev/shots/nekossh.webp",
+    "etag": "\"ef94bc0ac89a8d3b1522e7b89fa4fe4d\"",
+    "size": 19584
+  },
+  "assets/shots/nemorous.webp": {
+    "url": "https://awesomemygo.dev/shots/nemorous.webp",
+    "etag": "\"9a0b312cb8c0bd97f895d1bd3ee4af8b\"",
+    "size": 20260
+  },
+  "assets/shots/neohm.webp": {
+    "url": "https://awesomemygo.dev/shots/neohm.webp",
+    "etag": "\"194758275237118a2a1a258b2177db13\"",
+    "size": 26678
+  },
+  "assets/shots/nether.webp": {
+    "url": "https://awesomemygo.dev/shots/nether.webp",
+    "etag": "\"e5437087a38e44b574da320d6316f082\"",
+    "size": 28052
+  },
+  "assets/shots/neural-breach.webp": {
+    "url": "https://awesomemygo.dev/shots/neural-breach.webp",
+    "etag": "\"627997fc423a9edd52158d29e8b70dc9\"",
+    "size": 92076
+  },
+  "assets/shots/new-century-renamer.webp": {
+    "url": "https://awesomemygo.dev/shots/new-century-renamer.webp",
+    "etag": "\"78408a22e7c2405513b262b78d69fbc0\"",
+    "size": 40968
+  },
+  "assets/shots/nihongo-stack.webp": {
+    "url": "https://awesomemygo.dev/shots/nihongo-stack.webp",
+    "etag": "\"c90f907bdd166fc7bebf90280c0ca9db\"",
+    "size": 20562
+  },
+  "assets/shots/nomo.webp": {
+    "url": "https://awesomemygo.dev/shots/nomo.webp",
+    "etag": "\"35bd5780e512c1888704191839d3ac71\"",
+    "size": 10850
+  },
+  "assets/shots/notefloat.webp": {
+    "url": "https://awesomemygo.dev/shots/notefloat.webp",
+    "etag": "\"92bad34c19a6ca63e1c54c7862bb5119\"",
+    "size": 52640
+  },
+  "assets/shots/nova.webp": {
+    "url": "https://awesomemygo.dev/shots/nova.webp",
+    "etag": "\"fc5c81b3e7461dd2bfe147115fdcbfc1\"",
+    "size": 47044
+  },
+  "assets/shots/numbo.webp": {
+    "url": "https://awesomemygo.dev/shots/numbo.webp",
+    "etag": "\"9a0de12cd59c7a3eb13f686635b7776b\"",
+    "size": 21968
+  },
+  "assets/shots/nutty.webp": {
+    "url": "https://awesomemygo.dev/shots/nutty.webp",
+    "etag": "\"b938f8dfe40739f3fad307b9a126a106\"",
+    "size": 11844
+  },
+  "assets/shots/nvflasher.webp": {
+    "url": "https://awesomemygo.dev/shots/nvflasher.webp",
+    "etag": "\"63bec3ef1616ac405f56244ab8705ffa\"",
+    "size": 28564
+  },
+  "assets/shots/nvr-status.webp": {
+    "url": "https://awesomemygo.dev/shots/nvr-status.webp",
+    "etag": "\"5cdd75d868d8ef8b61f0ec9c18c427ba\"",
+    "size": 12774
+  },
+  "assets/shots/nyadb.webp": {
+    "url": "https://awesomemygo.dev/shots/nyadb.webp",
+    "etag": "\"27dd2bbd2b4787b91e1bdd5f4f4a7d79\"",
+    "size": 14866
+  },
+  "assets/shots/oci-sync.webp": {
+    "url": "https://awesomemygo.dev/shots/oci-sync.webp",
+    "etag": "\"5480a102f13a9e188267e19c925c3f05\"",
+    "size": 15104
+  },
+  "assets/shots/omaterm.webp": {
+    "url": "https://awesomemygo.dev/shots/omaterm.webp",
+    "etag": "\"0c3dd1340211f34859efc393ff69156a\"",
+    "size": 19160
+  },
+  "assets/shots/omo.webp": {
+    "url": "https://awesomemygo.dev/shots/omo.webp",
+    "etag": "\"92e4e9b2c40f542a3be9ae9330025eac\"",
+    "size": 21214
+  },
+  "assets/shots/onegit.webp": {
+    "url": "https://awesomemygo.dev/shots/onegit.webp",
+    "etag": "\"597535cf999dd5f381b8a54f6474f54e\"",
+    "size": 41596
+  },
+  "assets/shots/ooxml-translator.webp": {
+    "url": "https://awesomemygo.dev/shots/ooxml-translator.webp",
+    "etag": "\"8c2b7de41c019ba90ec0ac13ed5ecee4\"",
+    "size": 8082
+  },
+  "assets/shots/open-aria-exporter.webp": {
+    "url": "https://awesomemygo.dev/shots/open-aria-exporter.webp",
+    "etag": "\"a3b6661ba8d647925e6fa17c5c5420d5\"",
+    "size": 36246
+  },
+  "assets/shots/open-tj.webp": {
+    "url": "https://awesomemygo.dev/shots/open-tj.webp",
+    "etag": "\"b7fd599fbae06012b79cda744b59e335\"",
+    "size": 14114
+  },
+  "assets/shots/openbee.webp": {
+    "url": "https://awesomemygo.dev/shots/openbee.webp",
+    "etag": "\"47ad6f98c10af524656870548a0c3c0c\"",
+    "size": 44594
+  },
+  "assets/shots/openconnector.webp": {
+    "url": "https://awesomemygo.dev/shots/openconnector.webp",
+    "etag": "\"d3302de70d6cf6a1f6b3e51c4a5d54c2\"",
+    "size": 34166
+  },
+  "assets/shots/opendl.webp": {
+    "url": "https://awesomemygo.dev/shots/opendl.webp",
+    "etag": "\"fa33f36bc1a4ff06ffec59e1de01dfdd\"",
+    "size": 19060
+  },
+  "assets/shots/opensynapse.webp": {
+    "url": "https://awesomemygo.dev/shots/opensynapse.webp",
+    "etag": "\"0cc6149170efe4c537daeb686aa02366\"",
+    "size": 9002
+  },
+  "assets/shots/openuxp-installer.webp": {
+    "url": "https://awesomemygo.dev/shots/openuxp-installer.webp",
+    "etag": "\"1f1da39e8f7e2bbb680b0854b03a50ba\"",
+    "size": 32976
+  },
+  "assets/shots/orb.webp": {
+    "url": "https://awesomemygo.dev/shots/orb.webp",
+    "etag": "\"551769024b59ad0365ef0bc964ffea52\"",
+    "size": 22688
+  },
+  "assets/shots/orbit.webp": {
+    "url": "https://awesomemygo.dev/shots/orbit.webp",
+    "etag": "\"653d9a9ee7e314c75dc56ff9906873ba\"",
+    "size": 36704
+  },
+  "assets/shots/orbit360.webp": {
+    "url": "https://awesomemygo.dev/shots/orbit360.webp",
+    "etag": "\"d92fe644a55f87d0644e592ab85f04c0\"",
+    "size": 56424
+  },
+  "assets/shots/oriel.webp": {
+    "url": "https://awesomemygo.dev/shots/oriel.webp",
+    "etag": "\"83375a684726675a5985c0b5dd0d000d\"",
+    "size": 19056
+  },
+  "assets/shots/orole-os.webp": {
+    "url": "https://awesomemygo.dev/shots/orole-os.webp",
+    "etag": "\"de89d75561622b7b20fd837706e2949d\"",
+    "size": 45000
+  },
+  "assets/shots/oshell-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/oshell-desktop.webp",
+    "etag": "\"6d09da3a466a5ccef0fcc50e2e181023\"",
+    "size": 18938
+  },
+  "assets/shots/osprey.webp": {
+    "url": "https://awesomemygo.dev/shots/osprey.webp",
+    "etag": "\"b9eda68a148abe25dde7aac210824193\"",
+    "size": 47624
+  },
+  "assets/shots/otool.webp": {
+    "url": "https://awesomemygo.dev/shots/otool.webp",
+    "etag": "\"a8e06b27b73993321f7a9f0e454605b0\"",
+    "size": 32086
+  },
+  "assets/shots/ottr.webp": {
+    "url": "https://awesomemygo.dev/shots/ottr.webp",
+    "etag": "\"6b75c7ab9ee0f0ee59bf5ca1ad1c51d3\"",
+    "size": 23628
+  },
+  "assets/shots/outrash.webp": {
+    "url": "https://awesomemygo.dev/shots/outrash.webp",
+    "etag": "\"023eb70808796fd5a9a4d3622ffca50b\"",
+    "size": 42798
+  },
+  "assets/shots/pail.webp": {
+    "url": "https://awesomemygo.dev/shots/pail.webp",
+    "etag": "\"3a432d778b051772f11df8f5283ca0ce\"",
+    "size": 27870
+  },
+  "assets/shots/para-term.webp": {
+    "url": "https://awesomemygo.dev/shots/para-term.webp",
+    "etag": "\"b9db20770e7bdce73fecba8bed814c46\"",
+    "size": 14436
+  },
+  "assets/shots/patch.webp": {
+    "url": "https://awesomemygo.dev/shots/patch.webp",
+    "etag": "\"1b021f6e93baf338fff5ab50ac2db1e0\"",
+    "size": 21774
+  },
+  "assets/shots/peek.webp": {
+    "url": "https://awesomemygo.dev/shots/peek.webp",
+    "etag": "\"15aee363d708da83300d19910e879be7\"",
+    "size": 108808
+  },
+  "assets/shots/pi-web-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/pi-web-desktop.webp",
+    "etag": "\"ec2dffaf4254ccdb434c78db401d7d0c\"",
+    "size": 3972
+  },
+  "assets/shots/pickphoto.webp": {
+    "url": "https://awesomemygo.dev/shots/pickphoto.webp",
+    "etag": "\"56bc6a30801a5e2a43781fe912ceadfa\"",
+    "size": 15224
+  },
+  "assets/shots/pinion.webp": {
+    "url": "https://awesomemygo.dev/shots/pinion.webp",
+    "etag": "\"d01bb3d1ea07024b8c5b8e67942afbba\"",
+    "size": 113240
+  },
+  "assets/shots/pinnote.webp": {
+    "url": "https://awesomemygo.dev/shots/pinnote.webp",
+    "etag": "\"32498a330db2d8f81bee31f7a3b5f906\"",
+    "size": 6472
+  },
+  "assets/shots/pith-desk.webp": {
+    "url": "https://awesomemygo.dev/shots/pith-desk.webp",
+    "etag": "\"01e406669caea4f14ec0d6289bae6d8f\"",
+    "size": 29492
+  },
+  "assets/shots/pith.webp": {
+    "url": "https://awesomemygo.dev/shots/pith.webp",
+    "etag": "\"bf924b704eb75623eefbd88b74a83f4b\"",
+    "size": 29488
+  },
+  "assets/shots/pitstop.webp": {
+    "url": "https://awesomemygo.dev/shots/pitstop.webp",
+    "etag": "\"690f18de276318f2fe6eb3745c8db8dd\"",
+    "size": 26806
+  },
+  "assets/shots/planet-windows.webp": {
+    "url": "https://awesomemygo.dev/shots/planet-windows.webp",
+    "etag": "\"8d400ca7449260aaf00e708d543e81be\"",
+    "size": 47410
+  },
+  "assets/shots/png-to-ico.webp": {
+    "url": "https://awesomemygo.dev/shots/png-to-ico.webp",
+    "etag": "\"21f92379e1fec52c63d969f79d864da6\"",
+    "size": 8730
+  },
+  "assets/shots/polish.webp": {
+    "url": "https://awesomemygo.dev/shots/polish.webp",
+    "etag": "\"ccd8e90828ab6c79c46e02a5642fd47b\"",
+    "size": 23552
+  },
+  "assets/shots/polyfork.webp": {
+    "url": "https://awesomemygo.dev/shots/polyfork.webp",
+    "etag": "\"db3ae0c0bdb7ab62b2a96142e4a78918\"",
+    "size": 39442
+  },
+  "assets/shots/pomodoro-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/pomodoro-mygo.webp",
+    "etag": "\"915c9b6fa9d0928e6545c3b6eed1ee19\"",
+    "size": 25140
+  },
+  "assets/shots/pomodoro.webp": {
+    "url": "https://awesomemygo.dev/shots/pomodoro.webp",
+    "etag": "\"b8df1a821443bf778473e4b0c04d05db\"",
+    "size": 11904
+  },
+  "assets/shots/popmind.webp": {
+    "url": "https://awesomemygo.dev/shots/popmind.webp",
+    "etag": "\"a2f92d154c875bca280f0df031a18af3\"",
+    "size": 22270
+  },
+  "assets/shots/portglass.webp": {
+    "url": "https://awesomemygo.dev/shots/portglass.webp",
+    "etag": "\"f78cee242c152fa29520fe36dbb542bd\"",
+    "size": 29118
+  },
+  "assets/shots/portpilot.webp": {
+    "url": "https://awesomemygo.dev/shots/portpilot.webp",
+    "etag": "\"025c671bd801fdd4847dc05afaf85c02\"",
+    "size": 23650
+  },
+  "assets/shots/portproxy.webp": {
+    "url": "https://awesomemygo.dev/shots/portproxy.webp",
+    "etag": "\"d23fce1cbb9adb69415a65d9f4b9af5a\"",
+    "size": 26944
+  },
+  "assets/shots/posse.webp": {
+    "url": "https://awesomemygo.dev/shots/posse.webp",
+    "etag": "\"2e086402477e2a44e793c95966939bb6\"",
+    "size": 46282
+  },
+  "assets/shots/proton-drive-sync.webp": {
+    "url": "https://awesomemygo.dev/shots/proton-drive-sync.webp",
+    "etag": "\"0971c6f3e01f7af89cbe8ff4edbea953\"",
+    "size": 29964
+  },
+  "assets/shots/proxy-bridge.webp": {
+    "url": "https://awesomemygo.dev/shots/proxy-bridge.webp",
+    "etag": "\"f5597cefb31c7c5c1db55e335a8376e1\"",
+    "size": 35128
+  },
+  "assets/shots/proxygo.webp": {
+    "url": "https://awesomemygo.dev/shots/proxygo.webp",
+    "etag": "\"c5894673fb72822f6fbd75c7c9d19340\"",
+    "size": 69924
+  },
+  "assets/shots/pudmusic.webp": {
+    "url": "https://awesomemygo.dev/shots/pudmusic.webp",
+    "etag": "\"44f30d0cfbe802a48c37e4635c9c5935\"",
+    "size": 43914
+  },
+  "assets/shots/pulse-17130239-coder.webp": {
+    "url": "https://awesomemygo.dev/shots/pulse-17130239-coder.webp",
+    "etag": "\"8fbc70c2560fa492c25573a5d96af1e8\"",
+    "size": 47780
+  },
+  "assets/shots/pulse.webp": {
+    "url": "https://awesomemygo.dev/shots/pulse.webp",
+    "etag": "\"e20b3346a694e46f5e67efde0f43d504\"",
+    "size": 57782
+  },
+  "assets/shots/qmdr.webp": {
+    "url": "https://awesomemygo.dev/shots/qmdr.webp",
+    "etag": "\"f53e83696a14536f413a56e38a11ea16\"",
+    "size": 28630
+  },
+  "assets/shots/quarry.webp": {
+    "url": "https://awesomemygo.dev/shots/quarry.webp",
+    "etag": "\"6c08a439a8addc1275446fd4438c1ee8\"",
+    "size": 68348
+  },
+  "assets/shots/quaver-astra.webp": {
+    "url": "https://awesomemygo.dev/shots/quaver-astra.webp",
+    "etag": "\"b8bd1ce959a687a455495fa5e715a705\"",
+    "size": 60504
+  },
+  "assets/shots/quesora-native.webp": {
+    "url": "https://awesomemygo.dev/shots/quesora-native.webp",
+    "etag": "\"ca19913a611d4b6869b9ed2941407ab3\"",
+    "size": 11166
+  },
+  "assets/shots/quick-scan.webp": {
+    "url": "https://awesomemygo.dev/shots/quick-scan.webp",
+    "etag": "\"3715565e823ca3733dc5001c3a9155ec\"",
+    "size": 20302
+  },
+  "assets/shots/quickcleaner.webp": {
+    "url": "https://awesomemygo.dev/shots/quickcleaner.webp",
+    "etag": "\"9f09074dcdf6770adcdd875a92e3b139\"",
+    "size": 21330
+  },
+  "assets/shots/quosparr.webp": {
+    "url": "https://awesomemygo.dev/shots/quosparr.webp",
+    "etag": "\"aa248b91e8bc692d87bcdc6ad6ff237e\"",
+    "size": 33026
+  },
+  "assets/shots/qwen-image.webp": {
+    "url": "https://awesomemygo.dev/shots/qwen-image.webp",
+    "etag": "\"3f8f4fd61ca49c560b2535ea87822b48\"",
+    "size": 16206
+  },
+  "assets/shots/radio-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/radio-desktop.webp",
+    "etag": "\"23bf7cb44dec1de728f043325694abbd\"",
+    "size": 34102
+  },
+  "assets/shots/rainforest.webp": {
+    "url": "https://awesomemygo.dev/shots/rainforest.webp",
+    "etag": "\"8a16c080ed6a82d1a85342df77a1c100\"",
+    "size": 20592
+  },
+  "assets/shots/raydock.webp": {
+    "url": "https://awesomemygo.dev/shots/raydock.webp",
+    "etag": "\"a94aaf57eb319e148512328fcffaea88\"",
+    "size": 42908
+  },
+  "assets/shots/rclonedrive.webp": {
+    "url": "https://awesomemygo.dev/shots/rclonedrive.webp",
+    "etag": "\"54f5caa086a4e7dd180f7ed2e3805417\"",
+    "size": 21944
+  },
+  "assets/shots/rclonego.webp": {
+    "url": "https://awesomemygo.dev/shots/rclonego.webp",
+    "etag": "\"3f3fa895b6ede91b64519ff4b4421b29\"",
+    "size": 23456
+  },
+  "assets/shots/reconnascan.webp": {
+    "url": "https://awesomemygo.dev/shots/reconnascan.webp",
+    "etag": "\"6e45bd5a9e5a18af1bff451dab66ab09\"",
+    "size": 45838
+  },
+  "assets/shots/redis-manager.webp": {
+    "url": "https://awesomemygo.dev/shots/redis-manager.webp",
+    "etag": "\"5c41ba93aff5bd96262a15602308e11d\"",
+    "size": 26090
+  },
+  "assets/shots/rediscli.webp": {
+    "url": "https://awesomemygo.dev/shots/rediscli.webp",
+    "etag": "\"17d5cf3a494b245fe8bdcb59144c7fec\"",
+    "size": 14796
+  },
+  "assets/shots/renew.webp": {
+    "url": "https://awesomemygo.dev/shots/renew.webp",
+    "etag": "\"0a3047de10a9d859fc599637a8e4236b\"",
+    "size": 62588
+  },
+  "assets/shots/repo-hopper.webp": {
+    "url": "https://awesomemygo.dev/shots/repo-hopper.webp",
+    "etag": "\"2b774b6194f5800c4a874d01cef2a6cf\"",
+    "size": 37864
+  },
+  "assets/shots/repodock.webp": {
+    "url": "https://awesomemygo.dev/shots/repodock.webp",
+    "etag": "\"ef896c82b893a132bdd4b78a3c0fd5e1\"",
+    "size": 9894
+  },
+  "assets/shots/reqflow.webp": {
+    "url": "https://awesomemygo.dev/shots/reqflow.webp",
+    "etag": "\"2699bf82432a49b6f304a886fa442d90\"",
+    "size": 51936
+  },
+  "assets/shots/reso-backup.webp": {
+    "url": "https://awesomemygo.dev/shots/reso-backup.webp",
+    "etag": "\"e8b2b7f6670d7a6e6fab2547334bfedd\"",
+    "size": 113600
+  },
+  "assets/shots/ressu.webp": {
+    "url": "https://awesomemygo.dev/shots/ressu.webp",
+    "etag": "\"9f3854543155f5e58b14ea02dbcc460d\"",
+    "size": 44456
+  },
+  "assets/shots/revda-next.webp": {
+    "url": "https://awesomemygo.dev/shots/revda-next.webp",
+    "etag": "\"88961706e1d4ba357006852250710df0\"",
+    "size": 41682
+  },
+  "assets/shots/rightconvert.webp": {
+    "url": "https://awesomemygo.dev/shots/rightconvert.webp",
+    "etag": "\"b548541399c2a9314876fe07e1fb9d6b\"",
+    "size": 11744
+  },
+  "assets/shots/riichi-studio.webp": {
+    "url": "https://awesomemygo.dev/shots/riichi-studio.webp",
+    "etag": "\"251e3dd76bb1896d355292907ddc5afb\"",
+    "size": 54468
+  },
+  "assets/shots/rivu.webp": {
+    "url": "https://awesomemygo.dev/shots/rivu.webp",
+    "etag": "\"be907c957cbfab3c312621443dbb5605\"",
+    "size": 29716
+  },
+  "assets/shots/rnaxray-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/rnaxray-desktop.webp",
+    "etag": "\"3df4c87ef241a16e6f9961d2a01b11cc\"",
+    "size": 45942
+  },
+  "assets/shots/rocom-egg-check.webp": {
+    "url": "https://awesomemygo.dev/shots/rocom-egg-check.webp",
+    "etag": "\"f2c516f010800ea9e601fd33a694d49e\"",
+    "size": 30140
+  },
+  "assets/shots/roost.webp": {
+    "url": "https://awesomemygo.dev/shots/roost.webp",
+    "etag": "\"b88cb7d896a66e165d759990bc39a969\"",
+    "size": 69802
+  },
+  "assets/shots/rubick.webp": {
+    "url": "https://awesomemygo.dev/shots/rubick.webp",
+    "etag": "\"0ec3572c6b50b1c4f57772ac21c6d459\"",
+    "size": 20994
+  },
+  "assets/shots/sakamoto.webp": {
+    "url": "https://awesomemygo.dev/shots/sakamoto.webp",
+    "etag": "\"94f0f60f7f6d70f39f7873eb0551c9ff\"",
+    "size": 14430
+  },
+  "assets/shots/sakana.webp": {
+    "url": "https://awesomemygo.dev/shots/sakana.webp",
+    "etag": "\"20ed07464224b4be668bf21c20b83038\"",
+    "size": 8958
+  },
+  "assets/shots/saundo.webp": {
+    "url": "https://awesomemygo.dev/shots/saundo.webp",
+    "etag": "\"ec661f0ee6ae3ad8781935a184d42842\"",
+    "size": 24210
+  },
+  "assets/shots/sbdb.webp": {
+    "url": "https://awesomemygo.dev/shots/sbdb.webp",
+    "etag": "\"685e202932b22803953b83d5c45e48c5\"",
+    "size": 48310
+  },
+  "assets/shots/scan-image.webp": {
+    "url": "https://awesomemygo.dev/shots/scan-image.webp",
+    "etag": "\"f8277621b30ba8307c21b6ea3c0a5d35\"",
+    "size": 43522
+  },
+  "assets/shots/security-sentinel.webp": {
+    "url": "https://awesomemygo.dev/shots/security-sentinel.webp",
+    "etag": "\"3c199c6bef4ef6c42718a2fd21bcc139\"",
+    "size": 31396
+  },
+  "assets/shots/see.webp": {
+    "url": "https://awesomemygo.dev/shots/see.webp",
+    "etag": "\"8db7e79b5e651e3196cede1be73c52a2\"",
+    "size": 63316
+  },
+  "assets/shots/seismic.webp": {
+    "url": "https://awesomemygo.dev/shots/seismic.webp",
+    "etag": "\"0cc4855e1c20bbc00bdae7eab2877367\"",
+    "size": 31944
+  },
+  "assets/shots/sessionary.webp": {
+    "url": "https://awesomemygo.dev/shots/sessionary.webp",
+    "etag": "\"ce618cb935e2c5b167db0ba8bb9a7035\"",
+    "size": 32522
+  },
+  "assets/shots/shixin-input.webp": {
+    "url": "https://awesomemygo.dev/shots/shixin-input.webp",
+    "etag": "\"7ad904251ddf8e886e1077b8cbc8744e\"",
+    "size": 33102
+  },
+  "assets/shots/shun.webp": {
+    "url": "https://awesomemygo.dev/shots/shun.webp",
+    "etag": "\"4dbe71bc69b31f1f88fb68b52891b766\"",
+    "size": 18674
+  },
+  "assets/shots/sift.webp": {
+    "url": "https://awesomemygo.dev/shots/sift.webp",
+    "etag": "\"63e67b256897639b5dd61f61d42f60e5\"",
+    "size": 38390
+  },
+  "assets/shots/silverwing.webp": {
+    "url": "https://awesomemygo.dev/shots/silverwing.webp",
+    "etag": "\"98741854379121552f3d9557065efb5c\"",
+    "size": 16396
+  },
+  "assets/shots/simpletoggle.webp": {
+    "url": "https://awesomemygo.dev/shots/simpletoggle.webp",
+    "etag": "\"87484b0331519285883fca0679b7d834\"",
+    "size": 23252
+  },
+  "assets/shots/sing-box-drover-go.webp": {
+    "url": "https://awesomemygo.dev/shots/sing-box-drover-go.webp",
+    "etag": "\"92cedd18787538bfc7a1a7e76a884b17\"",
+    "size": 50860
+  },
+  "assets/shots/sit-and-play.webp": {
+    "url": "https://awesomemygo.dev/shots/sit-and-play.webp",
+    "etag": "\"8665f48835c9f8181a2ee51dd9c9b273\"",
+    "size": 32968
+  },
+  "assets/shots/site-sucker.webp": {
+    "url": "https://awesomemygo.dev/shots/site-sucker.webp",
+    "etag": "\"4890407d0ae5333e25a73b187b516a28\"",
+    "size": 21966
+  },
+  "assets/shots/skills-hub.webp": {
+    "url": "https://awesomemygo.dev/shots/skills-hub.webp",
+    "etag": "\"40276884f823a13ec8a50d6558b9cf25\"",
+    "size": 46592
+  },
+  "assets/shots/skills-reader.webp": {
+    "url": "https://awesomemygo.dev/shots/skills-reader.webp",
+    "etag": "\"56c2a049f4621f77d14582afa240e533\"",
+    "size": 64802
+  },
+  "assets/shots/sleepdock.webp": {
+    "url": "https://awesomemygo.dev/shots/sleepdock.webp",
+    "etag": "\"4aee4f6a213f6074a9eb154753853ea7\"",
+    "size": 12798
+  },
+  "assets/shots/smartar-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/smartar-desktop.webp",
+    "etag": "\"cca2589edeb13f07926adef4158175bd\"",
+    "size": 72140
+  },
+  "assets/shots/smartimage-toolkit.webp": {
+    "url": "https://awesomemygo.dev/shots/smartimage-toolkit.webp",
+    "etag": "\"d4494f9c2d9f1b3899d43b569eff1317\"",
+    "size": 17586
+  },
+  "assets/shots/snip.webp": {
+    "url": "https://awesomemygo.dev/shots/snip.webp",
+    "etag": "\"f6c7d79d8559dcbca31bb580b0843904\"",
+    "size": 14260
+  },
+  "assets/shots/sokki.webp": {
+    "url": "https://awesomemygo.dev/shots/sokki.webp",
+    "etag": "\"28df5dd91235043a4c5798aa35f59fdd\"",
+    "size": 20722
+  },
+  "assets/shots/sona.webp": {
+    "url": "https://awesomemygo.dev/shots/sona.webp",
+    "etag": "\"6220582472d2fc1aa6dcebac38f1fd07\"",
+    "size": 14970
+  },
+  "assets/shots/spark.webp": {
+    "url": "https://awesomemygo.dev/shots/spark.webp",
+    "etag": "\"35af39cd287af5dc578d592018041502\"",
+    "size": 20224
+  },
+  "assets/shots/spool.webp": {
+    "url": "https://awesomemygo.dev/shots/spool.webp",
+    "etag": "\"223610f735e0513bf8fce30438aa905b\"",
+    "size": 21034
+  },
+  "assets/shots/sprobo.webp": {
+    "url": "https://awesomemygo.dev/shots/sprobo.webp",
+    "etag": "\"6201162088d0307d8087da9b91e6c1a6\"",
+    "size": 26812
+  },
+  "assets/shots/ssh-keyselect.webp": {
+    "url": "https://awesomemygo.dev/shots/ssh-keyselect.webp",
+    "etag": "\"d56658bb561a090164c354b28018a346\"",
+    "size": 33590
+  },
+  "assets/shots/sshgo.webp": {
+    "url": "https://awesomemygo.dev/shots/sshgo.webp",
+    "etag": "\"f167c6424c3a28c8b39929a74c6f38d0\"",
+    "size": 15838
+  },
+  "assets/shots/sshyard.webp": {
+    "url": "https://awesomemygo.dev/shots/sshyard.webp",
+    "etag": "\"8180d2cbe20813dbb5379c067779bd4b\"",
+    "size": 63306
+  },
+  "assets/shots/sso-glow.webp": {
+    "url": "https://awesomemygo.dev/shots/sso-glow.webp",
+    "etag": "\"fb6d460a63d898d2bf6f5b93fb81ad25\"",
+    "size": 9984
+  },
+  "assets/shots/stage-manager-for-windows.webp": {
+    "url": "https://awesomemygo.dev/shots/stage-manager-for-windows.webp",
+    "etag": "\"39bc0c6d12834ee88b702297d0056d74\"",
+    "size": 21266
+  },
+  "assets/shots/stockfloat-native.webp": {
+    "url": "https://awesomemygo.dev/shots/stockfloat-native.webp",
+    "etag": "\"5150cf6126e0e3d2ad345f6db00e47e0\"",
+    "size": 7930
+  },
+  "assets/shots/stockfloat.webp": {
+    "url": "https://awesomemygo.dev/shots/stockfloat.webp",
+    "etag": "\"2fedfdb12f3d66ca51d9e108f6994ce5\"",
+    "size": 23840
+  },
+  "assets/shots/sun-ray.webp": {
+    "url": "https://awesomemygo.dev/shots/sun-ray.webp",
+    "etag": "\"9166edea5fcf15669dac4c8cd0315ad8\"",
+    "size": 40300
+  },
+  "assets/shots/sunvale.webp": {
+    "url": "https://awesomemygo.dev/shots/sunvale.webp",
+    "etag": "\"adbc54d09caa653c3e30b01493ddbe6b\"",
+    "size": 17290
+  },
+  "assets/shots/sweep.webp": {
+    "url": "https://awesomemygo.dev/shots/sweep.webp",
+    "etag": "\"91fc8ff3e82576fbd0811b375b7f3cca\"",
+    "size": 16580
+  },
+  "assets/shots/switchhosts-native.webp": {
+    "url": "https://awesomemygo.dev/shots/switchhosts-native.webp",
+    "etag": "\"72934b2dc46623897aa907b845b594d7\"",
+    "size": 15812
+  },
+  "assets/shots/tangentry.webp": {
+    "url": "https://awesomemygo.dev/shots/tangentry.webp",
+    "etag": "\"0838aefc37d4601b9568c77c5351257b\"",
+    "size": 100176
+  },
+  "assets/shots/tangit.webp": {
+    "url": "https://awesomemygo.dev/shots/tangit.webp",
+    "etag": "\"b1200f0748e9b8b5ebcffb4d2852615b\"",
+    "size": 99480
+  },
+  "assets/shots/tavu.webp": {
+    "url": "https://awesomemygo.dev/shots/tavu.webp",
+    "etag": "\"8577665b743cd09b1efb877d176f7136\"",
+    "size": 16680
+  },
+  "assets/shots/tcpconnbenchmark.webp": {
+    "url": "https://awesomemygo.dev/shots/tcpconnbenchmark.webp",
+    "etag": "\"2aabeb0c39dad9ab785796132df035cf\"",
+    "size": 111542
+  },
+  "assets/shots/tcs3200-sensor-kit.webp": {
+    "url": "https://awesomemygo.dev/shots/tcs3200-sensor-kit.webp",
+    "etag": "\"3c1e40f280b6ad6410387f54046bce1f\"",
+    "size": 37962
+  },
+  "assets/shots/tendedero-in-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/tendedero-in-mygo.webp",
+    "etag": "\"f6eb4ae52503358d0336127391a38a4f\"",
+    "size": 5208
+  },
+  "assets/shots/textrouter.webp": {
+    "url": "https://awesomemygo.dev/shots/textrouter.webp",
+    "etag": "\"bcb2069c885d4f6f1677e9c460850dd6\"",
+    "size": 35680
+  },
+  "assets/shots/textviewer.webp": {
+    "url": "https://awesomemygo.dev/shots/textviewer.webp",
+    "etag": "\"5bd0ae6bec20dca1097e6ecb05a5ddae\"",
+    "size": 20640
+  },
+  "assets/shots/thesio.webp": {
+    "url": "https://awesomemygo.dev/shots/thesio.webp",
+    "etag": "\"f374b91798b5b30419078ca80190877f\"",
+    "size": 12946
+  },
+  "assets/shots/thunderstrike-controller-tool.webp": {
+    "url": "https://awesomemygo.dev/shots/thunderstrike-controller-tool.webp",
+    "etag": "\"0ead7de8652f896c6078ba9c88f57589\"",
+    "size": 21860
+  },
+  "assets/shots/tiergo.webp": {
+    "url": "https://awesomemygo.dev/shots/tiergo.webp",
+    "etag": "\"d5aab971d4e6aace8f4d89b9107b02d3\"",
+    "size": 33200
+  },
+  "assets/shots/tiktok-live-recorder.webp": {
+    "url": "https://awesomemygo.dev/shots/tiktok-live-recorder.webp",
+    "etag": "\"1c2d8150a499c6048834a8e97271af0e\"",
+    "size": 29074
+  },
+  "assets/shots/tingsub.webp": {
+    "url": "https://awesomemygo.dev/shots/tingsub.webp",
+    "etag": "\"cd972dad523b8165572092b32c52bf8f\"",
+    "size": 25136
+  },
+  "assets/shots/tingyu.webp": {
+    "url": "https://awesomemygo.dev/shots/tingyu.webp",
+    "etag": "\"f28b512a0199bfc2e9aa81ac24221cbc\"",
+    "size": 17216
+  },
+  "assets/shots/titen.webp": {
+    "url": "https://awesomemygo.dev/shots/titen.webp",
+    "etag": "\"bdd824a76264c07109586a30df5c09bf\"",
+    "size": 15598
+  },
+  "assets/shots/todo.webp": {
+    "url": "https://awesomemygo.dev/shots/todo.webp",
+    "etag": "\"74246bcd4a4873868b0f3ca5a8439616\"",
+    "size": 5714
+  },
+  "assets/shots/tolk.webp": {
+    "url": "https://awesomemygo.dev/shots/tolk.webp",
+    "etag": "\"dd595986a2d1c593b6b39f571c3e2917\"",
+    "size": 17624
+  },
+  "assets/shots/tomoru.webp": {
+    "url": "https://awesomemygo.dev/shots/tomoru.webp",
+    "etag": "\"eeba998ddaee69704d55a04ff47bc451\"",
+    "size": 31498
+  },
+  "assets/shots/touko.webp": {
+    "url": "https://awesomemygo.dev/shots/touko.webp",
+    "etag": "\"99bfc25b45220bfe9cae8c3a37f93df7\"",
+    "size": 35768
+  },
+  "assets/shots/trae.webp": {
+    "url": "https://awesomemygo.dev/shots/trae.webp",
+    "etag": "\"ff4de3d419ea79c8dad7d16dd9e5322e\"",
+    "size": 31588
+  },
+  "assets/shots/transflowy.webp": {
+    "url": "https://awesomemygo.dev/shots/transflowy.webp",
+    "etag": "\"31e9b2ab22de0066c0763859fc6f6415\"",
+    "size": 55808
+  },
+  "assets/shots/translator233.webp": {
+    "url": "https://awesomemygo.dev/shots/translator233.webp",
+    "etag": "\"3c7492712c80e7dd8a3c9cb4065ca881\"",
+    "size": 9524
+  },
+  "assets/shots/trot.webp": {
+    "url": "https://awesomemygo.dev/shots/trot.webp",
+    "etag": "\"a2b80e5e0a7ff31926a74be644b2bdbc\"",
+    "size": 29738
+  },
+  "assets/shots/ttoy.webp": {
+    "url": "https://awesomemygo.dev/shots/ttoy.webp",
+    "etag": "\"e3d80dee37724a4410c96de5920b01ca\"",
+    "size": 10306
+  },
+  "assets/shots/tuck.webp": {
+    "url": "https://awesomemygo.dev/shots/tuck.webp",
+    "etag": "\"bd5f7c5aa3f48448c8fd8cf792e9e65b\"",
+    "size": 27846
+  },
+  "assets/shots/twill.webp": {
+    "url": "https://awesomemygo.dev/shots/twill.webp",
+    "etag": "\"20fc098dcfd61f5049bca711c62557ae\"",
+    "size": 15054
+  },
+  "assets/shots/twintrail.webp": {
+    "url": "https://awesomemygo.dev/shots/twintrail.webp",
+    "etag": "\"7a8d4d9d6be8a03fd45410eecdfb0309\"",
+    "size": 44860
+  },
+  "assets/shots/type.webp": {
+    "url": "https://awesomemygo.dev/shots/type.webp",
+    "etag": "\"667251303d38e79d722e114bd740a466\"",
+    "size": 20380
+  },
+  "assets/shots/uma.webp": {
+    "url": "https://awesomemygo.dev/shots/uma.webp",
+    "etag": "\"a63f4574491248346776b66d5a5dc1a8\"",
+    "size": 31676
+  },
+  "assets/shots/unipac.webp": {
+    "url": "https://awesomemygo.dev/shots/unipac.webp",
+    "etag": "\"a4011c6538fda4fe316d0e88210f5f8d\"",
+    "size": 40692
+  },
+  "assets/shots/universal-s3-ui.webp": {
+    "url": "https://awesomemygo.dev/shots/universal-s3-ui.webp",
+    "etag": "\"50a1f916dfbb47994aab5f6f1e67272e\"",
+    "size": 61198
+  },
+  "assets/shots/unscan.webp": {
+    "url": "https://awesomemygo.dev/shots/unscan.webp",
+    "etag": "\"6fd76ba2ea4d241f99d71804a0e44eb0\"",
+    "size": 54042
+  },
+  "assets/shots/vfox-plus.webp": {
+    "url": "https://awesomemygo.dev/shots/vfox-plus.webp",
+    "etag": "\"4fdb7e9c2b7b7cc025e61b12a94530e9\"",
+    "size": 21830
+  },
+  "assets/shots/vibe-cook.webp": {
+    "url": "https://awesomemygo.dev/shots/vibe-cook.webp",
+    "etag": "\"4e6697c4f8c6269d2b6ec73d5457b81d\"",
+    "size": 70768
+  },
+  "assets/shots/video-downloader.webp": {
+    "url": "https://awesomemygo.dev/shots/video-downloader.webp",
+    "etag": "\"db9a18ad915b1f789b195709f3d48d44\"",
+    "size": 11730
+  },
+  "assets/shots/video-player.webp": {
+    "url": "https://awesomemygo.dev/shots/video-player.webp",
+    "etag": "\"4fcdfb68c8eb9f6b9c92d2ad5988dbf3\"",
+    "size": 7736
+  },
+  "assets/shots/videodown.webp": {
+    "url": "https://awesomemygo.dev/shots/videodown.webp",
+    "etag": "\"b9f1f317fde3a1c57ee6c9e8768fb74a\"",
+    "size": 15412
+  },
+  "assets/shots/videohelper.webp": {
+    "url": "https://awesomemygo.dev/shots/videohelper.webp",
+    "etag": "\"30f2d5c1bb08ad0e116b1e25c267f447\"",
+    "size": 36902
+  },
+  "assets/shots/videopress.webp": {
+    "url": "https://awesomemygo.dev/shots/videopress.webp",
+    "etag": "\"401f01f4abf8b6007fd1532b0fabc8c4\"",
+    "size": 9572
+  },
+  "assets/shots/viper.webp": {
+    "url": "https://awesomemygo.dev/shots/viper.webp",
+    "etag": "\"f82ed9148ec1a46b8be540c7f079daa7\"",
+    "size": 30990
+  },
+  "assets/shots/vitals.webp": {
+    "url": "https://awesomemygo.dev/shots/vitals.webp",
+    "etag": "\"63521c4dea2c30edd2f71b3d91c71691\"",
+    "size": 25178
+  },
+  "assets/shots/vocabox.webp": {
+    "url": "https://awesomemygo.dev/shots/vocabox.webp",
+    "etag": "\"7f3ed78a4e60e6d18f4c85c8547d969f\"",
+    "size": 13446
+  },
+  "assets/shots/voicemore.webp": {
+    "url": "https://awesomemygo.dev/shots/voicemore.webp",
+    "etag": "\"7007242f196dc18ad47ee28d7aa93731\"",
+    "size": 25920
+  },
+  "assets/shots/voicemorph.webp": {
+    "url": "https://awesomemygo.dev/shots/voicemorph.webp",
+    "etag": "\"57728ec657d838734d7676ed84d7bd27\"",
+    "size": 34270
+  },
+  "assets/shots/voir.webp": {
+    "url": "https://awesomemygo.dev/shots/voir.webp",
+    "etag": "\"c198d16d25b4c8ed864d7ed860b61381\"",
+    "size": 32232
+  },
+  "assets/shots/voke.webp": {
+    "url": "https://awesomemygo.dev/shots/voke.webp",
+    "etag": "\"a52cc264a38b892a2bf134b1ed72107f\"",
+    "size": 10556
+  },
+  "assets/shots/voxflow.webp": {
+    "url": "https://awesomemygo.dev/shots/voxflow.webp",
+    "etag": "\"37abec99f5270f8d6399527e4eb43c99\"",
+    "size": 10234
+  },
+  "assets/shots/voxi.webp": {
+    "url": "https://awesomemygo.dev/shots/voxi.webp",
+    "etag": "\"f04d81e15d33ad2c1a660b82cad1bb8d\"",
+    "size": 38068
+  },
+  "assets/shots/voxt.webp": {
+    "url": "https://awesomemygo.dev/shots/voxt.webp",
+    "etag": "\"3059704bf63f75f1b8fc036cfc52097c\"",
+    "size": 25786
+  },
+  "assets/shots/voxtmini.webp": {
+    "url": "https://awesomemygo.dev/shots/voxtmini.webp",
+    "etag": "\"3059704bf63f75f1b8fc036cfc52097c\"",
+    "size": 25786
+  },
+  "assets/shots/vray.webp": {
+    "url": "https://awesomemygo.dev/shots/vray.webp",
+    "etag": "\"a8b4aac211f0b46d92548a9c4e71b0e5\"",
+    "size": 30002
+  },
+  "assets/shots/wada-cowork.webp": {
+    "url": "https://awesomemygo.dev/shots/wada-cowork.webp",
+    "etag": "\"d59c1321a936a79d63873ca3fcfbe0b0\"",
+    "size": 22852
+  },
+  "assets/shots/wada-terminal.webp": {
+    "url": "https://awesomemygo.dev/shots/wada-terminal.webp",
+    "etag": "\"bc5b16e3a712948166fbf237344d3a86\"",
+    "size": 33440
+  },
+  "assets/shots/wagyu-music.webp": {
+    "url": "https://awesomemygo.dev/shots/wagyu-music.webp",
+    "etag": "\"9228959f5604027f991ebfac8c852c54\"",
+    "size": 54860
+  },
+  "assets/shots/wallpaper.webp": {
+    "url": "https://awesomemygo.dev/shots/wallpaper.webp",
+    "etag": "\"453f117d51723a0fa8e4257bf4560d8d\"",
+    "size": 49586
+  },
+  "assets/shots/wavealign.webp": {
+    "url": "https://awesomemygo.dev/shots/wavealign.webp",
+    "etag": "\"8b9903054fabcefdc0af32420c13158c\"",
+    "size": 26150
+  },
+  "assets/shots/webdd.webp": {
+    "url": "https://awesomemygo.dev/shots/webdd.webp",
+    "etag": "\"cef016fcc7100b339324d9f87c4daad5\"",
+    "size": 24884
+  },
+  "assets/shots/wgm.webp": {
+    "url": "https://awesomemygo.dev/shots/wgm.webp",
+    "etag": "\"799409c79013f48947fea4c33e0aa5c4\"",
+    "size": 16020
+  },
+  "assets/shots/win-xinai-de-tools-mygo.webp": {
+    "url": "https://awesomemygo.dev/shots/win-xinai-de-tools-mygo.webp",
+    "etag": "\"c9db795f201b9054b5424bd4ea7c7a5b\"",
+    "size": 23800
+  },
+  "assets/shots/winswx.webp": {
+    "url": "https://awesomemygo.dev/shots/winswx.webp",
+    "etag": "\"2ad63d9df7a29d25e3b06d0e892094cc\"",
+    "size": 10388
+  },
+  "assets/shots/wintray.webp": {
+    "url": "https://awesomemygo.dev/shots/wintray.webp",
+    "etag": "\"cdf079c202c63b3cf00cc5a6ebb942a4\"",
+    "size": 41400
+  },
+  "assets/shots/withdo.webp": {
+    "url": "https://awesomemygo.dev/shots/withdo.webp",
+    "etag": "\"7ff23ef805fe4c38d78cb4c0434cf4b3\"",
+    "size": 28158
+  },
+  "assets/shots/wondervision.webp": {
+    "url": "https://awesomemygo.dev/shots/wondervision.webp",
+    "etag": "\"1d6292c443f883193ca9719814f90d3e\"",
+    "size": 30862
+  },
+  "assets/shots/wslpilot.webp": {
+    "url": "https://awesomemygo.dev/shots/wslpilot.webp",
+    "etag": "\"6a35724c5b3201303139551b60b4c909\"",
+    "size": 31950
+  },
+  "assets/shots/xiangqi-go.webp": {
+    "url": "https://awesomemygo.dev/shots/xiangqi-go.webp",
+    "etag": "\"70d7de763a94f3ecd3185e79997aff1a\"",
+    "size": 33014
+  },
+  "assets/shots/xiangzhuan.webp": {
+    "url": "https://awesomemygo.dev/shots/xiangzhuan.webp",
+    "etag": "\"0865835c123276465ab3c3661b395cc5\"",
+    "size": 5698
+  },
+  "assets/shots/yeek.webp": {
+    "url": "https://awesomemygo.dev/shots/yeek.webp",
+    "etag": "\"a167075ca901640b00d02e80a075877e\"",
+    "size": 11428
+  },
+  "assets/shots/yoho-music.webp": {
+    "url": "https://awesomemygo.dev/shots/yoho-music.webp",
+    "etag": "\"fb88901aebacc792e39bca1d262583d6\"",
+    "size": 47770
+  },
+  "assets/shots/yolomcl.webp": {
+    "url": "https://awesomemygo.dev/shots/yolomcl.webp",
+    "etag": "\"4f809e238f31e16a382d5829f1c6edcd\"",
+    "size": 48978
+  },
+  "assets/shots/yourun.webp": {
+    "url": "https://awesomemygo.dev/shots/yourun.webp",
+    "etag": "\"7c00929aadb83e7367d75a42db728d55\"",
+    "size": 21038
+  },
+  "assets/shots/yt-music-player.webp": {
+    "url": "https://awesomemygo.dev/shots/yt-music-player.webp",
+    "etag": "\"56c2a628a40d995b19a8f84d89d04dc8\"",
+    "size": 40828
+  },
+  "assets/shots/ytbplus.webp": {
+    "url": "https://awesomemygo.dev/shots/ytbplus.webp",
+    "etag": "\"a8edd6d704f1d354f833fff72cac3cfd\"",
+    "size": 37558
+  },
+  "assets/shots/ytmgo.webp": {
+    "url": "https://awesomemygo.dev/shots/ytmgo.webp",
+    "etag": "\"feb708dfa6588c4fbb1e82e53e81445c\"",
+    "size": 45188
+  },
+  "assets/shots/yunji-uml.webp": {
+    "url": "https://awesomemygo.dev/shots/yunji-uml.webp",
+    "etag": "\"246bbc34eb9e4d6833968da00125b82e\"",
+    "size": 27844
+  },
+  "assets/shots/z63.webp": {
+    "url": "https://awesomemygo.dev/shots/z63.webp",
+    "etag": "\"3b638454f37aaaaf5a1f39eb7f83c101\"",
+    "size": 40952
+  },
+  "assets/shots/zakki.webp": {
+    "url": "https://awesomemygo.dev/shots/zakki.webp",
+    "etag": "\"2922137f4e9733d83e283d5124197724\"",
+    "size": 7786
+  },
+  "assets/shots/zeokeel-super-agent.webp": {
+    "url": "https://awesomemygo.dev/shots/zeokeel-super-agent.webp",
+    "etag": "\"38950214695b367d85938b053a68ae47\"",
+    "size": 39160
+  },
+  "assets/shots/zeus.webp": {
+    "url": "https://awesomemygo.dev/shots/zeus.webp",
+    "etag": "\"09a57cef05d75b1b87b75a52e8f16885\"",
+    "size": 17764
+  }
+}

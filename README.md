@@ -56,7 +56,7 @@ Publishing an update needs the `MYGO_UPDATER_PRIVATE_KEY` repository secret. The
 
 ## Catalog updates
 
-The catalog and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog, and reads each app's bundle identifier from its repository so that the installed-apps scan can match an installed app exactly.
+The catalog and images are bundled with the app, so it opens instantly and works offline. `scripts/sync.py` refreshes them from the upstream catalog, and reads each app's bundle identifier from its repository so that the installed-apps scan can match an installed app exactly. A run reads identifiers only for apps it has not seen or that lost theirs (`--refresh-identifiers` reads them all again, as the daily job does on Mondays), and asks for an image again only when the host says it changed.
 
 At runtime the app also keeps its catalog fresh:
 

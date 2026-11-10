@@ -56,7 +56,7 @@ macOS 构建使用 ad-hoc 签名。如果首次打开被 Gatekeeper 拦截，请
 
 ## 应用目录同步
 
-`data/apps.json` 会打包进应用，作为启动时的离线快照，所以应用可以立即打开并离线使用。`scripts/sync.py` 会从上游目录刷新它，并读取每个仓库里应用自己的 bundle identifier，让已安装应用检测可以精确匹配。运行期间，应用也会自动保持目录最新：
+`data/apps.json` 会打包进应用，作为启动时的离线快照，所以应用可以立即打开并离线使用。`scripts/sync.py` 会从上游目录刷新它，并读取每个仓库里应用自己的 bundle identifier，让已安装应用检测可以精确匹配；每次只读取新应用或缺少 identifier 的应用（`--refresh-identifiers` 可全量重读，每日任务会在周一这样做），图片也只在托管方说它变化时才重新下载。运行期间，应用也会自动保持目录最新：
 
 - 启动约 10 秒后检查一次，之后每 6 小时检查一次。
 - 从固定标签的 [`catalog-latest`](https://github.com/tk103331/mygo-store/releases/tag/catalog-latest) Release 下载 `apps.json`。
