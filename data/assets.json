@@ -4,6 +4,11 @@
     "etag": "\"f61c68a3b6aaa8371402ddf5837b957d\"",
     "size": 2120
   },
+  "assets/icons/acton.webp": {
+    "url": "https://awesomemygo.dev/icons/acton.webp",
+    "etag": "\"6e654721f91e092e41ad7e62c5d06605\"",
+    "size": 2586
+  },
   "assets/icons/advanced-rdp.webp": {
     "url": "https://awesomemygo.dev/icons/advanced-rdp.webp",
     "etag": "\"d186dbc3ab92a045038773c24e9b6b57\"",
@@ -687,6 +692,11 @@
     "etag": "\"a891e452a4157737d79e0fc0de784edd\"",
     "size": 3620
   },
+  "assets/icons/flintrade.webp": {
+    "url": "https://awesomemygo.dev/icons/flintrade.webp",
+    "etag": "\"4bf65027e6e4ed747350830497746452\"",
+    "size": 310
+  },
   "assets/icons/floater.webp": {
     "url": "https://awesomemygo.dev/icons/floater.webp",
     "etag": "\"5eb01bcfcb92f20822f9df6d7e264ae1\"",
@@ -701,6 +711,16 @@
     "url": "https://awesomemygo.dev/icons/framepicker.webp",
     "etag": "\"383044d3d689e935ef88b2b40af81384\"",
     "size": 1034
+  },
+  "assets/icons/frostmail.webp": {
+    "url": "https://awesomemygo.dev/icons/frostmail.webp",
+    "etag": "\"410d4193de8eb0369c4eaceb5747a0c1\"",
+    "size": 1732
+  },
+  "assets/icons/frostnotes.webp": {
+    "url": "https://awesomemygo.dev/icons/frostnotes.webp",
+    "etag": "\"acc3428e77df129ab95834ecc79b3dc2\"",
+    "size": 6728
   },
   "assets/icons/frpc.webp": {
     "url": "https://awesomemygo.dev/icons/frpc.webp",
@@ -746,6 +766,11 @@
     "url": "https://awesomemygo.dev/icons/git-viewer.webp",
     "etag": "\"9d22a2884cf2959e77db32fd2218d5d1\"",
     "size": 748
+  },
+  "assets/icons/glide.webp": {
+    "url": "https://awesomemygo.dev/icons/glide.webp",
+    "etag": "\"88a5729d068d66e75e4c11c2ac417e2d\"",
+    "size": 1854
   },
   "assets/icons/glint.webp": {
     "url": "https://awesomemygo.dev/icons/glint.webp",
@@ -829,6 +854,11 @@
     "url": "https://awesomemygo.dev/icons/gorss.webp",
     "etag": "\"2ab108b6ac0c9a5ffb910dd91987423d\"",
     "size": 1472
+  },
+  "assets/icons/goshell.webp": {
+    "url": "https://awesomemygo.dev/icons/goshell.webp",
+    "etag": "\"d0c5a5b7d56731d05d6f83622ccde985\"",
+    "size": 1180
   },
   "assets/icons/gosidian.webp": {
     "url": "https://awesomemygo.dev/icons/gosidian.webp",
@@ -1310,6 +1340,11 @@
     "etag": "\"bbbeff9c0adf407610dc2e8581b8f0c0\"",
     "size": 5718
   },
+  "assets/icons/mcode.webp": {
+    "url": "https://awesomemygo.dev/icons/mcode.webp",
+    "etag": "\"19176889cbc307ef1ed7c9a69ba14d48\"",
+    "size": 1470
+  },
   "assets/icons/mcpctl.webp": {
     "url": "https://awesomemygo.dev/icons/mcpctl.webp",
     "etag": "\"38cbbc752d8c22614b631f993a3994ec\"",
@@ -1376,11 +1411,21 @@
     "etag": "\"028a084728ada77f6a9039c3dd43ae93\"",
     "size": 3228
   },
+  "assets/icons/mira.webp": {
+    "url": "https://awesomemygo.dev/icons/mira.webp",
+    "etag": "\"21111b99fe5b6dccec893c3c4e80f721\"",
+    "size": 1444
+  },
   "assets/icons/mixmusic.webp": {
     "url": "https://ailogo.yldm.ai/avatar/mixmusic.webp",
     "etag": "\"6af31d59-8062\"",
     "lastModified": "Tue, 10 Nov 2026 13:34:17 GMT",
     "size": 32866
+  },
+  "assets/icons/miya-desktop.webp": {
+    "url": "https://awesomemygo.dev/icons/miya-desktop.webp",
+    "etag": "\"a93895bf3d8e2f1db6350307e7f0e865\"",
+    "size": 3728
   },
   "assets/icons/mochi.webp": {
     "url": "https://awesomemygo.dev/icons/mochi.webp",
@@ -1489,8 +1534,8 @@
   },
   "assets/icons/myclip.webp": {
     "url": "https://awesomemygo.dev/icons/myclip.webp",
-    "etag": "\"0fe50ce4c277791e2f3db1eeb6718360\"",
-    "size": 4266
+    "etag": "\"f19af15bf9112cda63cb00f8f9c8768f\"",
+    "size": 1652
   },
   "assets/icons/mycode.webp": {
     "url": "https://awesomemygo.dev/icons/mycode.webp",
@@ -1566,6 +1611,16 @@
     "url": "https://awesomemygo.dev/icons/mylock.webp",
     "etag": "\"98e76f6371476184c624966c432e0270\"",
     "size": 12130
+  },
+  "assets/icons/mymcp.webp": {
+    "url": "https://awesomemygo.dev/icons/mymcp.webp",
+    "etag": "\"1cb0ba7659147616da9fb43ec4a1a8af\"",
+    "size": 1732
+  },
+  "assets/icons/mypack.webp": {
+    "url": "https://awesomemygo.dev/icons/mypack.webp",
+    "etag": "\"a0d71ca5750115e39c00540cc68920f4\"",
+    "size": 4876
   },
   "assets/icons/myshoes.webp": {
     "url": "https://awesomemygo.dev/icons/myshoes.webp",
@@ -1658,6 +1713,11 @@
     "etag": "\"026504433643fc3faaa106cf83a851c0\"",
     "size": 1706
   },
+  "assets/icons/nga-reader.webp": {
+    "url": "https://awesomemygo.dev/icons/nga-reader.webp",
+    "etag": "\"f76de099b4f2cec1eddb9c8da9a2009c\"",
+    "size": 328
+  },
   "assets/icons/nihongo-stack.webp": {
     "url": "https://awesomemygo.dev/icons/nihongo-stack.webp",
     "etag": "\"e1467b86e72e0e4c9740b677ea5d0302\"",
@@ -1677,6 +1737,11 @@
     "url": "https://awesomemygo.dev/icons/notefloat.webp",
     "etag": "\"b2ab3a8e24f5101d847930b8edc2dcba\"",
     "size": 1544
+  },
+  "assets/icons/notes.webp": {
+    "url": "https://awesomemygo.dev/icons/notes.webp",
+    "etag": "\"bc7c3cc7fa5720dc775ab9d559704379\"",
+    "size": 1938
   },
   "assets/icons/nova.webp": {
     "url": "https://awesomemygo.dev/icons/nova.webp",
@@ -2089,6 +2154,11 @@
     "url": "https://awesomemygo.dev/icons/riichi-studio.webp",
     "etag": "\"ca3c8602aec8f739ba76949a03fa8531\"",
     "size": 854
+  },
+  "assets/icons/ringo.webp": {
+    "url": "https://awesomemygo.dev/icons/ringo.webp",
+    "etag": "\"1a358bec9e66f77c7f4f667c319b18b2\"",
+    "size": 2578
   },
   "assets/icons/rivu.webp": {
     "url": "https://awesomemygo.dev/icons/rivu.webp",
@@ -2607,6 +2677,11 @@
     "etag": "\"785d6aa0faf87c93973552be96b877f2\"",
     "size": 4120
   },
+  "assets/icons/weave.webp": {
+    "url": "https://awesomemygo.dev/icons/weave.webp",
+    "etag": "\"806ae580776ead54c83c0e9e946e2d0a\"",
+    "size": 3050
+  },
   "assets/icons/webdd.webp": {
     "url": "https://awesomemygo.dev/icons/webdd.webp",
     "etag": "\"f0b5db787d6b575919edb7e8e0959464\"",
@@ -2712,15 +2787,30 @@
     "etag": "\"38910b1841810252549b03bd67bfaa41\"",
     "size": 1296
   },
+  "assets/icons/zephyr-center.webp": {
+    "url": "https://awesomemygo.dev/icons/zephyr-center.webp",
+    "etag": "\"1613a5dc7cb1154743351839f650f601\"",
+    "size": 2962
+  },
   "assets/icons/zeus.webp": {
     "url": "https://awesomemygo.dev/icons/zeus.webp",
     "etag": "\"cf4a363117977f15d091a7721fd080ae\"",
     "size": 2012
   },
+  "assets/icons/zmail.webp": {
+    "url": "https://awesomemygo.dev/icons/zmail.webp",
+    "etag": "\"10aaddcc3ea91dfdeeedec575fa7b00a\"",
+    "size": 1728
+  },
   "assets/shots/2048.webp": {
     "url": "https://awesomemygo.dev/shots/2048.webp",
     "etag": "\"ff4f37dd5970e78a004aeed637d1a8c1\"",
     "size": 12826
+  },
+  "assets/shots/acton.webp": {
+    "url": "https://awesomemygo.dev/shots/acton.webp",
+    "etag": "\"daf43a7e5af8346b5e71ec40fece7eb5\"",
+    "size": 10442
   },
   "assets/shots/advanced-rdp.webp": {
     "url": "https://awesomemygo.dev/shots/advanced-rdp.webp",
@@ -2729,8 +2819,8 @@
   },
   "assets/shots/aemeath.webp": {
     "url": "https://awesomemygo.dev/shots/aemeath.webp",
-    "etag": "\"71ac766247c1e9cf7c68bd6b87771836\"",
-    "size": 9080
+    "etag": "\"ea5bb61086266ea9518283762d7648c5\"",
+    "size": 30204
   },
   "assets/shots/agent-kanban.webp": {
     "url": "https://awesomemygo.dev/shots/agent-kanban.webp",
@@ -3402,6 +3492,11 @@
     "etag": "\"211addff4a52f7cd0b64e88bd9ff3687\"",
     "size": 28692
   },
+  "assets/shots/flintrade.webp": {
+    "url": "https://awesomemygo.dev/shots/flintrade.webp",
+    "etag": "\"15554a0034771fa18f4441737098c406\"",
+    "size": 47062
+  },
   "assets/shots/floater.webp": {
     "url": "https://awesomemygo.dev/shots/floater.webp",
     "etag": "\"27b0c5211eac92313e81b4bbee98f342\"",
@@ -3416,6 +3511,16 @@
     "url": "https://awesomemygo.dev/shots/framepicker.webp",
     "etag": "\"f4181aadc77183386eb887c067d0f2fb\"",
     "size": 16264
+  },
+  "assets/shots/frostmail.webp": {
+    "url": "https://awesomemygo.dev/shots/frostmail.webp",
+    "etag": "\"2c796c4bb6e24fe145fda8baf04530e8\"",
+    "size": 60764
+  },
+  "assets/shots/frostnotes.webp": {
+    "url": "https://awesomemygo.dev/shots/frostnotes.webp",
+    "etag": "\"a16b347fb0f0729e268c27a8046b1e0e\"",
+    "size": 42414
   },
   "assets/shots/frpc.webp": {
     "url": "https://awesomemygo.dev/shots/frpc.webp",
@@ -3461,6 +3566,11 @@
     "url": "https://awesomemygo.dev/shots/git-viewer.webp",
     "etag": "\"529e686829e049f6c1c636b3e31df333\"",
     "size": 32554
+  },
+  "assets/shots/glide.webp": {
+    "url": "https://awesomemygo.dev/shots/glide.webp",
+    "etag": "\"eb2716d1d4637cd710ba04600dadee3a\"",
+    "size": 30116
   },
   "assets/shots/glint.webp": {
     "url": "https://awesomemygo.dev/shots/glint.webp",
@@ -3541,6 +3651,11 @@
     "url": "https://awesomemygo.dev/shots/gorss.webp",
     "etag": "\"f8d72c9727fdb57911e09c33dfab6ac8\"",
     "size": 37062
+  },
+  "assets/shots/goshell.webp": {
+    "url": "https://awesomemygo.dev/shots/goshell.webp",
+    "etag": "\"58d01fcf381ab4d814ad0c485317fb07\"",
+    "size": 27974
   },
   "assets/shots/gosidian.webp": {
     "url": "https://awesomemygo.dev/shots/gosidian.webp",
@@ -4017,6 +4132,11 @@
     "etag": "\"b4ba20af05ae3205173522eb9c5b425d\"",
     "size": 51036
   },
+  "assets/shots/mcode.webp": {
+    "url": "https://awesomemygo.dev/shots/mcode.webp",
+    "etag": "\"7a69f1fff79ffd881771a8303cabfb46\"",
+    "size": 30354
+  },
   "assets/shots/mcpctl.webp": {
     "url": "https://awesomemygo.dev/shots/mcpctl.webp",
     "etag": "\"debb3a817e27c086eae1690ead353c8c\"",
@@ -4082,10 +4202,20 @@
     "etag": "\"bd65db2bb36cfb866391a9138184fc1d\"",
     "size": 79442
   },
+  "assets/shots/mira.webp": {
+    "url": "https://awesomemygo.dev/shots/mira.webp",
+    "etag": "\"dee9483a679a10149028c6b1ea7ebc9b\"",
+    "size": 8378
+  },
   "assets/shots/mixmusic.webp": {
     "url": "https://awesomemygo.dev/shots/mixmusic.webp",
     "etag": "\"ec9f679b043741aaf4a1f4b69bb5eb92\"",
     "size": 79790
+  },
+  "assets/shots/miya-desktop.webp": {
+    "url": "https://awesomemygo.dev/shots/miya-desktop.webp",
+    "etag": "\"66f5a7e61b2041297e03cfd47bb9a096\"",
+    "size": 26352
   },
   "assets/shots/mochi.webp": {
     "url": "https://awesomemygo.dev/shots/mochi.webp",
@@ -4272,6 +4402,16 @@
     "etag": "\"f62c4d0551d513ed17467cdf2fdd3e5d\"",
     "size": 26174
   },
+  "assets/shots/mymcp.webp": {
+    "url": "https://awesomemygo.dev/shots/mymcp.webp",
+    "etag": "\"ac95917581487ea761843c9d1225183b\"",
+    "size": 13772
+  },
+  "assets/shots/mypack.webp": {
+    "url": "https://awesomemygo.dev/shots/mypack.webp",
+    "etag": "\"0ff72acc29e9fb2860849168e8e648e3\"",
+    "size": 25428
+  },
   "assets/shots/myshoes.webp": {
     "url": "https://awesomemygo.dev/shots/myshoes.webp",
     "etag": "\"05d38e1420a93d4ebcadb6a31fd0cb78\"",
@@ -4367,6 +4507,11 @@
     "etag": "\"78408a22e7c2405513b262b78d69fbc0\"",
     "size": 40968
   },
+  "assets/shots/nga-reader.webp": {
+    "url": "https://awesomemygo.dev/shots/nga-reader.webp",
+    "etag": "\"f6d7b40c34dee364c127b461bb55a57a\"",
+    "size": 46872
+  },
   "assets/shots/nihongo-stack.webp": {
     "url": "https://awesomemygo.dev/shots/nihongo-stack.webp",
     "etag": "\"c90f907bdd166fc7bebf90280c0ca9db\"",
@@ -4386,6 +4531,11 @@
     "url": "https://awesomemygo.dev/shots/notefloat.webp",
     "etag": "\"92bad34c19a6ca63e1c54c7862bb5119\"",
     "size": 52640
+  },
+  "assets/shots/notes.webp": {
+    "url": "https://awesomemygo.dev/shots/notes.webp",
+    "etag": "\"79138f7c04abb341c496dd766422ca70\"",
+    "size": 22008
   },
   "assets/shots/nova.webp": {
     "url": "https://awesomemygo.dev/shots/nova.webp",
@@ -4796,6 +4946,11 @@
     "url": "https://awesomemygo.dev/shots/riichi-studio.webp",
     "etag": "\"251e3dd76bb1896d355292907ddc5afb\"",
     "size": 54468
+  },
+  "assets/shots/ringo.webp": {
+    "url": "https://awesomemygo.dev/shots/ringo.webp",
+    "etag": "\"a2147e305cb9b4559f38111883dc2658\"",
+    "size": 34676
   },
   "assets/shots/rivu.webp": {
     "url": "https://awesomemygo.dev/shots/rivu.webp",
@@ -5317,6 +5472,11 @@
     "etag": "\"8b9903054fabcefdc0af32420c13158c\"",
     "size": 26150
   },
+  "assets/shots/weave.webp": {
+    "url": "https://awesomemygo.dev/shots/weave.webp",
+    "etag": "\"ef138cf460f7e9b533ed9841f921c312\"",
+    "size": 23248
+  },
   "assets/shots/webdd.webp": {
     "url": "https://awesomemygo.dev/shots/webdd.webp",
     "etag": "\"cef016fcc7100b339324d9f87c4daad5\"",
@@ -5422,9 +5582,19 @@
     "etag": "\"38950214695b367d85938b053a68ae47\"",
     "size": 39160
   },
+  "assets/shots/zephyr-center.webp": {
+    "url": "https://awesomemygo.dev/shots/zephyr-center.webp",
+    "etag": "\"72c329879cbe636c43d604024c30bf33\"",
+    "size": 23174
+  },
   "assets/shots/zeus.webp": {
     "url": "https://awesomemygo.dev/shots/zeus.webp",
     "etag": "\"09a57cef05d75b1b87b75a52e8f16885\"",
     "size": 17764
+  },
+  "assets/shots/zmail.webp": {
+    "url": "https://awesomemygo.dev/shots/zmail.webp",
+    "etag": "\"aab8ff3eb1e45693737a68581228c3d2\"",
+    "size": 24918
   }
 }
