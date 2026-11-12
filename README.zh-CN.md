@@ -2,6 +2,8 @@
 
 [English](README.md) · 中文
 
+[![Listed on Awesome MyGo](https://awesomemygo.dev/badge.svg)](https://awesomemygo.dev/apps/mygo-store)
+
 一个用 [MyGo](https://github.com/egoist/mygo) 原生 UI 构建的跨平台应用市场，界面灵感来自 [Applite](https://github.com/milanvarady/Applite)。它浏览 [Awesome MyGo showcase](https://awesomemygo.dev/showcase) 中的数百款应用，按分类展示评分、截图和项目链接，支持 macOS、Windows 和 Linux。
 
 ![MyGo Store](docs/screenshot.png)

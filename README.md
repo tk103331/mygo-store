@@ -2,6 +2,8 @@
 
 English · [中文](README.zh-CN.md)
 
+[![Listed on Awesome MyGo](https://awesomemygo.dev/badge.svg)](https://awesomemygo.dev/apps/mygo-store)
+
 A native cross-platform app marketplace for projects built with [MyGo](https://github.com/egoist/mygo), inspired by [Applite](https://github.com/milanvarady/Applite). It browses the [Awesome MyGo showcase](https://awesomemygo.dev/showcase): hundreds of apps, grouped by category, with scores, screenshots and links to each project. It runs on macOS, Windows and Linux.
 
 ![MyGo Store](docs/screenshot.png)
