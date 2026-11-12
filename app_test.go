@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 	"path/filepath"
+	"slices"
 	"strings"
 	"testing"
 
@@ -364,5 +365,54 @@ func TestAcquireMessagesFollowTheLocale(t *testing.T) {
 	tt.Frame()
 	if texts := strings.Join(tt.Texts(), "\n"); !strings.Contains(texts, "Release 里没有适用于") {
 		t.Errorf("the Chinese failure message is missing: %q", texts)
+	}
+}
+
+func TestDuplicatedNames(t *testing.T) {
+	dups := duplicatedNames([]App{
+		{Name: "Pulse"}, {Name: "pulse"}, {Name: "MyGo Store"}, {Name: ""},
+	})
+	if !dups[normalizeName("Pulse")] {
+		t.Fatal("duplicatedNames misses the two Pulse entries")
+	}
+	if dups[normalizeName("MyGo Store")] || len(dups) != 1 {
+		t.Fatalf("duplicatedNames = %v, want only Pulse", dups)
+	}
+}
+
+func TestSameNameRowsShowTheAuthor(t *testing.T) {
+	// A fork may keep the name and the icon of the app it forked: rows of
+	// the same list name the author beside such a name, so the two stay
+	// apart.
+	t.Setenv("MYGO_STORE_CONFIG", t.TempDir())
+	s := &store{
+		catalog: &Catalog{Apps: []App{
+			{Slug: "pulse", Name: "Pulse", Author: "egoist", Summary: "The original"},
+			{Slug: "pulse-fork", Name: "Pulse", Author: "the-forker", Summary: "A fork"},
+			{Slug: "solo", Name: "Solo", Author: "solo-author", Summary: "Its own"},
+		}},
+		prefs:     newPrefs(),
+		images:    newImageCache(),
+		nav:       "discover",
+		sort:      sortRecommended,
+		runOnMain: func(fn func()) { fn() },
+	}
+	tt := ui.NewTester(s.view, 1180, 780)
+	tt.SetLocale("zh-Hans")
+	tt.Frame()
+
+	s.query = "pulse"
+	tt.Frame()
+	texts := tt.Texts()
+	for _, author := range []string{"egoist", "the-forker"} {
+		if !slices.Contains(texts, author) {
+			t.Errorf("the rows do not name the author %q: %q", author, texts)
+		}
+	}
+
+	s.query = "solo"
+	tt.Frame()
+	if slices.Contains(tt.Texts(), "solo-author") {
+		t.Error("a row without a namesake names its author anyway")
 	}
 }

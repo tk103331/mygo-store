@@ -4,6 +4,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"sort"
@@ -13,6 +14,7 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
+	"github.com/egoist/mygo"
 	"golang.org/x/sys/windows/registry"
 )
 
@@ -27,7 +29,9 @@ var (
 // platformInstalledApps reads the uninstall entries that Windows keeps, in
 // Settings > Apps, and keeps the ones whose executable `mygo build` marked
 // with MyGoIdentifier: the NSIS installers that `mygo build` makes and
-// install.ps1 write them under the app's identifier.
+// install.ps1 write them under the app's identifier. The packaged apps of
+// the Microsoft Store keep no uninstall entry, so packagedApps asks the
+// shell for them too.
 func platformInstalledApps(known func(string) bool) ([]installedApp, error) {
 	self, _ := os.Executable()
 	var apps []installedApp
@@ -65,7 +69,53 @@ func platformInstalledApps(known func(string) bool) ([]installedApp, error) {
 			apps = append(apps, app)
 		}
 	}
+	apps = append(apps, packagedApps(known)...)
 	return apps, nil
+}
+
+// packagedApps lists the packaged (Microsoft Store) apps the catalog may
+// know. They keep no uninstall entry, and their folder in WindowsApps is
+// sealed, so their executables tell nothing: the shell's Applications
+// folder names them instead, and a package matches the catalog by its
+// identity, which a packaged mygo build takes from the app's identifier,
+// or by the name it shows. Shell.LaunchApp starts such an app by the
+// shell item that Path keeps.
+func packagedApps(known func(string) bool) []installedApp {
+	found, err := mygo.Shell.InstalledApps()
+	if err != nil {
+		log.Printf("mygo-store: listing the shell's apps: %v", err)
+		return nil
+	}
+	var apps []installedApp
+	seen := map[string]bool{}
+	for _, item := range found {
+		// A packaged ID is <package family>!<application>; a desktop app
+		// has no such ID, and the uninstall entries know it.
+		family, _, ok := strings.Cut(item.ID, "!")
+		if !ok {
+			continue
+		}
+		// The family is <identity>_<publisher hash>, and the identity
+		// names the app the way its bundle identifier does.
+		identity := family
+		if i := strings.LastIndex(family, "_"); i >= 0 {
+			identity = family[:i]
+		}
+		if !known(identity) && !known(item.Name) {
+			continue
+		}
+		key := strings.ToLower(item.ID)
+		if seen[key] {
+			continue
+		}
+		seen[key] = true
+		apps = append(apps, installedApp{
+			Name:       item.Name,
+			Identifier: identity,
+			Path:       item.Path,
+		})
+	}
+	return apps
 }
 
 // uninstallApp reads one uninstall entry, and reports whether its app was

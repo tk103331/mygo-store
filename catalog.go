@@ -350,6 +350,25 @@ func (s *store) filterApps() []App {
 	return out
 }
 
+// duplicatedNames tells which normalized names several apps of a list
+// share: rows of the same list show the author beside such a name, as a
+// fork may keep the name and the icon of the app it forked.
+func duplicatedNames(apps []App) map[string]bool {
+	counts := make(map[string]int, len(apps))
+	for i := range apps {
+		if key := normalizeName(apps[i].Name); key != "" {
+			counts[key]++
+		}
+	}
+	dups := make(map[string]bool, len(counts))
+	for key, n := range counts {
+		if n > 1 {
+			dups[key] = true
+		}
+	}
+	return dups
+}
+
 func hasPlatform(app *App, platform string) bool {
 	for _, p := range app.Platforms {
 		if p == platform {

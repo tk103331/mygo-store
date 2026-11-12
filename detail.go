@@ -40,11 +40,12 @@ func (s *store) detailView(c *ui.Context, t *ui.Theme, app *App) {
 			s.info(c, t, app)
 
 			if others := s.sameAuthor(app); len(others) > 0 {
+				dupNames := duplicatedNames(others)
 				ui.Column(c).Gap(6).Children(func() {
 					ui.Text(c, msgs.OtherWorks(app.Author)).FontSize(17).Bold()
 					ui.Grid(c).Columns(s.columns(c)).GapX(18).GapY(1).Children(func() {
 						for i := range others {
-							s.appRow(c, &others[i], 76)
+							s.appRow(c, &others[i], 76, dupNames)
 						}
 					})
 				})

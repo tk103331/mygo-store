@@ -12,6 +12,7 @@ import (
 // ones, or a search, as a grid that builds only the rows in view.
 func (s *store) browseView(c *ui.Context, t *ui.Theme) {
 	apps := s.filterApps()
+	dupNames := duplicatedNames(apps)
 	title, subtitle := s.browseHeading(apps)
 
 	ui.Column(c).Grow(1).Children(func() {
@@ -27,7 +28,7 @@ func (s *store) browseView(c *ui.Context, t *ui.Theme) {
 
 		ui.Box(c).Grow(1).Padding(8, 24, 18, 24).Children(func() {
 			ui.GridView(c, &s.grid, len(apps), 290, 84, func(i int) {
-				s.appRow(c, &apps[i], 78)
+				s.appRow(c, &apps[i], 78, dupNames)
 			}).Grow(1)
 		})
 	})

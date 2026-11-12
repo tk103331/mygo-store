@@ -69,9 +69,10 @@ func (s *store) discoverSection(c *ui.Context, t *ui.Theme, title, blurb string,
 		})
 
 		cols := s.columns(c)
+		dupNames := duplicatedNames(apps)
 		ui.Grid(c).Columns(cols).GapX(18).GapY(1).Children(func() {
 			for i := range apps {
-				s.appRow(c, &apps[i], 76)
+				s.appRow(c, &apps[i], 76, dupNames)
 			}
 		})
 	})
@@ -102,8 +103,10 @@ func (s *store) topApps(limit int) []App {
 }
 
 // appRow is one app in a shelf or a grid: icon, name, summary and the
-// action pill that the whole row leads to.
-func (s *store) appRow(c *ui.Context, app *App, height float32) ui.Element {
+// action pill that the whole row leads to. dupNames tells which names
+// several apps of the same list share; such a name shows its author beside
+// it, as a fork may keep the name and the icon of the app it forked.
+func (s *store) appRow(c *ui.Context, app *App, height float32, dupNames map[string]bool) ui.Element {
 	t := c.Theme()
 	msgs := s.messages()
 	row := ui.ButtonBase(c).FillWidth().Height(height).Padding(7, 9).Radius(9).
@@ -118,6 +121,9 @@ func (s *store) appRow(c *ui.Context, app *App, height float32) ui.Element {
 		ui.Column(c).Grow(1).MinWidth(0).Gap(2).Children(func() {
 			ui.Row(c).Gap(6).AlignItems(ui.Center).Children(func() {
 				ui.Text(c, app.Name).FontSize(14).Bold().SingleLine().Grow(1).MinWidth(0)
+				if dupNames[normalizeName(app.Name)] {
+					ui.Text(c, app.Author).FontSize(11).TextColor(t.TextMuted).SingleLine().Shrink(0)
+				}
 				ui.Text(c, app.kindShort(msgs)).FontSize(9).TextColor(t.TextMuted).
 					Padding(1, 4).Radius(3).Background(t.Text.Alpha(0.06)).Shrink(0)
 			})
