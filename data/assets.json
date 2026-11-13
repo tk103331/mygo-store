@@ -417,6 +417,11 @@
     "etag": "\"69320ef35d513a76feb07654163ef140\"",
     "size": 1146
   },
+  "assets/icons/colab-yoga.webp": {
+    "url": "https://awesomemygo.dev/icons/colab-yoga.webp",
+    "etag": "\"ff98d6ae7237a887ea66778911ab441a\"",
+    "size": 1840
+  },
   "assets/icons/collate.webp": {
     "url": "https://awesomemygo.dev/icons/collate.webp",
     "etag": "\"ad97229a868f210f093afbde73910188\"",
@@ -707,6 +712,11 @@
     "etag": "\"d3400a212be244f00ac4c381fcdbedb5\"",
     "size": 2726
   },
+  "assets/icons/framely.webp": {
+    "url": "https://awesomemygo.dev/icons/framely.webp",
+    "etag": "\"8f82e852b9aeecde6c189fdf339c6546\"",
+    "size": 2780
+  },
   "assets/icons/framepicker.webp": {
     "url": "https://awesomemygo.dev/icons/framepicker.webp",
     "etag": "\"383044d3d689e935ef88b2b40af81384\"",
@@ -962,8 +972,8 @@
   },
   "assets/icons/hku-vpn.webp": {
     "url": "https://awesomemygo.dev/icons/hku-vpn.webp",
-    "etag": "\"5c127745468a143cc56c1363a40fea2e\"",
-    "size": 1556
+    "etag": "\"bb53ddb4a908e959392d727d007e0716\"",
+    "size": 70774
   },
   "assets/icons/hop.webp": {
     "url": "https://awesomemygo.dev/icons/hop.webp",
@@ -1467,6 +1477,11 @@
     "etag": "\"9e7bfbc0e6cc9d3e9f0838f76d94b184\"",
     "size": 1250
   },
+  "assets/icons/mothx-native.webp": {
+    "url": "https://awesomemygo.dev/icons/mothx-native.webp",
+    "etag": "\"dcb53c30d62959e74e4eb9c73ee3bb31\"",
+    "size": 1668
+  },
   "assets/icons/motionduo.webp": {
     "url": "https://awesomemygo.dev/icons/motionduo.webp",
     "etag": "\"21d200070c612eb643c9a571f8f3fdf7\"",
@@ -1596,6 +1611,11 @@
     "url": "https://awesomemygo.dev/icons/mygo-vaultwarden.webp",
     "etag": "\"421ca1b36f3c358107e76dfc2a564942\"",
     "size": 2726
+  },
+  "assets/icons/mygo-wallhaven.webp": {
+    "url": "https://awesomemygo.dev/icons/mygo-wallhaven.webp",
+    "etag": "\"83e4f48f92649530a69bd5fe395764db\"",
+    "size": 3022
   },
   "assets/icons/mygost.webp": {
     "url": "https://awesomemygo.dev/icons/mygost.webp",
@@ -2627,6 +2647,11 @@
     "etag": "\"8d143ce8a476d0dd8e7959f8d1f4627a\"",
     "size": 1560
   },
+  "assets/icons/vole.webp": {
+    "url": "https://awesomemygo.dev/icons/vole.webp",
+    "etag": "\"96be5b568f1d7f6ba1a114bb4a5be2be\"",
+    "size": 3624
+  },
   "assets/icons/voxflow.webp": {
     "url": "https://awesomemygo.dev/icons/voxflow.webp",
     "etag": "\"a80561a31a4578066e13ce5f5e434cd2\"",
@@ -3217,6 +3242,11 @@
     "etag": "\"779e657a13275742d39be2a925f3853b\"",
     "size": 25622
   },
+  "assets/shots/colab-yoga.webp": {
+    "url": "https://awesomemygo.dev/shots/colab-yoga.webp",
+    "etag": "\"a914de26d3fb24b8b88963ff364a6ed4\"",
+    "size": 22518
+  },
   "assets/shots/collate.webp": {
     "url": "https://awesomemygo.dev/shots/collate.webp",
     "etag": "\"bced0beb3ac2bf0c2eac2fc2b226a2fd\"",
@@ -3414,8 +3444,8 @@
   },
   "assets/shots/dumpingground.webp": {
     "url": "https://awesomemygo.dev/shots/dumpingground.webp",
-    "etag": "\"d643a11a513ff4cb2c13159629321e9e\"",
-    "size": 33232
+    "etag": "\"739b0dc102deebe34c415218a04391e8\"",
+    "size": 36142
   },
   "assets/shots/easy-ssh-port.webp": {
     "url": "https://awesomemygo.dev/shots/easy-ssh-port.webp",
@@ -3506,6 +3536,11 @@
     "url": "https://awesomemygo.dev/shots/fnmovie.webp",
     "etag": "\"080067c0f2edebd6005fb80956ba6277\"",
     "size": 40094
+  },
+  "assets/shots/framely.webp": {
+    "url": "https://awesomemygo.dev/shots/framely.webp",
+    "etag": "\"e26f0b8e6ae14467a5bbdf263f91d223\"",
+    "size": 39428
   },
   "assets/shots/framepicker.webp": {
     "url": "https://awesomemygo.dev/shots/framepicker.webp",
@@ -4257,6 +4292,11 @@
     "etag": "\"1e45dddc4fc5a6394e19f4869b0888ec\"",
     "size": 15958
   },
+  "assets/shots/mothx-native.webp": {
+    "url": "https://awesomemygo.dev/shots/mothx-native.webp",
+    "etag": "\"2288637d5d5b7475b421af071c442a14\"",
+    "size": 22212
+  },
   "assets/shots/motionduo.webp": {
     "url": "https://awesomemygo.dev/shots/motionduo.webp",
     "etag": "\"3a3061ab1c525d3600d1a8cb80c53f8c\"",
@@ -4386,6 +4426,11 @@
     "url": "https://awesomemygo.dev/shots/mygo-vaultwarden.webp",
     "etag": "\"65eb6e4620270445a396f1f624bab87b\"",
     "size": 17988
+  },
+  "assets/shots/mygo-wallhaven.webp": {
+    "url": "https://awesomemygo.dev/shots/mygo-wallhaven.webp",
+    "etag": "\"80e4e438b722ad38901f877445216e1b\"",
+    "size": 60462
   },
   "assets/shots/mygost.webp": {
     "url": "https://awesomemygo.dev/shots/mygost.webp",
@@ -5421,6 +5466,11 @@
     "url": "https://awesomemygo.dev/shots/voke.webp",
     "etag": "\"a52cc264a38b892a2bf134b1ed72107f\"",
     "size": 10556
+  },
+  "assets/shots/vole.webp": {
+    "url": "https://awesomemygo.dev/shots/vole.webp",
+    "etag": "\"cfbb862637588ee3dad44eb6118ed596\"",
+    "size": 11564
   },
   "assets/shots/voxflow.webp": {
     "url": "https://awesomemygo.dev/shots/voxflow.webp",
